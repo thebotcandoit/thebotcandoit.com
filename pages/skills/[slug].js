@@ -5,13 +5,6 @@ import path from 'path'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 
-const installSteps = [
-  'Download the SKILL.md file using the button above.',
-  'Open the Claude desktop app and go to Customize → Skills.',
-  'Click the + button and select the SKILL.md file you just downloaded.',
-  'The skill is now active. Open a new task and Claude will use it automatically when relevant.',
-]
-
 export default function SkillPage({ skill }) {
   return (
     <>
@@ -25,64 +18,125 @@ export default function SkillPage({ skill }) {
       <div className="min-h-screen bg-white">
         <Nav />
         <main className="max-w-2xl mx-auto px-8 py-12">
+
+          {/* BREADCRUMB */}
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-8">
             <Link href="/" className="hover:text-indigo-600 transition-colors">Home</Link>
             <span>/</span>
             <span className="text-gray-600">{skill.name}</span>
           </div>
-          <div className="mb-10">
+
+          {/* HEADER */}
+          <div className="mb-8">
             <div className="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full mb-4">
               {skill.category}
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-3 leading-tight">{skill.name}</h1>
             <p className="text-xl text-gray-500 leading-relaxed">{skill.tagline}</p>
           </div>
-          <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+
+          {/* WHAT IS A SKILL */}
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6 flex gap-3 items-start">
+            <span className="text-xl mt-0.5">💡</span>
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-1">Ready to use this skill?</p>
-              <p className="text-xs text-gray-500">Download the SKILL.md file and add it to your Claude Cowork skills.</p>
+              <p className="text-sm font-semibold text-gray-800 mb-1">What&apos;s a skill?</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                A skill is a small instruction file you add to your Claude Cowork app. Once added, Claude knows how to do something new — like automatically downloading every photo from a listing. Think of it like installing a shortcut that does a job for you.
+              </p>
             </div>
-            <a href={`/skills/${skill.slug}/SKILL.md`} download className="bg-indigo-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap">
-              ↓ Download skill
-            </a>
           </div>
+
+          {/* TWO-PATH: DIY vs CUSTOM */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+
+            {/* PATH 1: DO IT YOURSELF */}
+            <div className="border border-gray-200 rounded-2xl p-5">
+              <p className="text-sm font-bold text-gray-900 mb-1">⬇️ Do it yourself</p>
+              <p className="text-xs text-gray-400 mb-4">Download the skill file and add it to Cowork in under 2 minutes.</p>
+              <a
+                href={`/skills/${skill.slug}/SKILL.md`}
+                download
+                className="block text-center bg-indigo-600 text-white px-4 py-2.5 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors mb-5"
+              >
+                ↓ Download skill
+              </a>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">You&apos;ll need</p>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-base flex-shrink-0">🖥️</div>
+                  <div>
+                    <p className="text-xs font-bold text-gray-800 leading-snug">Claude desktop app</p>
+                    <p className="text-xs text-gray-400 leading-snug">With Cowork mode enabled</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-base flex-shrink-0">🌐</div>
+                  <div>
+                    <p className="text-xs font-bold text-gray-800 leading-snug">Claude in Chrome extension</p>
+                    <p className="text-xs text-gray-400 leading-snug">Installed and active in your Chrome browser</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* PATH 2: NEED HELP / CUSTOM */}
+            <div className="bg-gray-900 rounded-2xl p-5 flex flex-col">
+              <p className="text-sm font-bold text-white mb-1">🛠️ Need help — or something custom?</p>
+              <p className="text-xs text-gray-400 leading-relaxed mb-4 flex-grow">
+                Don&apos;t want to set it up yourself, or need something built specifically for your workflow?
+              </p>
+              <a
+                href="mailto:matt@thebotcandoit.com"
+                className="block text-center bg-white text-gray-900 px-4 py-2.5 rounded-xl text-sm font-bold hover:bg-gray-100 transition-colors mb-4"
+              >
+                Get in touch
+              </a>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2 text-xs text-gray-400 border-t border-gray-800 pt-2">
+                  <span className="text-gray-600 flex-shrink-0">→</span>
+                  I&apos;ll install and set it up for you
+                </li>
+                <li className="flex items-start gap-2 text-xs text-gray-400 border-t border-gray-800 pt-2">
+                  <span className="text-gray-600 flex-shrink-0">→</span>
+                  We can modify this skill for your specific needs
+                </li>
+                <li className="flex items-start gap-2 text-xs text-gray-400 border-t border-gray-800 pt-2">
+                  <span className="text-gray-600 flex-shrink-0">→</span>
+                  Or build something completely custom from scratch
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          {/* DIVIDER */}
+          <hr className="border-gray-100 mb-8" />
+
+          {/* WHAT IT DOES */}
           <section className="mb-8">
             <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">What it does</h2>
             <p className="text-gray-600 leading-relaxed">{skill.description}</p>
           </section>
+
+          {/* WHO IT'S FOR */}
           <section className="mb-8">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Who it's for</h2>
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Who it&apos;s for</h2>
             <p className="text-gray-600 leading-relaxed">{skill.whoFor}</p>
           </section>
+
+          {/* HOW IT WORKS */}
           <section className="mb-8">
             <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">How it works</h2>
             <p className="text-gray-600 leading-relaxed">{skill.howItWorks}</p>
           </section>
-          <section className="mb-10">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">How to install</h2>
-            <div className="space-y-3">
-              {installSteps.map((step, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-600 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{i + 1}</div>
-                  <p className="text-sm text-gray-600 leading-relaxed">{step}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-          <section className="mb-10 bg-gray-50 border border-gray-200 rounded-xl p-5">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Requirements</h2>
-            <p className="text-sm text-gray-600">{skill.requirements}</p>
-          </section>
-          <div className="flex gap-2 flex-wrap mb-10">
+
+          {/* TAGS */}
+          <div className="flex gap-2 flex-wrap">
             {skill.tags.map(tag => (
               <span key={tag} className="bg-gray-50 text-gray-500 text-xs px-3 py-1 rounded-full border border-gray-200 font-medium">{tag}</span>
             ))}
           </div>
-          <section className="bg-indigo-50 border border-indigo-100 rounded-2xl p-8 text-center">
-            <h2 className="text-xl font-bold text-gray-900 mb-2">Need help getting this working?</h2>
-            <p className="text-sm text-gray-500 mb-5 max-w-sm mx-auto">If the install steps aren't clear or something isn't working, just get in touch.</p>
-            <a href="mailto:hello@thebotcandoit.com" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">Get in touch →</a>
-          </section>
+
         </main>
         <Footer />
       </div>
