@@ -1,0 +1,13 @@
+{
+  "slug": "redfin-estimate-checker",
+  "name": "Redfin Estimate Checker",
+  "tagline": "Find out if a home's digital estimate matches what buyers are actually paying.",
+  "description": "Redfin's algorithm lags the real market — sometimes by months, sometimes by years. This skill back-calculates what Redfin estimated at the exact moment a home sold and compares it to the actual sale price, so you can see how far off the algorithm really was before making an offer.",
+  "category": "Real Estate",
+  "tags": ["Real Estate", "Analysis", "Valuation"],
+  "whoFor": "Home buyers and investors who want to know whether a listing price reflects what the market is actually doing — not what an algorithm guessed six months ago.",
+  "howItWorks": "Give Claude a list of recently sold addresses. The skill navigates to each Redfin listing, reads the estimate history widget, and uses the 'change since sold' figure to back-calculate what Redfin thought the home was worth at the moment of sale. It then builds a table showing the gap between algorithm and reality for each address.",
+  "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
+  "dateAdded": "2026-03-10",
+  "status": "available"
+}

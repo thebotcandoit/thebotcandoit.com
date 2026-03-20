@@ -1,0 +1,13 @@
+{
+  "slug": "real-estate-photo-scraper",
+  "name": "Real Estate Photo Scraper",
+  "tagline": "Download every photo from any home listing in one click.",
+  "description": "No more saving images one by one. Paste a listing URL from Redfin, Zillow, Compass, or any major real estate site and this skill downloads every photo instantly into a folder on your computer.",
+  "category": "Real Estate",
+  "tags": ["Real Estate", "Research", "Photos"],
+  "whoFor": "Home buyers, investors, and agents who spend too much time manually saving listing photos when comparing properties or building reports.",
+  "howItWorks": "Paste a listing URL into Claude and the skill takes over — opening the listing in your browser, navigating through every photo in the gallery, and saving them all to a folder. You get every image without touching a single save button.",
+  "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
+  "dateAdded": "2026-03-01",
+  "status": "available"
+}
