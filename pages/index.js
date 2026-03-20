@@ -24,21 +24,43 @@ export default function Home({ skills }) {
       <div className="min-h-screen bg-white">
         <Nav />
         <main>
-          <section className="px-8 pt-16 pb-12 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
-              🤖 One person + Claude built everything here
-            </div>
+
+          {/* HERO */}
+          <section className="px-8 pt-16 pb-10 max-w-3xl">
             <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
-              Small tools that get <span className="text-indigo-600">the job</span> done.
+              AI tools that get <span className="text-indigo-600">the job done.</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-6 max-w-xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-3 max-w-xl">
               Free, downloadable AI skills for people who want to work smarter — no coding required. Each one solves a real problem.
             </p>
-            <div className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-1.5 rounded-full text-xs text-gray-500 font-medium">
-              🤖 One person made all of this. You can too.
+            <p className="text-sm text-gray-400 mb-8">🤖 One person made all of this. You can too.</p>
+            <div className="flex gap-3 flex-wrap">
+              <a href="#skills" className="bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">
+                Browse Skills
+              </a>
+              <a href="mailto:matt@thebotcandoit.com" className="border border-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors">
+                Need something custom? Let&apos;s build it →
+              </a>
             </div>
           </section>
-          <section className="px-8 pb-16">
+
+          {/* CUSTOM BUILD BANNER */}
+          <section className="px-8 pb-10 max-w-3xl">
+            <div className="bg-indigo-600 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <h2 className="text-white font-bold text-base mb-1">Don&apos;t see what you need? We build custom.</h2>
+                <p className="text-indigo-200 text-sm leading-relaxed max-w-md">
+                  Describe the task that&apos;s eating your time. If it&apos;s repetitive, we can probably automate it — for any industry.
+                </p>
+              </div>
+              <a href="mailto:matt@thebotcandoit.com" className="bg-white text-indigo-600 px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-indigo-50 transition-colors whitespace-nowrap flex-shrink-0">
+                Get in touch
+              </a>
+            </div>
+          </section>
+
+          {/* SKILLS GRID */}
+          <section id="skills" className="px-8 pb-16">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5">Available Skills</p>
             <div className="flex gap-2 flex-wrap mb-7">
               {categories.map(cat => (
@@ -61,17 +83,20 @@ export default function Home({ skills }) {
               ))}
             </div>
           </section>
-          <section className="mx-8 mb-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+          {/* BOTTOM CTA */}
+          <section className="mx-8 mb-16 bg-gray-900 rounded-2xl p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-2">Have a task that's eating your time?</h2>
-              <p className="text-gray-500 text-sm leading-relaxed max-w-lg">
-                Every skill here started as someone's annoying problem. If you have a workflow you wish AI could just handle — tell us. We'll see if we can build it, and show you how.
+              <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a task that&apos;s eating your time?</h2>
+              <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
+                I build custom automations for real estate, research, data processing, and more. If you can describe it, we can probably build it — fast.
               </p>
             </div>
-            <a href="mailto:hello@thebotcandoit.com" className="bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-700 transition-colors">
-              Tell us what's eating your time →
+            <a href="mailto:matt@thebotcandoit.com" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">
+              Let&apos;s Talk
             </a>
           </section>
+
         </main>
         <Footer />
       </div>
