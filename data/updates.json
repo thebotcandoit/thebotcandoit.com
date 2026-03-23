@@ -1,6 +1,12 @@
 [
   {
     "date": "March 23, 2026",
+    "title": "Skill cards are easier to use",
+    "body": "Three small improvements to the skill cards on the homepage. The entire card is now clickable — you don't have to aim for the small button. The button itself now says 'Get the skill' which is clearer about what happens next. And we removed the 'Need help installing?' link from the homepage — it belongs on the individual skill page after you've already decided you want it, not before.",
+    "tag": "Improvement"
+  },
+  {
+    "date": "March 23, 2026",
     "title": "You can now contact us without leaving the site",
     "body": "Before today, every \"Get in touch\" button on this site opened your email app and dropped you into a blank compose window. That's a lousy experience — most people just close it and move on. We replaced all of those with a real contact form at /contact. You fill it out, hit send, and we get a notification. No email client required. First lead that comes through it will be a good day.",
     "tag": "Improvement"
