@@ -1,0 +1,10 @@
+{
+  "lastChecked": "2026-03-23T17:30:00Z",
+  "status": "pass",
+  "checks": [
+    { "name": "Homepage", "status": "pass" },
+    { "name": "Contact page", "status": "pass" },
+    { "name": "What's new", "status": "pass" },
+    { "name": "Skills pages", "status": "pass" }
+  ]
+}
