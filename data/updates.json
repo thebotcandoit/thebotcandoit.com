@@ -1,0 +1,14 @@
+[
+  {
+    "date": "March 23, 2026",
+    "title": "You can now contact us without leaving the site",
+    "body": "Before today, every \"Get in touch\" button on this site opened your email app and dropped you into a blank compose window. That's a lousy experience — most people just close it and move on. We replaced all of those with a real contact form at /contact. You fill it out, hit send, and we get a notification. No email client required. First lead that comes through it will be a good day.",
+    "tag": "Improvement"
+  },
+  {
+    "date": "March 17, 2026",
+    "title": "Site launched with two real estate skills",
+    "body": "Went live with the first version of thebotcandoit.com and two free skills built specifically for real estate professionals. The first one downloads all the photos from any listing page — Redfin, Zillow, Compass, Realtor.com — to a folder on your computer in about 30 seconds. The second reverse-engineers Redfin's valuation model to show exactly which features of a property are dragging its estimate down and by how much. Both were built because these are tasks that realtors, buyers, and investors actually do manually, repeatedly, every week. The site itself was built by one person using Claude — which is the point.",
+    "tag": "Launch"
+  }
+]

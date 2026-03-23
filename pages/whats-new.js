@@ -1,22 +1,8 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import fs from 'fs'
+import path from 'path'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-
-const updates = [
-  {
-    date: 'March 23, 2026',
-    title: 'You can now contact us without leaving the site',
-    body: `Before today, every "Get in touch" button on this site opened your email app and dropped you into a blank compose window. That's a lousy experience — most people just close it and move on. We replaced all of those with a real contact form at /contact. You fill it out, hit send, and we get a notification. No email client required. First lead that comes through it will be a good day.`,
-    tag: 'Improvement',
-  },
-  {
-    date: 'March 17, 2026',
-    title: 'Site launched with two real estate skills',
-    body: `Went live with the first version of thebotcandoit.com and two free skills built specifically for real estate professionals. The first one downloads all the photos from any listing page — Redfin, Zillow, Compass, Realtor.com — to a folder on your computer in about 30 seconds. The second reverse-engineers Redfin's valuation model to show exactly which features of a property are dragging its estimate down and by how much. Both were built because these are tasks that realtors, buyers, and investors actually do manually, repeatedly, every week. The site itself was built by one person using Claude — which is the point.`,
-    tag: 'Launch',
-  },
-]
 
 const tagColors = {
   Launch: 'bg-indigo-100 text-indigo-700',
@@ -25,7 +11,7 @@ const tagColors = {
   'New skill': 'bg-purple-100 text-purple-700',
 }
 
-export default function WhatsNew() {
+export default function WhatsNew({ updates }) {
   return (
     <>
       <Head>
@@ -45,18 +31,16 @@ export default function WhatsNew() {
           </p>
 
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-0 top-2 bottom-0 w-px bg-gray-100" />
-
             <div className="flex flex-col gap-12">
               {updates.map((update, i) => (
                 <div key={i} className="pl-8 relative">
-                  {/* Dot */}
                   <div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-indigo-400 -translate-x-[3px]" />
-
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-sm text-gray-400">{update.date}</span>
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${tagColors[update.tag] || 'bg-gray-100 text-gray-500'}`}>
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
+                      tagColors[update.tag] || 'bg-gray-100 text-gray-500'
+                    }`}>
                       {update.tag}
                     </span>
                   </div>
@@ -75,4 +59,10 @@ export default function WhatsNew() {
       </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const updatesPath = path.join(process.cwd(), 'data/updates.json')
+  const updates = JSON.parse(fs.readFileSync(updatesPath, 'utf8'))
+  return { props: { updates } }
 }
