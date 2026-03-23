@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
 import Nav from '../components/Nav'
@@ -38,9 +39,9 @@ export default function Home({ skills }) {
               <a href="#skills" className="bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">
                 Browse Skills
               </a>
-              <a href="mailto:matt@thebotcandoit.com" className="border border-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors">
+              <Link href="/contact" className="border border-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors">
                 Need something custom? Let&apos;s build it →
-              </a>
+              </Link>
             </div>
           </section>
 
@@ -53,9 +54,9 @@ export default function Home({ skills }) {
                   Describe the task that&apos;s eating your time. If it&apos;s repetitive, we can probably automate it — for any industry.
                 </p>
               </div>
-              <a href="mailto:matt@thebotcandoit.com" className="bg-white text-indigo-600 px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-indigo-50 transition-colors whitespace-nowrap flex-shrink-0">
+              <Link href="/contact" className="bg-white text-indigo-600 px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-indigo-50 transition-colors whitespace-nowrap flex-shrink-0">
                 Get in touch
-              </a>
+              </Link>
             </div>
           </section>
 
@@ -92,9 +93,9 @@ export default function Home({ skills }) {
                 I build custom automations for real estate, research, data processing, and more. If you can describe it, we can probably build it — fast.
               </p>
             </div>
-            <a href="mailto:matt@thebotcandoit.com" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">
+            <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">
               Let&apos;s Talk
-            </a>
+            </Link>
           </section>
 
         </main>
