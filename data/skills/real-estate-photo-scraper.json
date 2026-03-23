@@ -6,7 +6,8 @@
   "category": "Real Estate",
   "tags": ["Real Estate", "Research", "Photos"],
   "whoFor": "Home buyers, investors, and agents who spend too much time manually saving listing photos when comparing properties or building reports.",
-  "howItWorks": "Paste a listing URL into Claude and the skill takes over — opening the listing in your browser, navigating through every photo in the gallery, and saving them all to a folder. You get every image without touching a single save button.",
+  "useCommandHint": "Have the listing open in Chrome, or paste the URL directly into Claude, then say:",
+  "useCommand": "Download all the photos from this listing",
   "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
   "dateAdded": "2026-03-01",
   "status": "available"

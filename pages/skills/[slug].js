@@ -6,6 +6,8 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 
 export default function SkillPage({ skill }) {
+  const downloadFilename = skill.slug.replace(/-/g, '_') + '.md'
+
   return (
     <>
       <Head>
@@ -48,49 +50,30 @@ export default function SkillPage({ skill }) {
 
           {/* TWO-PATH: DIY vs CUSTOM */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-
-            {/* PATH 1: DO IT YOURSELF */}
             <div className="border border-gray-200 rounded-2xl p-5">
               <p className="text-sm font-bold text-gray-900 mb-1">⬇️ Do it yourself</p>
               <p className="text-xs text-gray-400 mb-4">Download the skill file and add it to Cowork in under 2 minutes.</p>
               <a
                 href={`/skills/${skill.slug}/SKILL.md`}
-                download
-                className="block text-center bg-indigo-600 text-white px-4 py-2.5 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors mb-5"
+                download={downloadFilename}
+                className="block text-center bg-indigo-600 text-white px-4 py-2.5 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors mb-2"
               >
                 ↓ Download skill
               </a>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">You&apos;ll need</p>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-base flex-shrink-0">🖥️</div>
-                  <div>
-                    <p className="text-xs font-bold text-gray-800 leading-snug">Claude desktop app</p>
-                    <p className="text-xs text-gray-400 leading-snug">With Cowork mode enabled</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-base flex-shrink-0">🌐</div>
-                  <div>
-                    <p className="text-xs font-bold text-gray-800 leading-snug">Claude in Chrome extension</p>
-                    <p className="text-xs text-gray-400 leading-snug">Installed and active in your Chrome browser</p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-xs text-gray-400 text-center">Saves as <span className="font-mono bg-gray-100 px-1 rounded">{downloadFilename}</span></p>
             </div>
 
-            {/* PATH 2: NEED HELP / CUSTOM */}
             <div className="bg-gray-900 rounded-2xl p-5 flex flex-col">
               <p className="text-sm font-bold text-white mb-1">🛠️ Need help — or something custom?</p>
               <p className="text-xs text-gray-400 leading-relaxed mb-4 flex-grow">
                 Don&apos;t want to set it up yourself, or need something built specifically for your workflow?
               </p>
-              <a
-                href="mailto:matt@thebotcandoit.com"
+              <Link
+                href="/contact"
                 className="block text-center bg-white text-gray-900 px-4 py-2.5 rounded-xl text-sm font-bold hover:bg-gray-100 transition-colors mb-4"
               >
                 Get in touch
-              </a>
+              </Link>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-xs text-gray-400 border-t border-gray-800 pt-2">
                   <span className="text-gray-600 flex-shrink-0">→</span>
@@ -106,10 +89,54 @@ export default function SkillPage({ skill }) {
                 </li>
               </ul>
             </div>
-
           </div>
 
-          {/* DIVIDER */}
+          <hr className="border-gray-100 mb-10" />
+
+          {/* STEP BY STEP */}
+          <section className="mb-10">
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">How to set it up</h2>
+
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">One-time setup</p>
+            <div className="space-y-5 mb-8">
+              {[
+                { n: 1, title: 'Get the Claude desktop app', body: 'Download it free at claude.ai — install it and open it.' },
+                { n: 2, title: 'Enable Cowork mode', body: 'Inside Claude, look for Cowork in the left sidebar and turn it on.' },
+                { n: 3, title: 'Install Claude in Chrome', body: 'Search "Claude for Chrome" in the Chrome Web Store and install the extension.' },
+                { n: 4, title: 'Sign in with the same account', body: 'Log into both the desktop app and the Chrome extension using the same Claude account.' },
+              ].map(step => (
+                <div key={step.n} className="flex gap-4 items-start">
+                  <div className="w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{step.n}</div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900 mb-0.5">{step.title}</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">{step.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Install this skill</p>
+            <div className="flex gap-4 items-start mb-8">
+              <div className="w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-0.5">Download and add the skill file</p>
+                <p className="text-sm text-gray-500 leading-relaxed">Click &ldquo;Download skill&rdquo; above. The file saves as <span className="font-mono bg-gray-100 px-1 rounded text-xs">{downloadFilename}</span> to your Downloads folder. In Claude Cowork, open the Skills or Plugins panel and add the downloaded file. Not sure how? <Link href="/contact" className="text-indigo-600 underline hover:text-indigo-800">Get in touch</Link> and we&apos;ll walk you through it.</p>
+              </div>
+            </div>
+
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Use it</p>
+            <div className="flex gap-4 items-start">
+              <div className="w-7 h-7 rounded-full bg-green-50 text-green-600 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">6</div>
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900 mb-0.5">{skill.useCommandHint}</p>
+                <p className="text-sm text-gray-500 mb-3">Then type this in Claude:</p>
+                <div className="bg-gray-900 text-green-400 text-sm font-mono px-4 py-3 rounded-xl">
+                  &ldquo;{skill.useCommand}&rdquo;
+                </div>
+              </div>
+            </div>
+          </section>
+
           <hr className="border-gray-100 mb-8" />
 
           {/* WHAT IT DOES */}
@@ -122,12 +149,6 @@ export default function SkillPage({ skill }) {
           <section className="mb-8">
             <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Who it&apos;s for</h2>
             <p className="text-gray-600 leading-relaxed">{skill.whoFor}</p>
-          </section>
-
-          {/* HOW IT WORKS */}
-          <section className="mb-8">
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">How it works</h2>
-            <p className="text-gray-600 leading-relaxed">{skill.howItWorks}</p>
           </section>
 
           {/* TAGS */}

@@ -1,6 +1,12 @@
 [
   {
     "date": "March 23, 2026",
+    "title": "Skill pages now tell you exactly what to do",
+    "body": "The old skill pages told you what each skill does but not how to actually get it working. That gap is fixed. Each skill page now has numbered step-by-step instructions — from downloading the Claude app all the way through the exact phrase to type when you're ready to use it. The skill files also now download with a proper name (like redfin_estimate_checker.md) instead of a generic filename that's impossible to find in your Downloads folder.",
+    "tag": "Improvement"
+  },
+  {
+    "date": "March 23, 2026",
     "title": "Skill cards are easier to use",
     "body": "Three small improvements to the skill cards on the homepage. The entire card is now clickable — you don't have to aim for the small button. The button itself now says 'Get the skill' which is clearer about what happens next. And we removed the 'Need help installing?' link from the homepage — it belongs on the individual skill page after you've already decided you want it, not before.",
     "tag": "Improvement"
