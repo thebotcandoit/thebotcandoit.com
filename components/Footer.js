@@ -6,9 +6,14 @@ export default function Footer() {
       <Link href="/" className="text-sm font-bold tracking-tight text-gray-900">
         the<span className="text-indigo-600">bot</span>candoit
       </Link>
-      <p className="text-xs text-gray-400">
-        🤖 <strong className="text-gray-500">One person + Claude.</strong> This is what that looks like.
-      </p>
+      <div className="flex items-center gap-6">
+        <Link href="/whats-new" className="text-xs text-gray-400 hover:text-indigo-600 transition-colors">
+          What&apos;s new
+        </Link>
+        <p className="text-xs text-gray-400">
+          🤖 <strong className="text-gray-500">One person + Claude.</strong> This is what that looks like.
+        </p>
+      </div>
     </footer>
   )
 }
