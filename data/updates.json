@@ -1,6 +1,12 @@
 [
   {
     "date": "March 24, 2026",
+    "title": "Rewrote the Redfin Estimate Checker — the old version was broken",
+    "body": "The original Redfin Estimate Checker used a technique that doesn't work. It tried to back-calculate Redfin's prediction from the 'since sold' number on a property page, but Redfin recalibrates that number after every sale — so the math was always circular and the results were meaningless. We've completely rewritten the skill. It now checks the Estimate History chart on nearby sold homes to find what Redfin was actually predicting before each sale. Same idea, correct technique. We also repositioned it for off-market properties — homeowners checking their own value, investors scoping properties, anyone wondering if they can trust a Redfin estimate on a home that isn't listed for sale.",
+    "tag": "Fix"
+  },
+  {
+    "date": "March 24, 2026",
     "title": "New skill: find out how accurate Redfin's estimate actually is",
     "body": "Redfin told a potential buyer that a San Francisco home was worth $600K more than its asking price. Should they trust that? We built a new skill that answers that question. You paste a for-sale listing URL and it checks how accurate Redfin's estimates have been on nearby homes that already sold — using actual sale prices, not guesses. If Redfin has been overshooting by 12% in that area, you'll know before you overbid. This is a different tool from the original Redfin Estimate Checker, which compares Redfin's prediction to the final sale price on homes that have already closed. That one tells you how Redfin did after the fact. This one tells you how much to trust Redfin right now, on a home you're actually considering.",
     "tag": "New skill"

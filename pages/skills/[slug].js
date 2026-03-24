@@ -6,7 +6,7 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 
 export default function SkillPage({ skill }) {
-  const downloadFilename = skill.slug.replace(/-/g, '_') + '.md'
+  const downloadFilename = skill.downloadFilename || skill.slug.replace(/-/g, '_') + '.md'
 
   return (
     <>
