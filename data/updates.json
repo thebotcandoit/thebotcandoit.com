@@ -1,5 +1,11 @@
 [
   {
+    "date": "March 24, 2026",
+    "title": "New skill: find out how accurate Redfin's estimate actually is",
+    "body": "Redfin told a potential buyer that a San Francisco home was worth $600K more than its asking price. Should they trust that? We built a new skill that answers that question. You paste a for-sale listing URL and it checks how accurate Redfin's estimates have been on nearby homes that already sold — using actual sale prices, not guesses. If Redfin has been overshooting by 12% in that area, you'll know before you overbid. This is a different tool from the original Redfin Estimate Checker, which compares Redfin's prediction to the final sale price on homes that have already closed. That one tells you how Redfin did after the fact. This one tells you how much to trust Redfin right now, on a home you're actually considering.",
+    "tag": "New skill"
+  },
+  {
     "date": "March 23, 2026",
     "title": "Skill pages now tell you exactly what to do",
     "body": "The old skill pages told you what each skill does but not how to actually get it working. That gap is fixed. Each skill page now has numbered step-by-step instructions — from downloading the Claude app all the way through the exact phrase to type when you're ready to use it. The skill files also now download with a proper name (like redfin_estimate_checker.md) instead of a generic filename that's impossible to find in your Downloads folder.",
