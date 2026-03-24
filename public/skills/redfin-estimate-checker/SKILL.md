@@ -1,3 +1,8 @@
+---
+name: redfin-estimate-checker
+description: "Use this skill to back-calculate what Redfin's AVM estimated at the moment a home sold and compare it to the actual sale price. Triggers when a user wants to check Redfin estimate accuracy, compare AVM to sale price, or audit how well Redfin predicted sold prices for a list of properties."
+---
+
 # Redfin Estimate Checker
 
 Use this skill to back-calculate what Redfin's AVM estimated at the moment a home sold and compare it to the actual sale price.
