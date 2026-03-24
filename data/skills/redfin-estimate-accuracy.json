@@ -1,0 +1,14 @@
+{
+  "slug": "redfin-estimate-accuracy",
+  "name": "Redfin Estimate Accuracy Checker",
+  "tagline": "Find out how accurate Redfin's estimate really is on a property you're looking at.",
+  "description": "Redfin says a home is worth $3.1M but it's listed at $2.5M — should you trust that? This skill checks Redfin's track record on nearby homes that already sold. If Redfin was consistently off by 10% on recent sales in the same area, you'll know to adjust the current estimate before making an offer.",
+  "category": "Real Estate",
+  "tags": ["Real Estate", "Analysis", "Valuation"],
+  "whoFor": "Home buyers, investors, and agents who want to know whether to trust the Redfin Estimate on an active listing — before making an offer based on a number that might be way off.",
+  "useCommandHint": "Paste a Redfin listing URL into Claude, then say:",
+  "useCommand": "How accurate is Redfin's estimate on this property?",
+  "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
+  "dateAdded": "2026-03-24",
+  "status": "available"
+}
