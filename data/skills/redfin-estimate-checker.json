@@ -6,7 +6,7 @@
   "category": "Real Estate",
   "tags": ["Real Estate", "Analysis", "Valuation"],
   "whoFor": "Home buyers and investors who want to know whether a listing price reflects what the market is actually doing — not what an algorithm guessed six months ago.",
-  "useCommandHint": "Have the Redfin listing open in your Chrome browser, then type this in Claude:",
+  "useCommandHint": "Paste a Redfin listing URL into Claude, then say:",
   "useCommand": "Check the Redfin estimate on this listing",
   "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
   "dateAdded": "2026-03-10",
