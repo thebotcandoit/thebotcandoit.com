@@ -10,5 +10,6 @@
   "useCommand": "Download all the photos from this listing",
   "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
   "dateAdded": "2026-03-01",
-  "status": "available"
+  "status": "available",
+  "demoVideo": "/videos/real-estate-photo-scraper-demo.mp4"
 }

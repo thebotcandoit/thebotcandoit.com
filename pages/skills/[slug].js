@@ -37,6 +37,22 @@ export default function SkillPage({ skill }) {
             <p className="text-xl text-gray-600 leading-relaxed">{skill.tagline}</p>
           </div>
 
+          {/* DEMO VIDEO */}
+          {skill.demoVideo && (
+            <div className="mb-8 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <video
+                src={skill.demoVideo}
+                controls
+                playsInline
+                muted
+                className="w-full block"
+                poster=""
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+
           {/* WHY A SKILL */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6 flex gap-3 items-start">
             <span className="text-xl mt-0.5">💡</span>
