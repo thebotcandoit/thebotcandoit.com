@@ -1,38 +1,44 @@
 [
   {
-    "date": "March 24, 2026",
-    "title": "Rewrote the Redfin Estimate Checker — the old version was broken",
-    "body": "The original Redfin Estimate Checker used a technique that doesn't work. It tried to back-calculate Redfin's prediction from the 'since sold' number on a property page, but Redfin recalibrates that number after every sale — so the math was always circular and the results were meaningless. We've completely rewritten the skill. It now checks the Estimate History chart on nearby sold homes to find what Redfin was actually predicting before each sale. Same idea, correct technique. We also repositioned it for off-market properties — homeowners checking their own value, investors scoping properties, anyone wondering if they can trust a Redfin estimate on a home that isn't listed for sale.",
-    "tag": "Fix"
+    "date": "March 25, 2026",
+    "tag": "Improvement",
+    "title": "Repositioned every page on the site",
+    "body": "Rewrote the homepage, skill pages, contact page, nav, and footer. The new message: every skill took days of testing to get right — you get the version that works on the first try. Cut the generic 'AI tools' framing and leaned into what actually matters: these are battle-tested, not just clever prompts."
   },
   {
     "date": "March 24, 2026",
-    "title": "New skill: find out how accurate Redfin's estimate actually is",
-    "body": "Redfin told a potential buyer that a San Francisco home was worth $600K more than its asking price. Should they trust that? We built a new skill that answers that question. You paste a for-sale listing URL and it checks how accurate Redfin's estimates have been on nearby homes that already sold — using actual sale prices, not guesses. If Redfin has been overshooting by 12% in that area, you'll know before you overbid. This is a different tool from the original Redfin Estimate Checker, which compares Redfin's prediction to the final sale price on homes that have already closed. That one tells you how Redfin did after the fact. This one tells you how much to trust Redfin right now, on a home you're actually considering.",
-    "tag": "New skill"
+    "tag": "New skill",
+    "title": "Redfin Estimate Accuracy Checker",
+    "body": "New skill for home buyers and agents. Paste an active Redfin listing and it checks how accurate Redfin's estimate has been on nearby homes that already sold — so you know whether to trust the number before making an offer."
   },
   {
-    "date": "March 23, 2026",
-    "title": "Skill pages now tell you exactly what to do",
-    "body": "The old skill pages told you what each skill does but not how to actually get it working. That gap is fixed. Each skill page now has numbered step-by-step instructions — from downloading the Claude app all the way through the exact phrase to type when you're ready to use it. The skill files also now download with a proper name (like redfin_estimate_checker.md) instead of a generic filename that's impossible to find in your Downloads folder.",
-    "tag": "Improvement"
+    "date": "March 24, 2026",
+    "tag": "Improvement",
+    "title": "Split Redfin tools into two distinct skills",
+    "body": "The original Redfin Estimate Checker only worked on sold properties. We split it into two: one for active listings (the new Accuracy Checker) and one for off-market/sold properties. Each now has copy and instructions that match its actual use case."
   },
   {
-    "date": "March 23, 2026",
-    "title": "Skill cards are easier to use",
-    "body": "Three small improvements to the skill cards on the homepage. The entire card is now clickable — you don't have to aim for the small button. The button itself now says 'Get the skill' which is clearer about what happens next. And we removed the 'Need help installing?' link from the homepage — it belongs on the individual skill page after you've already decided you want it, not before.",
-    "tag": "Improvement"
+    "date": "March 10, 2026",
+    "tag": "New skill",
+    "title": "Redfin Estimate Checker",
+    "body": "Compare what Redfin predicted for sold homes against the actual sale prices. Paste a Redfin URL and the skill does the math — tells you how far off the estimate was."
   },
   {
-    "date": "March 23, 2026",
-    "title": "You can now contact us without leaving the site",
-    "body": "Before today, every \"Get in touch\" button on this site opened your email app and dropped you into a blank compose window. That's a lousy experience — most people just close it and move on. We replaced all of those with a real contact form at /contact. You fill it out, hit send, and we get a notification. No email client required. First lead that comes through it will be a good day.",
-    "tag": "Improvement"
+    "date": "March 8, 2026",
+    "tag": "Improvement",
+    "title": "Category filters on the homepage",
+    "body": "You can now filter skills by category (Real Estate, Business, etc.) on the homepage. Helps when we have more than three skills."
   },
   {
-    "date": "March 17, 2026",
-    "title": "Site launched with two real estate skills",
-    "body": "Went live with the first version of thebotcandoit.com and two free skills built specifically for real estate professionals. The first one downloads all the photos from any listing page — Redfin, Zillow, Compass, Realtor.com — to a folder on your computer in about 30 seconds. The second reverse-engineers Redfin's valuation model to show exactly which features of a property are dragging its estimate down and by how much. Both were built because these are tasks that realtors, buyers, and investors actually do manually, repeatedly, every week. The site itself was built by one person using Claude — which is the point.",
-    "tag": "Launch"
+    "date": "March 8, 2026",
+    "tag": "Improvement",
+    "title": "Skill pages got clearer setup instructions",
+    "body": "Every skill page now walks you through one-time setup (Claude desktop app, Cowork mode, Chrome extension) plus how to install and use the specific skill — step by step."
+  },
+  {
+    "date": "March 1, 2026",
+    "tag": "Launch",
+    "title": "thebotcandoit.com is live",
+    "body": "The site launched with one skill: Real Estate Photo Scraper. Download every photo from a Redfin, Zillow, Compass, or Realtor.com listing in one click."
   }
 ]

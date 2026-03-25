@@ -37,8 +37,8 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Get in touch — thebotcandoit</title>
-        <meta name="description" content="Tell us what task is eating your time. We build custom AI automations fast." />
+        <title>Request a skill — thebotcandoit</title>
+        <meta name="description" content="Describe the task you're tired of doing manually. If it can be turned into a skill, I'll build and test it." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -46,10 +46,10 @@ export default function Contact() {
         <Nav />
         <main className="flex-1 px-8 py-16 max-w-xl">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-3">
-            Let&apos;s talk.
+            What should the next skill do?
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-10">
-            Describe the task that&apos;s eating your time. If it&apos;s repetitive, we can probably automate it — fast.
+            Describe a task you&apos;re tired of doing manually. If it can be turned into a skill, I&apos;ll build it and test it until it actually works — then put it on the site for free.
           </p>
 
           {status === 'success' ? (
@@ -94,7 +94,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  What task is eating your time?
+                  What task are you tired of doing manually?
                 </label>
                 <textarea
                   id="message"
@@ -117,7 +117,7 @@ export default function Contact() {
                 disabled={status === 'submitting'}
                 className="bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-gray-700 disabled:opacity-50 transition-colors"
               >
-                {status === 'submitting' ? 'Sending…' : 'Send message →'}
+                {status === 'submitting' ? 'Sending…' : 'Send it →'}
               </button>
             </form>
           )}

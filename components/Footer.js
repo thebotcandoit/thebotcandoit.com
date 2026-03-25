@@ -11,7 +11,7 @@ export default function Footer() {
           What&apos;s new
         </Link>
         <p className="text-xs text-gray-400">
-          🤖 <strong className="text-gray-500">One person + Claude.</strong> This is what that looks like.
+          Built and tested by a human. Powered by Claude.
         </p>
       </div>
     </footer>

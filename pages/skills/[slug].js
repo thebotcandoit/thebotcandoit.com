@@ -37,13 +37,13 @@ export default function SkillPage({ skill }) {
             <p className="text-xl text-gray-600 leading-relaxed">{skill.tagline}</p>
           </div>
 
-          {/* WHAT IS A SKILL */}
+          {/* WHY A SKILL */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6 flex gap-3 items-start">
             <span className="text-xl mt-0.5">💡</span>
             <div>
-              <p className="text-base font-semibold text-gray-900 mb-1">What&apos;s a skill?</p>
+              <p className="text-base font-semibold text-gray-900 mb-1">Why use a skill instead of just asking Claude?</p>
               <p className="text-base text-gray-600 leading-relaxed">
-                A skill is a small instruction file you add to your Claude Cowork app. Once added, Claude knows how to do something new — like automatically downloading every photo from a listing. Think of it like installing a shortcut that does a job for you.
+                You could ask Claude to do this from scratch — but it would hit the same walls we did. Wrong selectors, blocked requests, techniques that look right but give bad data. This skill is the version that works, after days of testing. You get the working result on your first try.
               </p>
             </div>
           </div>
@@ -64,9 +64,9 @@ export default function SkillPage({ skill }) {
             </div>
 
             <div className="bg-gray-900 rounded-2xl p-5 flex flex-col">
-              <p className="text-base font-bold text-white mb-1">🛠️ Need help — or something custom?</p>
+              <p className="text-base font-bold text-white mb-1">🛠️ Need help or something different?</p>
               <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-grow">
-                Don&apos;t want to set it up yourself, or need something built specifically for your workflow?
+                Don&apos;t want to set it up yourself, or need a version tailored to your workflow?
               </p>
               <Link
                 href="/contact"
@@ -77,15 +77,15 @@ export default function SkillPage({ skill }) {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
                   <span className="text-gray-500 flex-shrink-0">→</span>
-                  I&apos;ll install and set it up for you
+                  I&apos;ll set it up for you
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
                   <span className="text-gray-500 flex-shrink-0">→</span>
-                  We can modify this skill for your specific needs
+                  Modify this skill for your needs
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
                   <span className="text-gray-500 flex-shrink-0">→</span>
-                  Or build something completely custom from scratch
+                  Build something new from scratch
                 </li>
               </ul>
             </div>
@@ -120,7 +120,7 @@ export default function SkillPage({ skill }) {
               <div className="w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</div>
               <div>
                 <p className="text-base font-semibold text-gray-900 mb-0.5">Download and add the skill file</p>
-                <p className="text-base text-gray-600 leading-relaxed">Click &ldquo;Download skill&rdquo; above. The file saves as <span className="font-mono bg-gray-100 px-1.5 py-0.5 rounded text-sm">{downloadFilename}</span> to your Downloads folder. In Claude Cowork, open the Skills or Plugins panel and add the downloaded file. Not sure how? <Link href="/contact" className="text-indigo-600 underline hover:text-indigo-800">Get in touch</Link> and we&apos;ll walk you through it.</p>
+                <p className="text-base text-gray-600 leading-relaxed">Click &ldquo;Download skill&rdquo; above. The file saves as <span className="font-mono bg-gray-100 px-1.5 py-0.5 rounded text-sm">{downloadFilename}</span> to your Downloads folder. In Claude Cowork, open the Skills or Plugins panel and add the downloaded file. Not sure how? <Link href="/contact" className="text-indigo-600 underline hover:text-indigo-800">Get in touch</Link> and I&apos;ll walk you through it.</p>
               </div>
             </div>
 
