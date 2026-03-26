@@ -2,6 +2,12 @@
   {
     "date": "March 26, 2026",
     "tag": "Improvement",
+    "title": "Added Google Analytics to the site",
+    "body": "We now track page views and referral sources so we can see which skills people are finding and where they're coming from. No personal data is collected — just aggregate traffic patterns."
+  },
+  {
+    "date": "March 26, 2026",
+    "tag": "Improvement",
     "title": "Skill pages now show compatibility status",
     "body": "Each skill page now shows which sites currently work and which don't. The photo scraper works on Redfin, Zillow, and Compass. Realtor.com is currently blocked by Claude's browser extension — we're monitoring it and the page will update when that changes."
   },
