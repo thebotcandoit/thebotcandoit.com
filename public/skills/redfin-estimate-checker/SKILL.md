@@ -1,5 +1,7 @@
 ---
 name: redfin-estimate-checker
+version: "1.0"
+updated: "2026-03-26"
 description: "Use this skill when a user wants to know how accurate Redfin's estimate is on an off-market property — one that isn't currently listed for sale. Triggers when a user pastes a Redfin URL for a property that has already sold or isn't on the market and asks how accurate or trustworthy the estimate is, whether to trust the Redfin number, or how reliable the AVM is for a specific off-market property."
 ---
 
@@ -75,7 +77,7 @@ Present findings in this format:
 **How accurate Redfin has been nearby:**
 
 | Address | Sale Date | Sale Price | Redfin Pre-Sale Est. | Est. Month | Off By | Off By % | Direction |
-|---------|-----------|-----------|---------------------|------------|--------|----------|-----------|
+|---------|-----------|-----------|---------------------|------------|--------|----------|-----------| 
 | (comp)  | (date)    | $X        | $Y                  | Mon YYYY   | $Z     | N%       | Over/Under |
 
 **Summary:**
