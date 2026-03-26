@@ -1,5 +1,11 @@
 [
   {
+    "date": "March 26, 2026",
+    "tag": "Improvement",
+    "title": "Skill pages now show compatibility status",
+    "body": "Each skill page now shows which sites currently work and which don't. The photo scraper works on Redfin, Zillow, and Compass. Realtor.com is currently blocked by Claude's browser extension — we're monitoring it and the page will update when that changes."
+  },
+  {
     "date": "March 25, 2026",
     "tag": "Improvement",
     "title": "Repositioned every page on the site",

@@ -8,6 +8,9 @@ import Footer from '../../components/Footer'
 export default function SkillPage({ skill }) {
   const downloadFilename = skill.downloadFilename || skill.slug.replace(/-/g, '_') + '.md'
 
+  const workingSites = (skill.compatibility || []).filter(c => c.status === 'working')
+  const notWorkingSites = (skill.compatibility || []).filter(c => c.status === 'not-working')
+
   return (
     <>
       <Head>
@@ -53,9 +56,40 @@ export default function SkillPage({ skill }) {
             </div>
           )}
 
+          {/* COMPATIBILITY STATUS */}
+          {skill.compatibility && skill.compatibility.length > 0 && (
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Compatibility</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {skill.compatibility.map(c => (
+                  <span
+                    key={c.site}
+                    className={`inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1 rounded-full ${
+                      c.status === 'working'
+                        ? 'bg-green-50 text-green-700 border border-green-200'
+                        : 'bg-red-50 text-red-700 border border-red-200 line-through'
+                    }`}
+                  >
+                    {c.status === 'working' ? '\u2713' : '\u2717'} {c.site}
+                  </span>
+                ))}
+              </div>
+              {notWorkingSites.length > 0 && (
+                <div className="text-sm text-gray-600 space-y-1">
+                  {notWorkingSites.map(c => (
+                    <p key={c.site}><span className="font-medium text-gray-900">{c.site}:</span> {c.note}</p>
+                  ))}
+                </div>
+              )}
+              {skill.statusNote && (
+                <p className="text-sm text-gray-500 mt-3 pt-3 border-t border-gray-200">{skill.statusNote}</p>
+              )}
+            </div>
+          )}
+
           {/* WHY A SKILL */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6 flex gap-3 items-start">
-            <span className="text-xl mt-0.5">💡</span>
+            <span className="text-xl mt-0.5">\ud83d\udca1</span>
             <div>
               <p className="text-base font-semibold text-gray-900 mb-1">Why use a skill instead of just asking Claude?</p>
               <p className="text-base text-gray-600 leading-relaxed">
@@ -67,20 +101,20 @@ export default function SkillPage({ skill }) {
           {/* TWO-PATH: DIY vs CUSTOM */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="border border-gray-200 rounded-2xl p-5">
-              <p className="text-base font-bold text-gray-900 mb-1">⬇️ Do it yourself</p>
+              <p className="text-base font-bold text-gray-900 mb-1">\u2b07\ufe0f Do it yourself</p>
               <p className="text-sm text-gray-600 mb-4">Download the skill file and add it to Cowork in under 2 minutes.</p>
               <a
                 href={`/skills/${skill.slug}/SKILL.md`}
                 download={downloadFilename}
                 className="block text-center bg-indigo-600 text-white px-4 py-2.5 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-colors mb-2"
               >
-                ↓ Download skill
+                \u2193 Download skill
               </a>
               <p className="text-sm text-gray-500 text-center">Saves as <span className="font-mono bg-gray-100 px-1 rounded">{downloadFilename}</span></p>
             </div>
 
             <div className="bg-gray-900 rounded-2xl p-5 flex flex-col">
-              <p className="text-base font-bold text-white mb-1">🛠️ Need help or something different?</p>
+              <p className="text-base font-bold text-white mb-1">\ud83d\udee0\ufe0f Need help or something different?</p>
               <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-grow">
                 Don&apos;t want to set it up yourself, or need a version tailored to your workflow?
               </p>
@@ -92,15 +126,15 @@ export default function SkillPage({ skill }) {
               </Link>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">→</span>
+                  <span className="text-gray-500 flex-shrink-0">\u2192</span>
                   I&apos;ll set it up for you
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">→</span>
+                  <span className="text-gray-500 flex-shrink-0">\u2192</span>
                   Modify this skill for your needs
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">→</span>
+                  <span className="text-gray-500 flex-shrink-0">\u2192</span>
                   Build something new from scratch
                 </li>
               </ul>
