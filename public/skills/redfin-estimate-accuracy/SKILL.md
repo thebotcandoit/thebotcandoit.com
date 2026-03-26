@@ -1,5 +1,7 @@
 ---
 name: redfin-estimate-accuracy
+version: "1.0"
+updated: "2026-03-26"
 description: "Use this skill when a user wants to know how accurate Redfin's estimate is on a property currently for sale. Triggers when a user pastes a Redfin listing URL and asks how accurate or trustworthy the estimate is, whether to trust the Redfin number, or how reliable the AVM is for a specific property."
 ---
 
@@ -74,7 +76,7 @@ Present findings in this format:
 **How accurate Redfin has been nearby:**
 
 | Address | Sale Date | Sale Price | Redfin Pre-Sale Est. | Est. Month | Off By | Off By % | Direction |
-|---------|-----------|-----------|---------------------|------------|--------|----------|-----------|
+|---------|-----------|-----------|---------------------|------------|--------|----------|-----------| 
 | (comp)  | (date)    | $X        | $Y                  | Mon YYYY   | $Z     | N%       | Over/Under |
 
 **Summary:**
