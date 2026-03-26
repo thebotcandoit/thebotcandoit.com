@@ -89,7 +89,7 @@ export default function SkillPage({ skill }) {
 
           {/* WHY A SKILL */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6 flex gap-3 items-start">
-            <span className="text-xl mt-0.5">\ud83d\udca1</span>
+            <span className="text-xl mt-0.5">{'\ud83d\udca1'}</span>
             <div>
               <p className="text-base font-semibold text-gray-900 mb-1">Why use a skill instead of just asking Claude?</p>
               <p className="text-base text-gray-600 leading-relaxed">
@@ -101,20 +101,20 @@ export default function SkillPage({ skill }) {
           {/* TWO-PATH: DIY vs CUSTOM */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="border border-gray-200 rounded-2xl p-5">
-              <p className="text-base font-bold text-gray-900 mb-1">\u2b07\ufe0f Do it yourself</p>
+              <p className="text-base font-bold text-gray-900 mb-1">{'\u2b07\ufe0f'} Do it yourself</p>
               <p className="text-sm text-gray-600 mb-4">Download the skill file and add it to Cowork in under 2 minutes.</p>
               <a
                 href={`/skills/${skill.slug}/SKILL.md`}
                 download={downloadFilename}
                 className="block text-center bg-indigo-600 text-white px-4 py-2.5 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-colors mb-2"
               >
-                \u2193 Download skill
+                {'\u2193'} Download skill
               </a>
               <p className="text-sm text-gray-500 text-center">Saves as <span className="font-mono bg-gray-100 px-1 rounded">{downloadFilename}</span></p>
             </div>
 
             <div className="bg-gray-900 rounded-2xl p-5 flex flex-col">
-              <p className="text-base font-bold text-white mb-1">\ud83d\udee0\ufe0f Need help or something different?</p>
+              <p className="text-base font-bold text-white mb-1">{'\ud83d\udee0\ufe0f'} Need help or something different?</p>
               <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-grow">
                 Don&apos;t want to set it up yourself, or need a version tailored to your workflow?
               </p>
@@ -126,15 +126,15 @@ export default function SkillPage({ skill }) {
               </Link>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">\u2192</span>
+                  <span className="text-gray-500 flex-shrink-0">{'\u2192'}</span>
                   I&apos;ll set it up for you
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">\u2192</span>
+                  <span className="text-gray-500 flex-shrink-0">{'\u2192'}</span>
                   Modify this skill for your needs
                 </li>
                 <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">\u2192</span>
+                  <span className="text-gray-500 flex-shrink-0">{'\u2192'}</span>
                   Build something new from scratch
                 </li>
               </ul>
@@ -150,7 +150,7 @@ export default function SkillPage({ skill }) {
             <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">One-time setup</p>
             <div className="space-y-5 mb-8">
               {[
-                { n: 1, title: 'Get the Claude desktop app', body: 'Download it free at claude.ai — install it and open it.' },
+                { n: 1, title: 'Get the Claude desktop app', body: 'Download it free at claude.ai \u2014 install it and open it.' },
                 { n: 2, title: 'Enable Cowork mode', body: 'Inside Claude, look for Cowork in the left sidebar and turn it on.' },
                 { n: 3, title: 'Install Claude in Chrome', body: 'Search "Claude for Chrome" in the Chrome Web Store and install the extension.' },
                 { n: 4, title: 'Sign in with the same account', body: 'Log into both the desktop app and the Chrome extension using the same Claude account.' },
