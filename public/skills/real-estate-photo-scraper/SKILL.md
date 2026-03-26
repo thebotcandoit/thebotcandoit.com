@@ -1,5 +1,7 @@
 ---
 name: real-estate-photo-scraper
+version: "1.0"
+updated: "2026-03-26"
 description: "Use this skill whenever a user shares a real estate listing URL and wants to download, save, or export the property photos. Triggers on any mention of: downloading listing photos, saving house pictures, getting images from a real estate site, exporting photos from Redfin/Zillow/Compass/Realtor/MLS or any property listing page. Also trigger when the user says things like 'grab the photos from this listing', 'save the images from this house', 'download pics from this property', or pastes a real estate URL and asks for photos in any form. Use this skill proactively — if someone pastes a real estate URL and asks for photos, images, or pictures, this is the right skill."
 ---
 
