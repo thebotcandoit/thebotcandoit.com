@@ -14,7 +14,6 @@ export default function SkillCard({ skill }) {
   if (isComingSoon) {
     return (
       <div className="relative border rounded-2xl p-6 bg-gray-50 border-gray-200 opacity-50">
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-500 to-violet-400 rounded-t-2xl" />
         <span className="absolute top-4 right-4 bg-gray-100 text-gray-400 text-xs font-semibold px-2 py-1 rounded-full border border-gray-200">
           Coming soon
         </span>
@@ -44,7 +43,6 @@ export default function SkillCard({ skill }) {
       href={`/skills/${skill.slug}`}
       className="relative border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
     >
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-500 to-violet-400 rounded-t-2xl" />
       <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-xl mb-4">
         {categoryIcons[skill.category] || '🤖'}
       </div>
