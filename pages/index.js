@@ -45,7 +45,7 @@ export default function Home({ skills }) {
           <section className="px-8 pb-14 max-w-3xl">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
-                src="/matt-headshot.jpg"
+                src="/profile_pic_thebotcandoit_30MAR.jpg"
                 alt="Matt Livingston"
                 className="w-28 h-28 rounded-2xl object-cover flex-shrink-0 bg-gray-100"
               />
