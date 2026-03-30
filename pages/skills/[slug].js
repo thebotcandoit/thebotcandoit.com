@@ -8,13 +8,10 @@ import Footer from '../../components/Footer'
 export default function SkillPage({ skill }) {
   const downloadFilename = skill.downloadFilename || skill.slug.replace(/-/g, '_') + '.md'
 
-  const workingSites = (skill.compatibility || []).filter(c => c.status === 'working')
-  const notWorkingSites = (skill.compatibility || []).filter(c => c.status === 'not-working')
-
   return (
     <>
       <Head>
-        <title>{skill.name} — thebotcandoit</title>
+        <title>{skill.name} &mdash; thebotcandoit</title>
         <meta name="description" content={skill.tagline} />
         <meta property="og:title" content={`${skill.name} — thebotcandoit`} />
         <meta property="og:description" content={skill.tagline} />
@@ -40,6 +37,26 @@ export default function SkillPage({ skill }) {
             <p className="text-xl text-gray-600 leading-relaxed">{skill.tagline}</p>
           </div>
 
+          {/* PROBLEM > SOLUTION > RESULT */}
+          {skill.problem && (
+            <div className="mb-8 space-y-4">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">The problem</p>
+                <p className="text-base text-gray-700 leading-relaxed">{skill.problem}</p>
+              </div>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">What I built</p>
+                <p className="text-base text-gray-700 leading-relaxed">{skill.solution}</p>
+              </div>
+              {skill.result && (
+                <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-5">
+                  <p className="text-sm font-semibold text-indigo-600 uppercase tracking-wider mb-2">The result</p>
+                  <p className="text-base text-gray-700 leading-relaxed">{skill.result}</p>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* DEMO VIDEO */}
           {skill.demoVideo && (
             <div className="mb-8 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
@@ -49,142 +66,40 @@ export default function SkillPage({ skill }) {
                 playsInline
                 muted
                 className="w-full block"
-                poster=""
               >
                 Your browser does not support the video tag.
               </video>
             </div>
           )}
 
-          {/* COMPATIBILITY STATUS */}
-          {skill.compatibility && skill.compatibility.length > 0 && (
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Compatibility</p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {skill.compatibility.map(c => (
-                  <span
-                    key={c.site}
-                    className={`inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1 rounded-full ${
-                      c.status === 'working'
-                        ? 'bg-green-50 text-green-700 border border-green-200'
-                        : 'bg-red-50 text-red-700 border border-red-200 line-through'
-                    }`}
-                  >
-                    {c.status === 'working' ? '\u2713' : '\u2717'} {c.site}
-                  </span>
-                ))}
-              </div>
-              {notWorkingSites.length > 0 && (
-                <div className="text-sm text-gray-600 space-y-1">
-                  {notWorkingSites.map(c => (
-                    <p key={c.site}><span className="font-medium text-gray-900">{c.site}:</span> {c.note}</p>
-                  ))}
-                </div>
-              )}
-              {skill.statusNote && (
-                <p className="text-sm text-gray-500 mt-3 pt-3 border-t border-gray-200">{skill.statusNote}</p>
-              )}
-            </div>
-          )}
-
-          {/* WHY A SKILL */}
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6 flex gap-3 items-start">
-            <span className="text-xl mt-0.5">💡</span>
-            <div>
-              <p className="text-base font-semibold text-gray-900 mb-1">Why use a skill instead of just asking Claude?</p>
-              <p className="text-base text-gray-600 leading-relaxed">
-                You could ask Claude to do this from scratch — but it would hit the same walls we did. Wrong selectors, blocked requests, techniques that look right but give bad data. This skill is the version that works, after days of testing. You get the working result on your first try.
-              </p>
-            </div>
-          </div>
-
-          {/* TWO-PATH: DIY vs CUSTOM */}
+          {/* TWO-PATH: TRY IT + GET HELP */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="border border-gray-200 rounded-2xl p-5">
-              <p className="text-base font-bold text-gray-900 mb-1">⬇️ Do it yourself</p>
-              <p className="text-sm text-gray-600 mb-4">Download the skill file and add it to Cowork in under 2 minutes.</p>
+              <p className="text-base font-bold text-gray-900 mb-1">Try it yourself</p>
+              <p className="text-sm text-gray-600 mb-4">This is a free tool you can use right now with the Claude desktop app.</p>
               <a
                 href={`/skills/${skill.slug}/SKILL.md`}
                 download={downloadFilename}
                 className="block text-center bg-indigo-600 text-white px-4 py-2.5 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-colors mb-2"
               >
-                ↓ Download skill
+                Download tool
               </a>
-              <p className="text-sm text-gray-500 text-center">Saves as <span className="font-mono bg-gray-100 px-1 rounded">{downloadFilename}</span></p>
+              <p className="text-xs text-gray-400 text-center">Requires the Claude desktop app</p>
             </div>
 
             <div className="bg-gray-900 rounded-2xl p-5 flex flex-col">
-              <p className="text-base font-bold text-white mb-1">🛠️ Need help or something different?</p>
+              <p className="text-base font-bold text-white mb-1">Want something like this?</p>
               <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-grow">
-                Don&apos;t want to set it up yourself, or need a version tailored to your workflow?
+                I can build a custom version for your workflow, set this up for you, or create something entirely new.
               </p>
               <Link
                 href="/contact"
-                className="block text-center bg-white text-gray-900 px-4 py-2.5 rounded-xl text-base font-bold hover:bg-gray-100 transition-colors mb-4"
+                className="block text-center bg-white text-gray-900 px-4 py-2.5 rounded-xl text-base font-bold hover:bg-gray-100 transition-colors"
               >
                 Get in touch
               </Link>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">→</span>
-                  I&apos;ll set it up for you
-                </li>
-                <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">→</span>
-                  Modify this skill for your needs
-                </li>
-                <li className="flex items-start gap-2 text-sm text-gray-300 border-t border-gray-800 pt-2">
-                  <span className="text-gray-500 flex-shrink-0">→</span>
-                  Build something new from scratch
-                </li>
-              </ul>
             </div>
           </div>
-
-          <hr className="border-gray-100 mb-10" />
-
-          {/* STEP BY STEP */}
-          <section className="mb-10">
-            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-6">How to set it up</h2>
-
-            <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">One-time setup</p>
-            <div className="space-y-5 mb-8">
-              {[
-                { n: 1, title: 'Get the Claude desktop app', body: 'Download it free at claude.ai — install it and open it.' },
-                { n: 2, title: 'Enable Cowork mode', body: 'Inside Claude, look for Cowork in the left sidebar and turn it on.' },
-                { n: 3, title: 'Install Claude in Chrome', body: 'Search "Claude for Chrome" in the Chrome Web Store and install the extension.' },
-                { n: 4, title: 'Sign in with the same account', body: 'Log into both the desktop app and the Chrome extension using the same Claude account.' },
-              ].map(step => (
-                <div key={step.n} className="flex gap-4 items-start">
-                  <div className="w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{step.n}</div>
-                  <div>
-                    <p className="text-base font-semibold text-gray-900 mb-0.5">{step.title}</p>
-                    <p className="text-base text-gray-600 leading-relaxed">{step.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Install this skill</p>
-            <div className="flex gap-4 items-start mb-8">
-              <div className="w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</div>
-              <div>
-                <p className="text-base font-semibold text-gray-900 mb-0.5">Download and add the skill file</p>
-                <p className="text-base text-gray-600 leading-relaxed">Click &ldquo;Download skill&rdquo; above. The file saves as <span className="font-mono bg-gray-100 px-1.5 py-0.5 rounded text-sm">{downloadFilename}</span> to your Downloads folder. In Claude Cowork, open the Skills or Plugins panel and add the downloaded file. Not sure how? <Link href="/contact" className="text-indigo-600 underline hover:text-indigo-800">Get in touch</Link> and I&apos;ll walk you through it.</p>
-              </div>
-            </div>
-
-            <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Use it</p>
-            <div className="flex gap-4 items-start">
-              <div className="w-7 h-7 rounded-full bg-green-50 text-green-600 text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">6</div>
-              <div className="flex-1">
-                <p className="text-base font-semibold text-gray-900 mb-2">{skill.useCommandHint}</p>
-                <div className="bg-gray-900 text-green-400 text-base font-mono px-4 py-3 rounded-xl">
-                  &ldquo;{skill.useCommand}&rdquo;
-                </div>
-              </div>
-            </div>
-          </section>
 
           <hr className="border-gray-100 mb-8" />
 
@@ -199,6 +114,17 @@ export default function SkillPage({ skill }) {
             <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">Who it&apos;s for</h2>
             <p className="text-base text-gray-700 leading-relaxed">{skill.whoFor}</p>
           </section>
+
+          {/* HOW TO USE */}
+          {skill.useCommand && (
+            <section className="mb-8">
+              <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">How to use it</h2>
+              <p className="text-base text-gray-600 mb-3">{skill.useCommandHint}</p>
+              <div className="bg-gray-900 text-green-400 text-base font-mono px-4 py-3 rounded-xl">
+                &ldquo;{skill.useCommand}&rdquo;
+              </div>
+            </section>
+          )}
 
           {/* TAGS */}
           <div className="flex gap-2 flex-wrap">

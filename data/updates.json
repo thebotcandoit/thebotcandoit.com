@@ -1,56 +1,32 @@
 [
   {
-    "date": "March 26, 2026",
-    "tag": "Improvement",
-    "title": "Added Google Analytics to the site",
-    "body": "We now track page views and referral sources so we can see which skills people are finding and where they're coming from. No personal data is collected — just aggregate traffic patterns."
-  },
-  {
-    "date": "March 26, 2026",
-    "tag": "Improvement",
-    "title": "Skill pages now show compatibility status",
-    "body": "Each skill page now shows which sites currently work and which don't. The photo scraper works on Redfin, Zillow, and Compass. Realtor.com is currently blocked by Claude's browser extension — we're monitoring it and the page will update when that changes."
-  },
-  {
-    "date": "March 25, 2026",
-    "tag": "Improvement",
-    "title": "Repositioned every page on the site",
-    "body": "Rewrote the homepage, skill pages, contact page, nav, and footer. The new message: every skill took days of testing to get right — you get the version that works on the first try. Cut the generic 'AI tools' framing and leaned into what actually matters: these are battle-tested, not just clever prompts."
+    "date": "March 30, 2026",
+    "tag": "Update",
+    "title": "Redesigned the site around how I actually work with clients",
+    "body": "The site now reflects what thebotcandoit is really about: solving workflow problems for small businesses using AI. Added examples of work I've built, and made it easier to get in touch."
   },
   {
     "date": "March 24, 2026",
-    "tag": "New skill",
-    "title": "Redfin Estimate Accuracy Checker",
-    "body": "New skill for home buyers and agents. Paste an active Redfin listing and it checks how accurate Redfin's estimate has been on nearby homes that already sold — so you know whether to trust the number before making an offer."
+    "tag": "New tool",
+    "title": "Built a Redfin estimate accuracy checker for active listings",
+    "body": "If you're looking at a home on Redfin, this tool checks how accurate Redfin's estimate has been on nearby homes that already sold — so you know whether to trust the number before making an offer."
   },
   {
     "date": "March 24, 2026",
     "tag": "Improvement",
-    "title": "Split Redfin tools into two distinct skills",
-    "body": "The original Redfin Estimate Checker only worked on sold properties. We split it into two: one for active listings (the new Accuracy Checker) and one for off-market/sold properties. Each now has copy and instructions that match its actual use case."
+    "title": "Separated Redfin tools by use case",
+    "body": "The original Redfin estimate checker only worked on sold properties. Now there are two: one for homes currently listed for sale, and one for off-market properties. Each is tailored to its specific use case."
   },
   {
     "date": "March 10, 2026",
-    "tag": "New skill",
-    "title": "Redfin Estimate Checker",
-    "body": "Compare what Redfin predicted for sold homes against the actual sale prices. Paste a Redfin URL and the skill does the math — tells you how far off the estimate was."
-  },
-  {
-    "date": "March 8, 2026",
-    "tag": "Improvement",
-    "title": "Category filters on the homepage",
-    "body": "You can now filter skills by category (Real Estate, Business, etc.) on the homepage. Helps when we have more than three skills."
-  },
-  {
-    "date": "March 8, 2026",
-    "tag": "Improvement",
-    "title": "Skill pages got clearer setup instructions",
-    "body": "Every skill page now walks you through one-time setup (Claude desktop app, Cowork mode, Chrome extension) plus how to install and use the specific skill — step by step."
+    "tag": "New tool",
+    "title": "Built a Redfin estimate checker for off-market properties",
+    "body": "Curious whether Redfin's estimate on a property is trustworthy? This tool checks Redfin's track record on nearby sold homes and gives you a neighborhood accuracy report."
   },
   {
     "date": "March 1, 2026",
     "tag": "Launch",
     "title": "thebotcandoit.com is live",
-    "body": "The site launched with one skill: Real Estate Photo Scraper. Download every photo from a Redfin, Zillow, Compass, or Realtor.com listing in one click."
+    "body": "Launched the site with the first tool: a real estate photo downloader that saves every photo from a listing page in one click. Works with Redfin, Zillow, and Compass."
   }
 ]

@@ -7,6 +7,9 @@ export default function Nav() {
         the<span className="text-indigo-600">bot</span>candoit
       </Link>
       <div className="flex items-center gap-5">
+        <a href="/#work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
+          Work
+        </a>
         <Link href="/whats-new" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
           What&apos;s new
         </Link>
@@ -14,7 +17,7 @@ export default function Nav() {
           href="/contact"
           className="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-colors"
         >
-          Request a skill
+          Get in touch
         </Link>
       </div>
     </nav>

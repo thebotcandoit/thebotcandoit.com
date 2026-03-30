@@ -1,24 +1,20 @@
-import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import SkillCard from '../components/SkillCard'
 
 export default function Home({ skills }) {
-  const [activeFilter, setActiveFilter] = useState('All')
-  const categories = ['All', ...new Set(skills.map(s => s.category))]
-  const filtered = activeFilter === 'All' ? skills : skills.filter(s => s.category === activeFilter)
+  const available = skills.filter(s => s.status === 'available')
 
   return (
     <>
       <Head>
-        <title>thebotcandoit — AI skills that already work</title>
-        <meta name="description" content="Each skill took days of testing to get right. You get the version that works on the first try — free, no coding required." />
-        <meta property="og:title" content="thebotcandoit — AI skills that already work" />
-        <meta property="og:description" content="Each skill took days of testing to get right. You get the version that works on the first try." />
+        <title>thebotcandoit &mdash; AI solutions for small businesses</title>
+        <meta name="description" content="I help small businesses solve workflow problems using AI. 15 years of product management experience, now building practical tools that save you time." />
+        <meta property="og:title" content="thebotcandoit — AI solutions for small businesses" />
+        <meta property="og:description" content="I help small businesses solve workflow problems using AI." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,61 +23,75 @@ export default function Home({ skills }) {
         <main>
 
           {/* HERO */}
-          <section className="px-8 pt-16 pb-10 max-w-3xl">
+          <section className="px-8 pt-16 pb-12 max-w-3xl">
             <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
-              AI skills that <span className="text-indigo-600">already work.</span>
+              I solve workflow problems for small businesses{' '}
+              <span className="text-indigo-600">using AI.</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-3 max-w-xl">
-              Each one took days of testing to get right. You get the version that works on the first try — free, no coding required.
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-xl">
+              You tell me what&apos;s eating your time. I figure out if AI can fix it &mdash; and build something that actually works.
             </p>
-            <p className="text-sm text-gray-400 mb-8">Built for Claude&apos;s desktop app. Download a skill, add it, and go.</p>
             <div className="flex gap-3 flex-wrap">
-              <a href="#skills" className="bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">
-                Browse Skills
-              </a>
-              <Link href="/contact" className="border border-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors">
-                Need something we haven&apos;t built yet? →
+              <Link href="/contact" className="bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">
+                Let&apos;s talk
               </Link>
+              <a href="#work" className="border border-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors">
+                See examples of my work &rarr;
+              </a>
             </div>
           </section>
 
-          {/* CUSTOM BUILD BANNER */}
-          <section className="px-8 pb-10 max-w-3xl">
-            <div className="bg-indigo-600 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          {/* ABOUT */}
+          <section className="px-8 pb-14 max-w-3xl">
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <img
+                src="/matt-headshot.jpg"
+                alt="Matt Livingston"
+                className="w-28 h-28 rounded-2xl object-cover flex-shrink-0 bg-gray-100"
+              />
               <div>
-                <h2 className="text-white font-bold text-base mb-1">Need something we haven&apos;t built yet?</h2>
-                <p className="text-indigo-200 text-sm leading-relaxed max-w-md">
-                  Describe what&apos;s eating your time. If we can build a skill for it, we will — and we&apos;ll test it until it actually works.
+                <h2 className="text-xl font-bold text-gray-900 mb-2">Hi, I&apos;m Matt.</h2>
+                <p className="text-base text-gray-600 leading-relaxed mb-2">
+                  I spent 15 years as a technical product manager in software, most recently as VP of Product Management. I know how to figure out what to build, scope it down to what matters, and make sure it actually works for the people using it.
+                </p>
+                <p className="text-base text-gray-600 leading-relaxed">
+                  Now I use that experience to help small businesses save time with AI. I&apos;m not selling you a platform or a subscription &mdash; I build practical tools and workflows tailored to how you actually work.
                 </p>
               </div>
-              <Link href="/contact" className="bg-white text-indigo-600 px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-indigo-50 transition-colors whitespace-nowrap flex-shrink-0">
-                Get in touch
-              </Link>
             </div>
           </section>
 
-          {/* SKILLS GRID */}
-          <section id="skills" className="px-8 pb-16">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5">Available Skills</p>
-            <div className="flex gap-2 flex-wrap mb-7">
-              {categories.map(cat => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveFilter(cat)}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-                    activeFilter === cat
-                      ? 'bg-indigo-600 text-white border-indigo-600'
-                      : 'bg-white text-gray-500 border-gray-200 hover:border-indigo-300 hover:text-indigo-600'
-                  }`}
+          {/* PORTFOLIO */}
+          <section id="work" className="px-8 pb-12">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Examples of my work</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Problems I&apos;ve solved</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {available.map(skill => (
+                <Link
+                  key={skill.slug}
+                  href={`/skills/${skill.slug}`}
+                  className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
                 >
-                  {cat}
-                </button>
+                  <p className="text-sm font-semibold text-indigo-600 mb-2">{skill.category}</p>
+                  <h3 className="text-base font-bold text-gray-900 mb-2">{skill.name}</h3>
+                  <p className="text-sm text-gray-500 leading-snug mb-4">{skill.problem || skill.tagline}</p>
+                  <span className="text-sm font-semibold text-indigo-600">
+                    See how it works &rarr;
+                  </span>
+                </Link>
               ))}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filtered.map(skill => (
-                <SkillCard key={skill.slug} skill={skill} />
-              ))}
+          </section>
+
+          {/* CASE STUDIES */}
+          <section className="px-8 pb-12">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Client work</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Case Studies</h2>
+            <div className="border border-dashed border-gray-300 rounded-2xl p-8 text-center">
+              <p className="text-gray-400 text-sm">
+                Case studies from client projects are on the way. In the meantime, check out the examples above or{' '}
+                <Link href="/contact" className="text-indigo-600 underline hover:text-indigo-800">get in touch</Link> to talk about your project.
+              </p>
             </div>
           </section>
 
@@ -90,11 +100,11 @@ export default function Home({ skills }) {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                Every skill here started as someone describing a task they were tired of doing manually. If you&apos;ve got one, tell me about it — I&apos;ll figure out if it can be built.
+                Tell me what&apos;s taking too long or feels repetitive. If AI can make it better, I&apos;ll tell you how &mdash; no commitment, no pitch.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">
-              Describe your task
+              Let&apos;s talk
             </Link>
           </section>
 

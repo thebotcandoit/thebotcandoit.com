@@ -2,7 +2,10 @@
   "slug": "real-estate-photo-scraper",
   "name": "Real Estate Photo Scraper",
   "tagline": "Download every photo from any home listing in one click.",
-  "description": "No more saving images one by one. Paste a listing URL from Redfin, Zillow, or Compass and this skill downloads every photo instantly into a folder on your computer.",
+  "problem": "Agents, buyers, and investors waste time saving listing photos one by one — right-clicking, downloading, renaming. When you're comparing multiple properties, it adds up fast.",
+  "solution": "I built a tool that downloads every photo from a listing page in one click. Paste a URL from Redfin, Zillow, or Compass, and it saves all the photos to a folder on your computer — named and organized automatically.",
+  "result": "What used to take 20–30 minutes of manual clicking per property now takes about 10 seconds.",
+  "description": "No more saving images one by one. Paste a listing URL from Redfin, Zillow, or Compass and this tool downloads every photo instantly into a folder on your computer.",
   "category": "Real Estate",
   "tags": ["Real Estate", "Research", "Photos"],
   "whoFor": "Home buyers, investors, and agents who spend too much time manually saving listing photos when comparing properties or building reports.",
@@ -11,12 +14,5 @@
   "requirements": "Claude desktop app with Cowork mode enabled, plus the Claude in Chrome extension installed and active in your Chrome browser.",
   "dateAdded": "2026-03-01",
   "status": "available",
-  "demoVideo": "/videos/skill-demo-web.mp4",
-  "compatibility": [
-    { "site": "Redfin", "status": "working" },
-    { "site": "Zillow", "status": "working" },
-    { "site": "Compass", "status": "working" },
-    { "site": "Realtor.com", "status": "not-working", "note": "Blocked by Claude's browser extension since March 2026." }
-  ],
-  "statusNote": "This skill depends on Claude's browser extension, which occasionally changes which sites it can access. We test regularly and update this page when something changes."
+  "demoVideo": "/videos/skill-demo-web.mp4"
 }

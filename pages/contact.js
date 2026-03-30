@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID
 
 export default function Contact() {
-  const [status, setStatus] = useState('idle') // idle | submitting | success | error
+  const [status, setStatus] = useState('idle')
   const [form, setForm] = useState({ name: '', email: '', message: '' })
 
   const handleChange = (e) => {
@@ -37,8 +37,8 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Request a skill — thebotcandoit</title>
-        <meta name="description" content="Describe the task you're tired of doing manually. If it can be turned into a skill, I'll build and test it." />
+        <title>Get in touch &mdash; thebotcandoit</title>
+        <meta name="description" content="Tell me about a workflow that's taking too long. I'll let you know if AI can help — and what it would take to build." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -46,17 +46,16 @@ export default function Contact() {
         <Nav />
         <main className="flex-1 px-8 py-16 max-w-xl">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-3">
-            What should the next skill do?
+            Let&apos;s talk about your workflow.
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-10">
-            Describe a task you&apos;re tired of doing manually. If it can be turned into a skill, I&apos;ll build it and test it until it actually works — then put it on the site for free.
+            Tell me what&apos;s taking too long or what feels harder than it should be. I&apos;ll let you know if AI can help &mdash; and what it would look like to fix it.
           </p>
 
           {status === 'success' ? (
             <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 text-center">
-              <p className="text-2xl mb-2">✅</p>
-              <h2 className="text-gray-900 font-bold text-lg mb-1">Got it — thanks!</h2>
-              <p className="text-gray-500 text-sm">I&apos;ll get back to you at {form.email || 'your email'} within a day.</p>
+              <h2 className="text-gray-900 font-bold text-lg mb-1">Got it &mdash; thanks!</h2>
+              <p className="text-gray-500 text-sm">I&apos;ll get back to you within a day.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
@@ -94,7 +93,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  What task are you tired of doing manually?
+                  What&apos;s the workflow or task you&apos;d like to improve?
                 </label>
                 <textarea
                   id="message"
@@ -109,7 +108,7 @@ export default function Contact() {
               </div>
 
               {status === 'error' && (
-                <p className="text-red-500 text-sm">Something went wrong — please try again or email matt@thebotcandoit.com directly.</p>
+                <p className="text-red-500 text-sm">Something went wrong &mdash; please try again or email matt@thebotcandoit.com directly.</p>
               )}
 
               <button
@@ -117,7 +116,7 @@ export default function Contact() {
                 disabled={status === 'submitting'}
                 className="bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-gray-700 disabled:opacity-50 transition-colors"
               >
-                {status === 'submitting' ? 'Sending…' : 'Send it →'}
+                {status === 'submitting' ? 'Sending...' : 'Send it'}
               </button>
             </form>
           )}

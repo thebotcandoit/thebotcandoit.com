@@ -8,15 +8,16 @@ const tagColors = {
   Launch: 'bg-indigo-100 text-indigo-700',
   Improvement: 'bg-green-100 text-green-700',
   Fix: 'bg-yellow-100 text-yellow-700',
-  'New skill': 'bg-purple-100 text-purple-700',
+  'New tool': 'bg-purple-100 text-purple-700',
+  Update: 'bg-blue-100 text-blue-700',
 }
 
 export default function WhatsNew({ updates }) {
   return (
     <>
       <Head>
-        <title>What&apos;s new — thebotcandoit</title>
-        <meta name="description" content="A running log of what we've built, fixed, and shipped — written for humans, not developers." />
+        <title>What&apos;s new &mdash; thebotcandoit</title>
+        <meta name="description" content="What I've been building, improving, and shipping — in plain language." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,7 +28,7 @@ export default function WhatsNew({ updates }) {
             What&apos;s new
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-14">
-            A running log of what we&apos;ve built, fixed, and shipped — written for humans, not developers.
+            What I&apos;ve been building, improving, and shipping.
           </p>
 
           <div className="relative">
