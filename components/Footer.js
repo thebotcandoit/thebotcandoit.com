@@ -7,8 +7,14 @@ export default function Footer() {
         the<span className="text-indigo-600">bot</span>candoit
       </Link>
       <div className="flex items-center gap-6">
+        <Link href="/work" className="text-xs text-gray-400 hover:text-indigo-600 transition-colors">
+          Work
+        </Link>
         <Link href="/whats-new" className="text-xs text-gray-400 hover:text-indigo-600 transition-colors">
           What&apos;s new
+        </Link>
+        <Link href="/contact" className="text-xs text-gray-400 hover:text-indigo-600 transition-colors">
+          Contact
         </Link>
         <p className="text-xs text-gray-400">
           Built and tested by a human. Powered by Claude.

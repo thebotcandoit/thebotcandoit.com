@@ -7,9 +7,9 @@ export default function Nav() {
         the<span className="text-indigo-600">bot</span>candoit
       </Link>
       <div className="flex items-center gap-5">
-        <a href="/#work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
+        <Link href="/work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
           Work
-        </a>
+        </Link>
         <Link href="/whats-new" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
           What&apos;s new
         </Link>
