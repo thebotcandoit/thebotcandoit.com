@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Get in touch &mdash; thebotcandoit</title>
+        <title>Get in touch &mdash; Botworks Agency</title>
         <meta name="description" content="Tell me about a workflow that's taking too long. I'll let you know if AI can help — and what it would take to build." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -108,7 +108,7 @@ export default function Contact() {
               </div>
 
               {status === 'error' && (
-                <p className="text-red-500 text-sm">Something went wrong &mdash; please try again or email matt@thebotcandoit.com directly.</p>
+                <p className="text-red-500 text-sm">Something went wrong &mdash; please try again or email matt@botworksagency.com directly.</p>
               )}
 
               <button

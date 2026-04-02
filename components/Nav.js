@@ -8,7 +8,7 @@ export default function Nav() {
     <nav className="px-6 sm:px-8 py-4 sm:py-5 border-b border-gray-100">
       <div className="flex items-center justify-between">
         <Link href="/" className="text-lg font-bold tracking-tight text-gray-900 hover:opacity-80 transition-opacity">
-          the<span className="text-indigo-600">bot</span>candoit
+          Bot<span className="text-indigo-600">works</span>
         </Link>
 
         {/* Desktop links */}

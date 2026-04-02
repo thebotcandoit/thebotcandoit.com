@@ -11,9 +11,9 @@ export default function SkillPage({ skill }) {
   return (
     <>
       <Head>
-        <title>{skill.name} &mdash; thebotcandoit</title>
+        <title>{skill.name} &mdash; Botworks Agency</title>
         <meta name="description" content={skill.tagline} />
-        <meta property="og:title" content={`${skill.name} — thebotcandoit`} />
+        <meta property="og:title" content={`${skill.name} — Botworks Agency`} />
         <meta property="og:description" content={skill.tagline} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

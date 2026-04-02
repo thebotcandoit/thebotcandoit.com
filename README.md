@@ -1,6 +1,6 @@
-# thebotcandoit.com
+# Botworks Agency
 
-AI skills for real people. Free, downloadable skills built with Claude — no coding required.
+AI solutions for small businesses. Custom tools and workflows built with Claude.
 
 ## Stack
 - Next.js 14
@@ -11,6 +11,3 @@ AI skills for real people. Free, downloadable skills built with Claude — no co
 1. Add `data/skills/your-slug.json` with skill metadata
 2. Add `public/skills/your-slug/SKILL.md` with the downloadable skill file
 3. Page at `/skills/your-slug` generates automatically
-
----
-🤖 Built entirely by Claude. One person + AI.

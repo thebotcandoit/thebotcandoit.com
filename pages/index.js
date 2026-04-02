@@ -11,9 +11,9 @@ export default function Home({ skills }) {
   return (
     <>
       <Head>
-        <title>thebotcandoit &mdash; AI solutions for small businesses</title>
+        <title>Botworks Agency &mdash; AI solutions for small businesses</title>
         <meta name="description" content="I help small businesses solve workflow problems using AI. 15 years of product management experience, now building practical tools that save you time." />
-        <meta property="og:title" content="thebotcandoit — AI solutions for small businesses" />
+        <meta property="og:title" content="Botworks Agency — AI solutions for small businesses" />
         <meta property="og:description" content="I help small businesses solve workflow problems using AI." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -45,7 +45,7 @@ export default function Home({ skills }) {
           <section className="px-8 pb-14 max-w-3xl">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
-                src="/profil_pic_thebotcandoit_2_march30.jpg"
+                src="/matt-headshot.jpg"
                 alt="Matt Livingston"
                 className="w-28 h-28 rounded-2xl object-cover flex-shrink-0 bg-gray-100"
               />

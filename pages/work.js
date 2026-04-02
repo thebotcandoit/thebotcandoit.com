@@ -11,9 +11,9 @@ export default function Work({ skills }) {
   return (
     <>
       <Head>
-        <title>Work &mdash; thebotcandoit</title>
+        <title>Work &mdash; Botworks Agency</title>
         <meta name="description" content="Examples of AI tools and workflows I've built for small businesses. Each one solves a real problem — see how it works and try it yourself." />
-        <meta property="og:title" content="Work — thebotcandoit" />
+        <meta property="og:title" content="Work — Botworks Agency" />
         <meta property="og:description" content="Examples of AI tools and workflows I've built for small businesses." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

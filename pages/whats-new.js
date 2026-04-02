@@ -16,7 +16,7 @@ export default function WhatsNew({ updates }) {
   return (
     <>
       <Head>
-        <title>What&apos;s new &mdash; thebotcandoit</title>
+        <title>What&apos;s new &mdash; Botworks Agency</title>
         <meta name="description" content="What I've been building, improving, and shipping — in plain language." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
