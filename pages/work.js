@@ -12,28 +12,65 @@ export default function Work({ skills }) {
     <>
       <Head>
         <title>Work &mdash; Botworks Agency</title>
-        <meta name="description" content="Examples of AI tools and workflows I've built for small businesses. Each one solves a real problem — see how it works and try it yourself." />
+        <meta name="description" content="Case studies and tools I've built using AI for small businesses. Each one started with a real problem — here's what I built and why." />
         <meta property="og:title" content="Work — Botworks Agency" />
-        <meta property="og:description" content="Examples of AI tools and workflows I've built for small businesses." />
+        <meta property="og:description" content="Case studies and tools I've built using AI for small businesses." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen bg-white">
         <Nav />
-        <main className="max-w-3xl px-8 py-12">
+        <main className="max-w-5xl px-8 py-12">
 
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-3">
             Work
           </h1>
-          <p className="text-gray-500 text-base leading-relaxed mb-12">
-            Tools and workflows I&apos;ve built using AI. Each one started with a real problem &mdash; here&apos;s what I built and why.
+          <p className="text-gray-500 text-base leading-relaxed mb-12 max-w-2xl">
+            Case studies from real projects, plus a few standalone tools I&apos;ve built along the way. Each one started with a workflow that was eating someone&apos;s time.
           </p>
 
-          {/* SKILLS */}
-          <section className="mb-14">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Tools</p>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Problems I&apos;ve solved</h2>
+          {/* CASE STUDIES */}
+          <section className="mb-16">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Case studies</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Real work, in production</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <Link
+                href="/case-studies/hvac-rebate-automation"
+                className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
+              >
+                <p className="text-sm font-semibold text-indigo-600 mb-2">HVAC contractor</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Rebate program filings: 8 hours a week reclaimed.</h3>
+                <p className="text-sm text-gray-500 leading-snug mb-4">
+                  A custom hosted web app that turns one paste of a job number into a print-ready double-sided rebate filing. Application, classifier, browser automation, and PDF generation in one button.
+                </p>
+                <span className="text-sm font-semibold text-indigo-600">
+                  Read the case study &rarr;
+                </span>
+              </Link>
+              <Link
+                href="/case-studies/interior-design-research-toolkit"
+                className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
+              >
+                <p className="text-sm font-semibold text-indigo-600 mb-2">Interior design studio</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Real-estate research toolkit: three tools, one workflow.</h3>
+                <p className="text-sm text-gray-500 leading-snug mb-4">
+                  Three lightweight tools that compress a designer&apos;s pre-pitch homework &mdash; reference photos, listing-price sanity checks, neighborhood comps &mdash; from hours to minutes.
+                </p>
+                <span className="text-sm font-semibold text-indigo-600">
+                  Read the case study &rarr;
+                </span>
+              </Link>
+            </div>
+          </section>
+
+          {/* SKILLS — secondary */}
+          <section className="mb-16">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">More tools</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Standalone tools we&apos;ve built</h2>
+            <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-2xl">
+              Free downloads we shipped while exploring well-shaped problems. Useful on their own; they also feed into the case studies above.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {available.map(skill => (
                 <Link
                   key={skill.slug}
@@ -48,18 +85,6 @@ export default function Work({ skills }) {
                   </span>
                 </Link>
               ))}
-            </div>
-          </section>
-
-          {/* CASE STUDIES */}
-          <section className="mb-14">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Client work</p>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Case Studies</h2>
-            <div className="border border-dashed border-gray-300 rounded-2xl p-8 text-center">
-              <p className="text-gray-400 text-sm">
-                Case studies from client projects are on the way. In the meantime, check out the tools above or{' '}
-                <Link href="/contact" className="text-indigo-600 underline hover:text-indigo-800">get in touch</Link> to talk about your project.
-              </p>
             </div>
           </section>
 

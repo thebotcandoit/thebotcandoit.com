@@ -16,9 +16,6 @@ export default function Nav() {
           <Link href="/work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
             Work
           </Link>
-          <Link href="/whats-new" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
-            What&apos;s new
-          </Link>
           <Link
             href="/contact"
             className="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-colors"
@@ -47,13 +44,6 @@ export default function Nav() {
             className="text-base text-gray-600 hover:text-indigo-600 transition-colors font-medium py-2"
           >
             Work
-          </Link>
-          <Link
-            href="/whats-new"
-            onClick={() => setOpen(false)}
-            className="text-base text-gray-600 hover:text-indigo-600 transition-colors font-medium py-2"
-          >
-            What&apos;s new
           </Link>
           <Link
             href="/contact"

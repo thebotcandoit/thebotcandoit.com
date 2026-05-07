@@ -11,9 +11,6 @@ export default function Footer() {
           <Link href="/work" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
             Work
           </Link>
-          <Link href="/whats-new" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
-            What&apos;s new
-          </Link>
           <Link href="/contact" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
             Contact
           </Link>
