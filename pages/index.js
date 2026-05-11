@@ -39,6 +39,9 @@ export default function Home({ skills }) {
                 See a case study &rarr;
               </a>
             </div>
+            <p className="text-sm text-gray-400 mt-6">
+              Built by Matt Livingston, former VP of Product. 15 years in software.
+            </p>
           </section>
 
           {/* CAPABILITY STRIP — three tiers, easy to hard */}
@@ -132,7 +135,7 @@ export default function Home({ skills }) {
               <div>
                 <h2 className="text-xl font-bold text-gray-900 mb-2">Hi, I&apos;m Matt.</h2>
                 <p className="text-base text-gray-600 leading-relaxed mb-2">
-                  I spent 15 years as a technical product manager in software, most recently as VP of Product Management. I know how to figure out what to build, scope it down to what matters, and make sure it actually works for the people using it.
+                  15 years as a technical product manager in software, most recently VP of Product Management. I shipped to engineering teams that ship every day; now I bring that bar to small businesses that don&apos;t have engineering teams of their own.
                 </p>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Now I use that experience to help small businesses save time with AI. I&apos;m not selling you hype &mdash; I build practical tools and workflows tailored to how you actually work.
