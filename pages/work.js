@@ -63,6 +63,24 @@ export default function Work({ skills }) {
             </div>
           </section>
 
+          {/* WHAT'S NEXT */}
+          <section className="mb-16">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">What&apos;s next</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">In the pipeline</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="border rounded-2xl p-6 bg-white border-gray-200 block">
+                <div className="flex items-center gap-2 mb-2">
+                  <p className="text-sm font-semibold text-indigo-600">Chicago HVAC contractor</p>
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-2 py-0.5">Upcoming</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Front-office automation: one view of the day&apos;s work.</h3>
+                <p className="text-sm text-gray-500 leading-snug">
+                  Technicians ping Slack to grab their next job; Housecall Pro APIs feed a single source of truth for upcoming work; office and field see the same view in real time. Foundation for agent-driven inventory and scheduling decisions later.
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* SKILLS — secondary */}
           <section className="mb-16">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">More tools</p>
