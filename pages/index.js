@@ -72,6 +72,35 @@ export default function Home({ skills }) {
             </div>
           </section>
 
+          {/* AUDIENCES */}
+          <section className="px-8 pb-14 max-w-5xl">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Who this is for</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <Link
+                href="/for-searchers"
+                className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
+              >
+                <p className="text-sm font-semibold text-indigo-600 mb-2">Searchers and acquisition-backed SMBs</p>
+                <h2 className="text-lg font-bold text-gray-900 mb-2">The first workflow in the 100-day plan.</h2>
+                <p className="text-sm text-gray-500 leading-snug mb-4">
+                  Start with one manual bottleneck, ship quickly, and use the first win to find the next operating problem.
+                </p>
+                <span className="text-sm font-semibold text-indigo-600">See how it works &rarr;</span>
+              </Link>
+              <Link
+                href="/for-service-businesses"
+                className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
+              >
+                <p className="text-sm font-semibold text-indigo-600 mb-2">Service businesses</p>
+                <h2 className="text-lg font-bold text-gray-900 mb-2">Office and field workflows that still run on handoffs.</h2>
+                <p className="text-sm text-gray-500 leading-snug mb-4">
+                  HVAC, landscaping, cleaning, trades, and field-service teams where work gets copied, chased, retyped, or remembered.
+                </p>
+                <span className="text-sm font-semibold text-indigo-600">See examples &rarr;</span>
+              </Link>
+            </div>
+          </section>
+
           {/* CASE STUDIES */}
           <section id="case-studies" className="px-8 pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Case studies</p>
