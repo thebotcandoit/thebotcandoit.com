@@ -11,10 +11,10 @@ export default function Home({ skills }) {
   return (
     <>
       <Head>
-        <title>Botworks Agency &mdash; Custom AI tools for small businesses</title>
-        <meta name="description" content="Custom AI tools for small businesses that want their hours back. Easy-to-deploy tools, automations that run on their own, and custom applications your team logs into." />
-        <meta property="og:title" content="Botworks Agency — Custom AI tools for small businesses" />
-        <meta property="og:description" content="Custom AI tools for small businesses that want their hours back." />
+        <title>Botworks Agency &mdash; Custom operations software for SMBs</title>
+        <meta name="description" content="Custom operations software for SMBs with messy workflows. We start where the pain is sharpest, ship a durable system quickly, then keep finding the next operational bottleneck." />
+        <meta property="og:title" content="Botworks Agency — Custom operations software for SMBs" />
+        <meta property="og:description" content="Custom operations software for SMBs with messy workflows. No slide decks. Software you own outright." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,11 +25,11 @@ export default function Home({ skills }) {
           {/* HERO */}
           <section className="px-8 pt-16 pb-12 max-w-3xl">
             <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
-              Custom AI tools for small businesses{' '}
-              <span className="text-indigo-600">that want their hours back.</span>
+              Custom operations software for SMBs{' '}
+              <span className="text-indigo-600">with messy workflows.</span>
             </h1>
             <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-xl">
-              You tell me what&apos;s eating your time. I figure out if AI can fix it &mdash; and build something that actually works.
+              We start where the pain is sharpest, ship a durable system quickly, then keep finding the next operational bottleneck. No slide decks. Software you own outright.
             </p>
             <div className="flex gap-3 flex-wrap">
               <Link href="/contact" className="bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">
@@ -46,27 +46,27 @@ export default function Home({ skills }) {
 
           {/* CAPABILITY STRIP — three tiers, easy to hard */}
           <section className="px-8 pb-14 max-w-5xl">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">What I build</p>
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">What we build</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Tier 1 &middot; quick wins</p>
-                <h3 className="text-base font-bold text-gray-900 mb-2">Easy-to-use AI tools your team can deploy in a day.</h3>
+                <h3 className="text-base font-bold text-gray-900 mb-2">Fast prototypes that prove the workflow.</h3>
                 <p className="text-sm text-gray-500 leading-snug">
-                  Lightweight tools that drop into how your team already works. Useful right away, no engineering project required.
+                  Small working systems that make the pain concrete, show what is possible, and create the trust to keep going.
                 </p>
               </div>
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Tier 2 &middot; automations</p>
-                <h3 className="text-base font-bold text-gray-900 mb-2">Automations that run on their own.</h3>
+                <h3 className="text-base font-bold text-gray-900 mb-2">Automations that move work between broken systems.</h3>
                 <p className="text-sm text-gray-500 leading-snug">
                   Once-and-done setup. The work happens in the background &mdash; pulling data, filling forms, sending things to the right place &mdash; without anyone clicking through it.
                 </p>
               </div>
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Tier 3 &middot; custom apps</p>
-                <h3 className="text-base font-bold text-gray-900 mb-2">Custom applications your team logs into.</h3>
+                <h3 className="text-base font-bold text-gray-900 mb-2">Internal software your team can actually run.</h3>
                 <p className="text-sm text-gray-500 leading-snug">
-                  Hosted web apps purpose-built for one company&apos;s workflow. We build, host, and maintain. Your team uses it in a normal browser; no new accounts, no new subscriptions, no installs.
+                  Hosted web apps purpose-built for one company&apos;s workflow. We build, host, document, monitor, and maintain. Your team uses it in a normal browser; no installs.
                 </p>
               </div>
             </div>
@@ -151,7 +151,10 @@ export default function Home({ skills }) {
                   15 years as a technical product manager in software, most recently VP of Product Management. I shipped to engineering teams that ship every day; now I bring that bar to small businesses that don&apos;t have engineering teams of their own.
                 </p>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Now I use that experience to help small businesses save time with AI. I&apos;m not selling you hype &mdash; I build practical tools and workflows tailored to how you actually work.
+                  Botworks builds custom operations software for SMBs and acquisition-backed companies. We start with one workflow where the pain is obvious, ship a durable, working system quickly, and use that first win to uncover the next one.
+                </p>
+                <p className="text-base text-gray-600 leading-relaxed mt-2">
+                  Over time, the business gets a practical software layer around the places where people used to copy, chase, translate, retype, reconcile, and remember. No hidden fees. No hostage software. The company owns the code, data, infrastructure, and documentation.
                 </p>
               </div>
             </div>
@@ -162,7 +165,7 @@ export default function Home({ skills }) {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                Tell me what&apos;s taking too long or feels repetitive. If AI can make it better, I&apos;ll tell you how &mdash; no commitment, no pitch.
+                Tell me where the work gets copied, chased, retyped, or remembered by one person. If software can make it cleaner, I&apos;ll tell you how &mdash; no commitment, no pitch.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">
