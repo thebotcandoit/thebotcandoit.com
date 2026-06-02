@@ -5,7 +5,7 @@
 
 ## What this is
 
-Botworks Agency marketing/portfolio site (rebranded from thebotcandoit; URL retained). Lead with case studies; three-tier capability framing (quick wins / automations / custom apps); skills demoted to secondary section on `/work`.
+Botworks Agency marketing/portfolio site (rebranded from thebotcandoit; URL retained). Lead with custom operations software for SMBs with messy workflows. Core content architecture: homepage, how-we-work, workflow examples, audience pages, case studies, and contact.
 
 Vault scope: `Brain_a_17mar26/Botworks Platform/project-state.md` → "Site and infrastructure."
 
@@ -48,7 +48,7 @@ cp -R --reflink=auto <project> /tmp/site-build/
 cd /tmp/site-build && rm -rf .next && npx next build
 ```
 
-Confirm all routes pre-render (currently 11). See `START HERE.md` → "Verify production builds locally before pushing to main."
+Confirm all routes pre-render. See `START HERE.md` → "Verify production builds locally before pushing to main."
 
 ## After pushing — Vercel signal
 

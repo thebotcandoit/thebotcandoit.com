@@ -16,6 +16,9 @@ export default function Nav() {
           <Link href="/how-we-work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
             How we work
           </Link>
+          <Link href="/workflow-examples" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
+            Examples
+          </Link>
           <Link href="/work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
             Work
           </Link>
@@ -47,6 +50,13 @@ export default function Nav() {
             className="text-base text-gray-600 hover:text-indigo-600 transition-colors font-medium py-2"
           >
             How we work
+          </Link>
+          <Link
+            href="/workflow-examples"
+            onClick={() => setOpen(false)}
+            className="text-base text-gray-600 hover:text-indigo-600 transition-colors font-medium py-2"
+          >
+            Examples
           </Link>
           <Link
             href="/work"

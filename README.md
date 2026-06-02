@@ -1,13 +1,16 @@
 # Botworks Agency
 
-AI solutions for small businesses. Custom tools and workflows built with Claude.
+Custom operations software for SMBs with messy workflows.
 
 ## Stack
 - Next.js 14
 - Tailwind CSS
 - Vercel
 
-## Adding a new skill
-1. Add `data/skills/your-slug.json` with skill metadata
-2. Add `public/skills/your-slug/SKILL.md` with the downloadable skill file
-3. Page at `/skills/your-slug` generates automatically
+## Site shape
+- Homepage
+- How we work
+- Workflow examples
+- Audience pages for searchers and service businesses
+- Case studies
+- Contact

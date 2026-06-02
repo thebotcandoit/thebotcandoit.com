@@ -60,11 +60,7 @@ export default function InteriorDesignResearchToolkit() {
             <div className="space-y-8">
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-2">Tool 1</p>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  <Link href="/skills/real-estate-photo-scraper" className="hover:text-indigo-600 transition-colors">
-                    Listing photo scraper
-                  </Link>
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Listing photo scraper</h3>
                 <p className="text-base text-gray-600 leading-relaxed mb-3">
                   Pulls every photo from a real-estate listing across the major US sites in one shot &mdash; for reference boards, before-and-afters, or briefing files.
                 </p>
@@ -75,11 +71,7 @@ export default function InteriorDesignResearchToolkit() {
 
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-2">Tool 2</p>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  <Link href="/skills/redfin-estimate-accuracy" className="hover:text-indigo-600 transition-colors">
-                    Estimate accuracy checker (active listings)
-                  </Link>
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Estimate accuracy checker (active listings)</h3>
                 <p className="text-base text-gray-600 leading-relaxed mb-3">
                   For a home currently for sale, walks the AVM&apos;s own estimate history and recent comps to score how trustworthy that estimate is.
                 </p>
@@ -90,11 +82,7 @@ export default function InteriorDesignResearchToolkit() {
 
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-2">Tool 3</p>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  <Link href="/skills/redfin-estimate-checker" className="hover:text-indigo-600 transition-colors">
-                    Estimate checker (sold homes)
-                  </Link>
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Estimate checker (sold homes)</h3>
                 <p className="text-base text-gray-600 leading-relaxed mb-3">
                   For a home that already sold, back-calculates what the AVM thought the day it went under contract and compares it to the actual sale.
                 </p>

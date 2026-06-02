@@ -4,7 +4,9 @@
   "checks": [
     { "name": "Homepage", "status": "pass" },
     { "name": "Contact page", "status": "pass" },
-    { "name": "What's new", "status": "pass" },
-    { "name": "Skills pages", "status": "pass" }
+    { "name": "How we work", "status": "pass" },
+    { "name": "Workflow examples", "status": "pass" },
+    { "name": "Audience pages", "status": "pass" },
+    { "name": "Case studies", "status": "pass" }
   ]
 }

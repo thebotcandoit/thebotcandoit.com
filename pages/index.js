@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import fs from 'fs'
-import path from 'path'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-export default function Home({ skills }) {
-  const available = skills.filter(s => s.status === 'available')
-
+export default function Home() {
   return (
     <>
       <Head>
@@ -98,6 +94,22 @@ export default function Home({ skills }) {
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">See examples &rarr;</span>
               </Link>
+            </div>
+          </section>
+
+          {/* WORKFLOW EXAMPLES */}
+          <section className="px-8 pb-14 max-w-5xl">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Where this fits</p>
+            <div className="border border-gray-200 rounded-2xl p-6 md:p-8 bg-gray-50">
+              <div className="max-w-3xl">
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">The best first projects are usually hiding in plain sight.</h2>
+                <p className="text-base text-gray-600 leading-relaxed mb-5">
+                  Rebate paperwork, field handoffs, customer intake, spreadsheet reconciliation, status chasing, exception queues, manager-only memory. If the same person has to copy, check, translate, retype, or remember the same thing every week, it may be a good Botworks project.
+                </p>
+                <Link href="/workflow-examples" className="text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
+                  See workflow examples &rarr;
+                </Link>
+              </div>
             </div>
           </section>
 
@@ -207,11 +219,4 @@ export default function Home({ skills }) {
       </div>
     </>
   )
-}
-
-export async function getStaticProps() {
-  const skillsDir = path.join(process.cwd(), 'data/skills')
-  const files = fs.readdirSync(skillsDir).filter(f => f.endsWith('.json'))
-  const skills = files.map(file => JSON.parse(fs.readFileSync(path.join(skillsDir, file), 'utf8')))
-  return { props: { skills } }
 }

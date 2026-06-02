@@ -11,6 +11,9 @@ export default function Footer() {
           <Link href="/how-we-work" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
             How we work
           </Link>
+          <Link href="/workflow-examples" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
+            Examples
+          </Link>
           <Link href="/for-searchers" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
             Searchers
           </Link>
@@ -26,7 +29,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-xs text-gray-400 mt-6">
-        Built and tested by a human. Powered by Claude.
+        Custom operations software, built to be owned by the business.
       </p>
     </footer>
   )

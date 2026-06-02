@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import fs from 'fs'
-import path from 'path'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-export default function Work({ skills }) {
-  const available = skills.filter(s => s.status === 'available')
-
+export default function Work() {
   return (
     <>
       <Head>
@@ -26,7 +22,7 @@ export default function Work({ skills }) {
             Work
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-12 max-w-2xl">
-            Case studies from real projects, plus a few standalone tools built along the way. Each one started with a workflow that was expensive, manual, or stuck between systems.
+            Case studies from real projects. Each one started with a workflow that was expensive, manual, or stuck between systems.
           </p>
 
           {/* CASE STUDIES */}
@@ -94,31 +90,6 @@ export default function Work({ skills }) {
             </div>
           </section>
 
-          {/* SKILLS — secondary */}
-          <section className="mb-16">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">More tools</p>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Standalone tools we&apos;ve built</h2>
-            <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-2xl">
-              Free downloads we shipped while exploring well-shaped problems. Useful on their own; they also feed into the case studies above.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {available.map(skill => (
-                <Link
-                  key={skill.slug}
-                  href={`/skills/${skill.slug}`}
-                  className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
-                >
-                  <p className="text-sm font-semibold text-indigo-600 mb-2">{skill.category}</p>
-                  <h3 className="text-base font-bold text-gray-900 mb-2">{skill.name}</h3>
-                  <p className="text-sm text-gray-500 leading-snug mb-4">{skill.problem || skill.tagline}</p>
-                  <span className="text-sm font-semibold text-indigo-600">
-                    See how it works &rarr;
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-
           {/* CTA */}
           <section className="bg-gray-900 rounded-2xl p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
@@ -137,11 +108,4 @@ export default function Work({ skills }) {
       </div>
     </>
   )
-}
-
-export async function getStaticProps() {
-  const skillsDir = path.join(process.cwd(), 'data/skills')
-  const files = fs.readdirSync(skillsDir).filter(f => f.endsWith('.json'))
-  const skills = files.map(file => JSON.parse(fs.readFileSync(path.join(skillsDir, file), 'utf8')))
-  return { props: { skills } }
 }
