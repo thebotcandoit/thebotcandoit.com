@@ -8,9 +8,9 @@ export default function FieldVisitCapture() {
     <>
       <Head>
         <title>Field-visit capture &mdash; Botworks Agency</title>
-        <meta name="description" content="A multi-location commercial landscaper in Florida got a structured way to capture every account-manager site visit and turn field observations into operational follow-through." />
+        <meta name="description" content="A multi-location commercial landscaper turned scattered field notes into a structured operations workflow for account managers and supervisors." />
         <meta property="og:title" content="Field-visit capture — Botworks Agency" />
-        <meta property="og:description" content="Mobile-first capture in the field, central review in the office, and structured data ready for translation, ticketing, and follow-through." />
+        <meta property="og:description" content="Scattered field observations became a structured workflow for capture, review, translation, ticketing, and follow-through." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,10 +25,10 @@ export default function FieldVisitCapture() {
           </p>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-3">
-            How a multi-location commercial landscaper in Florida gave their field team a structured way to capture every visit &mdash; and turn observations into follow-through.
+            How a multi-location commercial landscaper turned scattered field notes into an operations workflow.
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-2xl">
-            Mobile-first capture in the field, central review in the office, and structured data ready for translation, ticketing, and supervisor follow-up.
+            Account managers needed a field-friendly way to capture what they saw. Supervisors needed one place to review it, translate it, and turn it into follow-through.
           </p>
 
           {/* AT A GLANCE */}
@@ -58,31 +58,42 @@ export default function FieldVisitCapture() {
           <section className="mb-10">
             <h2 className="text-xl font-bold text-gray-900 mb-3">The problem</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Their account managers spent the week driving between commercial properties, observing issues and opportunities &mdash; and capturing almost none of it in a structured way. Notes lived on paper, in scattered text messages, or didn&apos;t make it past the AM&apos;s head. There was no central view to scan the week&apos;s visits, no easy way for a supervisor to tell whether a property had been touched, what was found, or what needed to follow. As the company grew across locations, the gap widened. No off-the-shelf product fit how their account managers actually worked.
+              Account managers spent the week driving between commercial properties, noticing issues and opportunities that mattered to crews, supervisors, and customers. But the observations did not land in one reliable place. Some notes lived on paper. Some lived in text messages. Some stayed in the account manager&apos;s head. Supervisors had no clean view of which properties had been visited, what was found, or what needed to happen next.
             </p>
           </section>
 
-          {/* WHAT WE BUILT */}
+          {/* WHY OFF THE SHELF FAILED */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">What we built</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">Why off-the-shelf software did not solve it</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              A mobile-first web app account managers open in the field on whatever phone they&apos;re carrying &mdash; no install, no login, drafts survive a bad cell connection mid-visit. They pick the property they&apos;re at and tap through the same checklist they&apos;d use on paper: maintenance categories, issues, photos, enhancement opportunities. On the office side, a supervisor review surface &mdash; dense, sortable, designed to read like a spreadsheet &mdash; gives the operations lead one view of every visit, every photo, every issue logged across every property.
+              The company already had business systems, but none of them matched the field workflow. A CRM could hold records, but account managers needed something fast on a phone. A spreadsheet could be scanned, but it could not make field capture reliable. A task list could hold follow-ups, but only after someone translated the visit into tasks. The missing piece was a workflow layer between field observation and operational follow-through.
             </p>
           </section>
 
-          {/* WHY THIS MATTERS */}
+          {/* WHAT SHIPPED FIRST */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Why this matters</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What shipped first</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Capture is the beachhead, not the destination. Every structured visit the system records is a fact the business can act on &mdash; and a human can correct. The bilingual translation pipeline turns English field notes into Spanish for crew leads, with supervisor edits overriding anything the model misses. The next pieces stack on the same foundation: client communications based on what was actually observed during the visit; enhancement proposals the moment an opportunity gets logged; tickets created automatically in the customer&apos;s existing systems; assignments dispatched to the right crew lead on the day they&apos;re needed. Each integration reads from the same structured record. Each one is cheaper to ship than the last &mdash; because the hard part, getting the data structured at the point it&apos;s observed, is already done.
+              Botworks shipped a mobile-first web app account managers can open in the field on the phones they already carry. They pick the property, tap through structured visit categories, add notes and photos, and submit the visit before the details disappear. In the office, supervisors get a central review surface for every property visit, photo, issue, and enhancement opportunity.
+            </p>
+            <p className="text-base text-gray-600 leading-relaxed mt-4">
+              The first system is capture and review. It gives the business a canonical record of what the field team saw, without forcing account managers to become software operators.
             </p>
           </section>
 
-          {/* TECH STACK */}
+          {/* WHAT BECAME POSSIBLE */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What became possible next</h2>
+            <p className="text-base text-gray-600 leading-relaxed">
+              Once visits land structurally, the next workflows have something reliable to build on: translating English notes into Spanish for crew leads, creating operational tickets in the systems supervisors already use, drafting customer communications from real visit observations, and turning enhancement opportunities into proposals. Each next step reads from the same record instead of asking the office to re-enter the same facts again.
+            </p>
+          </section>
+
+          {/* OWNERSHIP */}
           <section className="border-t border-gray-200 pt-8 mb-12">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Tech stack</p>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Next.js (App Router) &middot; TypeScript &middot; Tailwind &middot; Supabase (Postgres, Storage) &middot; Anthropic API for translation.
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">What the client owns</p>
+            <p className="text-base text-gray-600 leading-relaxed">
+              The capture app, the structured visit records, the photos, the review workflow, the deployment path, and the documentation needed to understand how the system works. Botworks maintains the workflow, but the operational record belongs to the business.
             </p>
           </section>
 

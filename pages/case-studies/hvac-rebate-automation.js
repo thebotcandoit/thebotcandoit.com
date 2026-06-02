@@ -8,9 +8,9 @@ export default function HvacRebateAutomation() {
     <>
       <Head>
         <title>HVAC rebate automation &mdash; Botworks Agency</title>
-        <meta name="description" content="A family-owned HVAC contractor reclaimed 8 hours a week of admin time with a custom hosted web app that turns one paste of a job number into a print-ready rebate filing." />
+        <meta name="description" content="A family-owned HVAC contractor turned a weekly rebate paperwork drag into a durable workflow system their office manager can run from one job number." />
         <meta property="og:title" content="HVAC rebate automation — Botworks Agency" />
-        <meta property="og:description" content="8 hours a week reclaimed for a family-owned HVAC contractor." />
+        <meta property="og:description" content="A messy rebate workflow became owned operations software for a family-owned HVAC contractor." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,10 +25,10 @@ export default function HvacRebateAutomation() {
           </p>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-3">
-            How a family-owned HVAC contractor in the Midwest got 8 hours a week back.
+            How a family-owned HVAC contractor turned rebate paperwork into a one-button office workflow.
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-2xl">
-            A custom hosted web app that turns one paste of a job number into a print-ready rebate filing.
+            The office manager was stuck moving job data between systems by hand. Botworks shipped a custom workflow system that starts with one job number and ends with a print-ready rebate packet.
           </p>
 
           {/* AT A GLANCE */}
@@ -58,66 +58,42 @@ export default function HvacRebateAutomation() {
           <section className="mb-10">
             <h2 className="text-xl font-bold text-gray-900 mb-3">The problem</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Their operations manager spent roughly eight hours a week re-keying data from their field-service platform into a contractor-portal web form, then printing, signing, and mailing the result. The data already existed &mdash; it just lived in two different systems that didn&apos;t talk to each other. No off-the-shelf rebate software covered the program their company files into, so the work was permanent.
+              Their operations manager spent roughly eight hours a week re-keying data from the company&apos;s field-service platform into a contractor rebate portal, then assembling the paperwork for print, signature, and mailing. The data already existed. The problem was that the two systems did not talk to each other, and the last mile depended on one person remembering the right sequence every week.
             </p>
           </section>
 
-          {/* WHAT WE BUILT */}
+          {/* WHY OFF THE SHELF FAILED */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">What we built</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">Why off-the-shelf software did not solve it</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              A hosted web app at a subdomain of their company&apos;s URL. The operations manager signs in with an emailed code, pastes a job number from their field-service platform, and reviews a prefilled form. One click composes a print-ready double-sided PDF &mdash; rebate form on the front, paid invoice on the back &mdash; drops it into cloud storage, and opens it in a new tab.
+              This was not a generic rebate problem. It was a local program with its own portal, form behavior, print requirements, and tolerance for weird operational edge cases. Their field-service software had the job data, but it was not built to file this specific rebate. The rebate portal accepted submissions, but it was not built around how the office actually worked. The gap lived between the systems.
             </p>
           </section>
 
-          {/* FOUR LAYERS */}
+          {/* WHAT SHIPPED FIRST */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-5">Behind the button, four layers do the work</h2>
-
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-base font-bold text-indigo-600 mb-2">Application</h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  A custom Next.js app the team uses in their normal browser. Authentication, audit history, an admin view for elevated access, and a workflow picker so additional automations can slot in without redesign. Their team holds no AI subscriptions, installs nothing, and the data stays on infrastructure we control.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-base font-bold text-indigo-600 mb-2">Classification</h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Job records arrive with messy line-item naming &mdash; &ldquo;Maintenance &mdash; Clean and Check / AC&rdquo; in one template, &ldquo;Clean and Check / Furnace&rdquo; in another. We built a classifier that keys off stable internal identifiers (not the human-readable names that drift across templates), validated it against a corpus of 400 real jobs, and shipped an override queue. Every override the operations manager makes becomes a regression test fixture, so the next refactor can&apos;t re-break the case.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-base font-bold text-indigo-600 mb-2">Automation</h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  A cloud browser fills the third-party rebate portal end-to-end &mdash; login, the right form for the right rebate type, the right line items, submission. We capture the new submission&apos;s identifier with a pre/post diff, prime the portal&apos;s session correctly, and verify the rendered customer name on the printable receipt before saving the PDF. The class of bug where a wrong-customer PDF reaches storage was eliminated by design.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-base font-bold text-indigo-600 mb-2">Generation</h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  A two-page PDF assembled with <code className="text-sm bg-gray-100 px-1.5 py-0.5 rounded">pdf-lib</code> &mdash; the rebate form rendered to a print-ready preview on the front, the paid invoice rendered at half scale and rotated 180&deg; on the back so the operations manager can print double-sided and mail. Files land in cloud storage with human-readable names &mdash; last name plus job number &mdash; so any past filing is searchable by typing.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* RESULT */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">The result</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What shipped first</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              A working custom application, in production, that the operations manager opens every week. Eight hours of weekly data entry collapsed into &ldquo;click a button, review, print.&rdquo; The owner now has the option to fold additional workflows into the same app &mdash; the workflow picker is already there, waiting.
+              Botworks shipped a hosted internal app at a company subdomain. The office manager signs in, pastes a job number, reviews the job details, and clicks one button. The system classifies the job, fills the rebate portal, submits the filing, renders the paperwork, stores the PDF under a human-readable name, and opens the packet for print.
+            </p>
+            <p className="text-base text-gray-600 leading-relaxed mt-4">
+              The first version was narrow on purpose: make the weekly rebate workflow reliable before expanding into the next office problem. That first win gives the owner proof that custom operations software can fit the business instead of forcing the business to fit another tool.
             </p>
           </section>
 
-          {/* TECH STACK */}
+          {/* WHAT BECAME POSSIBLE */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What became possible next</h2>
+            <p className="text-base text-gray-600 leading-relaxed">
+              Eight hours of weekly data entry collapsed into &ldquo;paste, review, print.&rdquo; More importantly, the company now has an owned office workflow surface. The next bottlenecks can fold into the same operating layer: front-office work queues, technician dispatch, additional rebate programs, warehouse records, or estimate support.
+            </p>
+          </section>
+
+          {/* OWNERSHIP */}
           <section className="border-t border-gray-200 pt-8 mb-12">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Tech stack</p>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Next.js (App Router) &middot; TypeScript &middot; Tailwind &middot; Supabase (auth, storage, Postgres) &middot; Browserbase + Playwright &middot; pdf-lib &middot; Anthropic API for classification.
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">What the client owns</p>
+            <p className="text-base text-gray-600 leading-relaxed">
+              The working application, the operational data it creates, the generated rebate packet history, the deployment path, and the documentation needed to understand how the workflow runs. Botworks maintains the system, but the software is not a hostage.
             </p>
           </section>
 

@@ -8,9 +8,9 @@ export default function InteriorDesignResearchToolkit() {
     <>
       <Head>
         <title>Interior design research toolkit &mdash; Botworks Agency</title>
-        <meta name="description" content="Three tools that turn public real-estate data into a designer's pre-pitch homework: reference photos, listing-price sanity checks, and neighborhood comps." />
+        <meta name="description" content="An interior design studio compressed repetitive pre-pitch research into three lightweight tools for photos, valuation context, and neighborhood comps." />
         <meta property="og:title" content="Interior design research toolkit — Botworks Agency" />
-        <meta property="og:description" content="Three tools, one workflow, for an interior design studio." />
+        <meta property="og:description" content="A repetitive research workflow became three lightweight tools for an interior design studio." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,16 +25,31 @@ export default function InteriorDesignResearchToolkit() {
           </p>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-3">
-            A research toolkit for an interior design studio.
+            How an interior design studio compressed repetitive pre-pitch research.
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-2xl">
-            Three tools that turn public real-estate data into a designer&apos;s pre-pitch homework.
+            Before every project, the same research had to happen again: collect reference photos, sanity-check listing context, and understand the neighborhood before the client conversation.
           </p>
 
           {/* FRAMING */}
           <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">The problem</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Designers spend real time researching the homes they&apos;re about to walk into &mdash; pulling reference photos, sanity-checking listing prices, understanding what the market thinks a home is worth before the budget conversation starts. We built three tools, end-to-end, that compress that research into minutes. They&apos;re free to download and use; they doubled as proof we can ship working software in the corners of a workflow most agencies won&apos;t touch.
+              Designers spent real time researching the homes they were about to walk into. The work was not hard once; it was hard because it repeated. Someone had to pull photos, compare listing context, and build enough market understanding to walk into the first conversation prepared. No single design tool owned that whole pre-pitch workflow.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What shipped first</h2>
+            <p className="text-base text-gray-600 leading-relaxed">
+              Botworks shipped three small tools around the repeated research steps instead of pretending the studio needed a full platform. Each one handled a narrow task that used to eat attention before a client meeting.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">Why off-the-shelf software did not solve it</h2>
+            <p className="text-base text-gray-600 leading-relaxed">
+              The work crossed public listing sites, market context, visual reference gathering, and the studio&apos;s own client-prep habits. Generic design software did not own the research step, and real-estate tools were not built for a designer walking into a budget conversation. The gap was small but persistent, which made lightweight custom tools a better fit than a new platform.
             </p>
           </section>
 
@@ -92,9 +107,16 @@ export default function InteriorDesignResearchToolkit() {
 
           {/* WHAT THIS PROVES */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">What this proves we can do</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What became possible next</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              The same four layers from the <Link href="/case-studies/hvac-rebate-automation" className="text-indigo-600 underline hover:text-indigo-800">HVAC case study</Link> show up here at smaller scale: an <span className="font-semibold text-gray-700">application</span> surface (a Claude in Chrome workflow), <span className="font-semibold text-gray-700">classification</span> (which comp to trust), <span className="font-semibold text-gray-700">automation</span> (driving the listing site to extract the right data), and <span className="font-semibold text-gray-700">generation</span> (a clean output the designer can show a client). Different workflow, same toolkit.
+              The tools are small, but the operating pattern is the same as the <Link href="/case-studies/hvac-rebate-automation" className="text-indigo-600 underline hover:text-indigo-800">HVAC case study</Link>: find the recurring manual step, ship a focused system, and let the business decide whether the next bottleneck is worth building around. Different industry, same motion.
+            </p>
+          </section>
+
+          <section className="border-t border-gray-200 pt-8 mb-12">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">What the client owns</p>
+            <p className="text-base text-gray-600 leading-relaxed">
+              The workflow pattern, the tool instructions, and the outputs created for client prep. This was an early lightweight build, but it follows the same principle as larger Botworks systems: the business should be able to use the work without being trapped inside an agency black box.
             </p>
           </section>
 
