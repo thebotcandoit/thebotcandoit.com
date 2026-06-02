@@ -13,6 +13,9 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
+          <Link href="/how-we-work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
+            How we work
+          </Link>
           <Link href="/work" className="text-sm text-gray-500 hover:text-indigo-600 transition-colors font-medium">
             Work
           </Link>
@@ -38,6 +41,13 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden mt-4 pb-2 flex flex-col gap-4">
+          <Link
+            href="/how-we-work"
+            onClick={() => setOpen(false)}
+            className="text-base text-gray-600 hover:text-indigo-600 transition-colors font-medium py-2"
+          >
+            How we work
+          </Link>
           <Link
             href="/work"
             onClick={() => setOpen(false)}

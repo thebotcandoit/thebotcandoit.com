@@ -8,6 +8,9 @@ export default function Footer() {
           Bot<span className="text-indigo-600">works</span>
         </Link>
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          <Link href="/how-we-work" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
+            How we work
+          </Link>
           <Link href="/work" className="text-sm text-gray-400 hover:text-indigo-600 transition-colors py-1">
             Work
           </Link>
