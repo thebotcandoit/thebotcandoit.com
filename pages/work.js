@@ -12,9 +12,9 @@ export default function Work({ skills }) {
     <>
       <Head>
         <title>Work &mdash; Botworks Agency</title>
-        <meta name="description" content="Case studies and tools I've built using AI for small businesses. Each one started with a real problem — here's what I built and why." />
+        <meta name="description" content="Case studies from custom operations software built for SMBs with messy workflows. Each project started with a real operational bottleneck." />
         <meta property="og:title" content="Work — Botworks Agency" />
-        <meta property="og:description" content="Case studies and tools I've built using AI for small businesses." />
+        <meta property="og:description" content="Custom operations software case studies for SMBs with messy workflows." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -26,7 +26,7 @@ export default function Work({ skills }) {
             Work
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-12 max-w-2xl">
-            Case studies from real projects, plus a few standalone tools I&apos;ve built along the way. Each one started with a workflow that was eating someone&apos;s time.
+            Case studies from real projects, plus a few standalone tools built along the way. Each one started with a workflow that was expensive, manual, or stuck between systems.
           </p>
 
           {/* CASE STUDIES */}
@@ -54,7 +54,7 @@ export default function Work({ skills }) {
                 <p className="text-sm font-semibold text-indigo-600 mb-2">Commercial landscaping</p>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Field-visit capture: a structured record for every property visit.</h3>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  A mobile-first capture surface for account managers in the field, paired with a central review surface for the office. Built as the structured foundation for the AI features that follow &mdash; translation, communications, proposals, ticketing.
+                  A mobile-first capture surface for account managers in the field, paired with a central review surface for the office. Built as the structured foundation for translation, communications, proposals, and ticketing.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">
                   Read the case study &rarr;
@@ -124,7 +124,7 @@ export default function Work({ skills }) {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                Tell me what&apos;s taking too long or feels repetitive. If AI can make it better, I&apos;ll tell you how &mdash; no commitment, no pitch.
+                Tell me where the work gets copied, chased, retyped, or remembered by one person. If software can make it cleaner, I&apos;ll tell you how &mdash; no commitment, no pitch.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">

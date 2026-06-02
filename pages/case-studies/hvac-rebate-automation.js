@@ -126,7 +126,7 @@ export default function HvacRebateAutomation() {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a workflow that looks like this?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                If your team is moving data between two systems by hand, there&apos;s probably a button to be built. Tell me about it.
+                If your team is moving data between two systems by hand, there&apos;s probably a durable workflow system to build. Tell me about it.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">

@@ -8,9 +8,9 @@ export default function FieldVisitCapture() {
     <>
       <Head>
         <title>Field-visit capture &mdash; Botworks Agency</title>
-        <meta name="description" content="A multi-location commercial landscaper in Florida got a structured way to capture every account-manager site visit — and the foundation for the AI features that follow." />
+        <meta name="description" content="A multi-location commercial landscaper in Florida got a structured way to capture every account-manager site visit and turn field observations into operational follow-through." />
         <meta property="og:title" content="Field-visit capture — Botworks Agency" />
-        <meta property="og:description" content="Mobile-first capture in the field, central review in the office, structured data ready for the AI features that build on top." />
+        <meta property="og:description" content="Mobile-first capture in the field, central review in the office, and structured data ready for translation, ticketing, and follow-through." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,10 +25,10 @@ export default function FieldVisitCapture() {
           </p>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-3">
-            How a multi-location commercial landscaper in Florida gave their field team a structured way to capture every visit &mdash; and laid the foundation for the AI that follows.
+            How a multi-location commercial landscaper in Florida gave their field team a structured way to capture every visit &mdash; and turn observations into follow-through.
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-2xl">
-            Mobile-first capture in the field, central review in the office, structured data ready for the AI features that build on top.
+            Mobile-first capture in the field, central review in the office, and structured data ready for translation, ticketing, and supervisor follow-up.
           </p>
 
           {/* AT A GLANCE */}
@@ -74,7 +74,7 @@ export default function FieldVisitCapture() {
           <section className="mb-10">
             <h2 className="text-xl font-bold text-gray-900 mb-3">Why this matters</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Capture is the beachhead, not the destination. Every structured visit the system records is a fact AI can act on &mdash; and a human can correct. The bilingual translation pipeline shipping next &mdash; every English note rendered in Spanish for the Spanish-speaking crew, every Spanish edit by the operations lead overriding what the model missed &mdash; is the first AI feature riding on top of the canonical record. The ones that follow stack on the same foundation: auto-drafted client communications based on what was actually observed during the visit; auto-drafted enhancement proposals the moment an opportunity gets logged; tickets created automatically in the customer&apos;s existing CRM; assignments dispatched to the right crew lead on the day they&apos;re needed. Each integration reads from the same structured record. Each one is cheaper to ship than the last &mdash; because the hard part, getting the data structured at the point it&apos;s observed, is already done.
+              Capture is the beachhead, not the destination. Every structured visit the system records is a fact the business can act on &mdash; and a human can correct. The bilingual translation pipeline turns English field notes into Spanish for crew leads, with supervisor edits overriding anything the model misses. The next pieces stack on the same foundation: client communications based on what was actually observed during the visit; enhancement proposals the moment an opportunity gets logged; tickets created automatically in the customer&apos;s existing systems; assignments dispatched to the right crew lead on the day they&apos;re needed. Each integration reads from the same structured record. Each one is cheaper to ship than the last &mdash; because the hard part, getting the data structured at the point it&apos;s observed, is already done.
             </p>
           </section>
 
@@ -91,7 +91,7 @@ export default function FieldVisitCapture() {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                Tell me what&apos;s taking too long or feels repetitive. If AI can make it better, I&apos;ll tell you how &mdash; no commitment, no pitch.
+                Tell me where the work gets copied, chased, retyped, or remembered by one person. If software can make it cleaner, I&apos;ll tell you how &mdash; no commitment, no pitch.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">

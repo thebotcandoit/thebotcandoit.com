@@ -97,7 +97,7 @@ export default function Home({ skills }) {
                 <p className="text-sm font-semibold text-indigo-600 mb-2">Commercial landscaping</p>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Field-visit capture: a structured record for every property visit.</h3>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  A mobile-first capture surface for account managers in the field, paired with a central review surface for the office. Built as the structured foundation for the AI features that follow &mdash; translation, communications, proposals, ticketing.
+                  A mobile-first capture surface for account managers in the field, paired with a central review surface for the office. Built as the structured foundation for translation, communications, proposals, and ticketing.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">
                   Read the case study &rarr;

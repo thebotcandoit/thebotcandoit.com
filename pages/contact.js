@@ -38,7 +38,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Get in touch &mdash; Botworks Agency</title>
-        <meta name="description" content="Tell me about a workflow that's taking too long. I'll let you know if AI can help — and what it would take to build." />
+        <meta name="description" content="Tell me about a messy workflow in your business. I'll let you know whether custom operations software can make it cleaner, and what it would take to ship." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -49,7 +49,7 @@ export default function Contact() {
             Let&apos;s talk about your workflow.
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-10">
-            Tell me what&apos;s taking too long or what feels harder than it should be. I&apos;ll let you know if AI can help &mdash; and what it would look like to fix it.
+            Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll let you know whether custom software can make it cleaner &mdash; and what it would take to ship.
           </p>
 
           {status === 'success' ? (
@@ -102,7 +102,7 @@ export default function Contact() {
                   rows={5}
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="Every week I have to manually download photos from 10 listing pages and rename them..."
+                  placeholder="Every week someone copies job data from one system into another, checks a spreadsheet, then follows up by text..."
                   className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition resize-none"
                 />
               </div>
