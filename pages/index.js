@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Botworks Agency &mdash; Practical AI and workflow systems for SMBs</title>
-        <meta name="description" content="Practical AI and custom workflow systems for SMBs with messy operations. AI when it helps. Custom software when it matters. Operational judgment either way." />
+        <meta name="description" content="Practical AI and custom workflow systems for SMB owners. No slide decks, no long onboarding, and no hostage software." />
         <meta property="og:title" content="Botworks Agency — Practical AI and workflow systems for SMBs" />
         <meta property="og:description" content="AI when it helps. Custom software when it matters. Operational judgment either way." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +28,7 @@ export default function Home() {
               AI when it helps. Custom software when it matters. Operational judgment either way.
             </p>
             <p className="text-base text-gray-500 leading-relaxed mb-8 max-w-xl">
-              We help operators find where AI can actually save time, where existing tools are enough, and where a workflow is specific enough to deserve software the company owns.
+              I help owners figure out where AI is actually useful: the work Claude or Codex can improve today, the handoffs that can be automated, and the workflows specific enough to deserve custom software the company owns.
             </p>
             <div className="flex gap-3 flex-wrap">
               <Link href="/contact" className="bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-700 transition-colors">
@@ -39,8 +39,24 @@ export default function Home() {
               </a>
             </div>
             <p className="text-sm text-gray-400 mt-6">
-              Built by Matt Livingston, former VP of Product. 15 years in software.
+              No slide decks. No long onboarding. Usually one real conversation and we&apos;re off to the races.
             </p>
+          </section>
+
+          {/* POINT OF VIEW */}
+          <section className="px-8 pb-14 max-w-5xl">
+            <div className="border border-gray-200 rounded-2xl p-6 md:p-8 bg-gray-50">
+              <div className="max-w-3xl">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">The starting point</p>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">Usually an owner has a hunch that something should be done with AI.</h2>
+                <p className="text-base text-gray-600 leading-relaxed mb-4">
+                  That is a good starting point. The useful question is not &ldquo;can tech do this?&rdquo; It is &ldquo;is this the biggest win right now?&rdquo;
+                </p>
+                <p className="text-base text-gray-600 leading-relaxed">
+                  The answer might be teaching the team to use existing AI tools better, connecting two systems, or building a small internal app around the work still living in spreadsheets, portals, inboxes, texts, and one person&apos;s memory.
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* CAPABILITY STRIP */}
@@ -51,12 +67,12 @@ export default function Home() {
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">AI workflow review</p>
                 <h3 className="text-base font-bold text-gray-900 mb-2">Find where AI belongs.</h3>
                 <p className="text-sm text-gray-500 leading-snug">
-                  Find where employees can use existing AI tools better, and where they should not.
+                  Help employees use Claude, Codex, or the tools they already have better. Just as important: call out the places AI should not touch.
                 </p>
               </div>
               <div className="border border-gray-200 rounded-2xl p-6">
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Automations between systems</p>
-                <h3 className="text-base font-bold text-gray-900 mb-2">Automations that move work between broken systems.</h3>
+                <h3 className="text-base font-bold text-gray-900 mb-2">Stop paying people to copy and chase.</h3>
                 <p className="text-sm text-gray-500 leading-snug">
                   Move data, documents, updates, and decisions between tools without copy-paste.
                 </p>
@@ -65,7 +81,7 @@ export default function Home() {
                 <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Custom owned software</p>
                 <h3 className="text-base font-bold text-gray-900 mb-2">Build what is too specific to rent.</h3>
                 <p className="text-sm text-gray-500 leading-snug">
-                  Build the workflows that are too specific or too important to leave in spreadsheets, portals, or memory.
+                  Build the workflows that are too specific or too important to leave in spreadsheets, bad portals, inboxes, or memory.
                 </p>
               </div>
             </div>
@@ -80,9 +96,9 @@ export default function Home() {
                 className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
               >
                 <p className="text-sm font-semibold text-indigo-600 mb-2">Searchers and acquisition-backed SMBs</p>
-                <h2 className="text-lg font-bold text-gray-900 mb-2">The practical AI question in the 100-day plan.</h2>
+                <h2 className="text-lg font-bold text-gray-900 mb-2">A practical AI pass for the 100-day plan.</h2>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  Figure out what AI can handle, what existing tools can handle, and what needs a workflow system of its own.
+                  Find the workflows where AI is useful now, where the team just needs better habits, and where custom software is worth building.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">See how it works &rarr;</span>
               </Link>
@@ -93,7 +109,7 @@ export default function Home() {
                 <p className="text-sm font-semibold text-indigo-600 mb-2">Service businesses</p>
                 <h2 className="text-lg font-bold text-gray-900 mb-2">Office and field workflows that still run on handoffs.</h2>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  HVAC, landscaping, cleaning, trades, and field-service teams where work gets copied, chased, retyped, or remembered.
+                  HVAC, landscaping, cleaning, trades, and field-service teams where work gets copied, chased, retyped, and remembered by the person who cannot go on vacation.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">See examples &rarr;</span>
               </Link>
@@ -105,9 +121,9 @@ export default function Home() {
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Where this fits</p>
             <div className="border border-gray-200 rounded-2xl p-6 md:p-8 bg-gray-50">
               <div className="max-w-3xl">
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">The best first projects are usually hiding in plain sight.</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">The best first projects are weirdly ordinary.</h2>
                 <p className="text-base text-gray-600 leading-relaxed mb-5">
-                  Rebate paperwork, field handoffs, customer intake, spreadsheet reconciliation, status chasing, exception queues, manager-only memory. The first question is not always &ldquo;what should we build?&rdquo; It is &ldquo;where should AI, automation, or software actually help?&rdquo;
+                  Rebate paperwork, field handoffs, customer intake, spreadsheet reconciliation, estimate follow-up, permits, warranty packets, status chasing, exception queues, manager-only memory. The first question is not &ldquo;what should we build?&rdquo; It is &ldquo;where is the work leaking time?&rdquo;
                 </p>
                 <Link href="/workflow-examples" className="text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">
                   See workflow examples &rarr;
@@ -128,7 +144,7 @@ export default function Home() {
                 <p className="text-sm font-semibold text-indigo-600 mb-2">HVAC contractor</p>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Rebate program filings: 8 hours a week reclaimed.</h3>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  A custom hosted web app that turns one paste of a job number into a print-ready double-sided rebate filing. Application, classifier, browser automation, and PDF generation in one button.
+                  The office manager used to spend hours moving rebate data between bad systems. Now she pastes a job number and gets a mail-ready packet.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">
                   Read the case study &rarr;
@@ -141,7 +157,7 @@ export default function Home() {
                 <p className="text-sm font-semibold text-indigo-600 mb-2">Commercial landscaping</p>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Field-visit capture: a structured record for every property visit.</h3>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  A mobile-first capture surface for account managers in the field, paired with a central review surface for the office. Built as the structured foundation for translation, communications, proposals, and ticketing.
+                  Account managers needed one clean place to capture what they saw in the field, then turn it into office review, translation, follow-up, and crew tasks.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">
                   Read the case study &rarr;
@@ -195,10 +211,10 @@ export default function Home() {
                   15 years as a technical product manager in software, most recently VP of Product Management. I shipped to engineering teams that ship every day; now I bring that bar to small businesses that don&apos;t have engineering teams of their own.
                 </p>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  Botworks helps SMB operators figure out where AI and custom software can actually improve the business. We start with one workflow where the pain is obvious, choose the simplest useful fix, and use that first win to uncover the next one.
+                  I was searching in Miami and realized my skills were probably a better fit for an agency: sitting with owners, finding the operational mess, and turning the right piece of it into something that works.
                 </p>
                 <p className="text-base text-gray-600 leading-relaxed mt-2">
-                  Over time, the business gets practical AI habits, useful automations, and owned software around the places where people used to copy, chase, translate, retype, reconcile, and remember. No hidden fees. No hostage software.
+                  If it is custom software, the client owns all of it. I am also building the handoff so employees and LLM agents can keep running it if we ever part ways. No hidden fees. No hostage software.
                 </p>
               </div>
             </div>
@@ -209,7 +225,7 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automation, custom software, or nothing at all.
+                Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automation, custom software, or nothing at all. First few months of this, so pricing is gentle.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">
