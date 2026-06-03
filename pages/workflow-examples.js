@@ -48,7 +48,7 @@ export default function WorkflowExamples() {
         <link rel="canonical" href="https://botworksagency.com/workflow-examples" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen paper-grid">
         <Nav />
         <main className="max-w-5xl px-8 py-12">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Workflow examples</p>

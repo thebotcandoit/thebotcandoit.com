@@ -42,7 +42,7 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="min-h-screen paper-grid flex flex-col">
         <Nav />
         <main className="flex-1 px-8 py-16 max-w-xl">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-3">

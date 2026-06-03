@@ -37,7 +37,7 @@ export default function ForServiceBusinesses() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen paper-grid">
         <Nav />
         <main className="max-w-5xl px-8 py-12">
           <section className="max-w-3xl mb-14">
