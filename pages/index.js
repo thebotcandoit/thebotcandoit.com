@@ -63,9 +63,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Botworks Agency &mdash; Practical AI and workflow systems for SMBs</title>
-        <meta name="description" content="Practical AI and custom workflow systems for SMB owners. No slide decks, no long onboarding, and no hostage software." />
-        <meta property="og:title" content="Botworks Agency — Practical AI and workflow systems for SMBs" />
+        <title>Botworks Agency &mdash; Practical AI and custom workflows for SMBs</title>
+        <meta name="description" content="Practical AI and custom workflows for SMB owners. No slide decks, no long onboarding, and no hostage software." />
+        <meta property="og:title" content="Botworks Agency — Practical AI and custom workflows for SMBs" />
         <meta property="og:description" content="AI when it helps. Custom software when it matters. Operational judgment either way." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -79,10 +79,10 @@ export default function Home() {
             <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1.02fr)_420px] gap-10 lg:gap-14 items-center">
               <div className="animate-rise min-w-0 max-w-[20rem] sm:max-w-none">
                 <p className="mb-5 inline-flex max-w-full rounded-full border border-[#ded6c7] bg-[#fffaf0]/70 px-3 py-1 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#626b7a]">
-                  Built from the mess, not the pitch deck
+                  Built from within the mess
                 </p>
                 <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[1.03] sm:leading-[0.94] mb-6">
-                  Practical AI and custom workflow systems for SMBs{' '}
+                  Practical AI and custom workflows for SMBs{' '}
                   <span className="text-[#5145f5]">with messy operations.</span>
                 </h1>
                 <p className="font-display max-w-[20rem] sm:max-w-2xl text-[1.2rem] sm:text-2xl text-[#12131a] leading-snug mb-5">
@@ -134,10 +134,10 @@ export default function Home() {
                   Help employees use Claude, Codex, or the tools they already have better. Just as important: call out the places AI should not touch.
                 </p>
               </div>
-              <div className="lift hairline-card rounded-lg bg-[#12131a] p-6 text-white">
+              <div className="lift hairline-card rounded-lg bg-[#fffaf0] p-6">
                 <p className="text-xs font-semibold text-[#f2b84b] uppercase tracking-[0.18em] mb-3">Automations between systems</p>
-                <h3 className="font-display text-lg font-bold text-white mb-2">Stop paying people to copy and chase.</h3>
-                <p className="text-sm text-white/58 leading-snug">
+                <h3 className="font-display text-lg font-bold text-[#12131a] mb-2">Stop paying people to copy and chase.</h3>
+                <p className="text-sm text-[#626b7a] leading-snug">
                   Move data, documents, updates, and decisions between tools without copy-paste.
                 </p>
               </div>
