@@ -5,7 +5,7 @@
 
 ## What this is
 
-Botworks Agency marketing/portfolio site (rebranded from thebotcandoit; URL retained). Lead with custom operations software for SMBs with messy workflows. Core content architecture: homepage, how-we-work, workflow examples, audience pages, case studies, and contact.
+Botworks Agency marketing/portfolio site (rebranded from thebotcandoit; URL retained). Lead with practical AI and custom workflow systems for SMBs with messy operations. Core content architecture: homepage, how-we-work, workflow examples, audience pages, case studies, and contact.
 
 Vault scope: `Brain_a_17mar26/Botworks Platform/project-state.md` → "Site and infrastructure."
 

@@ -8,9 +8,9 @@ export default function Work() {
     <>
       <Head>
         <title>Work &mdash; Botworks Agency</title>
-        <meta name="description" content="Case studies from custom operations software built for SMBs with messy workflows. Each project started with a real operational bottleneck." />
+        <meta name="description" content="Case studies from practical AI, automation, and custom workflow systems built for SMBs with messy operations." />
         <meta property="og:title" content="Work — Botworks Agency" />
-        <meta property="og:description" content="Custom operations software case studies for SMBs with messy workflows." />
+        <meta property="og:description" content="Practical AI, automation, and custom workflow case studies for SMBs with messy operations." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -61,9 +61,9 @@ export default function Work() {
                 className="border rounded-2xl p-6 bg-white transition-all border-gray-200 hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50 cursor-pointer block"
               >
                 <p className="text-sm font-semibold text-indigo-600 mb-2">Interior design studio</p>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Real-estate research toolkit: three tools, one workflow.</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">AI-assisted research: better prep without a big custom app.</h3>
                 <p className="text-sm text-gray-500 leading-snug mb-4">
-                  Three lightweight tools that compress a designer&apos;s pre-pitch homework &mdash; reference photos, listing-price sanity checks, neighborhood comps &mdash; from hours to minutes.
+                  Practical AI habits and lightweight tools that compress a designer&apos;s pre-pitch homework &mdash; reference photos, listing-price sanity checks, neighborhood comps &mdash; from hours to minutes.
                 </p>
                 <span className="text-sm font-semibold text-indigo-600">
                   Read the case study &rarr;

@@ -1,6 +1,6 @@
 # Botworks Agency
 
-Custom operations software for SMBs with messy workflows.
+Practical AI and custom workflow systems for SMBs with messy operations.
 
 ## Stack
 - Next.js 14

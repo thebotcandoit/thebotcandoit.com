@@ -38,7 +38,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Get in touch &mdash; Botworks Agency</title>
-        <meta name="description" content="Tell me about a messy workflow in your business. I'll let you know whether custom operations software can make it cleaner, and what it would take to ship." />
+        <meta name="description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -49,7 +49,7 @@ export default function Contact() {
             Let&apos;s talk about your workflow.
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-10">
-            Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll let you know whether custom software can make it cleaner &mdash; and what it would take to ship.
+            Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automation, custom software, or nothing at all.
           </p>
 
           {status === 'success' ? (
@@ -93,7 +93,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  What&apos;s the workflow or task you&apos;d like to improve?
+                  What&apos;s the workflow, task, or AI question you&apos;d like to improve?
                 </label>
                 <textarea
                   id="message"

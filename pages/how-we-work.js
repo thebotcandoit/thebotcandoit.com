@@ -8,7 +8,7 @@ const steps = [
     eyebrow: 'Step 1',
     title: 'Start where the pain is sharpest.',
     body:
-      'We begin with one workflow that is already costing the business time, trust, or visibility. Usually it is the place where someone copies between systems, chases updates, translates context, reconciles records, or remembers how the work is supposed to happen.',
+      'We begin with one workflow that is already costing the business time, trust, or visibility. Then we decide what kind of help fits: better AI use, an automation, a configured tool, custom software, or no build at all.',
   },
   {
     eyebrow: 'Step 2',
@@ -44,12 +44,12 @@ export default function HowWeWork() {
         <title>How we work &mdash; Botworks Agency</title>
         <meta
           name="description"
-          content="How Botworks turns one painful SMB workflow into durable custom operations software, then keeps finding the next operational bottleneck."
+          content="How Botworks helps SMB operators decide where AI, automation, or custom workflow software actually belongs."
         />
         <meta property="og:title" content="How we work — Botworks Agency" />
         <meta
           property="og:description"
-          content="Start with one painful workflow, ship quickly, maintain and document it, then use the first win to find the next bottleneck."
+          content="Start with one painful workflow, decide what not to build, ship the useful fix, and use the first win to find the next bottleneck."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -60,10 +60,10 @@ export default function HowWeWork() {
           <section className="max-w-3xl mb-14">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">How we work</p>
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
-              One painful workflow becomes the first durable system.
+              One painful workflow becomes the first useful fix.
             </h1>
             <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
-              Botworks is built for SMBs where the work still depends on people moving information between messy systems. We start small, ship quickly, keep the system running, and use the first win to uncover the next operational bottleneck.
+              Botworks is built for SMBs where the work still depends on people moving information between messy systems. We start small, decide whether AI or software should help, ship quickly, and use the first win to uncover the next operational bottleneck.
             </p>
           </section>
 
@@ -75,6 +75,14 @@ export default function HowWeWork() {
                 <p className="text-sm text-gray-500 leading-relaxed">{step.body}</p>
               </div>
             ))}
+          </section>
+
+          <section className="border border-gray-200 rounded-2xl p-8 mb-16 bg-white">
+            <p className="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Judgment first</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Not every AI opportunity needs custom software.</h2>
+            <p className="text-base text-gray-600 leading-relaxed">
+              Many teams just need better ways to use ChatGPT, Claude, or the tools they already pay for. Other workflows need a simple automation. The recurring, important, company-specific work may deserve owned software. The first job is telling those apart.
+            </p>
           </section>
 
           <section className="border border-gray-200 rounded-2xl p-8 mb-16 bg-gray-50">

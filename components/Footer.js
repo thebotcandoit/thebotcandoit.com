@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-xs text-gray-400 mt-6">
-        Custom operations software, built to be owned by the business.
+        AI when it helps. Custom software when it matters. Operational judgment either way.
       </p>
     </footer>
   )

@@ -24,12 +24,12 @@ export default function ForServiceBusinesses() {
   return (
     <>
       <Head>
-        <title>Custom operations software for service businesses &mdash; Botworks Agency</title>
+        <title>Practical AI for service businesses &mdash; Botworks Agency</title>
         <meta
           name="description"
-          content="Custom operations software for HVAC, landscaping, cleaning, trades, and field-service SMBs with messy workflows."
+          content="Practical AI, automation, and custom workflow systems for HVAC, landscaping, cleaning, trades, and field-service SMBs with messy operations."
         />
-        <meta property="og:title" content="Custom operations software for service businesses — Botworks Agency" />
+        <meta property="og:title" content="Practical AI for service businesses — Botworks Agency" />
         <meta
           property="og:description"
           content="For service businesses where office and field work still depends on copying, chasing, retyping, and remembering."
@@ -43,10 +43,10 @@ export default function ForServiceBusinesses() {
           <section className="max-w-3xl mb-14">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">For service businesses</p>
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
-              Custom operations software for service businesses with messy workflows.
+              Practical AI and workflow systems for service businesses with messy operations.
             </h1>
             <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
-              Botworks builds internal workflow systems for companies where the office and field still depend on people copying, chasing, retyping, translating, and remembering what happens next.
+              Botworks helps service operators decide where AI can save time, where automation can remove handoffs, and where custom software should replace the work still living in memory.
             </p>
           </section>
 
@@ -97,7 +97,7 @@ export default function ForServiceBusinesses() {
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">How it starts</p>
             <h2 className="text-2xl font-bold text-gray-900 mb-3">One workflow proves the relationship.</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              The first build should be small enough to ship quickly and important enough that the team notices when it works. From there, the next bottleneck is easier to see: another handoff, another portal, another spreadsheet, another place where the business depends on one person remembering the system.
+              The first fix should be small enough to ship quickly and important enough that the team notices when it works. It may be an AI workflow, an automation, or a small internal app. From there, the next bottleneck is easier to see: another handoff, another portal, another spreadsheet, another place where the business depends on one person remembering the system.
             </p>
           </section>
 
@@ -105,7 +105,7 @@ export default function ForServiceBusinesses() {
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-white mb-2">Know where the work gets stuck?</h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-lg">
-                Tell me which workflow eats time in the office or field. I&apos;ll tell you what a first build could look like.
+                Tell me which workflow eats time in the office or field. I&apos;ll help sort whether AI, automation, or a first build is the right move.
               </p>
             </div>
             <Link href="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-xl text-sm font-semibold whitespace-nowrap hover:bg-gray-100 transition-colors">

@@ -77,7 +77,7 @@ export default function HvacRebateAutomation() {
               Botworks shipped a hosted internal app at a company subdomain. The office manager signs in, pastes a job number, reviews the job details, and clicks one button. The system classifies the job, fills the rebate portal, submits the filing, renders the paperwork, stores the PDF under a human-readable name, and opens the packet for print.
             </p>
             <p className="text-base text-gray-600 leading-relaxed mt-4">
-              The first version was narrow on purpose: make the weekly rebate workflow reliable before expanding into the next office problem. That first win gives the owner proof that custom operations software can fit the business instead of forcing the business to fit another tool.
+              The first version was narrow on purpose: make the weekly rebate workflow reliable before expanding into the next office problem. That first win gives the owner proof that owned workflow software can fit the business instead of forcing the business to fit another tool.
             </p>
           </section>
 

@@ -41,9 +41,9 @@ export default function WorkflowExamples() {
     <>
       <Head>
         <title>Workflow examples &mdash; Botworks Agency</title>
-        <meta name="description" content="Examples of messy SMB workflows Botworks can turn into custom operations software: back-office paperwork, field handoffs, spreadsheets, portals, and follow-up queues." />
+        <meta name="description" content="Examples of messy SMB workflows where practical AI, automation, or custom software can help: back-office paperwork, field handoffs, spreadsheets, portals, and follow-up queues." />
         <meta property="og:title" content="Workflow examples — Botworks Agency" />
-        <meta property="og:description" content="Examples of messy SMB workflows that can become durable custom operations software." />
+        <meta property="og:description" content="Examples of messy SMB workflows where practical AI, automation, or custom software can help." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://botworksagency.com/workflow-examples" />
         <link rel="icon" href="/favicon.ico" />
@@ -56,7 +56,7 @@ export default function WorkflowExamples() {
             The best first project is usually the workflow everyone already complains about.
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-12 max-w-2xl">
-            Botworks is a fit when the work is specific, recurring, and too awkward for generic software. We start with one painful process, ship a working system quickly, then keep looking for the next bottleneck.
+            Botworks is a fit when the work is specific, recurring, and too awkward for generic software. We start with one painful process, decide whether AI, automation, or custom software should help, then keep looking for the next bottleneck.
           </p>
 
           <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14">
