@@ -4,37 +4,39 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 function WorkflowWorkbench() {
-  const runs = [
-    ['Owner hunch', 'AI useful here?', 'reviewing'],
-    ['Bad portal', 'Job #52065 packet', 'ready'],
-    ['Field visit', 'Spanish crew task', 'queued'],
+  const steps = [
+    ['01', 'Discovery conversation', 'Map the workflow with the owner and the person doing the work.'],
+    ['02', 'Data probes + workflow model', 'Check the systems, APIs, files, forms, and messy edge cases.'],
+    ['03', 'Build the useful fix', 'Ship the smallest durable AI workflow, automation, or owned app.'],
+    ['04', 'Field / office use', 'Technicians, office staff, or managers run it while Botworks monitors it.'],
   ]
 
   return (
     <div className="animate-rise animate-delay-1 hairline-card min-w-0 w-full max-w-[20rem] sm:max-w-full overflow-hidden rounded-lg bg-[#12131a] p-4 text-white">
-      <div className="mb-4 flex items-center justify-between">
+      <div className="mb-4 flex items-center justify-between gap-4">
         <div>
-          <p className="font-display text-sm font-semibold">Botworks workbench</p>
-          <p className="text-xs text-white/45">messy workflow → useful fix</p>
+          <p className="font-display text-sm font-semibold">How a project starts</p>
+          <p className="text-xs text-white/45">conversation → proof → working system</p>
         </div>
         <div className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-white/65">
           <span className="h-1.5 w-1.5 rounded-full bg-[#2f9e73]" />
-          live
+          real work
         </div>
       </div>
 
-      <div className="space-y-2.5">
-        {runs.map(([from, to, status]) => (
-          <div key={from} className="rounded-lg border border-white/10 bg-white/[0.04] p-3">
-            <div className="mb-2 flex items-center justify-between gap-3 text-[11px] uppercase tracking-[0.18em] text-white/38">
-              <span className="truncate">{from}</span>
-              <span className="hidden shrink-0 text-[#f2b84b] sm:inline">{status}</span>
-            </div>
-            <div className="flex min-w-0 items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[#2f9e73]" />
-              <div className="handoff-line h-px min-w-0 flex-1 bg-white/15" />
-              <div className="max-w-[44%] truncate rounded-md bg-[#f7f3ea] px-2.5 py-1 font-display text-xs font-semibold text-[#12131a]">
-                {to}
+      <div className="space-y-2">
+        {steps.map(([number, title, body], index) => (
+          <div key={number} className="relative rounded-lg border border-white/10 bg-white/[0.04] p-3">
+            {index < steps.length - 1 && (
+              <div className="absolute left-[1.45rem] top-10 h-[calc(100%-0.25rem)] w-px bg-white/10" />
+            )}
+            <div className="flex gap-3">
+              <div className="relative z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f7f3ea] font-display text-xs font-bold text-[#12131a]">
+                {number}
+              </div>
+              <div className="min-w-0">
+                <p className="font-display text-sm font-semibold text-white">{title}</p>
+                <p className="mt-1 text-xs leading-snug text-white/48">{body}</p>
               </div>
             </div>
           </div>
@@ -43,16 +45,16 @@ function WorkflowWorkbench() {
 
       <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[11px]">
         <div className="rounded-md bg-white/[0.06] px-2 py-2">
-          <p className="font-display text-[#2f9e73]">AI fits</p>
-          <p className="mt-0.5 text-white/38">teach/use</p>
+          <p className="font-display text-[#2f9e73]">Review</p>
+          <p className="mt-0.5 text-white/38">AI or not</p>
         </div>
         <div className="rounded-md bg-white/[0.06] px-2 py-2">
-          <p className="font-display text-[#f2b84b]">Automate</p>
-          <p className="mt-0.5 text-white/38">connect</p>
+          <p className="font-display text-[#f2b84b]">Build</p>
+          <p className="mt-0.5 text-white/38">small first</p>
         </div>
         <div className="rounded-md bg-white/[0.06] px-2 py-2">
-          <p className="font-display text-white">Build</p>
-          <p className="mt-0.5 text-white/38">own it</p>
+          <p className="font-display text-white">Run</p>
+          <p className="mt-0.5 text-white/38">monitor</p>
         </div>
       </div>
     </div>
@@ -75,20 +77,20 @@ export default function Home() {
         <main>
 
           {/* HERO */}
-          <section className="max-w-6xl overflow-hidden px-6 sm:px-8 pt-16 pb-14">
+          <section className="max-w-6xl overflow-hidden px-6 sm:px-8 pt-10 sm:pt-12 pb-10">
             <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1.02fr)_420px] gap-10 lg:gap-14 items-center">
               <div className="animate-rise min-w-0 max-w-[20rem] sm:max-w-none">
-                <p className="mb-5 inline-flex max-w-full rounded-full border border-[#ded6c7] bg-[#fffaf0]/70 px-3 py-1 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#626b7a]">
+                <p className="mb-4 inline-flex max-w-full rounded-full border border-[#ded6c7] bg-[#fffaf0]/70 px-3 py-1 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#626b7a]">
                   Built from within the mess
                 </p>
-                <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[1.03] sm:leading-[0.94] mb-6">
+                <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2rem] sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#12131a] leading-[1.03] sm:leading-[0.96] mb-5">
                   Practical AI and custom workflows for SMBs{' '}
                   <span className="text-[#2f9e73]">with messy operations.</span>
                 </h1>
-                <p className="font-display max-w-[20rem] sm:max-w-2xl text-[1.2rem] sm:text-2xl text-[#12131a] leading-snug mb-5">
+                <p className="font-display max-w-[20rem] sm:max-w-2xl text-[1.2rem] sm:text-xl text-[#12131a] leading-snug mb-4">
                   AI when it helps. Custom software when it matters. Operational judgment either way.
                 </p>
-                <p className="max-w-[20rem] sm:max-w-xl text-base text-[#626b7a] leading-relaxed mb-8">
+                <p className="max-w-[20rem] sm:max-w-xl text-base text-[#626b7a] leading-relaxed mb-6">
                   I help owners figure out where AI is actually useful: the work Claude or Codex can improve today, the handoffs that can be automated, and the workflows specific enough to deserve custom software the company owns.
                 </p>
                 <div className="flex gap-3 flex-wrap">
