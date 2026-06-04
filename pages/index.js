@@ -31,7 +31,7 @@ function WorkflowWorkbench() {
               <span className="hidden shrink-0 text-[#f2b84b] sm:inline">{status}</span>
             </div>
             <div className="flex min-w-0 items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[#5145f5]" />
+              <div className="h-2 w-2 rounded-full bg-[#2f9e73]" />
               <div className="handoff-line h-px min-w-0 flex-1 bg-white/15" />
               <div className="max-w-[44%] truncate rounded-md bg-[#f7f3ea] px-2.5 py-1 font-display text-xs font-semibold text-[#12131a]">
                 {to}
@@ -83,7 +83,7 @@ export default function Home() {
                 </p>
                 <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[1.03] sm:leading-[0.94] mb-6">
                   Practical AI and custom workflows for SMBs{' '}
-                  <span className="text-[#5145f5]">with messy operations.</span>
+                  <span className="text-[#2f9e73]">with messy operations.</span>
                 </h1>
                 <p className="font-display max-w-[20rem] sm:max-w-2xl text-[1.2rem] sm:text-2xl text-[#12131a] leading-snug mb-5">
                   AI when it helps. Custom software when it matters. Operational judgment either way.
@@ -92,10 +92,10 @@ export default function Home() {
                   I help owners figure out where AI is actually useful: the work Claude or Codex can improve today, the handoffs that can be automated, and the workflows specific enough to deserve custom software the company owns.
                 </p>
                 <div className="flex gap-3 flex-wrap">
-                  <Link href="/contact" className="bg-[#12131a] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#5145f5] transition-colors">
+                  <Link href="/contact" className="bg-[#12131a] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors">
                     Let&apos;s talk
                   </Link>
-                  <a href="#case-studies" className="border border-[#ded6c7] bg-[#fffaf0]/70 text-[#12131a] px-5 py-2.5 rounded-lg text-sm font-semibold hover:border-[#5145f5] hover:text-[#5145f5] transition-colors">
+                  <a href="#case-studies" className="border border-[#ded6c7] bg-[#fffaf0]/70 text-[#12131a] px-5 py-2.5 rounded-lg text-sm font-semibold hover:border-[#2f9e73] hover:text-[#2f9e73] transition-colors">
                     See a case study &rarr;
                   </a>
                 </div>
@@ -128,7 +128,7 @@ export default function Home() {
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">How we help</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="lift hairline-card rounded-lg bg-[#fffaf0] p-6 md:translate-y-4">
-                <p className="text-xs font-semibold text-[#5145f5] uppercase tracking-[0.18em] mb-3">AI workflow review</p>
+                <p className="text-xs font-semibold text-[#2f9e73] uppercase tracking-[0.18em] mb-3">AI workflow review</p>
                 <h3 className="font-display text-lg font-bold text-[#12131a] mb-2">Find where AI belongs.</h3>
                 <p className="text-sm text-[#626b7a] leading-snug">
                   Help employees use Claude, Codex, or the tools they already have better. Just as important: call out the places AI should not touch.
@@ -159,12 +159,12 @@ export default function Home() {
                 href="/for-searchers"
                 className="lift hairline-card rounded-lg p-6 bg-[#fffaf0] cursor-pointer block"
               >
-                <p className="text-sm font-semibold text-[#5145f5] mb-2">Searchers and acquisition-backed SMBs</p>
+                <p className="text-sm font-semibold text-[#2f9e73] mb-2">Searchers and acquisition-backed SMBs</p>
                 <h2 className="font-display text-xl font-bold text-[#12131a] mb-2">A practical AI pass for the 100-day plan.</h2>
                 <p className="text-sm text-[#626b7a] leading-snug mb-4">
                   Find the workflows where AI is useful now, where the team just needs better habits, and where custom software is worth building.
                 </p>
-                <span className="text-sm font-semibold text-[#5145f5]">See how it works &rarr;</span>
+                <span className="text-sm font-semibold text-[#2f9e73]">See how it works &rarr;</span>
               </Link>
               <Link
                 href="/for-service-businesses"
@@ -175,7 +175,7 @@ export default function Home() {
                 <p className="text-sm text-[#626b7a] leading-snug mb-4">
                   HVAC, landscaping, cleaning, trades, and field-service teams where work gets copied, chased, retyped, and remembered by the person who cannot go on vacation.
                 </p>
-                <span className="text-sm font-semibold text-[#5145f5]">See examples &rarr;</span>
+                <span className="text-sm font-semibold text-[#2f9e73]">See examples &rarr;</span>
               </Link>
             </div>
           </section>
@@ -212,12 +212,12 @@ export default function Home() {
                 href="/case-studies/hvac-rebate-automation"
                 className="lift hairline-card rounded-lg p-6 bg-[#fffaf0] cursor-pointer block"
               >
-                <p className="text-sm font-semibold text-[#5145f5] mb-2">HVAC contractor</p>
+                <p className="text-sm font-semibold text-[#2f9e73] mb-2">HVAC contractor</p>
                 <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Rebate program filings: 8 hours a week reclaimed.</h3>
                 <p className="text-sm text-[#626b7a] leading-snug mb-4">
                   The office manager used to spend hours moving rebate data between bad systems. Now she pastes a job number and gets a mail-ready packet.
                 </p>
-                <span className="text-sm font-semibold text-[#5145f5]">
+                <span className="text-sm font-semibold text-[#2f9e73]">
                   Read the case study &rarr;
                 </span>
               </Link>
@@ -230,7 +230,7 @@ export default function Home() {
                 <p className="text-sm text-[#626b7a] leading-snug mb-4">
                   Account managers needed one clean place to capture what they saw in the field, then turn it into office review, translation, follow-up, and crew tasks.
                 </p>
-                <span className="text-sm font-semibold text-[#5145f5]">
+                <span className="text-sm font-semibold text-[#2f9e73]">
                   Read the case study &rarr;
                 </span>
               </Link>
@@ -243,7 +243,7 @@ export default function Home() {
                 <p className="text-sm text-[#626b7a] leading-snug mb-4">
                   Practical AI habits and lightweight tools that compress a designer&apos;s pre-pitch homework &mdash; reference photos, listing-price sanity checks, neighborhood comps &mdash; from hours to minutes.
                 </p>
-                <span className="text-sm font-semibold text-[#5145f5]">
+                <span className="text-sm font-semibold text-[#2f9e73]">
                   Read the case study &rarr;
                 </span>
               </Link>
@@ -257,7 +257,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="hairline-card rounded-lg p-6 bg-[#fffaf0] block">
                 <div className="flex items-center gap-2 mb-2">
-                  <p className="text-sm font-semibold text-[#5145f5]">Chicago HVAC contractor</p>
+                  <p className="text-sm font-semibold text-[#2f9e73]">Chicago HVAC contractor</p>
                   <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#7a4d00] bg-[#f2b84b]/20 border border-[#f2b84b]/50 rounded-full px-2 py-0.5">Upcoming</span>
                 </div>
                 <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Front-office automation: one view of the day&apos;s work.</h3>

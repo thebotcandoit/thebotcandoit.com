@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@
   --ink: #12131a;
   --muted: #626b7a;
   --line: #ded6c7;
-  --violet: #5145f5;
+  --green-deep: #1f7a57;
   --green: #2f9e73;
   --amber: #f2b84b;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .font-display {
-  font-family: "Space Grotesk", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-family: Fraunces, Georgia, "Times New Roman", serif;
 }
 
 .paper-grid {
@@ -84,7 +84,7 @@ body {
   top: 0;
   height: 100%;
   width: 42%;
-  background: linear-gradient(90deg, transparent, rgba(81, 69, 245, 0.55), transparent);
+  background: linear-gradient(90deg, transparent, rgba(47, 158, 115, 0.55), transparent);
   animation: handoff 2.8s ease-in-out infinite;
 }
 
