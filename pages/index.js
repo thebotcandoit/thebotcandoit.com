@@ -12,13 +12,16 @@ I am looking at Botworks Agency: https://botworksagency.com
 
 Botworks says it helps SMB operators figure out where AI is actually useful, where existing tools or better employee workflows are enough, where automations between systems can remove copy/paste work, and where custom owned software is worth building. They emphasize no slide decks, fast working prototypes, operational judgment, monitoring/documentation, and client ownership of code, data, infrastructure, and docs.
 
-Please act as an operator-advisor, not a vendor. Based on my business context:
+Please act as an operator-advisor, not a vendor or generic AI strategist. Keep the answer practical and under 900 words. Do not write a broad "AI transformation" memo. Do not include citations unless you actually browsed current sources.
+
+Based on my business context:
 
 1. What are the 3-5 workflows Botworks should inspect first?
-2. For each one, is the likely answer existing AI tools, automation between systems, custom software, or "do not build yet"?
-3. What questions should I ask Botworks on a first call?
+2. For each workflow, is the likely answer existing AI tools, automation between systems, custom software, or "do not build yet"?
+3. Which one workflow is the best small first project, and why?
 4. What would make this a bad fit?
-5. If we did one small first project, what should it be and why?`
+5. What should I send Botworks before a first call so the conversation can get concrete quickly?
+6. What questions should I ask Botworks on that call?`
 
 function AskAiSection() {
   const [copied, setCopied] = useState(false)
@@ -43,7 +46,7 @@ function AskAiSection() {
               Don&apos;t trust the pitch. <span className="block">Test the fit.</span>
             </h2>
             <p className="text-sm sm:text-base text-white/62 leading-relaxed mb-5">
-              Copy this into ChatGPT, Claude, Gemini, or whatever you already use. Add a few details about your business and ask it where Botworks would help, where existing tools are enough, and where building would be a mistake.
+              Copy this into ChatGPT, Claude, Gemini, or whatever you already use. Add a few details about your business and turn the vague &ldquo;should we do something with AI?&rdquo; hunch into a concrete first-call brief.
             </p>
             <button
               type="button"
