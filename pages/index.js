@@ -1,7 +1,74 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState } from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+
+const aiSecondOpinionPrompt = `I run or help operate this business:
+
+[Describe the company, team size, customers, and the operational workflow that feels messy.]
+
+I am looking at Botworks Agency: https://botworksagency.com
+
+Botworks says it helps SMB operators figure out where AI is actually useful, where existing tools or better employee workflows are enough, where automations between systems can remove copy/paste work, and where custom owned software is worth building. They emphasize no slide decks, fast working prototypes, operational judgment, monitoring/documentation, and client ownership of code, data, infrastructure, and docs.
+
+Please act as an operator-advisor, not a vendor. Based on my business context:
+
+1. What are the 3-5 workflows Botworks should inspect first?
+2. For each one, is the likely answer existing AI tools, automation between systems, custom software, or "do not build yet"?
+3. What questions should I ask Botworks on a first call?
+4. What would make this a bad fit?
+5. If we did one small first project, what should it be and why?`
+
+function AskAiSection() {
+  const [copied, setCopied] = useState(false)
+
+  async function copyPrompt() {
+    try {
+      await navigator.clipboard.writeText(aiSecondOpinionPrompt)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 2200)
+    } catch {
+      setCopied(false)
+    }
+  }
+
+  return (
+    <section className="px-6 sm:px-8 pb-14 max-w-[20rem] sm:max-w-5xl">
+      <div className="grid min-w-0 overflow-hidden grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-5 rounded-lg bg-[#12131a] p-6 md:p-8 text-white">
+        <div className="min-w-0">
+          <div>
+            <p className="text-xs font-semibold text-[#f2b84b] uppercase tracking-[0.18em] mb-4">Ask your own AI</p>
+            <h2 className="font-display text-2xl sm:text-3xl leading-tight font-bold text-white mb-3">
+              Don&apos;t trust the pitch. <span className="block">Test the fit.</span>
+            </h2>
+            <p className="text-sm sm:text-base text-white/62 leading-relaxed mb-5">
+              Copy this into ChatGPT, Claude, Gemini, or whatever you already use. Add a few details about your business and ask it where Botworks would help, where existing tools are enough, and where building would be a mistake.
+            </p>
+            <button
+              type="button"
+              onClick={copyPrompt}
+              className="rounded-lg bg-[#f2b84b] px-5 py-2.5 text-sm font-semibold text-[#12131a] transition-colors hover:bg-white"
+            >
+              {copied ? 'Prompt copied' : 'Copy the AI prompt'}
+            </button>
+          </div>
+        </div>
+        <div className="min-w-0 rounded-lg border border-white/10 bg-white/[0.05] p-4">
+          <div className="mb-3 flex items-center justify-between gap-3">
+            <p className="font-display text-sm font-semibold text-white">Second-opinion prompt</p>
+            <span className="rounded-full border border-white/10 bg-white/[0.06] px-2.5 py-1 text-[11px] text-white/50">paste into any LLM</span>
+          </div>
+          <textarea
+            readOnly
+            value={aiSecondOpinionPrompt}
+            className="h-80 w-full resize-none rounded-md border-0 bg-[#0d0e13] p-4 font-mono text-xs leading-relaxed text-white/58 outline-none"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
 
 function WorkflowWorkbench() {
   const steps = [
@@ -124,6 +191,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <AskAiSection />
 
           {/* CAPABILITY STRIP */}
           <section className="px-6 sm:px-8 pb-14 max-w-5xl">
