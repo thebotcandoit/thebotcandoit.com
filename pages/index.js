@@ -19,9 +19,7 @@ Based on my business context:
 1. What are the 3-5 workflows Botworks should inspect first?
 2. For each workflow, is the likely answer existing AI tools, automation between systems, custom software, or "do not build yet"?
 3. Which one workflow is the best small first project, and why?
-4. What would make this a bad fit?
-5. What should I send Botworks before a first call so the conversation can get concrete quickly?
-6. What questions should I ask Botworks on that call?`
+4. What would make this a bad fit?`
 
 function AskAiSection() {
   const [copied, setCopied] = useState(false)
