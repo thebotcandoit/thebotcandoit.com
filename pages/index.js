@@ -96,14 +96,14 @@ export default function Home() {
               </div>
               <div className="animate-rise animate-delay-1 min-w-0 max-w-[20rem] sm:max-w-2xl">
                 <p className="font-display text-2xl sm:text-3xl text-[#12131a] leading-tight mb-6">
-                  Practical AI and small custom systems for the workflows your team already complains about.
+                  Practical AI and custom systems for messy workflows.
                 </p>
                 <div className="space-y-5 text-base sm:text-lg text-[#626b7a] leading-relaxed mb-8">
                   <p>
-                    I help owners sort the hunch from the hype: where existing AI tools are enough, where two systems should simply talk to each other, and where a small piece of owned software is worth building.
+                    I help owners sort the hype: from simple out-of-the-box AI to creating and deploying durable custom software for complex workflows.
                   </p>
                   <p>
-                    No slide decks. No long onboarding. Usually one real conversation and we&apos;re off to the races.
+                    No slide decks. No lock-ins. No long onboardings. Usually one real conversation and we&apos;re off to the races.
                   </p>
                 </div>
                 <div className="flex gap-3 flex-wrap">
