@@ -35,7 +35,7 @@ function AskAiSection() {
   }
 
   return (
-    <section className="px-6 sm:px-8 pb-14 max-w-[20rem] sm:max-w-5xl">
+    <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
       <div className="grid min-w-0 overflow-hidden grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-5 rounded-lg bg-[#12131a] p-6 md:p-8 text-white">
         <div className="min-w-0">
           <div>
@@ -71,64 +71,6 @@ function AskAiSection() {
   )
 }
 
-function WorkflowWorkbench() {
-  const steps = [
-    ['01', 'Discovery conversation', 'Map the workflow with the owner and the person doing the work.'],
-    ['02', 'Data probes + workflow model', 'Check the systems, APIs, files, forms, and messy edge cases.'],
-    ['03', 'Build the useful fix', 'Ship the smallest durable AI workflow, automation, or owned app.'],
-    ['04', 'Field / office use', 'Technicians, office staff, or managers run it while Botworks monitors it.'],
-  ]
-
-  return (
-    <div className="animate-rise animate-delay-1 hairline-card min-w-0 w-full max-w-[20rem] sm:max-w-full overflow-hidden rounded-lg bg-[#12131a] p-4 text-white">
-      <div className="mb-4 flex items-center justify-between gap-4">
-        <div>
-          <p className="font-display text-sm font-semibold">How a project starts</p>
-          <p className="text-xs text-white/45">conversation → proof → working system</p>
-        </div>
-        <div className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-white/65">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#2f9e73]" />
-          real work
-        </div>
-      </div>
-
-      <div className="space-y-2">
-        {steps.map(([number, title, body], index) => (
-          <div key={number} className="relative rounded-lg border border-white/10 bg-white/[0.04] p-3">
-            {index < steps.length - 1 && (
-              <div className="absolute left-[1.45rem] top-10 h-[calc(100%-0.25rem)] w-px bg-white/10" />
-            )}
-            <div className="flex gap-3">
-              <div className="relative z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f7f3ea] font-display text-xs font-bold text-[#12131a]">
-                {number}
-              </div>
-              <div className="min-w-0">
-                <p className="font-display text-sm font-semibold text-white">{title}</p>
-                <p className="mt-1 text-xs leading-snug text-white/48">{body}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[11px]">
-        <div className="rounded-md bg-white/[0.06] px-2 py-2">
-          <p className="font-display text-[#2f9e73]">Review</p>
-          <p className="mt-0.5 text-white/38">AI or not</p>
-        </div>
-        <div className="rounded-md bg-white/[0.06] px-2 py-2">
-          <p className="font-display text-[#f2b84b]">Build</p>
-          <p className="mt-0.5 text-white/38">small first</p>
-        </div>
-        <div className="rounded-md bg-white/[0.06] px-2 py-2">
-          <p className="font-display text-white">Run</p>
-          <p className="mt-0.5 text-white/38">monitor</p>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export default function Home() {
   return (
     <>
@@ -140,54 +82,53 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen paper-grid">
+      <div className="min-h-screen overflow-x-hidden paper-grid">
         <Nav />
         <main>
 
           {/* HERO */}
-          <section className="max-w-6xl overflow-hidden px-6 sm:px-8 pt-10 sm:pt-12 pb-10">
-            <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1.02fr)_420px] gap-10 lg:gap-14 items-center">
+          <section className="mx-auto max-w-6xl overflow-hidden px-6 sm:px-8 pt-16 sm:pt-24 pb-16">
+            <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-20 items-start">
               <div className="animate-rise min-w-0 max-w-[20rem] sm:max-w-none">
-                <p className="mb-4 inline-flex max-w-full rounded-full border border-[#ded6c7] bg-[#fffaf0]/70 px-3 py-1 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#626b7a]">
-                  Built from within the mess
-                </p>
-                <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2rem] sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#12131a] leading-[1.03] sm:leading-[0.96] mb-5">
-                  Practical AI and custom workflows for SMBs{' '}
-                  <span className="text-[#2f9e73]">with messy operations.</span>
+                <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2.7rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[0.95] mb-6">
+                  Bot<span className="text-[#2f9e73]">works</span>
                 </h1>
-                <p className="font-display max-w-[20rem] sm:max-w-2xl text-[1.2rem] sm:text-xl text-[#12131a] leading-snug mb-4">
-                  AI when it helps. Custom software when it matters. Operational judgment either way.
+              </div>
+              <div className="animate-rise animate-delay-1 min-w-0 max-w-[20rem] sm:max-w-2xl">
+                <p className="font-display text-2xl sm:text-3xl text-[#12131a] leading-tight mb-6">
+                  Practical AI and small custom systems for the workflows your team already complains about.
                 </p>
-                <p className="max-w-[20rem] sm:max-w-xl text-base text-[#626b7a] leading-relaxed mb-6">
-                  I help owners figure out where AI is actually useful: the work Claude or Codex can improve today, the handoffs that can be automated, and the workflows specific enough to deserve custom software the company owns.
-                </p>
+                <div className="space-y-5 text-base sm:text-lg text-[#626b7a] leading-relaxed mb-8">
+                  <p>
+                    I help owners sort the hunch from the hype: where existing AI tools are enough, where two systems should simply talk to each other, and where a small piece of owned software is worth building.
+                  </p>
+                  <p>
+                    No slide decks. No long onboarding. Usually one real conversation and we&apos;re off to the races.
+                  </p>
+                </div>
                 <div className="flex gap-3 flex-wrap">
                   <Link href="/contact" className="bg-[#12131a] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors">
                     Let&apos;s talk
                   </Link>
                   <a href="#case-studies" className="border border-[#ded6c7] bg-[#fffaf0]/70 text-[#12131a] px-5 py-2.5 rounded-lg text-sm font-semibold hover:border-[#2f9e73] hover:text-[#2f9e73] transition-colors">
-                    See a case study &rarr;
+                    See the work &rarr;
                   </a>
                 </div>
-                <p className="text-sm text-[#8a8171] mt-6 max-w-lg">
-                  No slide decks. No long onboarding. Usually one real conversation and we&apos;re off to the races.
-                </p>
               </div>
-              <WorkflowWorkbench />
             </div>
           </section>
 
           {/* POINT OF VIEW */}
-          <section className="px-6 sm:px-8 pb-14 max-w-5xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <div className="hairline-card rounded-lg p-6 md:p-8 paper-noise">
               <div className="max-w-3xl">
                 <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">The starting point</p>
-                <h2 className="font-display text-3xl font-bold text-[#12131a] mb-3">Usually an owner has a hunch that something should be done with AI.</h2>
+                <h2 className="font-display text-3xl font-bold text-[#12131a] mb-3">Most owners already know the annoying part.</h2>
                 <p className="text-base text-[#626b7a] leading-relaxed mb-4">
-                  That is a good starting point. The useful question is not &ldquo;can tech do this?&rdquo; It is &ldquo;is this the biggest win right now?&rdquo;
+                  It is the thing that lives in texts, memory, screenshots, bad portals, duplicate spreadsheets, and the office manager&apos;s head.
                 </p>
                 <p className="text-base text-[#626b7a] leading-relaxed">
-                  The answer might be teaching the team to use existing AI tools better, connecting two systems, or building a small internal app around the work still living in spreadsheets, portals, inboxes, texts, and one person&apos;s memory.
+                  The useful question is not &ldquo;can AI do this?&rdquo; It is &ldquo;what should we fix first, and will the team actually use it?&rdquo;
                 </p>
               </div>
             </div>
@@ -196,7 +137,7 @@ export default function Home() {
           <AskAiSection />
 
           {/* CAPABILITY STRIP */}
-          <section className="px-6 sm:px-8 pb-14 max-w-5xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">How we help</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="lift hairline-card rounded-lg bg-[#fffaf0] p-6 md:translate-y-4">
@@ -224,7 +165,7 @@ export default function Home() {
           </section>
 
           {/* AUDIENCES */}
-          <section className="px-6 sm:px-8 pb-14 max-w-5xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">Who this is for</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <Link
@@ -253,7 +194,7 @@ export default function Home() {
           </section>
 
           {/* WORKFLOW EXAMPLES */}
-          <section className="px-6 sm:px-8 pb-14 max-w-5xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">Where this fits</p>
             <div className="rounded-lg p-6 md:p-8 bg-[#12131a] text-white">
               <div className="max-w-3xl">
@@ -276,7 +217,7 @@ export default function Home() {
           </section>
 
           {/* CASE STUDIES */}
-          <section id="case-studies" className="px-6 sm:px-8 pb-14 max-w-5xl">
+          <section id="case-studies" className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-2">Case studies</p>
             <h2 className="font-display text-3xl font-bold text-[#12131a] mb-6">Real work, in production</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -323,7 +264,7 @@ export default function Home() {
           </section>
 
           {/* WHAT'S NEXT */}
-          <section className="px-6 sm:px-8 pb-14 max-w-5xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-2">What&apos;s next</p>
             <h2 className="font-display text-3xl font-bold text-[#12131a] mb-6">In the pipeline</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -341,7 +282,7 @@ export default function Home() {
           </section>
 
           {/* ABOUT */}
-          <section className="px-6 sm:px-8 pb-14 max-w-4xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-4xl">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
                 src="/profil_pic_thebotcandoit_2_march30.jpg"
@@ -364,7 +305,7 @@ export default function Home() {
           </section>
 
           {/* BOTTOM CTA */}
-          <section className="mx-6 sm:mx-8 mb-16 bg-[#12131a] rounded-lg p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] max-w-5xl mb-16 bg-[#12131a] rounded-lg p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h2 className="font-display text-3xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
               <p className="text-white/58 text-sm leading-relaxed max-w-lg">
