@@ -308,8 +308,8 @@ export default function Home() {
           <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] max-w-5xl mb-16 bg-[#12131a] rounded-lg p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h2 className="font-display text-3xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
-              <p className="text-white/58 text-sm leading-relaxed max-w-lg">
-                Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automation, custom software, or nothing at all. First few months of this, so pricing is gentle.
+              <p className="text-white/70 text-sm leading-relaxed max-w-lg">
+                Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automations, or custom software.
               </p>
             </div>
             <Link href="/contact" className="bg-[#f2b84b] text-[#12131a] px-6 py-3 rounded-lg text-sm font-semibold whitespace-nowrap hover:bg-white transition-colors">
