@@ -11,7 +11,9 @@ export default function Work() {
         <meta name="description" content="Case studies from practical AI, automation, and custom workflow systems built for SMBs with messy operations." />
         <meta property="og:title" content="Work — Botworks Agency" />
         <meta property="og:description" content="Practical AI, automation, and custom workflow case studies for SMBs with messy operations." />
+        <meta property="og:url" content="https://botworksagency.com/work" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/work" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">

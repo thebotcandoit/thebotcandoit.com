@@ -51,7 +51,9 @@ export default function HowWeWork() {
           property="og:description"
           content="Start with one painful workflow, decide what not to build, ship the useful fix, and use the first win to find the next bottleneck."
         />
+        <meta property="og:url" content="https://botworksagency.com/how-we-work" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/how-we-work" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">

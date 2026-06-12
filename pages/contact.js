@@ -39,7 +39,11 @@ export default function Contact() {
       <Head>
         <title>Get in touch &mdash; Botworks Agency</title>
         <meta name="description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
+        <meta property="og:title" content="Get in touch — Botworks Agency" />
+        <meta property="og:description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
+        <meta property="og:url" content="https://botworksagency.com/contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/contact" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid flex flex-col">

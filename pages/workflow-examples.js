@@ -44,6 +44,7 @@ export default function WorkflowExamples() {
         <meta name="description" content="Examples of messy SMB workflows where practical AI, automation, or custom software can help: back-office paperwork, field handoffs, spreadsheets, portals, and follow-up queues." />
         <meta property="og:title" content="Workflow examples — Botworks Agency" />
         <meta property="og:description" content="Examples of messy SMB workflows where practical AI, automation, or custom software can help." />
+        <meta property="og:url" content="https://botworksagency.com/workflow-examples" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://botworksagency.com/workflow-examples" />
         <link rel="icon" href="/favicon.ico" />

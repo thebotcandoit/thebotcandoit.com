@@ -79,7 +79,9 @@ export default function Home() {
         <meta name="description" content="Practical AI and custom workflows for SMB owners. No slide decks, no long onboarding, and no hostage software." />
         <meta property="og:title" content="Botworks Agency — Practical AI and custom workflows for SMBs" />
         <meta property="og:description" content="AI when it helps. Custom software when it matters. Operational judgment either way." />
+        <meta property="og:url" content="https://botworksagency.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen overflow-x-hidden paper-grid">

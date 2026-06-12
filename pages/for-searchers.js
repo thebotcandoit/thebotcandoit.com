@@ -39,7 +39,9 @@ export default function ForSearchers() {
           property="og:description"
           content="For searchers and acquisition-backed SMBs that need practical AI judgment and workflow systems, not slide decks."
         />
+        <meta property="og:url" content="https://botworksagency.com/for-searchers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/for-searchers" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">

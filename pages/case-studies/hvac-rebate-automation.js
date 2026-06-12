@@ -11,7 +11,9 @@ export default function HvacRebateAutomation() {
         <meta name="description" content="A family-owned HVAC contractor turned a weekly rebate paperwork drag into a durable workflow system their office manager can run from one job number." />
         <meta property="og:title" content="HVAC rebate automation — Botworks Agency" />
         <meta property="og:description" content="A messy rebate workflow became owned operations software for a family-owned HVAC contractor." />
+        <meta property="og:url" content="https://botworksagency.com/case-studies/hvac-rebate-automation" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/case-studies/hvac-rebate-automation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">

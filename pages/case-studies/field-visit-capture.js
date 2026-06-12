@@ -11,7 +11,9 @@ export default function FieldVisitCapture() {
         <meta name="description" content="A multi-location commercial landscaper turned scattered field notes into a structured operations workflow for account managers and supervisors." />
         <meta property="og:title" content="Field-visit capture — Botworks Agency" />
         <meta property="og:description" content="Scattered field observations became a structured workflow for capture, review, translation, ticketing, and follow-through." />
+        <meta property="og:url" content="https://botworksagency.com/case-studies/field-visit-capture" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/case-studies/field-visit-capture" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">

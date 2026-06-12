@@ -11,7 +11,9 @@ export default function InteriorDesignResearchToolkit() {
         <meta name="description" content="An interior design studio compressed repetitive pre-pitch research with practical AI habits and lightweight tools for photos, valuation context, and neighborhood comps." />
         <meta property="og:title" content="Interior design AI research workflow — Botworks Agency" />
         <meta property="og:description" content="A repetitive research workflow became practical AI guidance plus lightweight tools for an interior design studio." />
+        <meta property="og:url" content="https://botworksagency.com/case-studies/interior-design-research-toolkit" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/case-studies/interior-design-research-toolkit" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">

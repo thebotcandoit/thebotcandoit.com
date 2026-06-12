@@ -34,7 +34,9 @@ export default function ForServiceBusinesses() {
           property="og:description"
           content="For service businesses where office and field work still depends on copying, chasing, retyping, and remembering."
         />
+        <meta property="og:url" content="https://botworksagency.com/for-service-businesses" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://botworksagency.com/for-service-businesses" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen paper-grid">
