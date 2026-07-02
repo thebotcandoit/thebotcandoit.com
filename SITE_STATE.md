@@ -29,7 +29,7 @@ Core line:
 
 Current hero:
 
-`Workflow software your business owns.`
+`Custom workflow software your business owns.`
 
 Current voice:
 
@@ -47,7 +47,6 @@ Avoid the generic AI-site lane: geometric sans headline, violet gradient accents
 Current direction:
 
 - Warm paper/grid background
-- Dark homepage hero with a product/workflow surface on mobile
 - `Fraunces` display font
 - `Inter` body font
 - Operational green accent, not default AI purple
