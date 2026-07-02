@@ -63,11 +63,54 @@ function AskAiSection() {
           <textarea
             readOnly
             value={aiSecondOpinionPrompt}
-            className="h-80 w-full resize-none rounded-md border-0 bg-[#0d0e13] p-4 font-mono text-xs leading-relaxed text-white/58 outline-none"
+            className="h-52 sm:h-80 w-full resize-none rounded-md border-0 bg-[#0d0e13] p-4 font-mono text-xs leading-relaxed text-white/58 outline-none"
           />
         </div>
       </div>
     </section>
+  )
+}
+
+function HeroWorkbench() {
+  const rows = [
+    ['Portal copy/paste', 'owned app', 'live'],
+    ['Field photos', 'review queue', 'ready'],
+    ['Office follow-up', 'crew tasks', 'sent'],
+  ]
+
+  return (
+    <div className="relative mx-auto w-full max-w-md rounded-lg border border-white/10 bg-[#181a22] p-4 shadow-2xl shadow-black/30">
+      <div className="mb-4 flex items-center justify-between gap-3">
+        <div>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#f2b84b]">Botworks surface</p>
+          <p className="mt-1 text-sm font-semibold text-white">Operations handoff</p>
+        </div>
+        <span className="rounded-md border border-[#2f9e73]/40 bg-[#2f9e73]/15 px-2.5 py-1 text-[11px] font-semibold text-[#74d2aa]">owned</span>
+      </div>
+      <div className="space-y-2">
+        {rows.map(([from, to, state]) => (
+          <div key={from} className="grid grid-cols-[1fr_auto] gap-3 rounded-md border border-white/8 bg-white/[0.045] p-3">
+            <div className="min-w-0">
+              <p className="truncate text-xs font-medium text-white">{from}</p>
+              <div className="my-2 h-1.5 overflow-hidden rounded-full bg-white/10">
+                <div className="handoff-line h-full w-full rounded-full bg-[#2f9e73]/45" />
+              </div>
+              <p className="truncate text-xs text-white/52">{to}</p>
+            </div>
+            <div className="flex items-center">
+              <span className="rounded-md bg-[#f2b84b] px-2 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-[#12131a]">{state}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-4 grid grid-cols-3 gap-2">
+        {['code', 'data', 'docs'].map(item => (
+          <div key={item} className="rounded-md border border-white/8 bg-[#0d0e13] px-3 py-2 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-white/60">
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 
@@ -84,39 +127,38 @@ export default function Home() {
         <link rel="canonical" href="https://botworksagency.com/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen overflow-x-hidden paper-grid">
-        <Nav />
+      <div className="min-h-screen overflow-x-hidden bg-[#f7f3ea]">
+        <Nav tone="dark" />
         <main>
 
           {/* HERO */}
-          <section className="mx-auto max-w-6xl overflow-hidden px-6 sm:px-8 pt-16 sm:pt-24 pb-16">
-            <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-20 items-start">
-              <div className="animate-rise min-w-0 max-w-[20rem] sm:max-w-none">
-                <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2.7rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[0.95] mb-6">
-                  Bot<span className="text-[#2f9e73]">works</span>
-                </h1>
+          <section className="relative overflow-hidden bg-[#12131a] text-white">
+            <div className="absolute inset-0 opacity-[0.08] paper-grid" />
+            <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-8 px-6 pb-12 pt-9 sm:px-8 sm:pb-20 sm:pt-16 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-14">
+              <div className="animate-rise min-w-0 lg:order-2">
+                <HeroWorkbench />
               </div>
-              <div className="animate-rise animate-delay-1 min-w-0 max-w-[20rem] sm:max-w-2xl">
-                <p className="font-display text-2xl sm:text-3xl text-[#12131a] leading-tight mb-6">
-                  Custom workflow software your business owns.
+              <div className="animate-rise animate-delay-1 min-w-0 lg:order-1">
+                <p className="mb-4 inline-flex rounded-md border border-[#2f9e73]/40 bg-[#2f9e73]/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-[#74d2aa]">
+                  Custom software you keep
                 </p>
-                <div className="space-y-5 text-base sm:text-lg text-[#626b7a] leading-relaxed mb-8">
-                  <p>
-                    I help SMB operators turn the work trapped in portals, spreadsheets, inboxes, and memory into practical systems built around how the business actually runs.
-                  </p>
-                  <p>
-                    Use AI where it helps. Automate the handoffs worth automating. Build owned software when the workflow is too specific to rent.
-                  </p>
-                  <p>
-                    No slide decks. No lock-ins. Code, data, infrastructure, and docs stay legible and handoff-ready.
-                  </p>
+                <h1 className="font-display max-w-xl text-4xl font-bold leading-[0.98] tracking-tight text-[#fffaf0] sm:text-6xl lg:text-7xl">
+                  Workflow software your business owns.
+                </h1>
+                <p className="mt-5 max-w-xl text-base leading-relaxed text-white/68 sm:text-lg">
+                  Turn the work trapped in portals, spreadsheets, inboxes, and memory into practical systems built around how your business actually runs.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/54">
+                  <span className="rounded-md border border-white/10 bg-white/[0.05] px-2.5 py-1.5">AI when useful</span>
+                  <span className="rounded-md border border-white/10 bg-white/[0.05] px-2.5 py-1.5">No lock-in</span>
+                  <span className="rounded-md border border-white/10 bg-white/[0.05] px-2.5 py-1.5">Code + data + docs</span>
                 </div>
-                <div className="flex gap-3 flex-wrap">
-                  <Link href="/contact" className="bg-[#12131a] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors">
-                    Let&apos;s talk
+                <div className="mt-7 flex gap-3">
+                  <Link href="/contact" className="bg-[#2f9e73] text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-[#f2b84b] hover:text-[#12131a] transition-colors">
+                    Start a conversation
                   </Link>
-                  <a href="#case-studies" className="border border-[#ded6c7] bg-[#fffaf0]/70 text-[#12131a] px-5 py-2.5 rounded-lg text-sm font-semibold hover:border-[#2f9e73] hover:text-[#2f9e73] transition-colors">
-                    See the work &rarr;
+                  <a href="#case-studies" className="border border-white/14 bg-white/[0.04] text-white px-5 py-3 rounded-lg text-sm font-semibold hover:border-[#2f9e73] hover:text-[#74d2aa] transition-colors">
+                    See work
                   </a>
                 </div>
               </div>
@@ -124,7 +166,7 @@ export default function Home() {
           </section>
 
           {/* POINT OF VIEW */}
-          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] py-14 max-w-5xl">
             <div className="hairline-card rounded-lg p-6 md:p-8 paper-noise">
               <div className="max-w-3xl">
                 <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">The starting point</p>
