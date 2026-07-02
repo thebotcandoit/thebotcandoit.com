@@ -29,7 +29,7 @@ Core line:
 
 Current hero:
 
-`Custom workflow software your business owns.`
+`Custom workflow solutions for small businesses.`
 
 Current voice:
 
@@ -37,6 +37,7 @@ Current voice:
 - Practical AI, not AI theater.
 - Custom software is part of the toolkit, not the only offer.
 - Ownership should be visible early: code, data, infrastructure, and documentation.
+- Approved mobile hero direction: light paper/grid, green pill `Practical solutions you own`, large Fraunces headline, two plain-language cards.
 - No slide decks. No long onboarding. One real conversation should lead to action.
 - If custom software ships, the client owns the code, data, infrastructure, and documentation.
 

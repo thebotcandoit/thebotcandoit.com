@@ -75,9 +75,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Botworks Agency &mdash; Custom workflow software SMBs own</title>
-        <meta name="description" content="Custom workflow software and practical AI for SMB operators. Built around the messy work your team already does, with ownership of code, data, infrastructure, and docs." />
-        <meta property="og:title" content="Botworks Agency — Custom workflow software SMBs own" />
+        <title>Botworks Agency &mdash; Custom workflow solutions for small businesses</title>
+        <meta name="description" content="Custom workflow solutions and practical AI for small businesses. Decide what to teach, automate, configure, or build, with ownership of code, data, infrastructure, and docs." />
+        <meta property="og:title" content="Botworks Agency — Custom workflow solutions for small businesses" />
         <meta property="og:description" content="Practical AI when it helps. Owned workflow software when it matters. Operational judgment either way." />
         <meta property="og:url" content="https://botworksagency.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -89,36 +89,38 @@ export default function Home() {
         <main>
 
           {/* HERO */}
-          <section className="mx-auto max-w-6xl overflow-hidden px-6 sm:px-8 pt-16 sm:pt-24 pb-16">
-            <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-20 items-start">
-              <div className="animate-rise min-w-0 max-w-[20rem] sm:max-w-none">
-                <h1 className="font-display max-w-[20rem] sm:max-w-none text-[2.7rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[0.95] mb-6">
-                  Bot<span className="text-[#2f9e73]">works</span>
-                </h1>
+          <section className="mx-auto max-w-5xl overflow-hidden px-6 sm:px-8 pt-8 sm:pt-16 pb-14 sm:pb-18">
+            <div className="animate-rise min-w-0">
+              <p className="mb-4 sm:mb-5 inline-flex rounded-full border border-[#2f9e73]/25 bg-[#2f9e73]/12 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[#1f7a57]">
+                Practical solutions you own
+              </p>
+              <h1 className="font-display max-w-4xl text-[2.55rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[0.97] mb-4 sm:mb-5">
+                Custom workflow solutions for small businesses.
+              </h1>
+              <p className="max-w-2xl text-base sm:text-lg text-[#4f5968] leading-relaxed mb-5 sm:mb-6">
+                Most SMB software problems are hiding between systems. Botworks helps decide what to teach, automate, configure, or build.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 mb-6 max-w-4xl">
+                <div className="hairline-card rounded-lg bg-[#fffaf0]/80 p-4 sm:p-5">
+                  <h2 className="text-base font-bold text-[#12131a] mb-2">Not everything needs custom software.</h2>
+                  <p className="text-sm text-[#596474] leading-relaxed">
+                    Sometimes the right answer is better AI use, a small automation, or cleaning up the process you already have.
+                  </p>
+                </div>
+                <div className="hairline-card rounded-lg bg-[#fffaf0]/80 p-4 sm:p-5">
+                  <h2 className="text-base font-bold text-[#12131a] mb-2">When custom is right, you keep it.</h2>
+                  <p className="text-sm text-[#596474] leading-relaxed">
+                    The code, data, infrastructure, and documentation stay handoff-ready instead of trapped inside an agency black box.
+                  </p>
+                </div>
               </div>
-              <div className="animate-rise animate-delay-1 min-w-0 max-w-[20rem] sm:max-w-2xl">
-                <p className="font-display text-2xl sm:text-3xl text-[#12131a] leading-tight mb-6">
-                  Custom workflow software your business owns.
-                </p>
-                <div className="space-y-5 text-base sm:text-lg text-[#626b7a] leading-relaxed mb-8">
-                  <p>
-                    I help SMB operators turn the work trapped in portals, spreadsheets, inboxes, and memory into practical systems built around how the business actually runs.
-                  </p>
-                  <p>
-                    Use AI where it helps. Automate the handoffs worth automating. Build owned software when the workflow is too specific to rent.
-                  </p>
-                  <p>
-                    No slide decks. No lock-ins. Code, data, infrastructure, and docs stay legible and handoff-ready.
-                  </p>
-                </div>
-                <div className="flex gap-3 flex-wrap">
-                  <Link href="/contact" className="bg-[#12131a] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors">
-                    Let&apos;s talk
-                  </Link>
-                  <a href="#case-studies" className="border border-[#ded6c7] bg-[#fffaf0]/70 text-[#12131a] px-5 py-2.5 rounded-lg text-sm font-semibold hover:border-[#2f9e73] hover:text-[#2f9e73] transition-colors">
-                    See the work &rarr;
-                  </a>
-                </div>
+              <div className="flex gap-3 flex-wrap">
+                <Link href="/contact" className="bg-[#12131a] text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors">
+                  Let&apos;s talk
+                </Link>
+                <a href="#case-studies" className="border border-[#ded6c7] bg-[#fffaf0]/70 text-[#12131a] px-5 py-3 rounded-lg text-sm font-semibold hover:border-[#2f9e73] hover:text-[#2f9e73] transition-colors">
+                  See work
+                </a>
               </div>
             </div>
           </section>
