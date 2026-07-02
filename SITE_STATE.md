@@ -1,6 +1,6 @@
 # Botworks Site State
 
-Last updated: 2026-06-04
+Last updated: 2026-07-02
 
 This file is the fast orientation note for new Codex chats working on the Botworks marketing site. Read it before editing so the site does not drift back into old positioning or generic AI-agency visuals.
 
@@ -25,17 +25,18 @@ Botworks helps SMB owners figure out where AI is actually useful:
 
 Core line:
 
-`AI when it helps. Custom software when it matters. Operational judgment either way.`
+`Practical AI when it helps. Owned workflow software when it matters. Operational judgment either way.`
 
 Current hero:
 
-`Practical AI and custom workflows for SMBs with messy operations.`
+`Custom workflow software your business owns.`
 
 Current voice:
 
 - Human and founder-led, not generic agency-polished.
 - Practical AI, not AI theater.
 - Custom software is part of the toolkit, not the only offer.
+- Ownership should be visible early: code, data, infrastructure, and documentation.
 - No slide decks. No long onboarding. One real conversation should lead to action.
 - If custom software ships, the client owns the code, data, infrastructure, and documentation.
 
@@ -114,4 +115,3 @@ zsh -lc 'set -a; source ~/Desktop/brain_a/.cowork-secrets.env; set +a; curl -sS 
 In a new Codex chat, the fastest instruction is:
 
 `Read SITE_STATE.md first, then help me with the Botworks site.`
-

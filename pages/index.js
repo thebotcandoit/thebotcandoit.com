@@ -75,10 +75,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Botworks Agency &mdash; Practical AI and custom workflows for SMBs</title>
-        <meta name="description" content="Practical AI and custom workflows for SMB owners. No slide decks, no long onboarding, and no hostage software." />
-        <meta property="og:title" content="Botworks Agency — Practical AI and custom workflows for SMBs" />
-        <meta property="og:description" content="AI when it helps. Custom software when it matters. Operational judgment either way." />
+        <title>Botworks Agency &mdash; Custom workflow software SMBs own</title>
+        <meta name="description" content="Custom workflow software and practical AI for SMB operators. Built around the messy work your team already does, with ownership of code, data, infrastructure, and docs." />
+        <meta property="og:title" content="Botworks Agency — Custom workflow software SMBs own" />
+        <meta property="og:description" content="Practical AI when it helps. Owned workflow software when it matters. Operational judgment either way." />
         <meta property="og:url" content="https://botworksagency.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://botworksagency.com/" />
@@ -98,14 +98,17 @@ export default function Home() {
               </div>
               <div className="animate-rise animate-delay-1 min-w-0 max-w-[20rem] sm:max-w-2xl">
                 <p className="font-display text-2xl sm:text-3xl text-[#12131a] leading-tight mb-6">
-                  Practical AI and custom systems for messy workflows.
+                  Custom workflow software your business owns.
                 </p>
                 <div className="space-y-5 text-base sm:text-lg text-[#626b7a] leading-relaxed mb-8">
                   <p>
-                    I help owners sort the hype: from simple out-of-the-box AI to creating and deploying durable custom software for complex workflows.
+                    I help SMB operators turn the work trapped in portals, spreadsheets, inboxes, and memory into practical systems built around how the business actually runs.
                   </p>
                   <p>
-                    No slide decks. No lock-ins. No long onboardings. Usually one real conversation and we&apos;re off to the races.
+                    Use AI where it helps. Automate the handoffs worth automating. Build owned software when the workflow is too specific to rent.
+                  </p>
+                  <p>
+                    No slide decks. No lock-ins. Code, data, infrastructure, and docs stay legible and handoff-ready.
                   </p>
                 </div>
                 <div className="flex gap-3 flex-wrap">
@@ -130,7 +133,7 @@ export default function Home() {
                   It is the thing that lives in texts, memory, screenshots, bad portals, duplicate spreadsheets, and the office manager&apos;s head.
                 </p>
                 <p className="text-base text-[#626b7a] leading-relaxed">
-                  The useful question is not &ldquo;can AI do this?&rdquo; It is &ldquo;what should we fix first, and will the team actually use it?&rdquo;
+                  The useful question is not &ldquo;can AI do this?&rdquo; It is &ldquo;what should we fix first, should we build or buy, and what will the business own when we are done?&rdquo;
                 </p>
               </div>
             </div>
