@@ -1,0 +1,20 @@
+# Botworks Agency
+
+Botworks Agency helps SMB operators decide where AI is actually useful, where automations between existing systems are enough, and where custom owned workflow software is worth building.
+
+Primary site: https://botworksagency.com/
+
+Useful pages:
+
+- https://botworksagency.com/how-we-work
+- https://botworksagency.com/workflow-examples
+- https://botworksagency.com/work
+- https://botworksagency.com/notes
+- https://botworksagency.com/contact
+
+Positioning:
+
+- Practical AI when it helps.
+- Owned workflow software when it matters.
+- Operational judgment either way.
+- Clients own the code, data, infrastructure, and documentation for custom systems.

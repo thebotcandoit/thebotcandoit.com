@@ -23,6 +23,9 @@ export default function Footer() {
           <Link href="/work" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors py-1">
             Work
           </Link>
+          <Link href="/notes" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors py-1">
+            Notes
+          </Link>
           <Link href="/contact" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors py-1">
             Contact
           </Link>

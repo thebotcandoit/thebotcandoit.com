@@ -143,6 +143,24 @@ export default function Home() {
 
           <AskAiSection />
 
+          {/* NOTES */}
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
+            <div className="hairline-card rounded-lg bg-[#fffaf0] p-6 md:p-8">
+              <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-3">Notes</p>
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+                <div className="max-w-2xl">
+                  <h2 className="font-display text-3xl font-bold text-[#12131a] mb-3">Thinking in public about practical AI and owned workflows.</h2>
+                  <p className="text-base text-[#626b7a] leading-relaxed">
+                    Comparisons, technical readouts, and field notes from the places where small-business operations meet software.
+                  </p>
+                </div>
+                <Link href="/notes" className="inline-flex rounded-lg bg-[#12131a] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#2f9e73]">
+                  Read notes
+                </Link>
+              </div>
+            </div>
+          </section>
+
           {/* CAPABILITY STRIP */}
           <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
             <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">How we help</p>

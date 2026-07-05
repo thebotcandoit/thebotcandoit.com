@@ -22,6 +22,9 @@ export default function Nav() {
           <Link href="/work" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium">
             Work
           </Link>
+          <Link href="/notes" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium">
+            Notes
+          </Link>
           <Link
             href="/contact"
             className="bg-[#12131a] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors"
@@ -64,6 +67,13 @@ export default function Nav() {
             className="text-base text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium py-2"
           >
             Work
+          </Link>
+          <Link
+            href="/notes"
+            onClick={() => setOpen(false)}
+            className="text-base text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium py-2"
+          >
+            Notes
           </Link>
           <Link
             href="/contact"
