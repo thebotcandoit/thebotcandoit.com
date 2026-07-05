@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Get in touch &mdash; Botworks Agency</title>
+        <title>{'Get in touch - Botworks Agency'}</title>
         <meta name="description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
         <meta property="og:title" content="Get in touch — Botworks Agency" />
         <meta property="og:description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
@@ -54,6 +54,9 @@ export default function Contact() {
           </h1>
           <p className="text-gray-500 text-base leading-relaxed mb-10">
             Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automation, custom software, or nothing at all.
+          </p>
+          <p className="text-sm text-gray-500 leading-relaxed mb-8">
+            Prefer email, or sending through an agent? <a href="mailto:matt@botworksagency.com" className="font-semibold text-[#2f9e73] hover:text-gray-900">matt@botworksagency.com</a>
           </p>
 
           {status === 'success' ? (

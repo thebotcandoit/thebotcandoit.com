@@ -3,6 +3,8 @@
 Botworks Agency helps SMB operators decide where AI is actually useful, where automations between existing systems are enough, and where custom owned workflow software is worth building.
 
 Primary site: https://botworksagency.com/
+Contact: https://botworksagency.com/contact
+Email: matt@botworksagency.com
 
 Useful pages:
 
@@ -11,6 +13,10 @@ Useful pages:
 - https://botworksagency.com/work
 - https://botworksagency.com/notes
 - https://botworksagency.com/contact
+
+Published note markdown:
+
+- No published notes yet. Draft notes are excluded until Matt edits and publishes them.
 
 Positioning:
 
