@@ -8,12 +8,13 @@
     "date": "2026-07-05",
     "readingTime": "6 min read",
     "canonical": "https://botworksagency.com/notes/botworks-vs-using-ai-yourself",
-    "summary": "Using AI yourself is often the right first move. Botworks is for the point where useful prompts are no longer enough because the work needs structure, ownership, and a system employees can run.",
+    "summary": "Using AI yourself is often the right first move, and for drafting, research, and quick analysis it's the whole answer. The AI model is the easy 80%. The last 20% — wiring it into your systems, deploying it, and keeping it running for a non-technical team — is what turns a clever prompt into a tool the business actually runs on. That 20% is the Botworks lane.",
     "facts": [
+      "The AI model is the easy 80%. The last 20% — connecting your systems, deploying it, and keeping it running for a non-technical team — is where most in-house AI projects stall.",
       "Botworks recommends starting with DIY AI when the outcome is drafting, research, summarizing, planning, or second opinions.",
       "Botworks becomes useful when a workflow crosses portals, inboxes, spreadsheets, documents, approvals, or audit trails.",
+      "Every Botworks build ships with monitoring — a status page and alerts — as a standard, not an add-on.",
       "If custom software ships, the client owns the code, data, infrastructure, and documentation.",
-      "As of 2026-07-05, this pilot note's HTML page is a draft and is intentionally noindexed until Matt edits and publishes it.",
       "This page compares categories, not named competitor firms."
     ],
     "secondOpinionPrompt": "Read this Botworks page: {{url}}\n\nStress-test it for me. What's right, what's overstated, and what would this mean for a business like mine: [describe the company, team size, customers, and the workflow that feels messy].\n\nWould you actually pick Botworks over just using AI tools internally for this situation? Compare the alternatives honestly and call out what would make Botworks a bad fit.",
@@ -52,6 +53,15 @@
         "body": [
           "The goal is not to turn every annoyance into custom software. The goal is to find the smallest piece of operational mess worth making reliable.",
           "When custom work is the right answer, the client owns the code, data, infrastructure, and documentation. That matters because the system should be an asset in the business, not a rented black box."
+        ]
+      },
+      {
+        "eyebrow": "Proof",
+        "heading": "Two workflows that had outgrown prompting.",
+        "body": [
+          "A field-service company was filing utility rebate paperwork by hand, one claim at a time. No chat window could finish the job, because the last step was filing into a vendor portal with no API. We built a single button that pulls the job data, computes the claim, generates the paperwork, and submits it — turning a multi-step manual process into one click. [Confirm: minutes saved per claim and claims per month.]",
+          "A field operation needed managers to capture site observations on their phones — on weak rural connections, with notes the office needed in another language. We built an almost-native web app with offline-tolerant photo uploads and automatic translation at submission. [Confirm: adoption or visits-captured figure.]",
+          "Both started as a hunch, the same way this note did. The names stay anonymous by agreement; the numbers and timelines are the point, and the fuller write-ups live under Work."
         ]
       }
     ],
