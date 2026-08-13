@@ -75,10 +75,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Botworks Agency &mdash; Custom workflow solutions for small businesses</title>
-        <meta name="description" content="Custom workflow solutions and practical AI for small businesses. Decide what to teach, automate, configure, or build, with ownership of code, data, infrastructure, and docs." />
-        <meta property="og:title" content="Botworks Agency — Custom workflow solutions for small businesses" />
-        <meta property="og:description" content="Practical AI when it helps. Owned workflow software when it matters. Operational judgment either way." />
+        <title>Botworks Agency &mdash; Workflow automation and custom software for SMBs</title>
+        <meta name="description" content="Botworks fixes the operational work between your systems with practical AI, workflow automation, and custom software your business owns." />
+        <meta property="og:title" content="Botworks Agency — Workflow automation and custom software for SMBs" />
+        <meta property="og:description" content="Fix the work between your systems. Practical AI, durable automations, and owned workflow software for small businesses." />
         <meta property="og:url" content="https://botworksagency.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://botworksagency.com/" />
@@ -92,25 +92,25 @@ export default function Home() {
           <section className="mx-auto max-w-5xl overflow-hidden px-6 sm:px-8 pt-8 sm:pt-16 pb-14 sm:pb-18">
             <div className="animate-rise min-w-0">
               <p className="mb-4 sm:mb-5 inline-flex rounded-full border border-[#2f9e73]/25 bg-[#2f9e73]/12 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[#1f7a57]">
-                Practical solutions you own
+                Workflow automation + custom software
               </p>
               <h1 className="font-display max-w-4xl text-[2.55rem] sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#12131a] leading-[0.97] mb-4 sm:mb-5">
-                Custom workflow solutions for small businesses.
+                Fix the work between your systems.
               </h1>
               <p className="max-w-2xl text-base sm:text-lg text-[#4f5968] leading-relaxed mb-5 sm:mb-6">
-                Most SMB software problems are hiding between systems. Botworks helps decide what to teach, automate, configure, or build.
+                Botworks turns the copying, chasing, retyping, and manager-only memory between your existing tools into a workflow the business can actually run.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 mb-6 max-w-4xl">
                 <div className="hairline-card rounded-lg bg-[#fffaf0]/80 p-4 sm:p-5">
-                  <h2 className="text-base font-bold text-[#12131a] mb-2">Not everything needs custom software.</h2>
+                  <h2 className="text-base font-bold text-[#12131a] mb-2">Start with the workflow, not the technology.</h2>
                   <p className="text-sm text-[#596474] leading-relaxed">
-                    Sometimes the right answer is better AI use, a small automation, or cleaning up the process you already have.
+                    The answer might be better AI use, a small integration, a configured tool, custom software, or a decision not to build yet.
                   </p>
                 </div>
                 <div className="hairline-card rounded-lg bg-[#fffaf0]/80 p-4 sm:p-5">
-                  <h2 className="text-base font-bold text-[#12131a] mb-2">When custom is right, you keep it.</h2>
+                  <h2 className="text-base font-bold text-[#12131a] mb-2">When software ships, it becomes part of operations.</h2>
                   <p className="text-sm text-[#596474] leading-relaxed">
-                    The code, data, infrastructure, and documentation stay handoff-ready instead of trapped inside an agency black box.
+                    That means permissions, records, monitoring, documentation, maintenance—and ownership of the code, data, and infrastructure.
                   </p>
                 </div>
               </div>
@@ -142,6 +142,55 @@ export default function Home() {
           </section>
 
           <AskAiSection />
+
+          {/* PRODUCTION STANDARD */}
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
+            <div className="mb-6 max-w-3xl">
+              <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-3">What shipping means</p>
+              <h2 className="font-display text-3xl font-bold text-[#12131a] mb-3">A useful workflow is a small operating system, not a demo.</h2>
+              <p className="text-base text-[#626b7a] leading-relaxed">
+                The visible screen is only one piece. Production work also has to respect how employees actually work, preserve a reliable record, survive exceptions, and tell us when an integration quietly stops doing its job.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                ['Operator surface', 'A field or office interface built for the person doing the work—not for the software buyer.'],
+                ['Existing systems', 'Reads from and writes to the CRM, field-service platform, portals, Microsoft 365, or other tools already in place.'],
+                ['Rules and exceptions', 'Encodes the real classification, routing, approval, and fallback logic the workflow depends on.'],
+                ['Canonical record', 'Keeps the source facts, generated files, decisions, and audit history findable after the work is done.'],
+                ['Reliability', 'Authentication, permissions, retries, health checks, monitoring, and visible failure states are part of the product.'],
+                ['Ownership and handoff', 'The client owns the code, data, infrastructure, deployment path, and operator documentation.'],
+              ].map(([title, body]) => (
+                <div key={title} className="hairline-card rounded-lg bg-[#fffaf0] p-5">
+                  <h3 className="font-display text-lg font-bold text-[#12131a] mb-2">{title}</h3>
+                  <p className="text-sm text-[#626b7a] leading-relaxed">{body}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* REAL SYSTEM FLOWS */}
+          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
+            <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">What this looks like in production</p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <Link href="/case-studies/hvac-rebate-automation" className="lift rounded-lg bg-[#12131a] p-6 text-white block">
+                <p className="text-xs font-semibold text-[#f2b84b] uppercase tracking-[0.18em] mb-3">Office workflow</p>
+                <h2 className="font-display text-2xl font-bold mb-4">One job number becomes a rebate packet.</h2>
+                <p className="text-sm text-white/64 leading-relaxed mb-5">
+                  Housecall Pro data → program classification → operator review → contractor-portal automation → verified, print-ready PDF → searchable run history.
+                </p>
+                <span className="text-sm font-semibold text-[#f2b84b]">See the HVAC system &rarr;</span>
+              </Link>
+              <Link href="/case-studies/field-visit-capture" className="lift rounded-lg bg-[#12131a] p-6 text-white block">
+                <p className="text-xs font-semibold text-[#f2b84b] uppercase tracking-[0.18em] mb-3">Field-to-office workflow</p>
+                <h2 className="font-display text-2xl font-bold mb-4">One property visit feeds operations and sales.</h2>
+                <p className="text-sm text-white/64 leading-relaxed mb-5">
+                  Mobile notes and photos → bilingual record → supervisor review → routed crew tasks → client-owned photo archive → editable proposal PDF.
+                </p>
+                <span className="text-sm font-semibold text-[#f2b84b]">See the landscaping system &rarr;</span>
+              </Link>
+            </div>
+          </section>
 
           {/* NOTES */}
           <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
@@ -264,9 +313,9 @@ export default function Home() {
                 className="lift hairline-card rounded-lg p-6 bg-[#fffaf0] cursor-pointer block md:translate-y-5"
               >
                 <p className="text-sm font-semibold text-[#2f9e73] mb-2">Commercial landscaping</p>
-                <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Field-visit capture: a structured record for every property visit.</h3>
+                <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Field visits now feed crew work, archives, and proposals.</h3>
                 <p className="text-sm text-[#626b7a] leading-snug mb-4">
-                  Account managers needed one clean place to capture what they saw in the field, then turn it into office review, translation, follow-up, and crew tasks.
+                  A resilient mobile capture app turns notes and photos into bilingual records, routed Microsoft To Do tasks, a SharePoint archive, and editable proposal PDFs.
                 </p>
                 <span className="text-sm font-semibold text-[#2f9e73]">
                   Read the case study &rarr;
@@ -285,24 +334,6 @@ export default function Home() {
                   Read the case study &rarr;
                 </span>
               </Link>
-            </div>
-          </section>
-
-          {/* WHAT'S NEXT */}
-          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] pb-14 max-w-5xl">
-            <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-2">What&apos;s next</p>
-            <h2 className="font-display text-3xl font-bold text-[#12131a] mb-6">In the pipeline</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="hairline-card rounded-lg p-6 bg-[#fffaf0] block">
-                <div className="flex items-center gap-2 mb-2">
-                  <p className="text-sm font-semibold text-[#2f9e73]">Chicago HVAC contractor</p>
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#7a4d00] bg-[#f2b84b]/20 border border-[#f2b84b]/50 rounded-full px-2 py-0.5">Upcoming</span>
-                </div>
-                <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Front-office automation: one view of the day&apos;s work.</h3>
-                <p className="text-sm text-[#626b7a] leading-snug">
-                  Technicians ping Slack to grab their next job; Housecall Pro APIs feed a single source of truth for upcoming work; office and field see the same view in real time. Foundation for agent-driven inventory and scheduling decisions later.
-                </p>
-              </div>
             </div>
           </section>
 

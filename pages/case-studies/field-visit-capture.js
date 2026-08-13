@@ -8,7 +8,7 @@ export default function FieldVisitCapture() {
     <>
       <Head>
         <title>Field-visit capture &mdash; Botworks Agency</title>
-        <meta name="description" content="A multi-location commercial landscaper turned scattered field notes into a structured operations workflow for account managers and supervisors." />
+        <meta name="description" content="A commercial landscaper turned field visits into bilingual records, routed crew tasks, a SharePoint photo archive, and client-ready proposals." />
         <meta property="og:title" content="Field-visit capture — Botworks Agency" />
         <meta property="og:description" content="Scattered field observations became a structured workflow for capture, review, translation, ticketing, and follow-through." />
         <meta property="og:url" content="https://botworksagency.com/case-studies/field-visit-capture" />
@@ -18,7 +18,7 @@ export default function FieldVisitCapture() {
       </Head>
       <div className="min-h-screen paper-grid">
         <Nav />
-        <main className="max-w-3xl px-8 py-12">
+        <main className="mx-auto max-w-3xl px-6 sm:px-8 py-12">
 
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">
             <Link href="/work" className="hover:text-indigo-600 transition-colors">&larr; Work</Link>
@@ -30,7 +30,7 @@ export default function FieldVisitCapture() {
             How a multi-location commercial landscaper turned scattered field notes into an operations workflow.
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-2xl">
-            Account managers needed a field-friendly way to capture what they saw. Supervisors needed one place to review it, translate it, and turn it into follow-through.
+            Account managers needed a field-friendly way to capture what they saw. The system grew into an owned operating layer that routes crew work, preserves photos, and helps the office turn enhancement opportunities into proposals.
           </p>
 
           {/* AT A GLANCE */}
@@ -47,7 +47,7 @@ export default function FieldVisitCapture() {
               </div>
               <div>
                 <dt className="font-semibold text-gray-900">Workflow</dt>
-                <dd className="text-gray-600">Account-manager site visits, captured structurally, reviewed centrally</dd>
+                <dd className="text-gray-600">Property visit → bilingual record → crew dispatch, archive, and proposal</dd>
               </div>
               <div>
                 <dt className="font-semibold text-gray-900">Status</dt>
@@ -76,18 +76,28 @@ export default function FieldVisitCapture() {
           <section className="mb-10">
             <h2 className="text-xl font-bold text-gray-900 mb-3">What shipped first</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Botworks shipped a mobile-first web app account managers can open in the field on the phones they already carry. They pick the property, tap through structured visit categories, add notes and photos, and submit the visit before the details disappear. In the office, supervisors get a central review surface for every property visit, photo, issue, and enhancement opportunity.
+              Botworks shipped an installable mobile web app account managers can open on the phones they already carry. They pick a property from the company&apos;s CRM data, tap through structured visit categories, and add notes and photos. Drafts and queued uploads survive poor signal on the device; photo transfers are compressed and resumable so a dead zone does not force the account manager to start again.
             </p>
             <p className="text-base text-gray-600 leading-relaxed mt-4">
-              The first system is capture and review. It gives the business a canonical record of what the field team saw, without forcing account managers to become software operators.
+              Free-text notes are translated into Spanish at submission and both languages remain on the canonical record. In the authenticated office portal, role-aware access lets supervisors review the full operation while account managers can revisit their own work.
             </p>
           </section>
 
           {/* WHAT BECAME POSSIBLE */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">What became possible next</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">How the system expanded</h2>
             <p className="text-base text-gray-600 leading-relaxed">
-              Once visits land structurally, the next workflows have something reliable to build on: translating English notes into Spanish for crew leads, creating operational tickets in the systems supervisors already use, drafting customer communications from real visit observations, and turning enhancement opportunities into proposals. Each next step reads from the same record instead of asking the office to re-enter the same facts again.
+              Crew-actionable issues now fan out into the correct Microsoft To Do list after an edit window, routed using production-manager data from HubSpot. Irrigation work splits to its own owner; visits with no crew work create no empty ticket; unroutable work lands in a visible catch-all instead of disappearing. Those distinctions came from observing the operation, not from a generic integration recipe.
+            </p>
+            <p className="text-base text-gray-600 leading-relaxed mt-4">
+              Visit photos mirror automatically into the client&apos;s SharePoint, where the archive can outlive the application stack. Enhancement opportunities stay out of crew task lists and feed a separate proposal workspace: an operator edits copy, chooses or annotates photos, and downloads a branded client-ready PDF. One field record now serves operations, institutional memory, and revenue follow-up without asking the office to re-enter the same facts.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">What production reliability required</h2>
+            <p className="text-base text-gray-600 leading-relaxed">
+              The automation is monitored as a business workflow, not merely as a website. Health checks verify the database, Microsoft connection, undispatched visits, and whether live HubSpot manager names still resolve to real To Do destinations. That last check matters: a renamed list can quietly hold work even when every server returns a successful response.
             </p>
           </section>
 
@@ -95,7 +105,7 @@ export default function FieldVisitCapture() {
           <section className="border-t border-gray-200 pt-8 mb-12">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">What the client owns</p>
             <p className="text-base text-gray-600 leading-relaxed">
-              The capture app, the structured visit records, the photos, the review workflow, the deployment path, and the documentation needed to understand how the system works. Botworks maintains the workflow, but the operational record belongs to the business.
+              The capture app, structured visit records, bilingual text, photos and SharePoint archive, review and proposal workflows, integration configuration, deployment path, and the documentation and decision log needed to understand how the system works. Botworks maintains the workflow, but the operational record and software belong to the business.
             </p>
           </section>
 

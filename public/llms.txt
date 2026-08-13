@@ -10,9 +10,17 @@ Useful pages:
 
 - https://botworksagency.com/how-we-work
 - https://botworksagency.com/workflow-examples
+- https://botworksagency.com/for-searchers
+- https://botworksagency.com/for-service-businesses
 - https://botworksagency.com/work
 - https://botworksagency.com/notes
 - https://botworksagency.com/contact
+
+Production case studies:
+
+- HVAC rebate automation (~8 hours/week reclaimed): https://botworksagency.com/case-studies/hvac-rebate-automation
+- Commercial-landscaping field workflow (capture, bilingual records, routed crew tasks, SharePoint archive, proposal PDFs): https://botworksagency.com/case-studies/field-visit-capture
+- Interior-design AI research toolkit: https://botworksagency.com/case-studies/interior-design-research-toolkit
 
 Published note markdown:
 
@@ -24,3 +32,4 @@ Positioning:
 - Owned workflow software when it matters.
 - Operational judgment either way.
 - Clients own the code, data, infrastructure, and documentation for custom systems.
+- Production systems include operator interfaces, integrations, business rules, durable records, permissions, monitoring, and handoff documentation.
