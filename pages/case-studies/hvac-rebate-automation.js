@@ -18,7 +18,7 @@ export default function HvacRebateAutomation() {
       </Head>
       <div className="min-h-screen paper-grid">
         <Nav />
-        <main className="max-w-3xl px-8 py-12">
+        <main className="mx-auto max-w-3xl px-6 sm:px-8 py-12">
 
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">
             <Link href="/work" className="hover:text-indigo-600 transition-colors">&larr; Work</Link>

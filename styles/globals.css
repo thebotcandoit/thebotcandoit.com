@@ -4,6 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+body.notes-editor-open {
+  padding-top: 78px;
+}
+
+[data-notes-editor-active="true"] {
+  border-radius: 0.25rem;
+  outline: 2px dashed rgba(242, 184, 75, 0.88);
+  outline-offset: 4px;
+  transition: background-color 140ms ease, outline-color 140ms ease;
+}
+
+[data-notes-editor-active="true"]:focus {
+  background: rgba(242, 184, 75, 0.12);
+  outline-style: solid;
+}
+
+textarea[data-notes-editor-active="true"] {
+  cursor: text;
+}
+
+@media (max-width: 639px) {
+  body.notes-editor-open {
+    padding-top: 132px;
+  }
+}
+
 :root {
   --paper: #f7f3ea;
   --paper-deep: #ebe3d4;

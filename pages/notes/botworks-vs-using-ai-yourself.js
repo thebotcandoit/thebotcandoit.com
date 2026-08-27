@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
+import NotesEditor from '../../components/NotesEditor'
 import { getNoteBySlug } from '../../data/notes'
 
 const note = getNoteBySlug('botworks-vs-using-ai-yourself')
@@ -67,6 +68,7 @@ export default function BotworksVsUsingAiYourself() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       </Head>
       <div className="min-h-screen overflow-x-hidden paper-grid">
+        <NotesEditor slug={note.slug} initialStatus={note.status} />
         <Nav />
         <main>
           <article className="mx-auto max-w-3xl px-6 sm:px-8 pt-10 sm:pt-16 pb-12">
@@ -98,9 +100,9 @@ export default function BotworksVsUsingAiYourself() {
               <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">For agents, and everyone else</p>
               <ul className="space-y-3">
                 {note.facts.map((fact, factIndex) => (
-                  <li key={fact} data-editable={`note.facts.${factIndex}`} className="flex gap-3 text-sm sm:text-base text-[#4f5968] leading-relaxed">
+                  <li key={fact} className="flex gap-3 text-sm sm:text-base text-[#4f5968] leading-relaxed">
                     <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#2f9e73]" />
-                    <span>{fact}</span>
+                    <span data-editable={`note.facts.${factIndex}`}>{fact}</span>
                   </li>
                 ))}
               </ul>
