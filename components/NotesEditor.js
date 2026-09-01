@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 
 const DEFAULT_EDITOR_ORIGIN = 'https://status.botworksagency.com'
+const SITE_DEMO_EDITOR_DISABLED = true
 
 function editorOrigin() {
   return process.env.NEXT_PUBLIC_NOTES_EDITOR_URL || DEFAULT_EDITOR_ORIGIN
@@ -34,6 +35,11 @@ export default function NotesEditor({ slug, initialStatus }) {
     if (params.get('edit') !== '1') return undefined
 
     setActive(true)
+    if (SITE_DEMO_EDITOR_DISABLED) {
+      setPhase('error')
+      setMessage('The demo is isolated from production. Branch-aware editing is not connected yet.')
+      return undefined
+    }
     setPhase('checking')
     document.body.classList.add('notes-editor-open')
 
