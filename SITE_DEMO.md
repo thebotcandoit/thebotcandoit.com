@@ -6,8 +6,12 @@ This branch is the persistent working version of the Botworks Agency website.
 - Intended URL: `https://sitedemo.botworksagency.com`
 - Public production remains `https://botworksagency.com` from `main`.
 - Search indexing and production analytics are disabled on this branch.
-- The existing Notes editor is disabled here until the editor service can write
-  explicitly to `site-demo`; it must never fall through to `main`.
+- The existing Notes editor remains disabled here because it targets production
+  Notes content.
+- The homepage editor opens at `/?edit=1`. Its API is hard-scoped to
+  `site-demo`, stores drafts separately from visible copy, and refuses to
+  publish until the exact saved version passes confirmed 375px and 430px
+  reviews.
 
 Changes are tested here in their real page context and at mobile widths. Approved
 content and layout changes can later be proposed for `main`; staging-only safety

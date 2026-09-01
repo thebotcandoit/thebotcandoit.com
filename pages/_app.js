@@ -3,7 +3,8 @@ import Script from 'next/script'
 import '../styles/globals.css'
 
 const GA_ID = 'G-VH8LTHVN9Z'
-const IS_SITE_DEMO = true
+const IS_SITE_DEMO = process.env.NEXT_PUBLIC_SITE_ENV !== 'production'
+const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,7 +15,7 @@ export default function App({ Component, pageProps }) {
           <meta name="googlebot" content="noindex, nofollow, noarchive" />
         </Head>
       )}
-      {!IS_SITE_DEMO && (
+      {ANALYTICS_ENABLED && !IS_SITE_DEMO && (
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
