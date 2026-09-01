@@ -9,14 +9,12 @@ const publishedNotes = notes.filter((note) => note.status === 'published')
 const baseUrls = [
   ['https://botworksagency.com/', 'weekly', '1.0'],
   ['https://botworksagency.com/how-we-work', 'monthly', '0.9'],
-  ['https://botworksagency.com/workflow-examples', 'monthly', '0.9'],
-  ['https://botworksagency.com/for-searchers', 'monthly', '0.9'],
-  ['https://botworksagency.com/for-service-businesses', 'monthly', '0.9'],
-  ['https://botworksagency.com/work', 'monthly', '0.8'],
+  ['https://botworksagency.com/work', 'monthly', '0.9'],
+  ['https://botworksagency.com/about', 'monthly', '0.8'],
   ['https://botworksagency.com/notes', 'weekly', '0.8'],
-  ['https://botworksagency.com/case-studies/hvac-rebate-automation', 'monthly', '0.8'],
   ['https://botworksagency.com/case-studies/field-visit-capture', 'monthly', '0.8'],
-  ['https://botworksagency.com/case-studies/interior-design-research-toolkit', 'monthly', '0.5'],
+  ['https://botworksagency.com/case-studies/finance-operations', 'monthly', '0.8'],
+  ['https://botworksagency.com/case-studies/hvac-rebate-automation', 'monthly', '0.8'],
   ['https://botworksagency.com/contact', 'monthly', '0.7'],
 ]
 
@@ -80,7 +78,9 @@ function renderLlmsTxt() {
   const lines = [
     '# Botworks Agency',
     '',
-    'Botworks Agency helps SMB operators decide where AI is actually useful, where automations between existing systems are enough, and where custom owned workflow software is worth building.',
+    'Botworks is an AI transformation partner for an executive who sees an important operational problem AI may be able to help with, but does not have someone carrying it from hunch to dependable use.',
+    '',
+    'Botworks investigates the problem, creates something useful quickly, builds only what the work warrants, takes responsibility for the real-world result, and leaves the client’s people and future AI agents able to understand and continue it.',
     '',
     'Primary site: https://botworksagency.com/',
     'Contact: https://botworksagency.com/contact',
@@ -89,18 +89,16 @@ function renderLlmsTxt() {
     'Useful pages:',
     '',
     '- https://botworksagency.com/how-we-work',
-    '- https://botworksagency.com/workflow-examples',
-    '- https://botworksagency.com/for-searchers',
-    '- https://botworksagency.com/for-service-businesses',
     '- https://botworksagency.com/work',
+    '- https://botworksagency.com/about',
     '- https://botworksagency.com/notes',
     '- https://botworksagency.com/contact',
     '',
     'Production case studies:',
     '',
-    '- HVAC rebate automation (~8 hours/week reclaimed): https://botworksagency.com/case-studies/hvac-rebate-automation',
-    '- Commercial-landscaping field workflow (capture, bilingual records, routed crew tasks, SharePoint archive, proposal PDFs): https://botworksagency.com/case-studies/field-visit-capture',
-    '- Interior-design AI research toolkit: https://botworksagency.com/case-studies/interior-design-research-toolkit',
+    '- Commercial-landscaping field workflow (weak-cell capture, review, follow-up, client PDFs, estimating): https://botworksagency.com/case-studies/field-visit-capture',
+    '- Transportation finance operations (source mapping, reconciliation, executive snapshot, owner-operator processing): https://botworksagency.com/case-studies/finance-operations',
+    '- HVAC rebate processing (existing job data to reviewed, print-ready packet; under operator validation): https://botworksagency.com/case-studies/hvac-rebate-automation',
     '',
     'Published note markdown:',
     '',
@@ -109,18 +107,20 @@ function renderLlmsTxt() {
   if (publishedNotes.length === 0) {
     lines.push('- No published notes yet. Draft notes are excluded until Matt edits and publishes them.')
   } else {
-    lines.push(...publishedNotes.map((note) => `- ${note.title}: https://botworksagency.com/notes/${note.slug}.md`))
+    lines.push(...publishedNotes.map((note) => `- ${note.title.replace(/[.!?]$/, '')}: https://botworksagency.com/notes/${note.slug}.md`))
   }
 
   lines.push(
     '',
     'Positioning:',
     '',
-    '- Practical AI when it helps.',
-    '- Owned workflow software when it matters.',
-    '- Operational judgment either way.',
+    '- AI transformation through consequential operational work, not a strategy presentation.',
+    '- Existing products remain the right answer when they solve the material problem.',
+    '- Custom work is reserved for specific, consequential workflows worth owning and maintaining.',
+    '- The common buyer trait is authority, not title: owner, CEO, CFO, COO, CMO, senior operator, or PE operating partner.',
     '- Clients own the code, data, infrastructure, and documentation for custom systems.',
-    '- Production systems include operator interfaces, integrations, business rules, durable records, permissions, monitoring, and handoff documentation.',
+    '- Production responsibility includes data integrity, permissions, tests, visible failure states, monitoring, deployment, maintenance, and documentation.',
+    '- Botworks commonly works through a monthly retainer and does not require a permanent software license.',
     ''
   )
 

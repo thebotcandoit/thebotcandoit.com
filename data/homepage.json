@@ -1,124 +1,111 @@
 {
   "published": {
     "meta": {
-      "title": "Botworks Agency — Workflow automation and custom software for SMBs",
-      "description": "Botworks fixes the operational work between your systems with practical AI, workflow automation, and custom software your business owns.",
-      "ogTitle": "Botworks Agency — Workflow automation and custom software for SMBs",
-      "ogDescription": "Fix the work between your systems. Practical AI, durable automations, and owned workflow software for small businesses."
+      "title": "Botworks — Put AI to work on the business you actually run",
+      "description": "Botworks is an AI transformation partner for executives who want to turn an important operational problem into something useful, reliable, and owned by the company."
     },
     "hero": {
-      "eyebrow": "Workflow automation + custom software",
-      "heading": "Fix the work between your systems.",
-      "body": "Botworks turns the copying, chasing, retyping, and manager-only memory between your existing tools into a workflow the business can actually run.",
-      "cards": [
+      "eyebrow": "AI transformation partner",
+      "heading": "Put AI to work on the business you actually run.",
+      "body": "You have a hunch that important work could be done better with AI. Botworks investigates the problem, builds the right answer, and stays responsible until people can rely on it.",
+      "note": "The work creates value now. The code, rules, data, and decisions stay legible enough for employees and AI agents to keep improving it.",
+      "primaryCta": "Email Matt",
+      "secondaryCta": "See the work"
+    },
+    "proof": {
+      "eyebrow": "Current work",
+      "heading": "Three companies. Three different answers.",
+      "body": "The point is not to force every problem into an AI agent or a custom application. The point is to make consequential work better, then make the result hold up in daily use.",
+      "items": [
         {
-          "heading": "Start with the workflow, not the technology.",
-          "body": "The answer might be better AI use, a small integration, a configured tool, custom software, or a decision not to build yet."
+          "industry": "Large commercial landscaper · South Florida",
+          "status": "In production",
+          "heading": "One site visit now feeds operations, client reporting, and estimating.",
+          "body": "Account managers capture notes and photos in the field, including on weak cell service. The same record supports supervisor review, crew follow-up, client PDFs, and a measured estimating system.",
+          "detail": "The difficult part was not generating an app. It was weeks of testing uploads, failure states, real field behavior, and the pricing rules the company actually uses.",
+          "cta": "Read the field-work case study"
         },
         {
-          "heading": "When software ships, it becomes part of operations.",
-          "body": "That means permissions, records, monitoring, documentation, maintenance—and ownership of the code, data, and infrastructure."
+          "industry": "Regional transportation company",
+          "status": "Active engagement",
+          "heading": "Reporting that can be rerun, reconciled, and challenged.",
+          "body": "Route, billing, payroll, card-sheet, and operating data now feed a repeatable executive snapshot and owner-operator transaction work instead of a one-off spreadsheet exercise.",
+          "detail": "The work includes definitions, source mapping, reconciliation, tests, and the discipline to present the math without pretending to know what it means for the operator.",
+          "cta": "Read the finance-operations case study"
+        },
+        {
+          "industry": "Family-owned HVAC contractor",
+          "status": "Working system",
+          "heading": "A job number becomes a rebate packet without re-keying the same facts.",
+          "body": "The system reads the company’s existing job data, applies the local program rules, lets the operator review the result, and produces the paperwork the office needs.",
+          "detail": "A narrow custom workflow made sense because the useful data already existed and the remaining work lived inside a program-specific portal and form process.",
+          "cta": "Read the rebate case study"
         }
-      ],
-      "primaryCta": "Let's talk",
-      "secondaryCta": "See work"
+      ]
     },
-    "startingPoint": {
-      "eyebrow": "The starting point",
-      "heading": "Most owners already know the annoying part.",
+    "premise": {
+      "eyebrow": "Why clients call",
+      "heading": "Access to AI is not the hard part.",
       "paragraphs": [
-        "It is the thing that lives in texts, memory, screenshots, bad portals, duplicate spreadsheets, and the office manager's head.",
-        "The useful question is not “can AI do this?” It is “what should we fix first, should we build or buy, and what will the business own when we are done?”"
+        "Most executives I meet already use ChatGPT, Claude, or another AI tool. Their teams are capable too. The gap is finding the time and ownership to investigate a problem, work through the data, build something, test real cases, deploy it, and keep it working.",
+        "That is where Botworks fits. A good engagement starts with an honest conversation and access to the relevant people, data, or systems. It should become tangible quickly: software, an analysis, a reporting surface, a processing tool, or a clear decision not to build."
       ]
     },
-    "askAi": {
-      "eyebrow": "Ask your own AI",
-      "heading": "Don't trust the pitch. Test the fit.",
-      "body": "Copy this into ChatGPT, Claude, Gemini, or whatever you already use. Add a few details about your business and turn the vague “should we do something with AI?” hunch into a concrete first-call brief.",
-      "button": "Copy the AI prompt",
-      "panelTitle": "Second-opinion prompt",
-      "panelLabel": "paste into any LLM",
-      "prompt": "I run or help operate this business:\n\n[Describe the company, team size, customers, and the operational workflow that feels messy.]\n\nI am looking at Botworks Agency: https://botworksagency.com\n\nBotworks says it helps SMB operators figure out where AI is actually useful, where existing tools or better employee workflows are enough, where automations between systems can remove copy/paste work, and where custom owned software is worth building. They emphasize no slide decks, fast working prototypes, operational judgment, monitoring/documentation, and client ownership of code, data, infrastructure, and docs.\n\nPlease act as an operator-advisor, not a vendor or generic AI strategist. Keep the answer practical and under 900 words. Do not write a broad \"AI transformation\" memo. Do not include citations unless you actually browsed current sources.\n\nBased on my business context:\n\n1. What are the 3-5 workflows Botworks should inspect first?\n2. For each workflow, is the likely answer existing AI tools, automation between systems, custom software, or \"do not build yet\"?\n3. Which one workflow is the best small first project, and why?\n4. What would make this a bad fit?"
-    },
-    "shipping": {
-      "eyebrow": "What shipping means",
-      "heading": "A useful workflow is a small operating system, not a demo.",
-      "body": "The visible screen is only one piece. Production work also has to respect how employees actually work, preserve a reliable record, survive exceptions, and tell us when an integration quietly stops doing its job.",
-      "cards": [
-        { "heading": "Operator surface", "body": "A field or office interface built for the person doing the work—not for the software buyer." },
-        { "heading": "Existing systems", "body": "Reads from and writes to the CRM, field-service platform, portals, Microsoft 365, or other tools already in place." },
-        { "heading": "Rules and exceptions", "body": "Encodes the real classification, routing, approval, and fallback logic the workflow depends on." },
-        { "heading": "Canonical record", "body": "Keeps the source facts, generated files, decisions, and audit history findable after the work is done." },
-        { "heading": "Reliability", "body": "Authentication, permissions, retries, health checks, monitoring, and visible failure states are part of the product." },
-        { "heading": "Ownership and handoff", "body": "The client owns the code, data, infrastructure, deployment path, and operator documentation." }
-      ]
-    },
-    "flows": {
-      "eyebrow": "What this looks like in production",
+    "work": {
+      "eyebrow": "What Botworks does",
+      "heading": "The role changes with the problem.",
+      "body": "On one engagement I may be doing product work, engineering, data analysis, operational investigation, or all four. The buyer should not have to diagnose which technical job title is missing before asking for help.",
       "items": [
         {
-          "eyebrow": "Office workflow",
-          "heading": "One job number becomes a rebate packet.",
-          "body": "Housecall Pro data → program classification → operator review → contractor-portal automation → verified, print-ready PDF → searchable run history.",
-          "cta": "See the HVAC system →"
+          "heading": "Find the real problem",
+          "body": "Read the files, map the workflow, inspect the data, and separate a fixable annoyance from work that is important enough to change."
         },
         {
-          "eyebrow": "Field-to-office workflow",
-          "heading": "One property visit feeds operations and sales.",
-          "body": "Mobile notes and photos → bilingual record → supervisor review → routed crew tasks → client-owned photo archive → editable proposal PDF.",
-          "cta": "See the landscaping system →"
+          "heading": "Make something useful",
+          "body": "Move quickly from discussion to a concrete output people can see, test, and use. The first useful thing is often the fastest way to learn what the company actually needs."
+        },
+        {
+          "heading": "Take production seriously",
+          "body": "If people log in or depend on the answer, permissions, monitoring, exceptions, data integrity, documentation, and maintenance are part of the work."
         }
       ]
     },
-    "notes": {
-      "eyebrow": "Notes",
-      "heading": "Thinking in public about practical AI and owned workflows.",
-      "body": "Comparisons, technical readouts, and field notes from the places where small-business operations meet software.",
-      "cta": "Read notes"
+    "judgment": {
+      "eyebrow": "Build only when the work warrants it",
+      "heading": "Good software already exists. Botworks is not here to replace it for sport.",
+      "body": "If a SaaS product, a configuration change, or a small automation solves the material problem, that is usually the right answer. Custom software creates an ongoing responsibility for security, support, integrations, and maintenance. It is worth building when the workflow is specific, consequential, poorly served by the market, and valuable enough to own.",
+      "principle": "Use the good product. Connect what should be connected. Build the part that is genuinely yours."
     },
-    "capabilities": {
-      "eyebrow": "How we help",
+    "buyer": {
+      "eyebrow": "Who this works for",
+      "heading": "The common trait is authority, not title.",
+      "body": "Botworks works best with an owner, CEO, CFO, COO, CMO, senior operator, or private-equity operating partner who can provide access, make decisions, and get the work moving.",
+      "fit": "A good prospect has an operational itch: something is slower, more manual, less visible, or less reliable than it should be—and they suspect AI could help but do not have someone carrying it into production.",
+      "notFit": "This is a poor fit when an existing tool already solves the important part, the work cannot reach the relevant data or people, or every decision must pass through months of approval before anyone can test it."
+    },
+    "ownership": {
+      "eyebrow": "No artificial lock-in",
+      "heading": "The client should be able to continue the work without Botworks.",
+      "body": "Engagements commonly run as a monthly retainer. That is payment for ongoing work—not a claim on the client’s future. Client-specific systems are designed for a clean transition if the relationship ends.",
       "items": [
-        { "eyebrow": "AI workflow review", "heading": "Find where AI belongs.", "body": "Help employees use Claude, Codex, or the tools they already have better. Just as important: call out the places AI should not touch." },
-        { "eyebrow": "Automations between systems", "heading": "Stop paying people to copy and chase.", "body": "Move data, documents, updates, and decisions between tools without copy-paste." },
-        { "eyebrow": "Custom owned software", "heading": "Build what is too specific to rent.", "body": "Build the workflows that are too specific or too important to leave in spreadsheets, bad portals, inboxes, or memory." }
-      ]
-    },
-    "audiences": {
-      "eyebrow": "Who this is for",
-      "items": [
-        { "eyebrow": "Searchers and acquisition-backed SMBs", "heading": "A practical AI pass for the 100-day plan.", "body": "Find the workflows where AI is useful now, where the team just needs better habits, and where custom software is worth building.", "cta": "See how it works →" },
-        { "eyebrow": "Service businesses", "heading": "Office and field workflows that still run on handoffs.", "body": "HVAC, landscaping, cleaning, trades, and field-service teams where work gets copied, chased, retyped, and remembered by the person who cannot go on vacation.", "cta": "See examples →" }
-      ]
-    },
-    "workflowExamples": {
-      "eyebrow": "Where this fits",
-      "heading": "The best first projects are weirdly ordinary.",
-      "body": "Rebate paperwork, field handoffs, customer intake, spreadsheet reconciliation, estimate follow-up, permits, warranty packets, status chasing, exception queues, manager-only memory. The first question is not “what should we build?” It is “where is the work leaking time?”",
-      "tags": ["rebates", "permits", "bad portals", "inbox handoffs", "one-person memory"],
-      "cta": "See workflow examples →"
-    },
-    "caseStudies": {
-      "eyebrow": "Case studies",
-      "heading": "Real work, in production",
-      "items": [
-        { "eyebrow": "HVAC contractor", "heading": "Rebate program filings: 8 hours a week reclaimed.", "body": "The office manager used to spend hours moving rebate data between bad systems. Now she pastes a job number and gets a mail-ready packet.", "cta": "Read the case study →" },
-        { "eyebrow": "Commercial landscaping", "heading": "Field visits now feed crew work, archives, and proposals.", "body": "A resilient mobile capture app turns notes and photos into bilingual records, routed Microsoft To Do tasks, a SharePoint archive, and editable proposal PDFs.", "cta": "Read the case study →" },
-        { "eyebrow": "Interior design studio", "heading": "AI-assisted research: better prep without a big custom app.", "body": "Practical AI habits and lightweight tools that compress a designer's pre-pitch homework — reference photos, listing-price sanity checks, neighborhood comps — from hours to minutes.", "cta": "Read the case study →" }
+        "Client-specific source code and repository history",
+        "Operational data, definitions, rules, and tests",
+        "Infrastructure, deployment, and monitoring paths",
+        "Documentation for employees, future maintainers, and AI agents"
       ]
     },
     "about": {
-      "heading": "Hi, I'm Matt.",
+      "eyebrow": "Who is Botworks?",
+      "heading": "Hi, I’m Matt.",
       "paragraphs": [
-        "15 years as a technical product manager in software, most recently VP of Product Management. I shipped to engineering teams that ship every day; now I bring that bar to small businesses that don't have engineering teams of their own.",
-        "I was searching in Miami and realized my skills were probably a better fit for an agency: sitting with owners, finding the operational mess, and turning the right piece of it into something that works.",
-        "If it is custom software, the client owns all of it. I am also building the handoff so employees and LLM agents can keep running it if we ever part ways. No hidden fees. No hostage software."
+        "I spent 15 years in software product management, most recently as a VP of Product Management. I was used to having engineers, designers, analysts, and product people around the table. Most operating companies do not—and it would be a strange use of their budget to recreate that whole department.",
+        "Botworks is a practical version of that capability: one accountable partner, AI agents doing a great deal of the production work, and specialists brought in when the problem genuinely needs them. I care about getting to the truth, shipping something people can use, and leaving the work understandable when I am gone."
       ]
     },
     "bottomCta": {
-      "heading": "Have a workflow that should be easier?",
-      "body": "Tell me where the work gets copied, chased, retyped, or remembered by one person. I'll help sort whether the answer is AI, automations, or custom software.",
-      "cta": "Let's talk"
+      "heading": "What is the problem you keep thinking AI should be able to help with?",
+      "body": "Send me the rough version. You do not need a specification, a budget category, or the right technical language.",
+      "cta": "matt@botworksagency.com"
     }
   },
   "draft": null,

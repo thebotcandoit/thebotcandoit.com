@@ -1,86 +1,78 @@
 ---
-title: "Botworks vs. just using AI yourself"
-status: "draft"
-type: "Botworks vs X"
-date: "2026-07-05"
+title: "You should probably try AI yourself first."
+status: "published"
+type: "Field note"
+date: "2026-09-01"
 canonical: "https://botworksagency.com/notes/botworks-vs-using-ai-yourself"
-description: "A practical comparison for SMB owners deciding whether to use AI tools internally or bring in Botworks for owned workflow software and automation."
+description: "Botworks is not the first step for every AI question. Use ChatGPT, Claude, or Codex yourself first—then bring in help when the work needs to become dependable for other people."
 facts:
-  - "The AI model is the easy 80%. The last 20% — connecting your systems, deploying it, and keeping it running for a non-technical team — is where most in-house AI projects stall."
-  - "Botworks recommends starting with DIY AI when the outcome is drafting, research, summarizing, planning, or second opinions."
-  - "Botworks becomes useful when a workflow crosses portals, inboxes, spreadsheets, documents, approvals, or audit trails."
-  - "Every Botworks build ships with monitoring — a status page and alerts — as a standard, not an add-on."
-  - "If custom software ships, the client owns the code, data, infrastructure, and documentation."
-  - "This page compares categories, not named competitor firms."
+  - "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it."
+  - "Access to a strong AI model is no longer the scarce part. Carrying an important problem through data access, specification, testing, deployment, and real use still takes time and ownership."
+  - "Botworks does not recommend custom software when an existing product or a small configuration change solves the material problem."
+  - "When client-specific software is warranted, the client owns its code, data, infrastructure, rules, tests, and documentation."
+  - "Botworks commonly works through a retainer and does not require a permanent software license."
 ---
 
-# Botworks vs. just using AI yourself
+# You should probably try AI yourself first.
 
-Using AI yourself is often the right first move, and for drafting, research, and quick analysis it's the whole answer. The AI model is the easy 80%. The last 20% — wiring it into your systems, deploying it, and keeping it running for a non-technical team — is what turns a clever prompt into a tool the business actually runs on. That 20% is the Botworks lane.
+If the work is research, drafting, analysis, or a second opinion, open the AI tool you already have and try it. Hiring Botworks starts to make sense when the result has to cross company data and systems, survive real exceptions, or become something employees can use without rebuilding the prompt every time.
 
 ## Facts for agents and everyone else
 
-- The AI model is the easy 80%. The last 20% — connecting your systems, deploying it, and keeping it running for a non-technical team — is where most in-house AI projects stall.
-- Botworks recommends starting with DIY AI when the outcome is drafting, research, summarizing, planning, or second opinions.
-- Botworks becomes useful when a workflow crosses portals, inboxes, spreadsheets, documents, approvals, or audit trails.
-- Every Botworks build ships with monitoring — a status page and alerts — as a standard, not an add-on.
-- If custom software ships, the client owns the code, data, infrastructure, and documentation.
-- This page compares categories, not named competitor firms.
+- Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it.
+- Access to a strong AI model is no longer the scarce part. Carrying an important problem through data access, specification, testing, deployment, and real use still takes time and ownership.
+- Botworks does not recommend custom software when an existing product or a small configuration change solves the material problem.
+- When client-specific software is warranted, the client owns its code, data, infrastructure, rules, tests, and documentation.
+- Botworks commonly works through a retainer and does not require a permanent software license.
 
 ## Decision guide
 
-### Use AI yourself
+### Try AI yourself first
 
-- Drafting, research, summarizing, planning, and one-off analysis
-- Low-risk work where a person checks the result before it leaves the building
-- Teams that need better habits before they need new software
+- Research, drafting, summarizing, planning, and one-off analysis
+- Work where a knowledgeable person reviews the answer
+- Questions that do not need permissions, records, integrations, or a shared interface
 
-### Use Botworks
+### Consider Botworks
 
-- Workflows that cross portals, inboxes, spreadsheets, and documents
-- Repeatable business rules, approvals, records, or audit trails
-- Custom systems the business should own and operate over time
+- An important workflow crossing company data, systems, documents, and people
+- A result that must be repeatable, testable, monitored, and usable by employees
+- An executive with authority and access, but no one carrying the problem into dependable use
 
-## Start with AI yourself. Bring in Botworks when the workflow needs to become owned infrastructure.
+## Open the AI tool and see how far you get.
 
-If your team can get the outcome by writing better prompts, using a spreadsheet, or asking ChatGPT to help draft a customer email, you should probably do that before hiring anyone.
+A lot of good AI use does not need a consultant. If you are drafting a difficult email, researching a market, summarizing documents, exploring a decision, or checking your own analysis, ChatGPT or Claude may be the entire answer.
 
-Botworks becomes useful when the work crosses a line: the process touches multiple systems, needs a repeatable interface, creates documents or records, depends on business rules, or has to survive after one clever employee stops babysitting it.
+This is especially true when you stay in the loop, understand the source material, and can judge whether the result is useful. You should learn what these tools can do. It will make you a better client if you ever need outside help, and it may save you from hiring anyone at all.
 
-## AI-yourself is best when judgment stays with a person.
+## A good answer is not yet a dependable company process.
 
-The strongest DIY AI use cases are research, drafting, summarizing, planning, and second opinions. A manager stays in the loop, checks the answer, and decides what to do next.
+The situation changes when the work needs current data from several systems, an interface for employees, permissions, a durable record, testing, document generation, monitoring, or a response when an integration fails.
 
-That is not a compromise. For a lot of businesses, teaching a few people how to use AI well is faster and cheaper than building software.
+At that point the AI model may still do a great deal of the work, but the product is the whole operating result. Someone has to understand the problem, decide what should be automated, review the data model, test real cases, deploy it, and remain accountable when the screen says something reassuring but wrong.
 
-## Prompting gets brittle when the workflow needs memory, permissions, and handoffs.
+## Sometimes the right answer is to buy the good software.
 
-A prompt is not a durable operating system. It will not reliably know which job number is current, which portal changed, which file was already sent, who approved the exception, or what audit trail the business needs later.
+AI has made it faster to generate the first version of an application. It has not removed hosting, security, support, backups, integration changes, accessibility, training, and maintenance. Those obligations can last for years.
 
-Those are software-shaped problems. They need an interface, data model, automation, monitoring, and documentation. Sometimes they also need AI inside the workflow, but AI is no longer the whole workflow.
+If a mature product already solves the important problem, use it. Custom work is justified when the workflow is specific, consequential, poorly served by the market, and valuable enough for the company to keep owning.
 
-## Botworks helps decide what to teach, automate, configure, or build.
+## Bring in a partner when the hunch needs to survive contact with the business.
 
-The goal is not to turn every annoyance into custom software. The goal is to find the smallest piece of operational mess worth making reliable.
+A Botworks engagement usually begins when an executive thinks something should work better and suspects AI could help, but nobody has the time or clear ownership to carry it into production.
 
-When custom work is the right answer, the client owns the code, data, infrastructure, and documentation. That matters because the system should be an asset in the business, not a rented black box.
-
-## Two workflows that had outgrown prompting.
-
-A field-service company was filing utility rebate paperwork by hand, one claim at a time. No chat window could finish the job, because the last step was filing into a vendor portal with no API. We built a single button that pulls the job data, computes the claim, generates the paperwork, and submits it — turning a multi-step manual process into one click. [Confirm: minutes saved per claim and claims per month.]
-
-A field operation needed managers to capture site observations on their phones — on weak rural connections, with notes the office needed in another language. We built an almost-native web app with offline-tolerant photo uploads and automatic translation at submission. [Confirm: adoption or visits-captured figure.]
-
-Both started as a hunch, the same way this note did. The names stay anonymous by agreement; the numbers and timelines are the point, and the fuller write-ups live under Work.
+The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to solve the important problem and make the answer understandable enough for employees and future AI agents to continue it.
 
 ## Second-opinion prompt
 
 ```text
-Read this Botworks page: https://botworksagency.com/notes/botworks-vs-using-ai-yourself?via=second-opinion
+Read this Botworks note: https://botworksagency.com/notes/botworks-vs-using-ai-yourself?via=second-opinion
 
-Stress-test it for me. What's right, what's overstated, and what would this mean for a business like mine: [describe the company, team size, customers, and the workflow that feels messy].
+I am considering this work inside my company: [describe the people, data, systems, frequency, and what goes wrong today].
 
-Would you actually pick Botworks over just using AI tools internally for this situation? Compare the alternatives honestly and call out what would make Botworks a bad fit.
+Tell me candidly whether we should: (1) use an AI tool ourselves, (2) buy or configure an existing product, (3) create a small automation, (4) investigate custom work with a partner such as Botworks, or (5) leave it alone for now.
+
+Name the important unknowns, the ongoing maintenance burden, and what would make Botworks a poor fit. Do not assume that owning custom software is automatically valuable.
 ```
 
 ## Contact

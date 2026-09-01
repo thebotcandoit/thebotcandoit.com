@@ -13,6 +13,12 @@ This branch is the persistent working version of the Botworks Agency website.
   publish until the exact saved version passes confirmed 375px and 430px
   reviews.
 
+The demo contains the complete repositioned site rather than an editor wrapped
+around the old copy. Its primary routes are `/`, `/work`, `/how-we-work`,
+`/notes`, `/about`, and `/contact`, plus anonymized case studies for commercial
+landscaping, transportation finance operations, and HVAC rebate processing.
+Obsolete audience and example routes redirect to the current site structure.
+
 Changes are tested here in their real page context and at mobile widths. Approved
 content and layout changes can later be proposed for `main`; staging-only safety
 settings in this branch do not move to production.

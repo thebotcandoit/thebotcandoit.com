@@ -1,87 +1,41 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
+const links = [
+  ['Work', '/work'],
+  ['How we work', '/how-we-work'],
+  ['Notes', '/notes'],
+  ['About', '/about'],
+]
+
 export default function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="px-6 sm:px-8 py-4 sm:py-5 border-b border-[#ded6c7]/80 bg-[#f7f3ea]/90 backdrop-blur">
-      <div className="flex items-center justify-between">
-        <Link href="/" className="font-display text-lg font-bold tracking-tight text-[#12131a] hover:opacity-80 transition-opacity">
-          Bot<span className="text-[#2f9e73]">works</span>
+    <nav className="sticky top-0 z-40 border-b border-[#ded6c7]/90 bg-[#f7f3ea]/95 px-5 py-4 backdrop-blur sm:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6">
+        <Link href="/" className="group flex min-w-0 items-baseline gap-3" onClick={() => setOpen(false)}>
+          <span className="font-display text-xl font-bold tracking-tight text-[#12131a]">Bot<span className="text-[#2f9e73]">works</span></span>
+          <span className="hidden text-[10px] font-bold uppercase tracking-[0.16em] text-[#8a8171] sm:inline">AI transformation partner</span>
         </Link>
-
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-6">
-          <Link href="/how-we-work" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium">
-            How we work
-          </Link>
-          <Link href="/workflow-examples" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium">
-            Examples
-          </Link>
-          <Link href="/work" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium">
-            Work
-          </Link>
-          <Link href="/notes" className="text-sm text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium">
-            Notes
-          </Link>
-          <Link
-            href="/contact"
-            className="bg-[#12131a] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#2f9e73] transition-colors"
-          >
-            Get in touch
-          </Link>
+        <div className="hidden items-center gap-6 md:flex">
+          {links.map(([label, href]) => <Link key={href} href={href} className="text-sm font-medium text-[#626b7a] transition-colors hover:text-[#12131a]">{label}</Link>)}
+          <a href="mailto:matt@botworksagency.com" className="rounded-md bg-[#12131a] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#2f9e73]">Email Matt</a>
         </div>
-
-        {/* Hamburger button — mobile only */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg hover:bg-[#ebe3d4] transition-colors"
-          aria-label="Toggle menu"
-        >
-          <span className={`block w-5 h-0.5 bg-[#12131a] transition-all duration-200 ${open ? 'rotate-45 translate-y-[3px]' : ''}`} />
-          <span className={`block w-5 h-0.5 bg-[#12131a] mt-1 transition-all duration-200 ${open ? '-rotate-45 -translate-y-[3px]' : ''}`} />
+        <button type="button" onClick={() => setOpen((value) => !value)} className="flex h-10 w-10 items-center justify-center rounded-md border border-[#ded6c7] md:hidden" aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? 'Close menu' : 'Open menu'}>
+          <span className="sr-only">Menu</span>
+          <span className="flex w-5 flex-col gap-1.5">
+            <span className={`h-0.5 bg-[#12131a] transition-transform ${open ? 'translate-y-1 rotate-45' : ''}`} />
+            <span className={`h-0.5 bg-[#12131a] transition-transform ${open ? '-translate-y-1 -rotate-45' : ''}`} />
+          </span>
         </button>
       </div>
-
-      {/* Mobile menu */}
       {open && (
-        <div className="md:hidden mt-4 pb-2 flex flex-col gap-4">
-          <Link
-            href="/how-we-work"
-            onClick={() => setOpen(false)}
-            className="text-base text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium py-2"
-          >
-            How we work
-          </Link>
-          <Link
-            href="/workflow-examples"
-            onClick={() => setOpen(false)}
-            className="text-base text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium py-2"
-          >
-            Examples
-          </Link>
-          <Link
-            href="/work"
-            onClick={() => setOpen(false)}
-            className="text-base text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium py-2"
-          >
-            Work
-          </Link>
-          <Link
-            href="/notes"
-            onClick={() => setOpen(false)}
-            className="text-base text-[#626b7a] hover:text-[#2f9e73] transition-colors font-medium py-2"
-          >
-            Notes
-          </Link>
-          <Link
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="bg-[#12131a] text-white px-4 py-3 rounded-lg text-base font-semibold hover:bg-[#2f9e73] transition-colors text-center"
-          >
-            Get in touch
-          </Link>
+        <div id="mobile-navigation" className="mx-auto mt-4 max-w-6xl border-t border-[#ded6c7] pt-3 md:hidden">
+          <div className="flex flex-col">
+            {links.map(([label, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} className="py-3 text-base font-medium text-[#12131a]">{label}</Link>)}
+            <a href="mailto:matt@botworksagency.com" className="mt-2 rounded-md bg-[#12131a] px-4 py-3 text-center text-base font-semibold text-white">Email Matt</a>
+          </div>
         </div>
       )}
     </nav>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Head from 'next/head'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import SiteHead from '../components/SiteHead'
 
 const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID
 
@@ -9,26 +9,22 @@ export default function Contact() {
   const [status, setStatus] = useState('idle')
   const [form, setForm] = useState({ name: '', email: '', message: '' })
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+  async function handleSubmit(event) {
+    event.preventDefault()
+    if (!FORMSPREE_ID) {
+      window.location.href = `mailto:matt@botworksagency.com?subject=${encodeURIComponent(`Botworks conversation — ${form.name}`)}&body=${encodeURIComponent(`${form.message}\n\nReply to: ${form.email}`)}`
+      return
+    }
     setStatus('submitting')
-
     try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(form),
       })
-      if (res.ok) {
-        setStatus('success')
-        setForm({ name: '', email: '', message: '' })
-      } else {
-        setStatus('error')
-      }
+      if (!response.ok) throw new Error('Form failed')
+      setStatus('success')
+      setForm({ name: '', email: '', message: '' })
     } catch {
       setStatus('error')
     }
@@ -36,97 +32,49 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>{'Get in touch - Botworks Agency'}</title>
-        <meta name="description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
-        <meta property="og:title" content="Get in touch — Botworks Agency" />
-        <meta property="og:description" content="Tell me about a messy workflow in your business. I'll help sort whether the answer is AI, automation, custom software, or nothing at all." />
-        <meta property="og:url" content="https://botworksagency.com/contact" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://botworksagency.com/contact" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="min-h-screen paper-grid flex flex-col">
+      <SiteHead
+        title="Contact Matt — Botworks"
+        description="Tell Matt Livingston about an operational problem you think AI could help with. No specification or technical vocabulary required."
+        path="/contact"
+      />
+      <div className="min-h-screen overflow-x-hidden paper-grid">
         <Nav />
-        <main className="flex-1 px-8 py-16 max-w-xl">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-3">
-            Let&apos;s talk about your workflow.
-          </h1>
-          <p className="text-gray-500 text-base leading-relaxed mb-10">
-            Tell me where the work gets copied, chased, retyped, or remembered by one person. I&apos;ll help sort whether the answer is AI, automation, custom software, or nothing at all.
-          </p>
-          <p className="text-sm text-gray-500 leading-relaxed mb-8">
-            Prefer email, or sending through an agent? <a href="mailto:matt@botworksagency.com" className="font-semibold text-[#2f9e73] hover:text-gray-900">matt@botworksagency.com</a>
-          </p>
-
-          {status === 'success' ? (
-            <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 text-center">
-              <h2 className="text-gray-900 font-bold text-lg mb-1">Got it &mdash; thanks!</h2>
-              <p className="text-gray-500 text-sm">I&apos;ll get back to you within a day.</p>
+        <main className="mx-auto grid max-w-6xl gap-12 px-6 py-12 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+          <section>
+            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Contact</p>
+            <h1 className="font-display mt-4 text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">Send me the rough version.</h1>
+            <p className="mt-6 text-lg leading-relaxed text-[#4f5968]">What is the work you keep thinking AI should be able to help with? You do not need to know whether the answer is software, analysis, automation, or something else.</p>
+            <div className="mt-8 border-l-2 border-[#f2b84b] pl-5">
+              <p className="text-sm leading-relaxed text-[#626b7a]">A useful note usually includes the company, the people doing the work, what happens today, and where it becomes slow or unreliable. It can be incomplete.</p>
             </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  Your name
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder="Jane Smith"
-                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
-                />
+            <a href="mailto:matt@botworksagency.com" className="mt-8 inline-block font-semibold text-[#1f7a57] hover:text-[#12131a]">matt@botworksagency.com</a>
+          </section>
+
+          <section className="rounded-lg bg-[#fffaf0] p-6 ring-1 ring-[#ded6c7] sm:p-8">
+            {status === 'success' ? (
+              <div className="py-10 text-center">
+                <h2 className="font-display text-3xl font-bold text-[#12131a]">Got it. Thank you.</h2>
+                <p className="mt-3 text-sm text-[#626b7a]">Matt will reply directly.</p>
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  Your email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="jane@example.com"
-                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  What&apos;s the workflow, task, or AI question you&apos;d like to improve?
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={5}
-                  value={form.message}
-                  onChange={handleChange}
-                  placeholder="Every week someone copies job data from one system into another, checks a spreadsheet, then follows up by text..."
-                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition resize-none"
-                />
-              </div>
-
-              {status === 'error' && (
-                <p className="text-red-500 text-sm">Something went wrong &mdash; please try again or email matt@botworksagency.com directly.</p>
-              )}
-
-              <button
-                type="submit"
-                disabled={status === 'submitting'}
-                className="bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-gray-700 disabled:opacity-50 transition-colors"
-              >
-                {status === 'submitting' ? 'Sending...' : 'Send it'}
-              </button>
-            </form>
-          )}
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-semibold text-[#12131a]">Your name</label>
+                  <input id="name" name="name" required value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} className="mt-2 w-full rounded-md border border-[#cfc5b5] bg-white px-4 py-3 text-sm text-[#12131a] outline-none focus:border-[#2f9e73] focus:ring-2 focus:ring-[#2f9e73]/15" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-[#12131a]">Your email</label>
+                  <input id="email" name="email" type="email" required value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} className="mt-2 w-full rounded-md border border-[#cfc5b5] bg-white px-4 py-3 text-sm text-[#12131a] outline-none focus:border-[#2f9e73] focus:ring-2 focus:ring-[#2f9e73]/15" />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold text-[#12131a]">What is happening today?</label>
+                  <textarea id="message" name="message" required rows={8} value={form.message} onChange={(event) => setForm({ ...form, message: event.target.value })} placeholder="We have a process that…" className="mt-2 w-full resize-y rounded-md border border-[#cfc5b5] bg-white px-4 py-3 text-sm leading-relaxed text-[#12131a] outline-none focus:border-[#2f9e73] focus:ring-2 focus:ring-[#2f9e73]/15" />
+                </div>
+                {status === 'error' && <p className="text-sm text-red-700">The form did not send. Please email matt@botworksagency.com directly.</p>}
+                <button type="submit" disabled={status === 'submitting'} className="w-full rounded-md bg-[#12131a] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2f9e73] disabled:opacity-50">{status === 'submitting' ? 'Sending…' : FORMSPREE_ID ? 'Send to Matt' : 'Open in email'}</button>
+              </form>
+            )}
+          </section>
         </main>
         <Footer />
       </div>

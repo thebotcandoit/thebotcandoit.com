@@ -1,112 +1,87 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import SiteHead from '../components/SiteHead'
+
+const studies = [
+  {
+    href: '/case-studies/field-visit-capture',
+    industry: 'Large commercial landscaper · South Florida',
+    status: 'In production',
+    title: 'A field visit became the shared record for operations, clients, and estimates.',
+    body: 'Weak-cell photo capture, supervisor review, crew follow-up, client PDFs, and an estimating system under active testing.',
+  },
+  {
+    href: '/case-studies/finance-operations',
+    industry: 'Regional transportation company',
+    status: 'Active engagement',
+    title: 'A recurring executive snapshot became a tested reporting product.',
+    body: 'Source mapping, reconciliation, stable reporting definitions, PDF generation, and owner-operator transaction processing.',
+  },
+  {
+    href: '/case-studies/hvac-rebate-automation',
+    industry: 'Family-owned HVAC contractor',
+    status: 'Under operator validation',
+    title: 'A job number became a reviewable, print-ready rebate packet.',
+    body: 'Existing job data connected to a local program-specific filing and paperwork workflow without replacing the field-service product.',
+  },
+]
 
 export default function Work() {
   return (
     <>
-      <Head>
-        <title>Production workflow systems &mdash; Botworks Agency</title>
-        <meta name="description" content="Production case studies from workflow automation and custom software built for HVAC, commercial landscaping, and service-business operations." />
-        <meta property="og:title" content="Work — Botworks Agency" />
-        <meta property="og:description" content="Practical AI, automation, and custom workflow case studies for SMBs with messy operations." />
-        <meta property="og:url" content="https://botworksagency.com/work" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://botworksagency.com/work" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="min-h-screen paper-grid">
+      <SiteHead
+        title="Work — Botworks"
+        description="Anonymous Botworks case studies in commercial landscaping, transportation finance operations, and HVAC rebate processing."
+        path="/work"
+      />
+      <div className="min-h-screen overflow-x-hidden paper-grid">
         <Nav />
-        <main className="mx-auto max-w-5xl px-6 sm:px-8 py-12">
+        <main>
+          <header className="mx-auto max-w-6xl px-6 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-20">
+            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Work</p>
+            <h1 className="font-display mt-4 max-w-4xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">The work is the clearest explanation of Botworks.</h1>
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">These are not polished before-and-after stories with invented certainty. They describe what the company needed, what exists now, where testing mattered, and what remains unresolved.</p>
+          </header>
 
-          <p className="text-xs font-semibold text-[#2f9e73] uppercase tracking-[0.18em] mb-3">Work</p>
-          <h1 className="font-display text-4xl sm:text-6xl font-bold tracking-tight text-[#12131a] leading-[0.98] mb-4">
-            Systems that carry real work.
-          </h1>
-          <p className="text-[#4f5968] text-base sm:text-lg leading-relaxed mb-12 max-w-3xl">
-            Each engagement started with one expensive or unreliable handoff. The useful part is not simply what the interface does—it is the operational layer underneath: integrations, rules, records, permissions, monitoring, and a path for the next workflow.
-          </p>
-
-          {/* CASE STUDIES */}
-          <section className="mb-16">
-            <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-2">Case studies</p>
-            <h2 className="font-display text-3xl font-bold text-[#12131a] mb-6">Real work, in production</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <Link
-                href="/case-studies/hvac-rebate-automation"
-                className="lift hairline-card rounded-lg p-6 bg-[#fffaf0] cursor-pointer block"
-              >
-                <p className="text-sm font-semibold text-[#2f9e73] mb-2">HVAC contractor</p>
-                <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Rebate program filings: 8 hours a week reclaimed.</h3>
-                <p className="text-sm text-[#626b7a] leading-relaxed mb-4">
-                  A job-number lookup pulls source data from Housecall Pro, classifies the program, lets the operator review exceptions, drives the contractor portal, verifies the rendered customer, and stores a print-ready double-sided mailer.
-                </p>
-                <span className="text-sm font-semibold text-[#2f9e73]">
-                  Read the case study &rarr;
-                </span>
-              </Link>
-              <Link
-                href="/case-studies/field-visit-capture"
-                className="lift hairline-card rounded-lg p-6 bg-[#fffaf0] cursor-pointer block"
-              >
-                <p className="text-sm font-semibold text-[#2f9e73] mb-2">Commercial landscaping</p>
-                <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">Field visits now feed crew work, archives, and proposals.</h3>
-                <p className="text-sm text-[#626b7a] leading-relaxed mb-4">
-                  A resilient mobile PWA captures notes and photos; the system stores a bilingual record, routes crew issues into Microsoft To Do, mirrors photos into SharePoint, and turns enhancement opportunities into editable client PDFs.
-                </p>
-                <span className="text-sm font-semibold text-[#2f9e73]">
-                  Read the case study &rarr;
-                </span>
-              </Link>
-              <Link
-                href="/case-studies/interior-design-research-toolkit"
-                className="lift hairline-card rounded-lg p-6 bg-[#fffaf0] cursor-pointer block"
-              >
-                <p className="text-sm font-semibold text-[#f2b84b] mb-2">Interior design studio</p>
-                <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">AI-assisted research: better prep without a big custom app.</h3>
-                <p className="text-sm text-[#626b7a] leading-relaxed mb-4">
-                  Practical AI habits and lightweight tools that compress a designer&apos;s pre-pitch homework &mdash; reference photos, listing-price sanity checks, neighborhood comps &mdash; from hours to minutes.
-                </p>
-                <span className="text-sm font-semibold text-[#2f9e73]">
-                  Read the case study &rarr;
-                </span>
-              </Link>
-            </div>
-          </section>
-
-          {/* OPERATING PATTERNS */}
-          <section className="mb-16">
-            <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-2">What the work has taught us</p>
-            <h2 className="font-display text-3xl font-bold text-[#12131a] mb-6">The reusable knowledge is in the decisions.</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              {[
-                ['Adoption beats theoretical completeness', 'A no-login field capture form can be the right choice when every extra step costs adoption—while the supervisor workspace still gets real OTP authentication and role-aware access.'],
-                ['Automations need visible failure states', 'A pipeline can behave correctly and still hold work because a token expired or someone renamed a destination list. Health checks must watch business routing, not merely server errors.'],
-                ['Structured data creates the next product', 'Once a visit or filing becomes a canonical record, the same facts can drive tasks, archives, PDFs, proposals, reporting, and the next operational workflow without re-entry.'],
-                ['Human review belongs at the right boundary', 'People should review exceptions and customer-facing output—not repeat deterministic copying that software can handle reliably.'],
-              ].map(([title, body]) => (
-                <div key={title} className="hairline-card rounded-lg bg-[#fffaf0] p-6">
-                  <h3 className="font-display text-xl font-bold text-[#12131a] mb-2">{title}</h3>
-                  <p className="text-sm text-[#626b7a] leading-relaxed">{body}</p>
-                </div>
+          <section className="border-y border-[#ded6c7] bg-[#efe8da]/65">
+            <div className="mx-auto max-w-6xl divide-y divide-[#cfc5b5] px-6 sm:px-8">
+              {studies.map((study, index) => (
+                <Link key={study.href} href={study.href} className="group grid gap-4 py-8 sm:py-10 lg:grid-cols-[70px_1fr_1fr] lg:gap-8">
+                  <span className="font-mono text-xs text-[#1f7a57]">0{index + 1}</span>
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#626b7a]">{study.industry}</p>
+                    <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#1f7a57]">{study.status}</p>
+                  </div>
+                  <div>
+                    <h2 className="font-display text-2xl font-bold leading-tight text-[#12131a] transition-colors group-hover:text-[#1f7a57]">{study.title}</h2>
+                    <p className="mt-3 text-sm leading-relaxed text-[#596474]">{study.body}</p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-[#1f7a57]">Read case study →</span>
+                  </div>
+                </Link>
               ))}
             </div>
           </section>
 
-          {/* CTA */}
-          <section className="bg-[#12131a] rounded-lg p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 sm:px-8 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
             <div>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-white mb-2">Have a workflow that should be easier?</h2>
-              <p className="text-white/65 text-sm leading-relaxed max-w-lg">
-                Tell me where the work gets copied, chased, retyped, or remembered by one person. If software can make it cleaner, I&apos;ll tell you how &mdash; no commitment, no pitch.
-              </p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">What repeats</p>
+              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">The answer changes. The operating discipline does not.</h2>
             </div>
-            <Link href="/contact" className="bg-[#f2b84b] text-[#12131a] px-6 py-3 rounded-lg text-sm font-semibold whitespace-nowrap hover:bg-white transition-colors">
-              Let&apos;s talk
-            </Link>
+            <div className="grid gap-6 sm:grid-cols-2">
+              {[
+                ['Start with evidence', 'Open the files, trace the workflow, and reproduce the current answer before deciding what to build.'],
+                ['Put something into use', 'A concrete output exposes edge cases and disagreements faster than a strategy presentation.'],
+                ['Test the real failure modes', 'Weak cell service, renamed lists, missing divisions, portal changes, and misleading empty states are part of the product.'],
+                ['Leave the work legible', 'Definitions, decisions, source data, code, tests, and documentation should survive the person who created them.'],
+              ].map(([title, body]) => (
+                <div key={title} className="border-t border-[#cfc5b5] pt-4">
+                  <h3 className="font-display text-xl font-bold text-[#12131a]">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#626b7a]">{body}</p>
+                </div>
+              ))}
+            </div>
           </section>
-
         </main>
         <Footer />
       </div>

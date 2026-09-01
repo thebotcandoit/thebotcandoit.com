@@ -1,9 +1,9 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import NotesEditor from '../../components/NotesEditor'
+import SiteHead from '../../components/SiteHead'
 import { getNoteBySlug } from '../../data/notes'
 
 const note = getNoteBySlug('botworks-vs-using-ai-yourself')
@@ -53,20 +53,8 @@ export default function BotworksVsUsingAiYourself() {
 
   return (
     <>
-      <Head>
-        <title>{`${note.title} - Botworks Agency`}</title>
-        <meta name="description" content={note.description} />
-        {isDraft && <meta name="robots" content="noindex,nofollow" />}
-        <meta property="og:title" content={`${note.title} — Botworks Agency`} />
-        <meta property="og:description" content={note.description} />
-        <meta property="og:url" content={note.canonical} />
-        <meta property="og:type" content="article" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={note.canonical} />
-        <link rel="alternate" type="text/markdown" href={`https://botworksagency.com${markdownUrl}`} />
-        <link rel="icon" href="/favicon.ico" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      </Head>
+      <SiteHead title={`${note.title} — Botworks`} description={note.description} path={`/notes/${note.slug}`} type="article" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <div className="min-h-screen overflow-x-hidden paper-grid">
         <NotesEditor slug={note.slug} initialStatus={note.status} />
         <Nav />

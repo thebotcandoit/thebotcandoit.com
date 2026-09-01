@@ -1,77 +1,47 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
+import SiteHead from '../../components/SiteHead'
 import { publishedNotes } from '../../data/notes'
 
 export default function NotesIndex() {
   return (
     <>
-      <Head>
-        <title>{'Notes - Botworks Agency'}</title>
-        <meta name="description" content="Notes from Botworks Agency on practical AI, custom workflow software, automation, and operating systems for SMBs." />
-        <meta property="og:title" content="Notes — Botworks Agency" />
-        <meta property="og:description" content="Practical notes on AI, automation, and owned workflow software for SMB operators." />
-        <meta property="og:url" content="https://botworksagency.com/notes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://botworksagency.com/notes" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SiteHead
+        title="Notes — Botworks"
+        description="Notes from Matt Livingston about putting AI into real company work, deciding when not to build, and making operational results dependable."
+        path="/notes"
+      />
       <div className="min-h-screen overflow-x-hidden paper-grid">
         <Nav />
         <main>
-          <section className="mx-auto max-w-5xl px-6 sm:px-8 pt-10 sm:pt-16 pb-12">
-            <p className="mb-4 inline-flex rounded-full border border-[#2f9e73]/25 bg-[#2f9e73]/12 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[#1f7a57]">
-              Notes
-            </p>
-            <h1 className="font-display max-w-4xl text-[2.5rem] sm:text-6xl font-bold tracking-tight text-[#12131a] leading-[0.98] mb-5">
-              Field notes on practical AI and owned workflows.
-            </h1>
-            <p className="max-w-2xl text-base sm:text-lg text-[#4f5968] leading-relaxed">
-              Short, useful writeups from Botworks: where AI helps, where automation is enough, and where custom software is worth owning.
-            </p>
-          </section>
+          <header className="mx-auto max-w-6xl px-6 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-20">
+            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Notes</p>
+            <h1 className="font-display mt-4 max-w-5xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">Writing down the decisions behind the work.</h1>
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">These are working notes from Matt—not an AI content calendar. They explain tradeoffs, boundaries, failures, and the things that became clear only after someone used the result.</p>
+          </header>
 
-          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] max-w-5xl pb-14">
-            {publishedNotes.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                {publishedNotes.map((note) => (
-                  <Link key={note.slug} href={`/notes/${note.slug}`} className="lift hairline-card rounded-lg bg-[#fffaf0] p-6 block">
-                    <p className="text-xs font-semibold text-[#2f9e73] uppercase tracking-[0.18em] mb-3">{note.type}</p>
-                    <h2 className="font-display text-2xl font-bold text-[#12131a] mb-3">{note.title}</h2>
-                    <p className="text-sm text-[#626b7a] leading-relaxed mb-5">{note.description}</p>
-                    <span className="text-sm font-semibold text-[#2f9e73]">Read note &rarr;</span>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="hairline-card rounded-lg bg-[#fffaf0] p-6 md:p-8">
-                <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-3">Coming online</p>
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#12131a] mb-3">Published notes will appear here after Matt&apos;s edit pass.</h2>
-                <p className="max-w-2xl text-base text-[#626b7a] leading-relaxed mb-5">
-                  Drafts stay out of this index until they are deliberately published. That keeps the public hub clean while each page gets edited in the live browser workflow.
-                </p>
-                <Link href="/contact" className="inline-flex rounded-lg bg-[#12131a] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#2f9e73]">
-                  Ask about a workflow
+          <section className="border-y border-[#ded6c7] bg-[#efe8da]/65">
+            <div className="mx-auto max-w-6xl px-6 py-12 sm:px-8 sm:py-16">
+              {publishedNotes.map((note) => (
+                <Link key={note.slug} href={`/notes/${note.slug}`} className="group grid gap-5 border-y border-[#cfc5b5] py-8 sm:grid-cols-[0.4fr_1.6fr] sm:gap-10">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#1f7a57]">{note.type}</p>
+                    <p className="mt-2 text-xs text-[#8a8171]">{note.date} · {note.readingTime}</p>
+                  </div>
+                  <div>
+                    <h2 className="font-display text-3xl font-bold leading-tight text-[#12131a] transition-colors group-hover:text-[#1f7a57]">{note.title}</h2>
+                    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#596474]">{note.description}</p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-[#1f7a57]">Read note →</span>
+                  </div>
                 </Link>
-              </div>
-            )}
-          </section>
-
-          <section className="mx-auto w-[calc(100%-3rem)] sm:w-[calc(100%-4rem)] max-w-5xl pb-16">
-            <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">What belongs here</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {[
-                ['Requests for clients', 'Problem-aware notes for owners who know a workflow is leaking time.'],
-                ['Botworks vs X', 'Category comparisons for buyers weighing AI-yourself, freelancers, tools, and custom systems.'],
-                ['Technical readouts', 'Practical build notes from the places where real operations meet software.'],
-              ].map(([title, body]) => (
-                <div key={title} className="hairline-card rounded-lg bg-[#fffaf0] p-6">
-                  <h2 className="font-display text-xl font-bold text-[#12131a] mb-2">{title}</h2>
-                  <p className="text-sm text-[#626b7a] leading-relaxed">{body}</p>
-                </div>
               ))}
             </div>
+          </section>
+
+          <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.7fr_1.3fr] lg:gap-14">
+            <h2 className="font-display text-3xl font-bold leading-tight text-[#12131a]">Useful to agents without reading like an agent wrote it.</h2>
+            <p className="text-base leading-relaxed text-[#4f5968]">Each note has a stable URL, factual summary, explicit status, structured facts, a Markdown version, and a prompt that lets a reader ask another AI to challenge the argument. That structure is for retrieval. The judgment and voice are still Matt’s responsibility.</p>
           </section>
         </main>
         <Footer />

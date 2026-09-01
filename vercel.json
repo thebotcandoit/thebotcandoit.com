@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/for-searchers",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/for-service-businesses",
+      "destination": "/work",
+      "permanent": true
+    },
+    {
+      "source": "/workflow-examples",
+      "destination": "/work",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/interior-design-research-toolkit",
+      "destination": "/work",
+      "permanent": true
+    }
+  ]
+}
