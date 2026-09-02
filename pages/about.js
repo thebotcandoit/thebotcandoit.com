@@ -8,7 +8,7 @@ export default function About() {
     <>
       <SiteHead
         title="About Matt Livingston and Botworks"
-        description="Botworks is Matt Livingston: a former VP of Product Management using AI agents, software, data work, and operational judgment to carry company problems into dependable use."
+        description="Botworks is Matt Livingston: a former VP of Product Management who turns an executive's sense that AI could help into working proof inside the business."
         path="/about"
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">
@@ -29,7 +29,7 @@ export default function About() {
               <div className="space-y-5 text-base leading-relaxed text-[#4f5968]">
                 <p>I spent 15 years in software product management, most recently as a VP of Product Management. I was used to working with engineers, designers, analysts, and product people around the same problem.</p>
                 <p>Most operating companies do not have that group in-house, and I do not think recreating a software organization is a sensible use of their budget. They may have an IT provider, but keeping laptops and networks working is different from investigating a business problem and building a dependable product around it.</p>
-                <p>AI changed what one experienced person can carry. It can help inspect data, write and review code, generate tests, research unfamiliar systems, and document decisions. It still needs someone accountable for the problem, the tradeoffs, and whether the thing actually works. Botworks is that partnership.</p>
+                <p>AI changed what one experienced person can carry. It can help inspect data, write and review code, generate tests, research unfamiliar systems, and document decisions. Botworks uses that leverage to turn an executive’s hunch into something the company can see and use—while keeping one person accountable for the problem, the tradeoffs, and whether the thing actually works.</p>
               </div>
             </div>
           </section>

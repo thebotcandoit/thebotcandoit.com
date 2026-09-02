@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-[1.3fr_1fr] sm:items-end">
         <div>
           <Link href="/" className="font-display text-lg font-bold tracking-tight text-[#12131a]">Bot<span className="text-[#2f9e73]">works</span></Link>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#626b7a]">Botworks is Matt Livingston, working with AI agents and specialists when the work calls for them. Client-specific code, data, infrastructure, and documentation stay with the client.</p>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#626b7a]">Botworks is Matt Livingston, turning useful AI possibilities into working proof with AI agents and specialists when the work calls for them. Client-specific code, data, infrastructure, and documentation stay with the client.</p>
           <a href="mailto:matt@botworksagency.com" className="mt-3 inline-block text-sm font-semibold text-[#1f7a57] hover:text-[#12131a]">matt@botworksagency.com</a>
         </div>
         <nav className="flex flex-wrap gap-x-5 gap-y-3 sm:justify-end" aria-label="Footer">

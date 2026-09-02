@@ -1,7 +1,8 @@
 # Botworks Agency
 
-Botworks is an AI transformation partner. It investigates operational problems,
-builds the right answer, and stays responsible until people can rely on it.
+Botworks helps executives use AI to change how important work gets done. It
+turns a promising hunch into working proof inside the business and stays
+responsible until people can rely on the result.
 
 ## Stack
 - Next.js 14

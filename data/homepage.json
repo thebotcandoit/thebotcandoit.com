@@ -1,21 +1,21 @@
 {
   "published": {
     "meta": {
-      "title": "Botworks — Put AI to work on the business you actually run",
-      "description": "Botworks is an AI transformation partner for executives who want to turn an important operational problem into something useful, reliable, and owned by the company."
+      "title": "Botworks — Use AI to change how important work gets done",
+      "description": "Botworks turns an executive's sense that AI could help into working proof: useful, dependable work built around the company and owned by it."
     },
     "hero": {
-      "eyebrow": "AI transformation partner",
-      "heading": "Put AI to work on the business you actually run.",
-      "body": "You have a hunch that important work could be done better with AI. Botworks investigates the problem, builds the right answer, and stays responsible until people can rely on it.",
-      "note": "The work creates value now. The code, rules, data, and decisions stay legible enough for employees and AI agents to keep improving it.",
+      "eyebrow": "From possibility to working proof",
+      "heading": "Use AI to change how important work gets done.",
+      "body": "You have a sense that AI could help your business. Botworks turns that possibility into something real—a working tool, process, or analysis built around your company and dependable enough to use.",
+      "note": "Working proof changes the conversation. When AI does something valuable for the business, people have a reason to use it—and a clearer idea of what should come next.",
       "primaryCta": "Email Matt",
       "secondaryCta": "See the work"
     },
     "proof": {
-      "eyebrow": "Current work",
-      "heading": "Three companies. Three different answers.",
-      "body": "The point is not to force every problem into an AI agent or a custom application. The point is to make consequential work better, then make the result hold up in daily use.",
+      "eyebrow": "Working proof",
+      "heading": "What that looked like in practice.",
+      "body": "Each company began with important work that seemed harder than it should be—and a sense that AI might help. The answer emerged from real data, real users, and real operating constraints.",
       "items": [
         {
           "industry": "Large commercial landscaper · South Florida",
@@ -45,28 +45,28 @@
     },
     "premise": {
       "eyebrow": "Why clients call",
-      "heading": "Access to AI is not the hard part.",
+      "heading": "You do not need the answer to begin.",
       "paragraphs": [
-        "Most executives I meet already use ChatGPT, Claude, or another AI tool. Their teams are capable too. The gap is finding the time and ownership to investigate a problem, work through the data, build something, test real cases, deploy it, and keep it working.",
-        "That is where Botworks fits. A good engagement starts with an honest conversation and access to the relevant people, data, or systems. It should become tangible quickly: software, an analysis, a reporting surface, a processing tool, or a clear decision not to build."
+        "Clients rarely arrive asking for an AI adoption program. Usually an executive already sees the potential and has one piece of work in mind: something slow, manual, opaque, or newly possible. What they need first is evidence inside their own business.",
+        "That is where Botworks fits. We choose a useful first proof, get access to the relevant people, data, and systems, and make something tangible quickly. It may be software, an analysis, a reporting surface, a processing tool, or a clear decision not to build."
       ]
     },
     "work": {
       "eyebrow": "What Botworks does",
-      "heading": "The role changes with the problem.",
-      "body": "On one engagement I may be doing product work, engineering, data analysis, operational investigation, or all four. The buyer should not have to diagnose which technical job title is missing before asking for help.",
+      "heading": "Turn possibility into working proof.",
+      "body": "The first job is not to persuade the whole company to change. It is to find where AI can do something genuinely useful, make that result real, and learn what the business should do next. The role changes with whatever that proof requires.",
       "items": [
         {
-          "heading": "Find the real problem",
-          "body": "Read the files, map the workflow, inspect the data, and separate a fixable annoyance from work that is important enough to change."
+          "heading": "Find what is worth changing",
+          "body": "Read the files, map the workflow, inspect the data, and choose work important enough that a better answer would matter."
         },
         {
-          "heading": "Make something useful",
-          "body": "Move quickly from discussion to a concrete output people can see, test, and use. The first useful thing is often the fastest way to learn what the company actually needs."
+          "heading": "Make the proof tangible",
+          "body": "Move quickly from discussion to an output people can see, test, and use. A real thing teaches the company more than another list of AI possibilities."
         },
         {
-          "heading": "Take production seriously",
-          "body": "If people log in or depend on the answer, permissions, monitoring, exceptions, data integrity, documentation, and maintenance are part of the work."
+          "heading": "Make it dependable",
+          "body": "If people log in or rely on the answer, permissions, monitoring, exceptions, data integrity, documentation, and maintenance are part of proving that it works."
         }
       ]
     },
@@ -80,7 +80,7 @@
       "eyebrow": "Who this works for",
       "heading": "The common trait is authority, not title.",
       "body": "Botworks works best with an owner, CEO, CFO, COO, CMO, senior operator, or private-equity operating partner who can provide access, make decisions, and get the work moving.",
-      "fit": "A good prospect has an operational itch: something is slower, more manual, less visible, or less reliable than it should be—and they suspect AI could help but do not have someone carrying it into production.",
+      "fit": "A good prospect has an operational itch: something is slower, more manual, less visible, or less capable than it should be. They suspect AI could change it, but need someone to investigate the possibility and make the first useful proof real.",
       "notFit": "This is a poor fit when an existing tool already solves the important part, the work cannot reach the relevant data or people, or every decision must pass through months of approval before anyone can test it."
     },
     "ownership": {
@@ -103,12 +103,12 @@
       ]
     },
     "bottomCta": {
-      "heading": "What is the problem you keep thinking AI should be able to help with?",
-      "body": "Send me the rough version. You do not need a specification, a budget category, or the right technical language.",
+      "heading": "What is the work you suspect AI could change?",
+      "body": "Send me the rough version. An initial idea is enough; you do not need a specification, a budget category, or the right technical language.",
       "cta": "matt@botworksagency.com"
     }
   },
   "draft": null,
   "updatedAt": null,
-  "publishedAt": "2026-09-01T00:00:00.000Z"
+  "publishedAt": "2026-09-02T00:00:00.000Z"
 }

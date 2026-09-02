@@ -4,22 +4,22 @@
     "status": "published",
     "type": "Field note",
     "title": "You should probably try AI yourself first.",
-    "description": "Botworks is not the first step for every AI question. Use ChatGPT, Claude, or Codex yourself first—then bring in help when the work needs to become dependable for other people.",
+    "description": "Botworks is not the first step for every AI question. Try the tools yourself—then bring in help when a promising hunch needs to become working proof inside the business.",
     "date": "2026-09-01",
     "readingTime": "5 min read",
     "canonical": "https://botworksagency.com/notes/botworks-vs-using-ai-yourself",
-    "summary": "If the work is research, drafting, analysis, or a second opinion, open the AI tool you already have and try it. Hiring Botworks starts to make sense when the result has to cross company data and systems, survive real exceptions, or become something employees can use without rebuilding the prompt every time.",
+    "summary": "If the work is research, drafting, analysis, or a second opinion, open the AI tool you already have and try it. Hiring Botworks starts to make sense when you see a larger possibility inside the business and need someone to turn that hunch into something real, dependable, and usable by other people.",
     "facts": [
       "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it.",
-      "Access to a strong AI model is no longer the scarce part. Carrying an important problem through data access, specification, testing, deployment, and real use still takes time and ownership.",
+      "Access to a strong AI model is no longer the scarce part. Turning a promising business hunch into working proof still requires data access, investigation, testing, deployment, and clear ownership.",
       "Botworks does not recommend custom software when an existing product or a small configuration change solves the material problem.",
       "When client-specific software is warranted, the client owns its code, data, infrastructure, rules, tests, and documentation.",
       "Botworks commonly works through a retainer and does not require a permanent software license."
     ],
     "secondOpinionPrompt": "Read this Botworks note: {{url}}\n\nI am considering this work inside my company: [describe the people, data, systems, frequency, and what goes wrong today].\n\nTell me candidly whether we should: (1) use an AI tool ourselves, (2) buy or configure an existing product, (3) create a small automation, (4) investigate custom work with a partner such as Botworks, or (5) leave it alone for now.\n\nName the important unknowns, the ongoing maintenance burden, and what would make Botworks a poor fit. Do not assume that owning custom software is automatically valuable.",
     "cta": {
-      "heading": "What has to become reliable for someone besides you?",
-      "body": "That is usually the line between a useful AI conversation and a piece of operational work that needs an accountable partner."
+      "heading": "What do you think AI could change inside the business?",
+      "body": "A promising hunch becomes Botworks work when someone needs to investigate it, make the first useful proof real, and remain accountable for the result."
     },
     "sections": [
       {
@@ -48,10 +48,10 @@
       },
       {
         "eyebrow": "The Botworks line",
-        "heading": "Bring in a partner when the hunch needs to survive contact with the business.",
+        "heading": "Bring in a partner when the hunch should become working proof.",
         "body": [
-          "A Botworks engagement usually begins when an executive thinks something should work better and suspects AI could help, but nobody has the time or clear ownership to carry it into production.",
-          "The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to solve the important problem and make the answer understandable enough for employees and future AI agents to continue it."
+          "A Botworks engagement usually begins when an executive senses that AI could change an important piece of work, but the company needs to see that possibility working in its own business before deciding what comes next.",
+          "The first proof might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to create real value now and make the answer understandable enough for employees and future AI agents to continue it."
         ]
       }
     ],
@@ -69,7 +69,7 @@
         "items": [
           "An important workflow crossing company data, systems, documents, and people",
           "A result that must be repeatable, testable, monitored, and usable by employees",
-          "An executive with authority and access, but no one carrying the problem into dependable use"
+          "An executive with authority and access, but no one turning the hunch into working proof"
         ]
       }
     ]

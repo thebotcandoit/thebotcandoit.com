@@ -32,7 +32,7 @@ export default function Work() {
     <>
       <SiteHead
         title="Work — Botworks"
-        description="Anonymous Botworks case studies in commercial landscaping, transportation finance operations, and HVAC rebate processing."
+        description="Three Botworks case studies showing how a promising AI hunch became working proof in commercial landscaping, transportation finance, and HVAC rebate processing."
         path="/work"
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">
@@ -40,8 +40,8 @@ export default function Work() {
         <main>
           <header className="mx-auto max-w-6xl px-6 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-20">
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Work</p>
-            <h1 className="font-display mt-4 max-w-4xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">The work is the clearest explanation of Botworks.</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">These are not polished before-and-after stories with invented certainty. They describe what the company needed, what exists now, where testing mattered, and what remains unresolved.</p>
+            <h1 className="font-display mt-4 max-w-4xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">A hunch becomes real when the company can use it.</h1>
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">These companies did not begin with an AI transformation plan. They began with important work that seemed harder than it should be—and a sense AI might help. The case studies show what that hunch became, where testing mattered, and what remains unresolved.</p>
           </header>
 
           <section className="border-y border-[#ded6c7] bg-[#efe8da]/65">
@@ -65,13 +65,13 @@ export default function Work() {
 
           <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 sm:px-8 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">What repeats</p>
-              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">The answer changes. The operating discipline does not.</h2>
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">From possibility to proof</p>
+              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">The thing we make changes. The way we prove it does not.</h2>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
               {[
-                ['Start with evidence', 'Open the files, trace the workflow, and reproduce the current answer before deciding what to build.'],
-                ['Put something into use', 'A concrete output exposes edge cases and disagreements faster than a strategy presentation.'],
+                ['Choose consequential work', 'Open the files, trace the workflow, and find where a better answer would genuinely matter.'],
+                ['Make the hunch visible', 'A concrete output lets the company judge AI against its own work instead of an abstract promise.'],
                 ['Test the real failure modes', 'Weak cell service, renamed lists, missing divisions, portal changes, and misleading empty states are part of the product.'],
                 ['Leave the work legible', 'Definitions, decisions, source data, code, tests, and documentation should survive the person who created them.'],
               ].map(([title, body]) => (

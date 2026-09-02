@@ -34,7 +34,7 @@ export default function Contact() {
     <>
       <SiteHead
         title="Contact Matt — Botworks"
-        description="Tell Matt Livingston about an operational problem you think AI could help with. No specification or technical vocabulary required."
+        description="Tell Matt Livingston about important work you suspect AI could change. A hunch is enough; no specification or technical vocabulary is required."
         path="/contact"
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">
@@ -43,9 +43,9 @@ export default function Contact() {
           <section>
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Contact</p>
             <h1 className="font-display mt-4 text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">Send me the rough version.</h1>
-            <p className="mt-6 text-lg leading-relaxed text-[#4f5968]">What is the work you keep thinking AI should be able to help with? You do not need to know whether the answer is software, analysis, automation, or something else.</p>
+            <p className="mt-6 text-lg leading-relaxed text-[#4f5968]">What is the work you suspect AI could change? You do not need to know whether the answer is software, analysis, automation, an existing product, or something else.</p>
             <div className="mt-8 border-l-2 border-[#f2b84b] pl-5">
-              <p className="text-sm leading-relaxed text-[#626b7a]">A useful note usually includes the company, the people doing the work, what happens today, and where it becomes slow or unreliable. It can be incomplete.</p>
+              <p className="text-sm leading-relaxed text-[#626b7a]">A useful note usually includes the company, the people doing the work, what happens today, and what you think might now be possible. It can be incomplete.</p>
             </div>
             <a href="mailto:matt@botworksagency.com" className="mt-8 inline-block font-semibold text-[#1f7a57] hover:text-[#12131a]">matt@botworksagency.com</a>
           </section>
@@ -67,8 +67,8 @@ export default function Contact() {
                   <input id="email" name="email" type="email" required value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} className="mt-2 w-full rounded-md border border-[#cfc5b5] bg-white px-4 py-3 text-sm text-[#12131a] outline-none focus:border-[#2f9e73] focus:ring-2 focus:ring-[#2f9e73]/15" />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-[#12131a]">What is happening today?</label>
-                  <textarea id="message" name="message" required rows={8} value={form.message} onChange={(event) => setForm({ ...form, message: event.target.value })} placeholder="We have a process that…" className="mt-2 w-full resize-y rounded-md border border-[#cfc5b5] bg-white px-4 py-3 text-sm leading-relaxed text-[#12131a] outline-none focus:border-[#2f9e73] focus:ring-2 focus:ring-[#2f9e73]/15" />
+                  <label htmlFor="message" className="block text-sm font-semibold text-[#12131a]">What do you think AI could change?</label>
+                  <textarea id="message" name="message" required rows={8} value={form.message} onChange={(event) => setForm({ ...form, message: event.target.value })} placeholder="We have this work that…" className="mt-2 w-full resize-y rounded-md border border-[#cfc5b5] bg-white px-4 py-3 text-sm leading-relaxed text-[#12131a] outline-none focus:border-[#2f9e73] focus:ring-2 focus:ring-[#2f9e73]/15" />
                 </div>
                 {status === 'error' && <p className="text-sm text-red-700">The form did not send. Please email matt@botworksagency.com directly.</p>}
                 <button type="submit" disabled={status === 'submitting'} className="w-full rounded-md bg-[#12131a] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2f9e73] disabled:opacity-50">{status === 'submitting' ? 'Sending…' : FORMSPREE_ID ? 'Send to Matt' : 'Open in email'}</button>
