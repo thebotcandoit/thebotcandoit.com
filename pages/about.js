@@ -53,7 +53,7 @@ export default function About() {
                 <h2 className="font-display text-3xl font-bold">Have something you want to think through?</h2>
                 <p className="mt-3 text-sm leading-relaxed text-white/65">Email is the best place to start. The first conversation is simply a conversation.</p>
               </div>
-              <a href="mailto:matt@botworksagency.com" className="mt-6 inline-flex shrink-0 rounded-md bg-[#f2b84b] px-5 py-3 text-sm font-semibold text-[#12131a] hover:bg-white sm:mt-0">Email Matt</a>
+              <a href="mailto:matt@botworksagency.com" className="mt-6 inline-flex shrink-0 rounded-md bg-[#f2b84b] px-5 py-3 text-sm font-semibold text-[#12131a] hover:bg-white sm:mt-0">matt@botworksagency.com</a>
             </div>
           </section>
         </main>

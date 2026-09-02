@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import SiteHead from '../components/SiteHead'
@@ -113,7 +112,7 @@ export default function HowWeWork() {
                 <h2 className="font-display text-3xl font-bold">Start with the rough problem.</h2>
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/65">You do not need to decide whether this is AI, software, data, or operations work before getting in touch.</p>
               </div>
-              <Link href="/contact" className="mt-6 inline-flex shrink-0 rounded-md bg-[#f2b84b] px-5 py-3 text-sm font-semibold text-[#12131a] hover:bg-white sm:mt-0">Contact Matt</Link>
+              <a href="mailto:matt@botworksagency.com" className="mt-6 inline-flex shrink-0 rounded-md bg-[#f2b84b] px-5 py-3 text-sm font-semibold text-[#12131a] hover:bg-white sm:mt-0">matt@botworksagency.com</a>
             </div>
           </section>
         </main>

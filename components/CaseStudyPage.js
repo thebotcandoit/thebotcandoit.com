@@ -93,7 +93,7 @@ export default function CaseStudyPage({
                 <h2 className="font-display text-2xl font-bold text-[#12131a]">Does this resemble work inside your company?</h2>
                 <p className="mt-2 text-sm leading-relaxed text-[#626b7a]">Send Matt the rough version. The first conversation can begin before the problem has a clean name.</p>
               </div>
-              <a href="mailto:matt@botworksagency.com" className="mt-5 inline-flex shrink-0 rounded-md bg-[#12131a] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2f9e73] sm:mt-0">Email Matt</a>
+              <a href="mailto:matt@botworksagency.com" className="mt-5 inline-flex shrink-0 rounded-md bg-[#12131a] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2f9e73] sm:mt-0">matt@botworksagency.com</a>
             </div>
           </section>
         </main>
