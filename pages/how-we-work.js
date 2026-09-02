@@ -5,28 +5,28 @@ import SiteHead from '../components/SiteHead'
 const stages = [
   {
     number: '01',
-    title: 'Bring the hunch, not a specification.',
-    body: 'A useful first conversation begins with work you think AI might change. It does not require a prescribed solution. It does require enough authority to open the relevant data, systems, and conversations.',
+    title: 'Bring the hunch and the people who know the work.',
+    body: 'A useful first conversation begins with something you think AI might change. You do not need a prescribed solution. We do need access to the employees, data, systems, and examples that reveal how the job actually works.',
   },
   {
     number: '02',
-    title: 'Find the first proof worth making.',
-    body: 'Botworks maps the current work, reproduces existing calculations, inspects source data, and names disagreements. The goal is a first result valuable enough to matter and bounded enough to learn from.',
+    title: 'Learn the job before assigning any of it to AI.',
+    body: 'I trace the current work with the team, reproduce the calculations, inspect the evidence, and look for exceptions. The goal is not to automate a description of the process. It is to understand the responsibility well enough to redesign it.',
   },
   {
     number: '03',
-    title: 'Make something the company can see and use.',
-    body: 'There is no universal starter package. The first output may be an app, a report, a data reconciliation, a processing surface, a tested prototype, or a clear decision to use an existing product. It should make the hunch concrete.',
+    title: 'Give AI a useful, bounded part of the work.',
+    body: 'Some steps should be deterministic software. AI can handle appropriate ambiguity, drafting, matching, and investigation. Employees keep the context, judgment, and accountability that belong with them. Uncertain work returns to the right person instead of being hidden.',
   },
   {
     number: '04',
-    title: 'Let real use decide what comes next.',
-    body: 'Real work exposes permissions, bad connections, exceptions, naming changes, missing records, confusing states, and definitions nobody had written down. Botworks tests and iterates until the result is dependable—or the evidence points somewhere better.',
+    title: 'Build the surrounding system and use it for real.',
+    body: 'An agent needs evidence, tools, rules, tests, a place in the workflow, and a path for exceptions. Real use exposes bad connections, missing records, changed names, confusing states, and assumptions nobody had written down. We keep iterating—or choose a better answer.',
   },
   {
     number: '05',
-    title: 'Keep the company able to continue.',
-    body: 'Client-specific code, data, infrastructure, rules, tests, and documentation stay with the client. The work should be understandable to employees, future maintainers, and the AI agents they use next.',
+    title: 'Let the team own and improve the capability.',
+    body: 'Client-specific code, data, infrastructure, rules, tests, and documentation stay with the client. Corrections should make the shared system better. The work should remain understandable to employees, future maintainers, and the AI agents they use next.',
   },
 ]
 
@@ -34,8 +34,8 @@ export default function HowWeWork() {
   return (
     <>
       <SiteHead
-        title="How Botworks works — from promising hunch to working proof"
-        description="How Botworks turns an executive's sense that AI could help into something the company can see, test, use, and continue."
+        title="How Botworks works — AI built with the people who know the work"
+        description="How Botworks works with employees to give AI a useful part of an important job, build the surrounding system, and test it in practice."
         path="/how-we-work"
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">
@@ -43,8 +43,8 @@ export default function HowWeWork() {
         <main>
           <header className="mx-auto max-w-6xl px-6 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-20">
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">How we work</p>
-            <h1 className="font-display mt-4 max-w-5xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">From “AI should be able to help” to working proof inside the business.</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">The first goal is not to persuade everyone to change. It is to use AI on work the company already cares about and make the result tangible enough to judge.</p>
+            <h1 className="font-display mt-4 max-w-5xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">Build with the people who know the work. Give AI a useful part of it.</h1>
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">The first goal is not to persuade everyone to adopt AI. It is to work with employees on something the company already cares about and make a better way of doing it real.</p>
           </header>
 
           <section className="border-y border-[#ded6c7] bg-[#efe8da]/65">
@@ -61,13 +61,13 @@ export default function HowWeWork() {
 
           <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 sm:px-8 sm:py-24 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16">
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Why working proof comes first</p>
-              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">The business needs to see AI working for itself.</h2>
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Why the work comes first</p>
+              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">People need a reason to change how they work.</h2>
             </div>
             <div className="space-y-5 border-l border-[#cfc5b5] pl-6 sm:pl-8">
-              <p className="text-lg leading-relaxed text-[#4f5968]">An executive may already believe AI could help while having no reason to ask employees to change their habits yet. A working result gives everyone something more useful than a promise: evidence from their own business.</p>
-              <p className="text-lg leading-relaxed text-[#4f5968]">When AI handles something that was difficult before, broader use stops feeling theoretical. Training, guardrails, and documentation can support what follows, but they are attached to work people already understand and value.</p>
-              <blockquote className="border-y border-[#cfc5b5] py-6 font-display text-2xl font-bold leading-snug text-[#12131a]">The first objective is not AI adoption. It is to give the company something worth adopting.</blockquote>
+              <p className="text-lg leading-relaxed text-[#4f5968]">An executive may believe AI could help while having no reason to ask employees to change their habits for a promise. A working result gives the team evidence from its own business and a chance to shape the system around what it knows.</p>
+              <p className="text-lg leading-relaxed text-[#4f5968]">When AI does something that was difficult before, broader use stops feeling theoretical. Training, guardrails, and documentation now support work people already understand and value.</p>
+              <blockquote className="border-y border-[#cfc5b5] py-6 font-display text-2xl font-bold leading-snug text-[#12131a]">Do not make employees work for the AI. Build AI that works with them.</blockquote>
             </div>
           </section>
 
@@ -83,9 +83,9 @@ export default function HowWeWork() {
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#f2b84b]">What Botworks takes responsibility for</p>
               <ul className="mt-6 space-y-4">
                 {[
-                  'If software is live, it works for the problem it was built to solve.',
+                  'If software is live, it works for the problem and the people it was built to serve.',
                   'If the work is analysis, the sources, definitions, assumptions, and disagreements remain inspectable.',
-                  'Real exceptions and failures are visible instead of hidden behind a reassuring screen.',
+                  'AI uncertainty, real exceptions, and failures are visible to the person equipped to decide what happens next.',
                   'The company can see what is validated, what is experimental, and what remains open.',
                 ].map((item) => <li key={item} className="flex gap-3 text-sm leading-relaxed text-white/72"><span className="text-[#f2b84b]">—</span><span>{item}</span></li>)}
               </ul>

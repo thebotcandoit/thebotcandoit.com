@@ -1,8 +1,8 @@
 # Botworks Agency
 
-Botworks helps an executive use AI to change how important work gets done. It turns the executive’s sense that AI could help into working proof inside the business.
+Botworks helps companies put AI to work alongside the people who know the business.
 
-The first goal is not an abstract adoption program. Botworks finds a useful first proof, creates something tangible quickly, builds only what the work warrants, takes responsibility for the real-world result, and leaves the client’s people and future AI agents able to understand and continue it.
+Botworks works with employees to understand an important job, give AI a useful and bounded part of it, build the surrounding software and rules, and test the result in real conditions. Employees supply operating knowledge, judgment, and accountability. AI handles appropriate investigation, matching, drafting, analysis, and other repeatable work. The client owns the resulting capability.
 
 Primary site: https://botworksagency.com/
 Contact: https://botworksagency.com/contact
@@ -28,8 +28,10 @@ Published note markdown:
 
 Positioning:
 
-- Use AI to change how important work gets done.
-- A typical engagement begins with an executive hunch, produces working proof, and lets real business value determine what comes next.
+- Put AI to work alongside the people who know the business.
+- Employees are not the fallback when AI fails. Their knowledge and judgment are part of what makes the system useful.
+- A useful system should fit the operation and should not depend on widespread new employee behavior before it can create value.
+- A typical engagement begins with an executive hunch and the employees, systems, and evidence needed to test it.
 - AI transformation is the cumulative result of useful work proving itself, not the first thing Botworks asks a company to buy.
 - Existing products remain the right answer when they solve the material problem.
 - Custom work is reserved for specific, consequential workflows worth owning and maintaining.

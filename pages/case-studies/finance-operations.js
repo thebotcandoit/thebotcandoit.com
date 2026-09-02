@@ -4,47 +4,49 @@ export default function FinanceOperations() {
   return (
     <CaseStudyPage
       path="/case-studies/finance-operations"
-      title="A recurring executive snapshot became a tested reporting product."
-      description="How Botworks is turning fragmented transportation data, spreadsheet reconciliation, reporting definitions, and owner-operator transaction work into repeatable internal products."
+      title="An alert was redesigned before it could become another source of noise."
+      description="How Botworks worked with a transportation company to understand conflicting operational data, build useful reporting, and redesign an AI alert around the employees who would use it."
       eyebrow="Regional transportation company"
       status="Active engagement"
-      intro="The engagement began with a finance executive, several operating systems, and reporting work that depended on manual spreadsheets. It has grown into a data map, a repeatable snapshot, reconciliation rules, and custom processing for owner-operator transactions."
+      intro="The engagement began with a finance executive, employees who understood different parts of the operation, and systems that disagreed about trucks, drivers, routes, revenue, and time. Some of the work became software. Some became analysis. One proposed agent job changed completely once we saw what it would ask people to do."
       facts={[
-        ['Work spans', 'Routes, billing, payroll, card sheets, and operating data'],
-        ['Current output', 'Repeatable executive snapshot and PDF'],
-        ['Also in scope', 'Owner-operator transaction processing and reconciliation'],
+        ['People involved', 'Finance, dispatch, billing, and company leadership'],
+        ['Evidence spans', 'Routes, billing, payroll, card sheets, and vehicle data'],
+        ['Work produced', 'Reporting, reconciliation, cleanup lists, and processing tools'],
       ]}
       sections={[
         {
           eyebrow: 'The starting point',
-          heading: 'Before building a dashboard, the numbers needed a defensible meaning.',
+          heading: 'The systems held data. The employees knew what it meant.',
           paragraphs: [
             'The source systems did not agree automatically on dates, divisions, trucks, drivers, revenue, surcharge treatment, or which records belonged in a reporting window. A polished interface would have hidden those disagreements rather than solving them.',
-            'Botworks mapped the sources, reproduced the finance team’s calculations, and turned definitions into explicit rules. When totals are additive, the generator cross-foots them. When trucks and drivers are distinct counts rather than sums, the page says so.',
+            'The finance and operating teams supplied the context the systems could not. I mapped the sources, reproduced their calculations, and turned agreed definitions into explicit rules. When totals are additive, the generator cross-foots them. When trucks and drivers are distinct counts rather than sums, the page says so.',
           ],
         },
         {
           eyebrow: 'The reporting product',
-          heading: 'The same structure can now be rerun against a different day of data.',
+          heading: 'Reporting became repeatable without pretending to run the business.',
           paragraphs: [
             'The snapshot produces a fixed reporting grammar across today’s schedule, the prior day, month to date, and a trailing quarter. The notes describe definitions rather than commenting on whichever numbers happened to arrive that morning.',
-            'That distinction became a test: render the same template from two genuinely different days and require every definition note to remain identical. If the prose changes with the data, the page has started interpreting the operator’s business instead of reporting it.',
+            'That distinction became a test: render the same template from two genuinely different days and require every definition note to remain identical. If the prose changes with the data, the page has started interpreting the operator’s business instead of reporting it. The employees remain responsible for what the numbers mean for the operation.',
           ],
           callout: 'Present the math. Label it precisely enough to be unambiguous. Do not interpret it for the operator.',
         },
         {
-          eyebrow: 'What production discipline looked like',
-          heading: 'A page can reconcile perfectly and still mislead.',
+          eyebrow: 'The proposed agent job',
+          heading: 'A recurring driver alert would have trained the team to ignore it.',
           paragraphs: [
-            'The work included adversarial review of comparison windows, absent divisions, daily ratios, and calendar composition. Some proposed “fixes” were later removed because they smuggled judgment into the report. The client knows what a Sunday means for its operation; the product’s job is to show the defined number consistently.',
-            'Visual rules were codified too: one data size, reporting figures in ink, bold reserved for totals, and no red/orange/green value coloring that pretends a threshold is universally good or bad.',
+            'One promising idea was to compare dispatch and vehicle systems and alert the team when a driver appeared to be logged into the wrong truck—or not logged in at all. The first 31-day analysis found that most of the apparent problem came from standing conditions: missing accounts, repeated driver-truck pairings, aliases, and master-data errors.',
+            'If we had shipped the alert first, dispatch would have received the same known problems every day. The useful first output was a one-time cleanup list for the employees who could fix an account, correct a record, or decide that a particular role should not be expected to log in.',
           ],
+          callout: 'Good AI should not require more than 100 drivers to change their behavior before it can become useful.',
         },
         {
-          eyebrow: 'Beyond the snapshot',
-          heading: 'The same relationship now carries transaction work that did not fit an existing product.',
+          eyebrow: 'Another useful boundary',
+          heading: 'Not every repeatable process needs a new application.',
           paragraphs: [
-            'Botworks is also reconciling owner-operator card sheets across months and developing custom processing around those transactions. This is the same pattern in another form: inspect the source data, agree on the rule, build the repeatable process, and leave the rule and evidence visible.',
+            'The company also hand-builds monthly owner-operator card sheets. We derived the current roster from the operating system, reconciled multiple months, and established repeatable rules for producing the files.',
+            'A portal was considered and deliberately deferred. Once the rules existed, an employee could upload the source and export the completed files in about a minute each month. Building and maintaining a new interface would not yet have improved the important part of the job.',
           ],
         },
       ]}
@@ -53,10 +55,11 @@ export default function FinanceOperations() {
         'Explicit definitions and reconciliation rules',
         'A repeatable executive snapshot and four-page PDF',
         'Tests for arithmetic, stable definitions, and visual grammar',
-        'Owner-operator card-sheet reconciliation and processing work',
+        'A driver-and-truck mismatch analysis and one-time cleanup design',
+        'Owner-operator card-sheet reconciliation and repeatable processing',
         'A working record of open questions, decisions, and limitations',
       ]}
-      boundary="This is an active internal engagement. The reporting figures change every run, so this case study describes the product and its controls rather than publishing today’s company numbers or claiming a business outcome Botworks cannot independently attribute."
+      boundary="This is an active internal engagement. The reporting product and reconciliation work exist; the recurring driver alert described here was deliberately not shipped before the standing problems were addressed. This case study does not publish company figures or claim a business outcome Botworks cannot independently attribute."
     />
   )
 }

@@ -8,22 +8,22 @@ const studies = [
     href: '/case-studies/field-visit-capture',
     industry: 'Large commercial landscaper · South Florida',
     status: 'In production',
-    title: 'A field visit became the shared record for operations, clients, and estimates.',
-    body: 'Weak-cell photo capture, supervisor review, crew follow-up, client PDFs, and an estimating system under active testing.',
+    title: 'The team records a site visit once. AI and software help carry it forward.',
+    body: 'Weak-cell photo capture, supervisor review, crew follow-up, client PDFs, and an estimating system under active testing—all built around the way employees already work in the field.',
   },
   {
     href: '/case-studies/finance-operations',
     industry: 'Regional transportation company',
     status: 'Active engagement',
-    title: 'A recurring executive snapshot became a tested reporting product.',
-    body: 'Source mapping, reconciliation, stable reporting definitions, PDF generation, and owner-operator transaction processing.',
+    title: 'An alert was redesigned before it could become another source of noise.',
+    body: 'Operational data revealed standing account, identity, and equipment problems. The first useful output was a one-time cleanup list, not a recurring demand that more than 100 drivers change their behavior.',
   },
   {
     href: '/case-studies/hvac-rebate-automation',
     industry: 'Family-owned HVAC contractor',
     status: 'Under operator validation',
-    title: 'A job number became a reviewable, print-ready rebate packet.',
-    body: 'Existing job data connected to a local program-specific filing and paperwork workflow without replacing the field-service product.',
+    title: 'The office reviews a rebate decision instead of assembling it from scratch.',
+    body: 'Existing job data, delivered equipment, certification records, and deterministic program rules come together in one reviewable workflow.',
   },
 ]
 
@@ -32,7 +32,7 @@ export default function Work() {
     <>
       <SiteHead
         title="Work — Botworks"
-        description="Three Botworks case studies showing how a promising AI hunch became working proof in commercial landscaping, transportation finance, and HVAC rebate processing."
+        description="Three Botworks case studies showing how AI and software can support employees in commercial landscaping, transportation, and HVAC rebate processing."
         path="/work"
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">
@@ -40,8 +40,8 @@ export default function Work() {
         <main>
           <header className="mx-auto max-w-6xl px-6 pb-14 pt-12 sm:px-8 sm:pb-20 sm:pt-20">
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Work</p>
-            <h1 className="font-display mt-4 max-w-4xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">A hunch becomes real when the company can use it.</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">These companies did not begin with an AI transformation plan. They began with important work that seemed harder than it should be—and a sense AI might help. The case studies show what that hunch became, where testing mattered, and what remains unresolved.</p>
+            <h1 className="font-display mt-4 max-w-4xl text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">AI is useful when it helps someone do real work differently.</h1>
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#4f5968]">These companies did not begin with a transformation plan. They began with employees who knew the work, an important problem, and a belief that AI might now make a better approach possible. The case studies show what we built together, where the human judgment remained, and what real use taught us.</p>
           </header>
 
           <section className="border-y border-[#ded6c7] bg-[#efe8da]/65">
@@ -65,15 +65,15 @@ export default function Work() {
 
           <section className="mx-auto grid max-w-6xl gap-8 px-6 py-16 sm:px-8 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">From possibility to proof</p>
-              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">The thing we make changes. The way we prove it does not.</h2>
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">What repeats</p>
+              <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">The software changes. The working relationship does not.</h2>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
               {[
-                ['Choose consequential work', 'Open the files, trace the workflow, and find where a better answer would genuinely matter.'],
-                ['Make the hunch visible', 'A concrete output lets the company judge AI against its own work instead of an abstract promise.'],
-                ['Test the real failure modes', 'Weak cell service, renamed lists, missing divisions, portal changes, and misleading empty states are part of the product.'],
-                ['Leave the work legible', 'Definitions, decisions, source data, code, tests, and documentation should survive the person who created them.'],
+                ['Learn from the people doing the job', 'The files and systems show part of the work. Employees explain the exceptions, judgment, and operating reality around them.'],
+                ['Give AI a bounded responsibility', 'Software calculates what should be deterministic. AI handles appropriate ambiguity. A person receives the decisions that still need judgment.'],
+                ['Test the real failure modes', 'Weak cell service, missing identities, changed equipment, portal rules, and misleading empty states are part of the product.'],
+                ['Leave the capability with the company', 'Definitions, decisions, source data, code, tests, and documentation remain usable by employees and the agents they use next.'],
               ].map(([title, body]) => (
                 <div key={title} className="border-t border-[#cfc5b5] pt-4">
                   <h3 className="font-display text-xl font-bold text-[#12131a]">{title}</h3>

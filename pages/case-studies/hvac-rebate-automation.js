@@ -4,54 +4,56 @@ export default function HvacRebateAutomation() {
   return (
     <CaseStudyPage
       path="/case-studies/hvac-rebate-automation"
-      title="A job number became a reviewable, print-ready rebate packet."
-      description="A Botworks case study about connecting existing HVAC job data to a local rebate process without turning the same facts into recurring office data entry."
+      title="The office reviews a rebate decision instead of assembling it from scratch."
+      description="How Botworks combined HVAC job data, delivered equipment, certification records, deterministic program rules, AI-assisted matching, and human review."
       eyebrow="Family-owned HVAC contractor"
       status="Built and under operator validation"
-      intro="The office already had the customer and job information. The recurring work came from moving those facts through a local rebate program, checking the result, and assembling the packet the customer needed to sign and mail."
+      intro="The office already had the customer and job information. The difficult part was reconciling what was proposed, what was actually delivered, what the certification directory recognized, and what the rebate program allowed. The useful system does the assembly work and gives judgment back to the person who knows the job."
       facts={[
-        ['Source', 'Existing field-service job data'],
-        ['Operator starts with', 'One job number'],
-        ['Output', 'A reviewed rebate filing and print-ready packet'],
+        ['Evidence', 'Job records, supplier invoices, equipment certification, and program rules'],
+        ['Operator starts with', 'A job that may contain incomplete or conflicting facts'],
+        ['Operator receives', 'A decision, supporting evidence, and clearly marked uncertainty'],
       ]}
       sections={[
         {
           eyebrow: 'The problem',
-          heading: 'The data existed. The process still required a person to re-key it.',
+          heading: 'The facts existed, but not in one trustworthy place.',
           paragraphs: [
-            'The company’s field-service platform already held the customer, equipment, and job facts. The rebate workflow lived somewhere else, with its own program rules, portal behavior, and paperwork requirements.',
-            'This was not a reason to replace the field-service product. It was a reason to connect one company workflow to the good system already in use.',
+            'The company’s field-service platform held the proposed customer, equipment, and job facts. Supplier invoices showed what was actually delivered. A certification directory held the rated system combinations. The rebate program supplied another set of rules.',
+            'Those sources can disagree. A proposed coil may not be the coil that arrived. Multiple invoices may compose one job. A model number may be partial or ambiguous. This was not a reason to replace the field-service product. It was a reason to help the office reconcile evidence that already existed.',
           ],
         },
         {
           eyebrow: 'What Botworks built',
-          heading: 'The operator reviews the answer instead of rebuilding it.',
+          heading: 'Software, AI, and the employee have different responsibilities.',
           paragraphs: [
-            'The internal application starts with a job number, reads the source record, applies the relevant program classification, and presents the facts for review. The filing and packet generation happen from that reviewed record, and the result is stored under a name the office can find later.',
-            'Human review remains at the point where it is useful: confirming the customer-facing result and handling exceptions. Deterministic copying and document assembly do not need to be repeated by hand.',
+            'Deterministic software applies eligibility thresholds and calculates money. AI helps read messy records, match equipment, reconcile competing sources, and assemble the evidence. The employee reviews uncertainty, decides novel cases, and controls submission.',
+            'The review is organized by confidence. Exact matches with clear evidence can move quickly. Missing certification, model-only matches, or ambiguous records receive attention. Unsupported cases stop instead of producing a confident number.',
           ],
         },
         {
           eyebrow: 'Why custom work was warranted',
-          heading: 'The valuable gap was narrow, local, and poorly served by the products on either side.',
+          heading: 'The system changes the employee’s job without trying to remove it.',
           paragraphs: [
-            'The field-service platform was valuable and stayed in place. The rebate portal was mandatory. Neither product was designed to carry this contractor’s specific job data through this program’s exact process.',
-            'That is the kind of gap where a small owned workflow can make sense: the underlying products remain, while the company-specific handoff becomes reliable.',
+            'The field-service platform stays. The supplier records and certification directory stay. The program portal stays. What changes is the office work between them.',
+            'Instead of repeatedly searching, copying, comparing, and re-keying, the employee receives a reviewable decision with the evidence attached. The person still knows the customer, recognizes a strange job, and decides whether the packet should be submitted.',
           ],
         },
         {
           eyebrow: 'Why this matters beyond one contractor',
-          heading: 'The method can repeat; the program rules cannot be assumed to.',
+          heading: 'Corrections should improve the shared system.',
           paragraphs: [
-            'A private-equity operator or multi-location HVAC business may see the same class of problem across companies. The useful reusable parts are the investigation method, the review boundaries, the testing discipline, and some technical components—not a claim that every utility program or contractor should use identical software.',
+            'When the operator corrects a match or a proposed value, that decision can become a known mapping, a test case, or a clearer rule. Confidence grows through accumulated evidence rather than a vague claim that the agent learns on its own.',
+            'A private-equity operator or multi-location HVAC business may see the same class of problem across companies. The reusable parts are the investigation method, source hierarchy, review boundaries, testing discipline, and some technical components—not an assumption that every utility program or contractor works the same way.',
           ],
         },
       ]}
       delivered={[
-        'Job-number lookup against the existing field-service record',
-        'Program classification and operator review',
-        'Program-specific filing workflow',
-        'Print-ready packet generation and searchable history',
+        'A source hierarchy across job records, invoices, certification, and program rules',
+        'Deterministic eligibility and calculation tests',
+        'AI-assisted equipment matching and evidence assembly',
+        'Confidence-based operator review for ambiguous cases',
+        'A program-specific filing and packet workflow under operator validation',
         'A client-owned deployment path and documentation',
       ]}
       boundary="The system is built and being validated with the operator. Earlier site copy claimed approximately eight hours saved each week; that number is not used here until its source and the current production status are confirmed."

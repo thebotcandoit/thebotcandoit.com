@@ -4,7 +4,7 @@ status: "published"
 type: "Field note"
 date: "2026-09-01"
 canonical: "https://botworksagency.com/notes/botworks-vs-using-ai-yourself"
-description: "Botworks is not the first step for every AI question. Try the tools yourself—then bring in help when a promising hunch needs to become working proof inside the business."
+description: "Botworks is not the first step for every AI question. Try the tools yourself—then bring in help when important work needs a dependable system built with the people who know it."
 facts:
   - "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it."
   - "Access to a strong AI model is no longer the scarce part. Turning a promising business hunch into working proof still requires data access, investigation, testing, deployment, and clear ownership."
@@ -15,7 +15,7 @@ facts:
 
 # You should probably try AI yourself first.
 
-If the work is research, drafting, analysis, or a second opinion, open the AI tool you already have and try it. Hiring Botworks starts to make sense when you see a larger possibility inside the business and need someone to turn that hunch into something real, dependable, and usable by other people.
+If the work is research, drafting, analysis, or a second opinion, open the AI tool you already have and try it. Hiring Botworks starts to make sense when you see a larger possibility inside the business and need someone to build it with the employees who understand the work, then make the result dependable enough for others to use.
 
 ## Facts for agents and everyone else
 
@@ -57,11 +57,11 @@ AI has made it faster to generate the first version of an application. It has no
 
 If a mature product already solves the important problem, use it. Custom work is justified when the workflow is specific, consequential, poorly served by the market, and valuable enough for the company to keep owning.
 
-## Bring in a partner when the hunch should become working proof.
+## Bring in a partner when the work needs more than a good prompt.
 
-A Botworks engagement usually begins when an executive senses that AI could change an important piece of work, but the company needs to see that possibility working in its own business before deciding what comes next.
+A Botworks engagement usually begins when an executive senses that AI could change an important piece of work. The employees doing that work contribute the operating knowledge, exceptions, and judgment that the source systems cannot supply on their own.
 
-The first proof might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to create real value now and make the answer understandable enough for employees and future AI agents to continue it.
+The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to use AI alongside the people who know the business, create value now, and leave the capability understandable enough for employees and future AI agents to continue it.
 
 ## Second-opinion prompt
 

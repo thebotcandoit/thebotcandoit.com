@@ -1,92 +1,92 @@
 {
   "published": {
     "meta": {
-      "title": "Botworks — Use AI to change how important work gets done",
-      "description": "Botworks turns an executive's sense that AI could help into working proof: useful, dependable work built around the company and owned by it."
+      "title": "Botworks — Put AI to work alongside the people who know the business",
+      "description": "Botworks works with your team to build practical AI systems for important work, test them in the real world, and leave the result in your hands."
     },
     "hero": {
-      "eyebrow": "From possibility to working proof",
-      "heading": "Use AI to change how important work gets done.",
-      "body": "You have a sense that AI could help your business. Botworks turns that possibility into something real—a working tool, process, or analysis built around your company and dependable enough to use.",
-      "note": "Working proof changes the conversation. When AI does something valuable for the business, people have a reason to use it—and a clearer idea of what should come next.",
+      "eyebrow": "AI transformation, one useful job at a time",
+      "heading": "Put AI to work alongside the people who know the business.",
+      "body": "Your employees already know the work. I work with them to find where AI can help, build what the job requires, and test it in the real conditions of the business. Sometimes that means an agent. Sometimes it means software, analysis, or a better use of the systems you already have.",
+      "note": "The first useful system matters more than a transformation plan. Once people see AI doing something valuable in their own work, they have a reason to use it—and ideas about what should happen next.",
       "primaryCta": "matt@botworksagency.com",
       "secondaryCta": "See the work"
     },
     "proof": {
-      "eyebrow": "Working proof",
-      "heading": "What that looked like in practice.",
-      "body": "Each company began with important work that seemed harder than it should be—and a sense that AI might help. The answer emerged from real data, real users, and real operating constraints.",
+      "eyebrow": "The work",
+      "heading": "AI becomes useful in a particular job.",
+      "body": "These are not demonstrations built around ideal data. Each began with employees who knew the work, an important problem, and a chance to discover what AI could actually do inside the business.",
       "items": [
         {
           "industry": "Large commercial landscaper · South Florida",
           "status": "In production",
-          "heading": "One site visit now feeds operations, client reporting, and estimating.",
-          "body": "Account managers capture notes and photos in the field, including on weak cell service. The same record supports supervisor review, crew follow-up, client PDFs, and a measured estimating system.",
-          "detail": "The difficult part was not generating an app. It was weeks of testing uploads, failure states, real field behavior, and the pricing rules the company actually uses.",
+          "heading": "The team records a site visit once. AI and software help carry it forward.",
+          "body": "Account managers capture what they see in the field, including on weak cell service. The same record supports supervisor review, crew follow-up, client PDFs, and an estimating system under active testing.",
+          "detail": "The people remain the source of the work. The system makes their record more useful without asking them to recreate it for every audience.",
           "cta": "Read the field-work case study"
         },
         {
           "industry": "Regional transportation company",
           "status": "Active engagement",
-          "heading": "Reporting that can be rerun, reconciled, and challenged.",
-          "body": "Route, billing, payroll, card-sheet, and operating data now feed a repeatable executive snapshot and owner-operator transaction work instead of a one-off spreadsheet exercise.",
-          "detail": "The work includes definitions, source mapping, reconciliation, tests, and the discipline to present the math without pretending to know what it means for the operator.",
+          "heading": "A proposed driver alert became a cleanup plan before it could become noise.",
+          "body": "The first analysis found standing identity, account, and equipment problems that would have produced the same alerts every day. The better first step was a short list for the people who could resolve them.",
+          "detail": "Good AI should fit the operation. It should not require more than 100 drivers to change their behavior before it can become useful.",
           "cta": "Read the finance-operations case study"
         },
         {
           "industry": "Family-owned HVAC contractor",
           "status": "Working system",
-          "heading": "A job number becomes a rebate packet without re-keying the same facts.",
-          "body": "The system reads the company’s existing job data, applies the local program rules, lets the operator review the result, and produces the paperwork the office needs.",
-          "detail": "A narrow custom workflow made sense because the useful data already existed and the remaining work lived inside a program-specific portal and form process.",
+          "heading": "The office reviews a rebate decision instead of assembling it from scratch.",
+          "body": "The system brings together job data, delivered equipment, certification records, and program rules. It handles the repeatable work and sends uncertainty back to the person who knows the job.",
+          "detail": "The software calculates. AI helps with messy matching and reconciliation. The employee remains responsible for judgment and submission.",
           "cta": "Read the rebate case study"
         }
       ]
     },
     "premise": {
-      "eyebrow": "Why clients call",
-      "heading": "You do not need the answer to begin.",
+      "eyebrow": "Where it starts",
+      "heading": "Bring the hunch. Bring the people who know the work.",
       "paragraphs": [
-        "Clients rarely arrive asking for an AI adoption program. Usually an executive already sees the potential and has one piece of work in mind: something slow, manual, opaque, or newly possible. What they need first is evidence inside their own business.",
-        "That is where Botworks fits. We choose a useful first proof, get access to the relevant people, data, and systems, and make something tangible quickly. It may be software, an analysis, a reporting surface, a processing tool, or a clear decision not to build."
+        "Clients rarely arrive asking for an AI adoption program. Usually an executive sees a piece of important work that is slow, manual, difficult to understand, or newly possible. The employees doing that work already know things the software and source data cannot explain on their own.",
+        "I work with those people to understand the job and make something tangible quickly. It may be software, an analysis, a reporting surface, a processing tool, a carefully bounded agent, or a clear decision not to build."
       ]
     },
     "work": {
-      "eyebrow": "What Botworks does",
-      "heading": "Turn possibility into working proof.",
-      "body": "The first job is not to persuade the whole company to change. It is to find where AI can do something genuinely useful, make that result real, and learn what the business should do next. The role changes with whatever that proof requires.",
+      "eyebrow": "What I do",
+      "heading": "Build around the job, the people, and the evidence.",
+      "body": "AI by itself is rarely the finished answer. I help decide which part of the work it should take on, build the surrounding software and rules, and test the combination with the employees who will know whether it is right.",
       "items": [
         {
-          "heading": "Find what is worth changing",
-          "body": "Read the files, map the workflow, inspect the data, and choose work important enough that a better answer would matter."
+          "heading": "Learn the work with the team",
+          "body": "Read the files, trace the workflow, inspect the data, and listen for the exceptions that only appear when someone actually does the job."
         },
         {
-          "heading": "Make the proof tangible",
-          "body": "Move quickly from discussion to an output people can see, test, and use. A real thing teaches the company more than another list of AI possibilities."
+          "heading": "Give AI a useful part of it",
+          "body": "Choose a bounded responsibility, connect the evidence and tools, and return uncertain cases to the person equipped to decide them."
         },
         {
-          "heading": "Make it dependable",
-          "body": "If people log in or rely on the answer, permissions, monitoring, exceptions, data integrity, documentation, and maintenance are part of proving that it works."
+          "heading": "Make the whole system dependable",
+          "body": "If people rely on the result, permissions, tests, monitoring, exceptions, data integrity, documentation, and maintenance are part of the work."
         }
       ]
     },
     "judgment": {
-      "eyebrow": "Build only when the work warrants it",
-      "heading": "Good software already exists. Botworks is not here to replace it for sport.",
-      "body": "If a SaaS product, a configuration change, or a small automation solves the material problem, that is usually the right answer. Custom software creates an ongoing responsibility for security, support, integrations, and maintenance. It is worth building when the workflow is specific, consequential, poorly served by the market, and valuable enough to own.",
-      "principle": "Use the good product. Connect what should be connected. Build the part that is genuinely yours."
+      "eyebrow": "A design rule",
+      "heading": "Employees should not have to work for the AI.",
+      "body": "A useful system should fit the operation and rely, wherever possible, on information the business already produces. If it only works after dozens or hundreds of people adopt a new behavior perfectly, the first job is to redesign the system. Good existing software stays in place. Custom work is reserved for the gap that is truly specific and valuable.",
+      "principle": "The employee is not the fallback when AI fails. The employee is part of what makes the system useful."
     },
     "buyer": {
       "eyebrow": "Who this works for",
-      "heading": "The common trait is authority, not title.",
-      "body": "Botworks works best with an owner, CEO, CFO, COO, CMO, senior operator, or private-equity operating partner who can provide access, make decisions, and get the work moving.",
-      "fit": "A good prospect has an operational itch: something is slower, more manual, less visible, or less capable than it should be. They suspect AI could change it, but need someone to investigate the possibility and make the first useful proof real.",
-      "notFit": "This is a poor fit when an existing tool already solves the important part, the work cannot reach the relevant data or people, or every decision must pass through months of approval before anyone can test it."
+      "heading": "Authority helps. Access and a useful problem matter more.",
+      "body": "I usually work with an owner, CEO, CFO, COO, CMO, senior operator, or private-equity operating partner who can open the right doors and let the work move. The title is less important than the ability to involve the people and systems that hold the real answer.",
+      "fit": "A good prospect has an itch: important work is slower, more manual, less visible, or less capable than it should be. They suspect AI could change it and are willing to let their team help test that belief against the real business.",
+      "notFit": "This is a poor fit when a good existing product already solves the material problem, the work cannot reach the relevant people or evidence, or nobody can test the result in practice."
     },
     "ownership": {
       "eyebrow": "No artificial lock-in",
-      "heading": "The client should be able to continue the work without Botworks.",
-      "body": "Engagements commonly run as a monthly retainer. That is payment for ongoing work—not a claim on the client’s future. Client-specific systems are designed for a clean transition if the relationship ends.",
+      "heading": "The capability stays with the company.",
+      "body": "Engagements commonly run as a monthly retainer. That is payment for the work I am doing—not a claim on the client’s future. The people who know the business should be able to understand, operate, and eventually improve what we build together.",
       "items": [
         "Client-specific source code and repository history",
         "Operational data, definitions, rules, and tests",
@@ -99,12 +99,12 @@
       "heading": "Hi, I’m Matt.",
       "paragraphs": [
         "I spent 15 years in software product management, most recently as a VP of Product Management. I was used to having engineers, designers, analysts, and product people around the table. Most operating companies do not—and it would be a strange use of their budget to recreate that whole department.",
-        "Botworks is a practical version of that capability: one accountable partner, AI agents doing a great deal of the production work, and specialists brought in when the problem genuinely needs them. I care about getting to the truth, shipping something people can use, and leaving the work understandable when I am gone."
+        "AI lets me carry much more of the investigation, analysis, product, and engineering work myself. But the client’s employees supply the operating knowledge and judgment that make any result worth using. I care about getting to the truth, shipping something people can depend on, and leaving the work understandable when I am gone."
       ]
     },
     "bottomCta": {
-      "heading": "What is the work you suspect AI could change?",
-      "body": "Send me the rough version. An initial idea is enough; you do not need a specification, a budget category, or the right technical language.",
+      "heading": "What could AI help your people do differently?",
+      "body": "Send me the rough version of the problem. An initial idea is enough; you do not need a specification, a budget category, or the right technical language.",
       "cta": "matt@botworksagency.com"
     }
   },

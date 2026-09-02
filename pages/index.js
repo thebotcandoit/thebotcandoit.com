@@ -37,7 +37,7 @@ export default function Home() {
               </div>
             </div>
             <aside className="border-l-2 border-[#f2b84b] pl-5 lg:mb-2">
-              <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8a8171]">Why proof matters</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8a8171]">Why start with real work</p>
               <p data-home-editable="hero.note" className="mt-3 text-sm leading-relaxed text-[#4f5968]">{content.hero.note}</p>
             </aside>
           </section>
