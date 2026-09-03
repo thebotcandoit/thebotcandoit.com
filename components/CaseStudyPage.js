@@ -11,9 +11,12 @@ export default function CaseStudyPage({
   intro,
   status,
   facts,
+  journey,
   sections,
   evidence,
   delivered,
+  deliveredHeading = 'What exists now',
+  deliveredIntro,
   boundary,
 }) {
   const schema = {
@@ -24,6 +27,19 @@ export default function CaseStudyPage({
     url: `https://botworksagency.com${path}`,
     author: { '@type': 'Person', name: 'Matt Livingston' },
     publisher: { '@type': 'Organization', name: 'Botworks Agency' },
+    additionalProperty: facts.map(([name, value]) => ({
+      '@type': 'PropertyValue',
+      name,
+      value,
+    })),
+    ...(journey ? {
+      hasPart: journey.steps.map((step, index) => ({
+        '@type': 'HowToStep',
+        position: index + 1,
+        name: step.heading,
+        text: step.body,
+      })),
+    } : {}),
   }
 
   return (
@@ -45,7 +61,7 @@ export default function CaseStudyPage({
           </header>
 
           <section className="border-y border-line bg-paper-deep/70">
-            <dl className="site-shell grid max-w-5xl divide-y divide-line sm:grid-cols-3 sm:gap-8 sm:divide-y-0">
+            <dl className={`site-shell grid max-w-5xl divide-y divide-line sm:gap-8 sm:divide-y-0 ${facts.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
               {facts.map(([label, value]) => (
                 <div key={label} className="py-5">
                   <dt className="site-label text-copy">{label}</dt>
@@ -54,6 +70,25 @@ export default function CaseStudyPage({
               ))}
             </dl>
           </section>
+
+          {journey && (
+            <section className="site-shell max-w-5xl py-14 sm:py-18">
+              <p className="site-label">{journey.eyebrow}</p>
+              <h2 className="site-section-title mt-3 max-w-3xl">{journey.heading}</h2>
+              {journey.intro && <p className="site-body mt-4 max-w-3xl">{journey.intro}</p>}
+              <ol className="mt-8 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+                {journey.steps.map((step, index) => (
+                  <li key={step.heading} className="border-t border-line pt-4">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-mono text-xs font-semibold text-accent">{String(index + 1).padStart(2, '0')}</span>
+                      <h3 className="site-item-title">{step.heading}</h3>
+                    </div>
+                    <p className="site-supporting mt-2 pl-8">{step.body}</p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
 
           <article className="site-shell site-section grid max-w-5xl gap-12 lg:grid-cols-[220px_1fr] lg:gap-16">
             <aside className="hidden lg:block">
@@ -102,10 +137,23 @@ export default function CaseStudyPage({
               )}
 
               <section className="rounded-lg bg-ink p-6 text-white sm:p-8">
-                <p className="site-label text-amber">What exists now</p>
-                <ul className="mt-5 space-y-3">
-                  {delivered.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">•</span><span>{item}</span></li>)}
-                </ul>
+                <p className="site-label text-amber">In production</p>
+                <h2 className="site-section-title mt-3 text-white">{deliveredHeading}</h2>
+                {deliveredIntro && <p className="mt-3 text-sm leading-6 text-white/70">{deliveredIntro}</p>}
+                {typeof delivered[0] === 'string' ? (
+                  <ul className="mt-5 space-y-3">
+                    {delivered.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">•</span><span>{item}</span></li>)}
+                  </ul>
+                ) : (
+                  <div className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+                    {delivered.map((item) => (
+                      <section key={item.heading} className="border-t border-white/15 pt-4">
+                        <h3 className="text-base font-semibold text-white">{item.heading}</h3>
+                        <p className="mt-2 text-sm leading-6 text-white/65">{item.body}</p>
+                      </section>
+                    ))}
+                  </div>
+                )}
               </section>
 
               <section className="border-y border-line py-7">
