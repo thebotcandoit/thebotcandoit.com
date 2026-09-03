@@ -44,7 +44,7 @@ export default function HvacRebateAutomation() {
           heading: 'Corrections should improve the shared system.',
           paragraphs: [
             'When the operator corrects a match or a proposed value, that decision can become a known mapping, a test case, or a clearer rule. Confidence grows through accumulated evidence rather than a vague claim that the agent learns on its own.',
-            'A private-equity operator or multi-location HVAC business may see the same class of problem across companies. The reusable parts are the investigation method, source hierarchy, review boundaries, testing discipline, and some technical components—not an assumption that every utility program or contractor works the same way.',
+            'A private-equity operator or multi-location HVAC business may see the same class of problem across companies. The reusable parts are the investigation method, source hierarchy, review boundaries, testing discipline, and some technical components. We do not assume that every utility program or contractor works the same way.',
           ],
         },
       ]}

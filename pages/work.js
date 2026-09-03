@@ -9,7 +9,7 @@ const studies = [
     industry: 'Large commercial landscaper · South Florida',
     status: 'In production',
     title: 'The team records a site visit once. AI and software help carry it forward.',
-    body: 'Weak-cell photo capture, supervisor review, crew follow-up, client PDFs, and an estimating system under active testing—all built around the way employees already work in the field.',
+    body: 'Weak-cell photo capture, supervisor review, crew follow-up, client PDFs, and an estimating system under active testing. It is all built around the way employees already work in the field.',
   },
   {
     href: '/case-studies/finance-operations',
@@ -31,7 +31,7 @@ export default function Work() {
   return (
     <>
       <SiteHead
-        title="Work — Botworks"
+        title="Work | Botworks"
         description="Three Botworks case studies showing how AI and software can support employees in commercial landscaping, transportation, and HVAC rebate processing."
         path="/work"
       />

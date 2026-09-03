@@ -4,7 +4,7 @@ status: "published"
 type: "Field note"
 date: "2026-09-01"
 canonical: "https://botworksagency.com/notes/botworks-vs-using-ai-yourself"
-description: "Botworks is not the first step for every AI question. Try the tools yourself—then bring in help when important work needs a dependable system built with the people who know it."
+description: "Botworks is not the first step for every AI question. Try the tools yourself, then bring in help when important work needs a dependable system built with the people who know it."
 facts:
   - "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it."
   - "Access to a strong AI model is no longer the scarce part. Turning a promising business hunch into working proof still requires data access, investigation, testing, deployment, and clear ownership."

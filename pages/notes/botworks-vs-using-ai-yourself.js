@@ -53,7 +53,7 @@ export default function BotworksVsUsingAiYourself() {
 
   return (
     <>
-      <SiteHead title={`${note.title} — Botworks`} description={note.description} path={`/notes/${note.slug}`} type="article" />
+      <SiteHead title={`${note.title} | Botworks`} description={note.description} path={`/notes/${note.slug}`} type="article" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <div className="min-h-screen overflow-x-hidden paper-grid">
         <NotesEditor slug={note.slug} initialStatus={note.status} />

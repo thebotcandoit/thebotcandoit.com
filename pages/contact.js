@@ -12,7 +12,7 @@ export default function Contact() {
   async function handleSubmit(event) {
     event.preventDefault()
     if (!FORMSPREE_ID) {
-      window.location.href = `mailto:matt@botworksagency.com?subject=${encodeURIComponent(`Botworks conversation — ${form.name}`)}&body=${encodeURIComponent(`${form.message}\n\nReply to: ${form.email}`)}`
+      window.location.href = `mailto:matt@botworksagency.com?subject=${encodeURIComponent(`Botworks conversation: ${form.name}`)}&body=${encodeURIComponent(`${form.message}\n\nReply to: ${form.email}`)}`
       return
     }
     setStatus('submitting')
@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <>
       <SiteHead
-        title="Contact Matt — Botworks"
+        title="Contact Matt | Botworks"
         description="Tell Matt Livingston about important work you and your team suspect AI could change. A hunch is enough; no specification or technical vocabulary is required."
         path="/contact"
       />

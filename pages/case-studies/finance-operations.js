@@ -36,7 +36,7 @@ export default function FinanceOperations() {
           eyebrow: 'The proposed agent job',
           heading: 'A recurring driver alert would have trained the team to ignore it.',
           paragraphs: [
-            'One promising idea was to compare dispatch and vehicle systems and alert the team when a driver appeared to be logged into the wrong truck—or not logged in at all. The first 31-day analysis found that most of the apparent problem came from standing conditions: missing accounts, repeated driver-truck pairings, aliases, and master-data errors.',
+            'One promising idea was to compare dispatch and vehicle systems and alert the team when a driver appeared to be logged into the wrong truck or not logged in at all. The first 31-day analysis found that most of the apparent problem came from standing conditions: missing accounts, repeated driver-truck pairings, aliases, and master-data errors.',
             'If we had shipped the alert first, dispatch would have received the same known problems every day. The useful first output was a one-time cleanup list for the employees who could fix an account, correct a record, or decide that a particular role should not be expected to log in.',
           ],
           callout: 'Good AI should not require more than 100 drivers to change their behavior before it can become useful.',

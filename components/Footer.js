@@ -17,7 +17,7 @@ export default function Footer() {
           <Link href="/contact" className="text-sm text-copy hover:text-ink">Contact</Link>
         </nav>
       </div>
-      <div className="site-shell mt-8 border-t border-line/70 pt-5 text-sm text-copy">Written for people. Structured so the next responsible operator—and their agents—can understand it too.</div>
+      <div className="site-shell mt-8 border-t border-line/70 pt-5 text-sm text-copy">Written for people. Structured so the next responsible operator and their agents can understand it too.</div>
     </footer>
   )
 }

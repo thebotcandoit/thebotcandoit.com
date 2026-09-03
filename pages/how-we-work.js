@@ -21,7 +21,7 @@ const stages = [
   {
     number: '04',
     title: 'Build the surrounding system and use it for real.',
-    body: 'An agent needs evidence, tools, rules, tests, a place in the workflow, and a path for exceptions. Real use exposes bad connections, missing records, changed names, confusing states, and assumptions nobody had written down. We keep iterating—or choose a better answer.',
+    body: 'An agent needs evidence, tools, rules, tests, a place in the workflow, and a path for exceptions. Real use exposes bad connections, missing records, changed names, confusing states, and assumptions nobody had written down. We keep iterating, or choose a better answer.',
   },
   {
     number: '05',
@@ -34,7 +34,7 @@ export default function HowWeWork() {
   return (
     <>
       <SiteHead
-        title="How Botworks works — AI built with the people who know the work"
+        title="How Botworks works | AI built with the people who know the work"
         description="How Botworks works with employees to give AI a useful part of an important job, build the surrounding system, and test it in practice."
         path="/how-we-work"
       />
@@ -76,7 +76,7 @@ export default function HowWeWork() {
             <div>
               <p className="site-label">The commercial relationship</p>
               <h2 className="site-section-title mt-3">Usually a retainer. Never artificial lock-in.</h2>
-              <p className="site-body mt-4">Ongoing work commonly runs through a monthly retainer because production systems and recurring analysis need continuity and an accountable operator. The fee is for the work Botworks is doing—not a license claim on the client’s future.</p>
+              <p className="site-body mt-4">Ongoing work commonly runs through a monthly retainer because production systems and recurring analysis need continuity and an accountable operator. The fee is for the work Botworks is doing, not a license claim on the client’s future.</p>
               <p className="site-body mt-4">The client owns what we build. Ownership does not mean every employee should use agents to change production code, or that software will safely improve itself after Botworks leaves. If responsibility moves, the handoff should be deliberate and made to someone prepared to own it.</p>
             </div>
             <div className="rounded-lg bg-ink p-7 text-white sm:p-9">
@@ -87,7 +87,7 @@ export default function HowWeWork() {
                   'If the work is analysis, the sources, definitions, assumptions, and disagreements remain inspectable.',
                   'AI uncertainty, real exceptions, and failures are visible to the person equipped to decide what happens next.',
                   'The company can see what is validated, what is experimental, and what remains open.',
-                ].map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">—</span><span>{item}</span></li>)}
+                ].map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">•</span><span>{item}</span></li>)}
               </ul>
             </div>
             </div>

@@ -27,7 +27,7 @@ export default function CaseStudyPage({
 
   return (
     <>
-      <SiteHead title={`${title} — Botworks`} description={description} path={path} type="article" />
+      <SiteHead title={`${title} | Botworks`} description={description} path={path} type="article" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="min-h-screen overflow-x-hidden paper-grid">
         <Nav />
@@ -76,7 +76,7 @@ export default function CaseStudyPage({
               <section className="rounded-lg bg-ink p-6 text-white sm:p-8">
                 <p className="site-label text-amber">What exists now</p>
                 <ul className="mt-5 space-y-3">
-                  {delivered.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">—</span><span>{item}</span></li>)}
+                  {delivered.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">•</span><span>{item}</span></li>)}
                 </ul>
               </section>
 

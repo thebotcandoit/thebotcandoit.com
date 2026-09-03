@@ -31,7 +31,7 @@ export default function FieldVisitCapture() {
             'An AI model could generate the outline of an upload form quickly. It could not tell us which image sizes, retry behavior, progress states, and failure recovery would work on the connections account managers encountered at real properties. That required instrumentation, testing, and repeated changes with the people using it.',
             'Reliability also meant refusing reassuring false states. When a large batch of photo links failed to load in the supervisor view, the page originally looked as though the photos did not exist. The fix preserved successful batches and told the operator when photos could not be loaded, rather than silently claiming there were none.',
           ],
-          callout: 'If the interface says “no photos,” it needs to mean no photos—not “a background request failed.”',
+          callout: 'If the interface says “no photos,” it needs to mean no photos, not “a background request failed.”',
         },
         {
           eyebrow: 'What the same record now supports',

@@ -8,7 +8,7 @@ export default function NotesIndex() {
   return (
     <>
       <SiteHead
-        title="Notes — Botworks"
+        title="Notes | Botworks"
         description="Notes from Matt Livingston about putting AI into real company work, deciding when not to build, and making operational results dependable."
         path="/notes"
       />
@@ -18,7 +18,7 @@ export default function NotesIndex() {
           <header className="site-shell pb-16 pt-12 sm:pb-20 sm:pt-20">
             <p className="site-label">Notes</p>
             <h1 className="site-page-title mt-4">Writing down the decisions behind the work.</h1>
-            <p className="site-lede mt-6">These are working notes from Matt—not an AI content calendar. They explain tradeoffs, boundaries, failures, and the things that became clear only after someone used the result.</p>
+            <p className="site-lede mt-6">These are working notes from Matt, not an AI content calendar. They explain tradeoffs, boundaries, failures, and the things that became clear only after someone used the result.</p>
           </header>
 
           <section className="border-y border-line bg-paper-deep/65">
