@@ -49,6 +49,27 @@ export default function FieldVisitCapture() {
           ],
         },
       ]}
+      evidence={{
+        eyebrow: 'From the working system',
+        heading: 'The field record employees actually use.',
+        intro: 'The production interface is shown here with representative details in place of client information.',
+        items: [
+          {
+            src: '/case-studies/field-visit-capture/field-capture-form.png',
+            alt: 'Mobile site visit form with representative property and account manager details',
+            width: 780,
+            height: 1640,
+            caption: 'The account manager records the visit once on a phone, including the condition of each service area.',
+          },
+          {
+            src: '/case-studies/field-visit-capture/field-capture-issue.png',
+            alt: 'Issue entry in the field visit form with a note and photo controls',
+            width: 764,
+            height: 650,
+            caption: 'An issue keeps the employee’s explanation and photographs together for the people who act on it next.',
+          },
+        ],
+      }}
       delivered={[
         'Mobile field capture with resilient photo handling',
         'Supervisor review with visible failure states',

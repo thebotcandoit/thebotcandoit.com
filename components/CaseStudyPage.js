@@ -12,6 +12,7 @@ export default function CaseStudyPage({
   status,
   facts,
   sections,
+  evidence,
   delivered,
   boundary,
 }) {
@@ -72,6 +73,33 @@ export default function CaseStudyPage({
                   {section.callout && <blockquote className="site-item-title mt-6">{section.callout}</blockquote>}
                 </section>
               ))}
+
+              {evidence && (
+                <section>
+                  <p className="site-label mb-2">{evidence.eyebrow}</p>
+                  <h2 className="site-section-title">{evidence.heading}</h2>
+                  {evidence.intro && <p className="site-body mt-4">{evidence.intro}</p>}
+                  <div className="mt-7 grid items-start gap-6 sm:grid-cols-2">
+                    {evidence.items.map((item) => (
+                      <figure key={item.src} className="overflow-hidden rounded-lg border border-line bg-white/70">
+                        <div className="bg-white">
+                          <img
+                            src={item.src}
+                            alt={item.alt}
+                            width={item.width}
+                            height={item.height}
+                            decoding="async"
+                            className="h-auto w-full"
+                          />
+                        </div>
+                        <figcaption className="border-t border-line px-4 py-3 text-sm leading-6 text-copy">
+                          {item.caption}
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                </section>
+              )}
 
               <section className="rounded-lg bg-ink p-6 text-white sm:p-8">
                 <p className="site-label text-amber">What exists now</p>
