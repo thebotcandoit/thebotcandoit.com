@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-line bg-paper py-10">
       <div className="site-shell grid gap-8 sm:grid-cols-[1.3fr_1fr] sm:items-end">
         <div>
-          <Link href="/" className="font-display text-xl font-bold tracking-tight text-ink">Bot<span className="text-accent">works</span></Link>
+          <Link href="/" className="font-brand text-xl font-bold tracking-tight text-ink">Bot<span className="text-accent">works</span></Link>
           <p className="site-supporting mt-3 max-w-xl">Botworks is Matt Livingston, working with the people who know a business to put AI to work on important jobs. The client owns the company-specific code, data, infrastructure, and documentation; Botworks operates it while engaged.</p>
           <a href="mailto:matt@botworksagency.com" className="site-link mt-3 inline-block">matt@botworksagency.com</a>
         </div>

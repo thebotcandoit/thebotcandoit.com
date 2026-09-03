@@ -15,7 +15,7 @@ export default function Nav() {
     <nav className="sticky top-0 z-40 border-b border-line/90 bg-paper/95 py-4 backdrop-blur">
       <div className="site-shell flex items-center justify-between gap-6">
         <Link href="/" className="group flex min-w-0 items-baseline gap-3" onClick={() => setOpen(false)}>
-          <span className="font-display text-xl font-bold tracking-tight text-ink">Bot<span className="text-accent">works</span></span>
+          <span className="font-brand text-xl font-bold tracking-tight text-ink">Bot<span className="text-accent">works</span></span>
           <span className="hidden text-sm font-semibold text-copy sm:inline">AI transformation partner</span>
         </Link>
         <div className="hidden items-center gap-5 lg:flex">
