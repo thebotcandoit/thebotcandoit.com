@@ -25,8 +25,8 @@ const stages = [
   },
   {
     number: '05',
-    title: 'Let the team own and improve the capability.',
-    body: 'Client-specific code, data, infrastructure, rules, tests, and documentation stay with the client. Corrections should make the shared system better. The work should remain understandable to employees, future maintainers, and the AI agents they use next.',
+    title: 'Keep the work client-owned and give it a responsible operator.',
+    body: 'Client-specific code, data, infrastructure, rules, tests, and documentation stay with the client. That makes the work transferable, not self-running. Botworks operates it while engaged; a future handoff requires a named person or partner who can direct agents, review consequential changes, and remain accountable for production.',
   },
 ]
 
@@ -76,8 +76,8 @@ export default function HowWeWork() {
             <div>
               <p className="site-label">The commercial relationship</p>
               <h2 className="site-section-title mt-3">Usually a retainer. Never artificial lock-in.</h2>
-              <p className="site-body mt-4">Ongoing work commonly runs through a monthly retainer because production systems and recurring analysis benefit from continuity. The fee is for the work Botworks is doing—not a license claim on the client’s future.</p>
-              <p className="site-body mt-4">There is no published standard duration or universal first engagement because the problems are not interchangeable. Some are obvious enough to start building; others need a short investigation before either side should commit.</p>
+              <p className="site-body mt-4">Ongoing work commonly runs through a monthly retainer because production systems and recurring analysis need continuity and an accountable operator. The fee is for the work Botworks is doing—not a license claim on the client’s future.</p>
+              <p className="site-body mt-4">The client owns what we build. Ownership does not mean every employee should use agents to change production code, or that software will safely improve itself after Botworks leaves. If responsibility moves, the handoff should be deliberate and made to someone prepared to own it.</p>
             </div>
             <div className="rounded-lg bg-ink p-7 text-white sm:p-9">
               <p className="site-label text-amber">What Botworks takes responsibility for</p>
@@ -96,12 +96,12 @@ export default function HowWeWork() {
           <section className="border-y border-line bg-white/50">
             <div className="site-shell site-section grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
               <div>
-                <p className="site-label">One important boundary</p>
-                <h2 className="site-section-title mt-3">Custom software is a responsibility, not a trophy.</h2>
+                <p className="site-label">What gets built</p>
+                <h2 className="site-section-title mt-3">Purpose-built software, without turning every workflow into a new product.</h2>
               </div>
               <div>
-                <p className="site-body">AI has made the first version of software much faster to produce. It has not removed hosting, security, permissions, backups, integration changes, support, training, or maintenance. If a good product already solves the important problem, Botworks will recommend using it.</p>
-                <p className="site-item-title mt-5">Use the good product. Connect what should be connected. Build the part that is genuinely yours.</p>
+                <p className="site-body">Most Botworks engagements involve custom software: SQL, data connections, processing scripts, document generation, agents, monitoring, or focused internal interfaces. The boundary is not custom versus off-the-shelf. It is whether the business needs a company-specific operating system or an unnecessary attempt to recreate a mature SaaS product.</p>
+                <p className="site-item-title mt-5">Use the good product. Build the company-specific software, connections, and intelligence around it.</p>
               </div>
             </div>
           </section>

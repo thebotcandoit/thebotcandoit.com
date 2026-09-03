@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="site-shell grid gap-8 sm:grid-cols-[1.3fr_1fr] sm:items-end">
         <div>
           <Link href="/" className="font-display text-xl font-bold tracking-tight text-ink">Bot<span className="text-accent">works</span></Link>
-          <p className="site-supporting mt-3 max-w-xl">Botworks is Matt Livingston, working with the people who know a business to put AI to work on important jobs. Client-specific code, data, infrastructure, and documentation stay with the client.</p>
+          <p className="site-supporting mt-3 max-w-xl">Botworks is Matt Livingston, working with the people who know a business to put AI to work on important jobs. The client owns the company-specific code, data, infrastructure, and documentation; Botworks operates it while engaged.</p>
           <a href="mailto:matt@botworksagency.com" className="site-link mt-3 inline-block">matt@botworksagency.com</a>
         </div>
         <nav className="flex flex-wrap gap-x-5 gap-y-3 sm:justify-end" aria-label="Footer">
@@ -17,7 +17,7 @@ export default function Footer() {
           <Link href="/contact" className="text-sm text-copy hover:text-ink">Contact</Link>
         </nav>
       </div>
-      <div className="site-shell mt-8 border-t border-line/70 pt-5 text-sm text-copy">Written for people. Structured so their agents can understand it too.</div>
+      <div className="site-shell mt-8 border-t border-line/70 pt-5 text-sm text-copy">Written for people. Structured so the next responsible operator—and their agents—can understand it too.</div>
     </footer>
   )
 }

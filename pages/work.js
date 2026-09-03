@@ -73,7 +73,7 @@ export default function Work() {
                 ['Learn from the people doing the job', 'The files and systems show part of the work. Employees explain the exceptions, judgment, and operating reality around them.'],
                 ['Give AI a bounded responsibility', 'Software calculates what should be deterministic. AI handles appropriate ambiguity. A person receives the decisions that still need judgment.'],
                 ['Test the real failure modes', 'Weak cell service, missing identities, changed equipment, portal rules, and misleading empty states are part of the product.'],
-                ['Leave the capability with the company', 'Definitions, decisions, source data, code, tests, and documentation remain usable by employees and the agents they use next.'],
+                ['Keep the work client-owned and transferable', 'The company keeps its definitions, decisions, source data, code, tests, and documentation. A named operator still has to decide what changes and keep the system dependable.'],
               ].map(([title, body]) => (
                 <div key={title} className="border-t border-line pt-4">
                   <h3 className="font-display text-xl font-bold leading-snug text-ink">{title}</h3>

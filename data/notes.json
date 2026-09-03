@@ -12,8 +12,8 @@
     "facts": [
       "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it.",
       "Access to a strong AI model is no longer the scarce part. Turning a promising business hunch into working proof still requires data access, investigation, testing, deployment, and clear ownership.",
-      "Botworks does not recommend custom software when an existing product or a small configuration change solves the material problem.",
-      "When client-specific software is warranted, the client owns its code, data, infrastructure, rules, tests, and documentation.",
+      "Botworks uses good existing products where they fit and builds the company-specific software, connections, and intelligence around them.",
+      "The client owns its code, data, infrastructure, rules, tests, and documentation. Ownership still requires a named person or partner to operate and improve the system.",
       "Botworks commonly works through a retainer and does not require a permanent software license."
     ],
     "secondOpinionPrompt": "Read this Botworks note: {{url}}\n\nI am considering this work inside my company: [describe the people, data, systems, frequency, and what goes wrong today].\n\nTell me candidly whether we should: (1) use an AI tool ourselves, (2) buy or configure an existing product, (3) create a small automation, (4) investigate custom work with a partner such as Botworks, or (5) leave it alone for now.\n\nName the important unknowns, the ongoing maintenance burden, and what would make Botworks a poor fit. Do not assume that owning custom software is automatically valuable.",
@@ -40,10 +40,10 @@
       },
       {
         "eyebrow": "Do not confuse custom with better",
-        "heading": "Sometimes the right answer is to buy the good software.",
+        "heading": "Use the good product. Build only what is genuinely specific to the company.",
         "body": [
-          "AI has made it faster to generate the first version of an application. It has not removed hosting, security, support, backups, integration changes, accessibility, training, and maintenance. Those obligations can last for years.",
-          "If a mature product already solves the important problem, use it. Custom work is justified when the workflow is specific, consequential, poorly served by the market, and valuable enough for the company to keep owning."
+          "Most Botworks engagements involve custom software: data connections, SQL, processing scripts, document generation, monitoring, agents, or focused internal interfaces. The question is not whether code will be written. It is whether each custom part serves an important company-specific job.",
+          "AI has made the first version of software faster to produce. It has not removed hosting, security, support, backups, integration changes, accessibility, training, and maintenance. If a mature product already solves the important problem, use it rather than recreating a SaaS product and inheriting all of those obligations."
         ]
       },
       {
@@ -51,7 +51,7 @@
         "heading": "Bring in a partner when the work needs more than a good prompt.",
         "body": [
           "A Botworks engagement usually begins when an executive senses that AI could change an important piece of work. The employees doing that work contribute the operating knowledge, exceptions, and judgment that the source systems cannot supply on their own.",
-          "The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to use AI alongside the people who know the business, create value now, and leave the capability understandable enough for employees and future AI agents to continue it."
+          "The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, or a larger piece of purpose-built software. The point is to use AI alongside the people who know the business and create value now. The client owns the work, while Botworks remains its operator until responsibility is deliberately transferred to someone prepared to take it on."
         ]
       }
     ],

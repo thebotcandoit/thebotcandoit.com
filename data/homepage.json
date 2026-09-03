@@ -2,7 +2,7 @@
   "published": {
     "meta": {
       "title": "Botworks — Put AI to work alongside the people who know the business",
-      "description": "Botworks works with your team to build practical AI systems for important work, test them in the real world, and leave the result in your hands."
+      "description": "Botworks works with your team to build and operate practical AI systems and purpose-built software for important work. The client owns what we build."
     },
     "hero": {
       "eyebrow": "AI transformation, one useful job at a time",
@@ -48,7 +48,7 @@
       "heading": "Bring the hunch. Bring the people who know the work.",
       "paragraphs": [
         "Clients rarely arrive asking for an AI adoption program. Usually an executive sees a piece of important work that is slow, manual, difficult to understand, or newly possible. The employees doing that work already know things the software and source data cannot explain on their own.",
-        "I work with those people to understand the job and make something tangible quickly. It may be software, an analysis, a reporting surface, a processing tool, a carefully bounded agent, or a clear decision not to build."
+        "I work with those people to understand the job and make something tangible quickly. Most engagements involve some custom software: an analysis, reporting pipeline, processing tool, internal interface, carefully bounded agent, or a combination of them."
       ]
     },
     "work": {
@@ -73,7 +73,7 @@
     "judgment": {
       "eyebrow": "A design rule",
       "heading": "Employees should not have to work for the AI.",
-      "body": "A useful system should fit the operation and rely, wherever possible, on information the business already produces. If it only works after dozens or hundreds of people adopt a new behavior perfectly, the first job is to redesign the system. Good existing software stays in place. Custom work is reserved for the gap that is truly specific and valuable.",
+      "body": "A useful system should fit the operation and rely, wherever possible, on information the business already produces. If it only works after dozens or hundreds of people adopt a new behavior perfectly, the first job is to redesign the system. Good existing products stay in place. Botworks builds the company-specific software, connections, and intelligence around them.",
       "principle": "The employee is not the fallback when AI fails. The employee is part of what makes the system useful."
     },
     "buyer": {
@@ -85,13 +85,13 @@
     },
     "ownership": {
       "eyebrow": "No artificial lock-in",
-      "heading": "The capability stays with the company.",
-      "body": "Engagements commonly run as a monthly retainer. That is payment for the work I am doing—not a claim on the client’s future. The people who know the business should be able to understand, operate, and eventually improve what we build together.",
+      "heading": "The work belongs to the company. Someone still has to own it.",
+      "body": "Engagements commonly run as a monthly retainer because production systems need an accountable operator. While we work together, Botworks fills that role. The client owns what we build, but that does not mean every employee becomes a developer or that agents can safely run production without direction. A future handoff requires a named person or partner prepared to take responsibility.",
       "items": [
         "Client-specific source code and repository history",
         "Operational data, definitions, rules, and tests",
         "Infrastructure, deployment, and monitoring paths",
-        "Documentation for employees, future maintainers, and AI agents"
+        "Documentation and a deliberate path to the next responsible operator"
       ]
     },
     "about": {
@@ -99,7 +99,7 @@
       "heading": "Hi, I’m Matt.",
       "paragraphs": [
         "I spent 15 years in software product management, most recently as a VP of Product Management. I was used to having engineers, designers, analysts, and product people around the table. Most operating companies do not—and it would be a strange use of their budget to recreate that whole department.",
-        "AI lets me carry much more of the investigation, analysis, product, and engineering work myself. But the client’s employees supply the operating knowledge and judgment that make any result worth using. I care about getting to the truth, shipping something people can depend on, and leaving the work understandable when I am gone."
+        "AI lets me carry much more of the investigation, analysis, product, and engineering work myself. But the client’s employees supply the operating knowledge and judgment that make any result worth using. I care about getting to the truth, shipping something people can depend on, and keeping the work understandable enough to transfer when another responsible operator is ready."
       ]
     },
     "bottomCta": {

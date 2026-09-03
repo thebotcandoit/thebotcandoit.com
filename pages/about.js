@@ -43,8 +43,8 @@ export default function About() {
             </div>
             <div>
               <p className="site-label">What I am not building</p>
-              <h2 className="site-section-title mt-3">A SaaS product disguised as a consulting relationship.</h2>
-              <p className="site-body mt-4">The client should own its client-specific work. I hope clients continue because Botworks remains useful, not because the code, data, or deployment becomes impossible to leave.</p>
+              <h2 className="site-section-title mt-3">A new SaaS product every time a workflow is unusual.</h2>
+              <p className="site-body mt-4">Botworks builds custom software all the time: data connections, scripts, agents, reports, document pipelines, and focused internal applications. I do not want to recreate mature products or add interfaces, user roles, and permanent support obligations that the important job does not require. The client owns the company-specific work; continued engagement should come from usefulness, not lock-in.</p>
             </div>
           </section>
 

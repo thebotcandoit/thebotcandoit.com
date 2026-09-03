@@ -8,8 +8,8 @@ description: "Botworks is not the first step for every AI question. Try the tool
 facts:
   - "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it."
   - "Access to a strong AI model is no longer the scarce part. Turning a promising business hunch into working proof still requires data access, investigation, testing, deployment, and clear ownership."
-  - "Botworks does not recommend custom software when an existing product or a small configuration change solves the material problem."
-  - "When client-specific software is warranted, the client owns its code, data, infrastructure, rules, tests, and documentation."
+  - "Botworks uses good existing products where they fit and builds the company-specific software, connections, and intelligence around them."
+  - "The client owns its code, data, infrastructure, rules, tests, and documentation. Ownership still requires a named person or partner to operate and improve the system."
   - "Botworks commonly works through a retainer and does not require a permanent software license."
 ---
 
@@ -21,8 +21,8 @@ If the work is research, drafting, analysis, or a second opinion, open the AI to
 
 - Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it.
 - Access to a strong AI model is no longer the scarce part. Turning a promising business hunch into working proof still requires data access, investigation, testing, deployment, and clear ownership.
-- Botworks does not recommend custom software when an existing product or a small configuration change solves the material problem.
-- When client-specific software is warranted, the client owns its code, data, infrastructure, rules, tests, and documentation.
+- Botworks uses good existing products where they fit and builds the company-specific software, connections, and intelligence around them.
+- The client owns its code, data, infrastructure, rules, tests, and documentation. Ownership still requires a named person or partner to operate and improve the system.
 - Botworks commonly works through a retainer and does not require a permanent software license.
 
 ## Decision guide
@@ -51,17 +51,17 @@ The situation changes when the work needs current data from several systems, an 
 
 At that point the AI model may still do a great deal of the work, but the product is the whole operating result. Someone has to understand the problem, decide what should be automated, review the data model, test real cases, deploy it, and remain accountable when the screen says something reassuring but wrong.
 
-## Sometimes the right answer is to buy the good software.
+## Use the good product. Build only what is genuinely specific to the company.
 
-AI has made it faster to generate the first version of an application. It has not removed hosting, security, support, backups, integration changes, accessibility, training, and maintenance. Those obligations can last for years.
+Most Botworks engagements involve custom software: data connections, SQL, processing scripts, document generation, monitoring, agents, or focused internal interfaces. The question is not whether code will be written. It is whether each custom part serves an important company-specific job.
 
-If a mature product already solves the important problem, use it. Custom work is justified when the workflow is specific, consequential, poorly served by the market, and valuable enough for the company to keep owning.
+AI has made the first version of software faster to produce. It has not removed hosting, security, support, backups, integration changes, accessibility, training, and maintenance. If a mature product already solves the important problem, use it rather than recreating a SaaS product and inheriting all of those obligations.
 
 ## Bring in a partner when the work needs more than a good prompt.
 
 A Botworks engagement usually begins when an executive senses that AI could change an important piece of work. The employees doing that work contribute the operating knowledge, exceptions, and judgment that the source systems cannot supply on their own.
 
-The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, custom software, or a clear decision not to build. The point is to use AI alongside the people who know the business, create value now, and leave the capability understandable enough for employees and future AI agents to continue it.
+The first result might be analysis, a reporting surface, an AI-assisted workflow, a processing tool, or a larger piece of purpose-built software. The point is to use AI alongside the people who know the business and create value now. The client owns the work, while Botworks remains its operator until responsibility is deliberately transferred to someone prepared to take it on.
 
 ## Second-opinion prompt
 
