@@ -36,7 +36,7 @@ export default function Home() {
                 <a href="#work" className="rounded-md border border-[#cfc5b5] bg-[#fffaf0]/80 px-5 py-3 text-sm font-semibold text-[#12131a] transition-colors hover:border-[#12131a]"><span data-home-editable="hero.secondaryCta">{content.hero.secondaryCta}</span></a>
               </div>
             </div>
-            <aside className="border-l-2 border-[#f2b84b] pl-5 lg:mb-2">
+            <aside className="lg:mb-2">
               <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8a8171]">Why start with real work</p>
               <p data-home-editable="hero.note" className="mt-3 text-sm leading-relaxed text-[#4f5968]">{content.hero.note}</p>
             </aside>
@@ -62,7 +62,7 @@ export default function Home() {
                         </div>
                         <h3 data-home-editable={`proof.items.${index}.heading`} className="font-display text-2xl font-bold leading-tight text-[#12131a] transition-colors group-hover:text-[#1f7a57]">{item.heading}</h3>
                         <p data-home-editable={`proof.items.${index}.body`} className="mt-3 text-sm leading-relaxed text-[#596474]">{item.body}</p>
-                        <p data-home-editable={`proof.items.${index}.detail`} className="mt-3 border-l border-[#cfc5b5] pl-3 text-xs leading-relaxed text-[#8a8171]">{item.detail}</p>
+                        <p data-home-editable={`proof.items.${index}.detail`} className="mt-3 text-xs leading-relaxed text-[#8a8171]">{item.detail}</p>
                         <span data-home-editable={`proof.items.${index}.cta`} className="mt-4 inline-block text-sm font-semibold text-[#1f7a57]">{item.cta} →</span>
                       </Link>
                     )
@@ -78,7 +78,7 @@ export default function Home() {
                 <p data-home-editable="premise.eyebrow" className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">{content.premise.eyebrow}</p>
                 <h2 data-home-editable="premise.heading" className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-5xl">{content.premise.heading}</h2>
               </div>
-              <div className="space-y-5 border-l border-[#cfc5b5] pl-6 sm:pl-8">
+              <div className="space-y-5">
                 {content.premise.paragraphs.map((paragraph, index) => (
                   <p key={paragraph} data-home-editable={`premise.paragraphs.${index}`} className="text-base leading-relaxed text-[#4f5968] sm:text-lg">{paragraph}</p>
                 ))}
@@ -129,11 +129,11 @@ export default function Home() {
                 <p data-home-editable="buyer.body" className="mt-5 text-base leading-relaxed text-[#4f5968]">{content.buyer.body}</p>
               </div>
               <div className="space-y-7">
-                <div className="border-l-2 border-[#2f9e73] pl-5">
+                <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#1f7a57]">Good fit</p>
                   <p data-home-editable="buyer.fit" className="mt-2 text-base leading-relaxed text-[#4f5968]">{content.buyer.fit}</p>
                 </div>
-                <div className="border-l-2 border-[#8a8171] pl-5">
+                <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8a8171]">Probably not a fit</p>
                   <p data-home-editable="buyer.notFit" className="mt-2 text-base leading-relaxed text-[#4f5968]">{content.buyer.notFit}</p>
                 </div>

@@ -64,7 +64,7 @@ export default function HowWeWork() {
               <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Why the work comes first</p>
               <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-[#12131a] sm:text-4xl">People need a reason to change how they work.</h2>
             </div>
-            <div className="space-y-5 border-l border-[#cfc5b5] pl-6 sm:pl-8">
+            <div className="space-y-5">
               <p className="text-lg leading-relaxed text-[#4f5968]">An executive may believe AI could help while having no reason to ask employees to change their habits for a promise. A working result gives the team evidence from its own business and a chance to shape the system around what it knows.</p>
               <p className="text-lg leading-relaxed text-[#4f5968]">When AI does something that was difficult before, broader use stops feeling theoretical. Training, guardrails, and documentation now support work people already understand and value.</p>
               <blockquote className="border-y border-[#cfc5b5] py-6 font-display text-2xl font-bold leading-snug text-[#12131a]">Do not make employees work for the AI. Build AI that works with them.</blockquote>

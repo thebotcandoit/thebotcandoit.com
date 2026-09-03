@@ -56,7 +56,7 @@ export default function CaseStudyPage({
 
           <article className="mx-auto grid max-w-5xl gap-12 px-6 py-14 sm:px-8 sm:py-20 lg:grid-cols-[220px_1fr] lg:gap-16">
             <aside className="hidden lg:block">
-              <div className="sticky top-28 border-l-2 border-[#f2b84b] pl-4">
+              <div className="sticky top-28">
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8a8171]">Case note</p>
                 <p className="mt-2 text-sm leading-relaxed text-[#626b7a]">Client details are anonymized. Status and limitations are stated directly.</p>
               </div>
@@ -69,7 +69,7 @@ export default function CaseStudyPage({
                   <div className="mt-4 space-y-4">
                     {section.paragraphs.map((paragraph) => <p key={paragraph} className="text-base leading-relaxed text-[#4f5968]">{paragraph}</p>)}
                   </div>
-                  {section.callout && <blockquote className="mt-6 border-l-2 border-[#2f9e73] pl-5 font-display text-xl font-bold leading-snug text-[#12131a]">{section.callout}</blockquote>}
+                  {section.callout && <blockquote className="mt-6 font-display text-xl font-bold leading-snug text-[#12131a]">{section.callout}</blockquote>}
                 </section>
               ))}
 

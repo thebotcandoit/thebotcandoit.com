@@ -349,7 +349,7 @@ export default function HomepageEditor() {
               <>
                 <div className="flex rounded border border-white/15">
                   <button type="button" onClick={() => moveToEditable(-1)} className="px-3 py-2 text-sm text-white/70 hover:text-white" aria-label="Previous editable text">↑</button>
-                  <button type="button" onClick={() => moveToEditable(1)} className="border-l border-white/15 px-3 py-2 text-sm text-white/70 hover:text-white" aria-label="Next editable text">↓</button>
+                  <button type="button" onClick={() => moveToEditable(1)} className="px-3 py-2 text-sm text-white/70 hover:text-white" aria-label="Next editable text">↓</button>
                 </div>
                 <button type="button" onClick={handleSave} disabled={busy || !sha} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">{phase === 'saving' ? 'Saving…' : 'Save draft'}</button>
                 <button type="button" onClick={openPhoneReview} disabled={busy || !sha} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">Review phone</button>

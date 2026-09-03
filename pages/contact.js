@@ -44,7 +44,7 @@ export default function Contact() {
             <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#1f7a57]">Contact</p>
             <h1 className="font-display mt-4 text-[2.8rem] font-bold leading-[0.97] tracking-tight text-[#12131a] sm:text-6xl">Send me the rough version.</h1>
             <p className="mt-6 text-lg leading-relaxed text-[#4f5968]">What is the work you and your team suspect AI could change? You do not need to know whether the answer is an agent, software, analysis, an existing product, or something else.</p>
-            <div className="mt-8 border-l-2 border-[#f2b84b] pl-5">
+            <div className="mt-8">
               <p className="text-sm leading-relaxed text-[#626b7a]">A useful note usually includes the company, the people who know the work, what happens today, and what you think might now be possible. It can be incomplete.</p>
             </div>
             <a href="mailto:matt@botworksagency.com" className="mt-8 inline-block font-semibold text-[#1f7a57] hover:text-[#12131a]">matt@botworksagency.com</a>
