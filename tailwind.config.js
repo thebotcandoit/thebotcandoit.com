@@ -7,7 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: '#5b4fff',
+        paper: '#f7f3ea',
+        'paper-deep': '#efe8da',
+        ink: '#12131a',
+        copy: '#4f5968',
+        accent: '#1f7a57',
+        line: '#d7cebf',
+        amber: '#f2b84b',
       },
     },
   },

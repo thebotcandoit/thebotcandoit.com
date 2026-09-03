@@ -4,6 +4,56 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .site-shell {
+    @apply mx-auto max-w-6xl px-6 sm:px-8;
+  }
+
+  .site-section {
+    @apply py-16 sm:py-20;
+  }
+
+  .site-section-compact {
+    @apply py-10 sm:py-12;
+  }
+
+  .site-label {
+    @apply text-sm font-semibold uppercase leading-5 tracking-[0.12em] text-accent;
+  }
+
+  .site-page-title {
+    @apply font-display max-w-4xl text-4xl font-bold leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-6xl;
+  }
+
+  .site-section-title {
+    @apply font-display text-3xl font-bold leading-tight text-ink sm:text-4xl;
+  }
+
+  .site-item-title {
+    @apply font-display max-w-[38ch] text-2xl font-bold leading-snug text-ink;
+  }
+
+  .site-lede {
+    @apply max-w-prose text-lg leading-8 text-copy;
+  }
+
+  .site-body {
+    @apply max-w-prose text-base leading-7 text-copy;
+  }
+
+  .site-supporting {
+    @apply max-w-prose text-sm leading-6 text-copy;
+  }
+
+  .site-meta {
+    @apply text-sm font-semibold leading-6 text-copy;
+  }
+
+  .site-link {
+    @apply text-sm font-semibold leading-6 text-accent underline-offset-4 hover:underline;
+  }
+}
+
 body.notes-editor-open {
   padding-top: 78px;
 }
@@ -63,12 +113,12 @@ textarea[data-notes-editor-active="true"] {
 
 :root {
   --paper: #f7f3ea;
-  --paper-deep: #ebe3d4;
+  --paper-deep: #efe8da;
   --ink: #12131a;
-  --muted: #626b7a;
-  --line: #ded6c7;
+  --muted: #4f5968;
+  --line: #d7cebf;
   --green-deep: #1f7a57;
-  --green: #2f9e73;
+  --green: #1f7a57;
   --amber: #f2b84b;
 }
 
@@ -91,8 +141,8 @@ body {
 .paper-grid {
   background-color: var(--paper);
   background-image:
-    linear-gradient(rgba(18, 19, 26, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(18, 19, 26, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(18, 19, 26, 0.024) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 19, 26, 0.024) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 

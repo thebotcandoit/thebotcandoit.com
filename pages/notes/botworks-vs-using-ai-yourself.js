@@ -59,14 +59,14 @@ export default function BotworksVsUsingAiYourself() {
         <NotesEditor slug={note.slug} initialStatus={note.status} />
         <Nav />
         <main>
-          <article className="mx-auto max-w-3xl px-6 sm:px-8 pt-10 sm:pt-16 pb-12">
+          <article className="mx-auto max-w-3xl px-6 pb-12 pt-10 sm:px-8 sm:pt-16">
             <div className="mb-7 flex flex-wrap items-center gap-3">
-              <Link href="/notes" className="text-sm font-semibold text-[#2f9e73] hover:text-[#12131a] transition-colors">
+              <Link href="/notes" className="site-link">
                 Notes
               </Link>
-              <span className="h-1 w-1 rounded-full bg-[#8a8171]" />
-              <span className="text-sm text-[#626b7a]">{note.readingTime}</span>
-              <a href={markdownUrl} className="text-sm font-semibold text-[#2f9e73] hover:text-[#12131a] transition-colors">
+              <span aria-hidden="true" className="text-copy/40">·</span>
+              <span className="text-sm text-copy">{note.readingTime}</span>
+              <a href={markdownUrl} className="site-link">
                 Markdown version
               </a>
               {isDraft && (
@@ -76,35 +76,35 @@ export default function BotworksVsUsingAiYourself() {
               )}
             </div>
 
-            <p className="mb-4 text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em]">{note.type}</p>
-            <h1 data-editable="note.title" className="font-display text-[2.45rem] sm:text-6xl font-bold tracking-tight text-[#12131a] leading-[0.98] mb-5">
+            <p className="site-label mb-4 text-copy">{note.type}</p>
+            <h1 data-editable="note.title" className="site-page-title mb-5">
               {note.title}
             </h1>
-            <p data-editable="note.summary" className="text-lg sm:text-xl text-[#4f5968] leading-relaxed mb-10">
+            <p data-editable="note.summary" className="site-lede mb-10">
               {note.summary}
             </p>
 
-            <section className="hairline-card rounded-lg bg-[#fffaf0] p-5 sm:p-6 mb-10">
-              <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-4">For agents, and everyone else</p>
+            <section className="hairline-card mb-10 rounded-lg bg-white/50 p-5 sm:p-6">
+              <p className="site-label mb-4 text-copy">For agents, and everyone else</p>
               <ul className="space-y-3">
                 {note.facts.map((fact, factIndex) => (
-                  <li key={fact} className="flex gap-3 text-sm sm:text-base text-[#4f5968] leading-relaxed">
-                    <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#2f9e73]" />
+                  <li key={fact} className="flex gap-3 text-base leading-7 text-copy">
+                    <span className="mt-2.5 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
                     <span data-editable={`note.facts.${factIndex}`}>{fact}</span>
                   </li>
                 ))}
               </ul>
             </section>
 
-            <div className="hairline-card rounded-lg bg-[#12131a] p-5 sm:p-6 text-white mb-10">
-              <p className="text-xs font-semibold text-[#f2b84b] uppercase tracking-[0.18em] mb-4">Decision guide</p>
+            <div className="hairline-card mb-10 rounded-lg bg-ink p-5 text-white sm:p-6">
+              <p className="site-label mb-4 text-amber">Decision guide</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {note.comparison.map((column, columnIndex) => (
                   <div key={column.label}>
                     <h2 data-editable={`note.comparison.${columnIndex}.label`} className="font-display text-xl font-bold mb-3">{column.label}</h2>
                     <ul className="space-y-3">
                       {column.items.map((item, itemIndex) => (
-                        <li key={item} data-editable={`note.comparison.${columnIndex}.items.${itemIndex}`} className="text-sm leading-relaxed text-white/70">
+                        <li key={item} data-editable={`note.comparison.${columnIndex}.items.${itemIndex}`} className="text-sm leading-6 text-white/70">
                           {item}
                         </li>
                       ))}
@@ -117,15 +117,15 @@ export default function BotworksVsUsingAiYourself() {
             <div className="space-y-10">
               {note.sections.map((section, sectionIndex) => (
                 <section key={section.heading}>
-                  <p data-editable={`note.sections.${sectionIndex}.eyebrow`} className="mb-3 text-xs font-semibold text-[#2f9e73] uppercase tracking-[0.18em]">
+                  <p data-editable={`note.sections.${sectionIndex}.eyebrow`} className="site-label mb-3">
                     {section.eyebrow}
                   </p>
-                  <h2 data-editable={`note.sections.${sectionIndex}.heading`} className="font-display text-3xl font-bold text-[#12131a] leading-tight mb-4">
+                  <h2 data-editable={`note.sections.${sectionIndex}.heading`} className="site-section-title mb-4">
                     {section.heading}
                   </h2>
                   <div className="space-y-4">
                     {section.body.map((paragraph, paragraphIndex) => (
-                      <p key={paragraph} data-editable={`note.sections.${sectionIndex}.body.${paragraphIndex}`} className="text-base text-[#626b7a] leading-relaxed">
+                      <p key={paragraph} data-editable={`note.sections.${sectionIndex}.body.${paragraphIndex}`} className="site-body">
                         {paragraph}
                       </p>
                     ))}
@@ -134,12 +134,12 @@ export default function BotworksVsUsingAiYourself() {
               ))}
             </div>
 
-            <section className="mt-12 rounded-lg bg-[#12131a] p-5 sm:p-6 text-white">
-              <p className="text-xs font-semibold text-[#f2b84b] uppercase tracking-[0.18em] mb-3">Ask your own AI</p>
+            <section className="mt-12 rounded-lg bg-ink p-5 text-white sm:p-6">
+              <p className="site-label mb-3 text-amber">Ask your own AI</p>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-3">
                 Don&apos;t trust this page. Stress-test it.
               </h2>
-              <p className="text-sm sm:text-base text-white/68 leading-relaxed mb-5">
+              <p className="mb-5 text-base leading-7 text-white/70">
                 This prompt asks an assistant to read the note, challenge the comparison, and decide whether Botworks is actually a better fit than using AI tools internally.
               </p>
               <textarea
@@ -152,7 +152,7 @@ export default function BotworksVsUsingAiYourself() {
                 <button
                   type="button"
                   onClick={copySecondOpinionPrompt}
-                  className="rounded-lg bg-[#f2b84b] px-4 py-2.5 text-sm font-semibold text-[#12131a] transition-colors hover:bg-white"
+                  className="rounded-lg bg-amber px-4 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-white"
                 >
                   {copied ? 'Prompt copied' : 'Copy prompt'}
                 </button>
@@ -162,7 +162,7 @@ export default function BotworksVsUsingAiYourself() {
                     href={href}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-lg border border-white/12 px-4 py-2.5 text-sm font-semibold text-white/78 transition-colors hover:border-[#f2b84b] hover:text-[#f2b84b]"
+                    className="rounded-lg border border-white/15 px-4 py-2.5 text-sm font-semibold text-white/80 transition-colors hover:border-amber hover:text-amber"
                   >
                     Open in {label}
                   </a>
@@ -170,15 +170,15 @@ export default function BotworksVsUsingAiYourself() {
               </div>
             </section>
 
-            <section className="mt-12 rounded-lg bg-[#fffaf0] hairline-card p-6">
-              <p className="text-xs font-semibold text-[#8a8171] uppercase tracking-[0.18em] mb-3">A useful next question</p>
-              <h2 data-editable="note.cta.heading" className="font-display text-2xl font-bold text-[#12131a] mb-3">
+            <section className="hairline-card mt-12 rounded-lg bg-white/50 p-6">
+              <p className="site-label mb-3 text-copy">A useful next question</p>
+              <h2 data-editable="note.cta.heading" className="site-item-title mb-3">
                 {note.cta.heading}
               </h2>
-              <p data-editable="note.cta.body" className="text-base text-[#626b7a] leading-relaxed mb-5">
+              <p data-editable="note.cta.body" className="site-body mb-5">
                 {note.cta.body}
               </p>
-              <Link href="/contact" className="inline-flex rounded-lg bg-[#12131a] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#2f9e73]">
+              <Link href="/contact" className="inline-flex rounded-lg bg-ink px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent">
                 Talk through a workflow
               </Link>
             </section>
