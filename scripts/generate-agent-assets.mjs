@@ -14,7 +14,7 @@ const baseUrls = [
   ['https://botworksagency.com/notes', 'weekly', '0.8'],
   ['https://botworksagency.com/case-studies/landscape-operations-software', 'monthly', '0.8'],
   ['https://botworksagency.com/case-studies/finance-operations', 'monthly', '0.8'],
-  ['https://botworksagency.com/case-studies/hvac-rebate-automation', 'monthly', '0.8'],
+  ['https://botworksagency.com/case-studies/hvac-rebate-software', 'monthly', '0.8'],
   ['https://botworksagency.com/contact', 'monthly', '0.7'],
 ]
 
@@ -98,7 +98,7 @@ function renderLlmsTxt() {
     '',
     '- Commercial landscaping operations software (property walks, weak-cell records, bilingual field tickets, supervisor review, and client reporting): https://botworksagency.com/case-studies/landscape-operations-software',
     '- Transportation finance operations (source mapping, reconciliation, executive snapshot, owner-operator processing): https://botworksagency.com/case-studies/finance-operations',
-    '- HVAC rebate processing (existing job data to reviewed, print-ready packet; under operator validation): https://botworksagency.com/case-studies/hvac-rebate-automation',
+    '- HVAC rebate software (Housecall Pro job data to reviewed union submission and double-sided PDF; in production): https://botworksagency.com/case-studies/hvac-rebate-software',
     '',
     'Published note markdown:',
     '',

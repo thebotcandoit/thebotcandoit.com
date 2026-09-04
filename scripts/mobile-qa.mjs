@@ -7,6 +7,7 @@ const chrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 const profile = await mkdtemp(path.join(os.tmpdir(), 'botworks-mobile-qa-'))
 const port = 9327
 const origin = process.env.QA_ORIGIN || 'http://localhost:3000'
+const screenshotRoute = process.env.QA_SCREENSHOT_ROUTE || '/'
 const routes = [
   '/',
   '/work',
@@ -17,7 +18,7 @@ const routes = [
   '/notes/botworks-vs-using-ai-yourself',
   '/case-studies/landscape-operations-software',
   '/case-studies/finance-operations',
-  '/case-studies/hvac-rebate-automation',
+  '/case-studies/hvac-rebate-software',
 ]
 
 const child = spawn(chrome, [
@@ -116,8 +117,8 @@ async function audit(width, height, screenshotRoute) {
 
 try {
   const reports = [
-    await audit(375, 812, '/'),
-    await audit(430, 932, '/#work'),
+    await audit(375, 812, screenshotRoute),
+    await audit(430, 932, screenshotRoute),
   ]
   console.log(JSON.stringify(reports, null, 2))
 } finally {

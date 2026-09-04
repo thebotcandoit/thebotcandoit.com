@@ -19,11 +19,11 @@ const studies = [
     body: 'Operational data revealed standing account, identity, and equipment problems. The first useful output was a one-time cleanup list, not a recurring demand that more than 100 drivers change their behavior.',
   },
   {
-    href: '/case-studies/hvac-rebate-automation',
+    href: '/case-studies/hvac-rebate-software',
     industry: 'Family-owned HVAC contractor',
-    status: 'Under operator validation',
-    title: 'The office reviews a rebate decision instead of assembling it from scratch.',
-    body: 'Existing job data, delivered equipment, certification records, and deterministic program rules come together in one reviewable workflow.',
+    status: 'In production',
+    title: 'They replaced manual rebate entry with one review-and-generate workflow.',
+    body: 'A Housecall Pro job becomes a reviewed union submission and one double-sided PDF, ready for the office to print, sign, and mail.',
   },
 ]
 

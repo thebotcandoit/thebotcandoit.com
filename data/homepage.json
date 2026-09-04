@@ -35,11 +35,11 @@
         },
         {
           "industry": "Family-owned HVAC contractor",
-          "status": "Working system",
-          "heading": "The office reviews a rebate decision instead of assembling it from scratch.",
-          "body": "The system brings together job data, delivered equipment, certification records, and program rules. It handles the repeatable work and sends uncertainty back to the person who knows the job.",
-          "detail": "The software calculates. AI helps with messy matching and reconciliation. The employee remains responsible for judgment and submission.",
-          "cta": "Read the rebate case study"
+          "status": "In production",
+          "heading": "They replaced manual rebate entry with one review-and-generate workflow.",
+          "body": "A Housecall Pro job becomes a reviewed union submission and one double-sided PDF, ready for the office to print, sign, and mail.",
+          "detail": "The software handles the repeated data entry, portal work, and document assembly. The employee reviews the facts and controls the final physical submission.",
+          "cta": "Read the HVAC rebate case study"
         }
       ]
     },

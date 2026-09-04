@@ -55,7 +55,6 @@ export default function CaseStudyPage({
             <Link href="/work" className="site-link">← Work</Link>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <span className="site-meta">{eyebrow}</span>
-              <span aria-hidden="true" className="text-copy/40">·</span>
               <span className="site-meta text-accent">{status}</span>
             </div>
             <h1 className="site-page-title mt-4">{title}</h1>

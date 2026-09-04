@@ -24,6 +24,11 @@
       "source": "/case-studies/field-visit-capture",
       "destination": "/case-studies/landscape-operations-software",
       "permanent": true
+    },
+    {
+      "source": "/case-studies/hvac-rebate-automation",
+      "destination": "/case-studies/hvac-rebate-software",
+      "permanent": true
     }
   ]
 }
