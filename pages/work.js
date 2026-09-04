@@ -15,8 +15,8 @@ const studies = [
     href: '/case-studies/finance-operations',
     industry: 'Regional transportation company',
     status: 'Active engagement',
-    title: 'An alert was redesigned before it could become another source of noise.',
-    body: 'Operational data revealed standing account, identity, and equipment problems. The first useful output was a one-time cleanup list, not a recurring demand that more than 100 drivers change their behavior.',
+    title: 'Leadership now sees the business every day. The same work is changing what happens behind the numbers.',
+    body: 'A daily executive report, repeatable owner-operator expense processing, and a mapped operating data architecture now support the next useful work for software, AI, and agents.',
   },
   {
     href: '/case-studies/hvac-rebate-software',
@@ -32,7 +32,7 @@ export default function Work() {
     <>
       <SiteHead
         title="Work | Botworks"
-        description="Three Botworks case studies showing how AI and software can support employees in commercial landscaping, transportation, and HVAC rebate processing."
+        description="Three Botworks case studies showing how AI and software support employees in commercial landscaping, transportation operations, and HVAC rebate processing."
         path="/work"
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">

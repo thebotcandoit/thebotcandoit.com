@@ -4,62 +4,112 @@ export default function FinanceOperations() {
   return (
     <CaseStudyPage
       path="/case-studies/finance-operations"
-      title="An alert was redesigned before it could become another source of noise."
-      description="How Botworks worked with a transportation company to understand conflicting operational data, build useful reporting, and redesign an AI alert around the employees who would use it."
+      title="Leadership now sees the business every day. The same work is changing what happens behind the numbers."
+      description="How Botworks built daily executive reporting, made monthly owner-operator expense processing repeatable, mapped a transportation company’s operating data, and uses that understanding to find the next useful work."
       eyebrow="Regional transportation company"
       status="Active engagement"
-      intro="The engagement began with a finance executive, employees who understood different parts of the operation, and systems that disagreed about trucks, drivers, routes, revenue, and time. Some of the work became software. Some became analysis. One proposed agent job changed completely once we saw what it would ask people to do."
+      intro="What began with one operational idea now gives company leadership a reconciled view of the business every day. Botworks also made monthly owner-operator card reporting easier to produce, mapped how the company’s operating systems fit together, and uses that understanding to investigate the next places where software, AI, and agents can help."
       facts={[
-        ['People involved', 'Finance, dispatch, billing, and company leadership'],
-        ['Evidence spans', 'Routes, billing, payroll, card sheets, and vehicle data'],
-        ['Work produced', 'Reporting, reconciliation, cleanup lists, and processing tools'],
+        ['For leadership', 'A daily operating and revenue view delivered to the C-suite'],
+        ['For finance', 'Repeatable monthly owner-operator card reports'],
+        ['Behind the work', 'A mapped data architecture across operating, fleet, fuel, and finance systems'],
       ]}
+      journey={{
+        eyebrow: 'One relationship, several useful jobs',
+        heading: 'Each useful output also makes the next question easier to answer.',
+        steps: [
+          {
+            heading: 'Start with an executive question',
+            body: 'Leadership wanted a timely view of what the company scheduled, moved, and earned, even before every invoice was final.',
+          },
+          {
+            heading: 'Connect the operating evidence',
+            body: 'Botworks traced dispatch, billing, routes, drivers, trucks, card purchases, telematics, fuel, and payroll sources.',
+          },
+          {
+            heading: 'Reconcile the definitions',
+            body: 'The team settled which dates, statuses, divisions, denominators, and revenue fields reproduce the company’s own records.',
+          },
+          {
+            heading: 'Publish the daily view',
+            body: 'A generated executive report now reaches company leadership each day with a stable structure and visible limitations.',
+          },
+          {
+            heading: 'Improve recurring finance work',
+            body: 'The same operating knowledge made monthly owner-operator card reports repeatable without hiding the judgment that remains.',
+          },
+          {
+            heading: 'Test the next opportunity',
+            body: 'New ideas are investigated against the real data and the employees who know the work before another system is built.',
+          },
+        ],
+      }}
       sections={[
         {
-          eyebrow: 'The starting point',
-          heading: 'The systems held data. The employees knew what it meant.',
+          eyebrow: 'What came before',
+          heading: 'The company had the data, but no single system held the whole answer.',
           paragraphs: [
-            'The source systems did not agree automatically on dates, divisions, trucks, drivers, revenue, surcharge treatment, or which records belonged in a reporting window. A polished interface would have hidden those disagreements rather than solving them.',
-            'The finance and operating teams supplied the context the systems could not. I mapped the sources, reproduced their calculations, and turned agreed definitions into explicit rules. When totals are additive, the generator cross-foots them. When trucks and drivers are distinct counts rather than sums, the page says so.',
+            'Dispatch and billing lived in one operating platform. Driver and vehicle activity lived in a fleet system. Card purchases, bulk fuel, payroll, and acquired operations added their own records and identifiers. Each system described a real part of the business, but the joins and definitions between them were not automatic.',
+            'Leadership wanted a dependable daily view. Finance employees also spent time rebuilding recurring owner-operator reports from exported transactions. Both jobs required more than placing numbers on a page. Someone had to determine which records belonged, reproduce the company’s existing calculations, and keep uncertain cases visible to the employees who could resolve them.',
           ],
         },
         {
-          eyebrow: 'The reporting product',
-          heading: 'Reporting became repeatable without pretending to run the business.',
+          eyebrow: 'The daily executive product',
+          heading: 'Leadership now receives a current view of the operation every day.',
           paragraphs: [
-            'The snapshot produces a fixed reporting grammar across today’s schedule, the prior day, month to date, and a trailing quarter. The notes describe definitions rather than commenting on whichever numbers happened to arrive that morning.',
-            'That distinction became a test: render the same template from two genuinely different days and require every definition note to remain identical. If the prose changes with the data, the page has started interpreting the operator’s business instead of reporting it. The employees remain responsible for what the numbers mean for the operation.',
+            'The generated report brings together today’s schedule, the prior day’s loads, deliveries, gallons and revenue, month-to-date comparisons, and trailing operating trends. It separates important parts of the operation instead of hiding them inside one company-wide average.',
+            'The report is emailed to company leadership as a consistent executive product. Definitions do not change from one day to the next, partial revenue is labeled with its priced share, and every total is checked against the underlying detail before the report is released.',
           ],
-          callout: 'Present the math. Label it precisely enough to be unambiguous. Do not interpret it for the operator.',
+          callout: 'A daily number is only useful when the reader can tell whether the business changed or the calculation changed.',
         },
         {
-          eyebrow: 'The proposed agent job',
-          heading: 'A recurring driver alert would have trained the team to ignore it.',
+          eyebrow: 'The monthly finance workflow',
+          heading: 'Owner-operator expense reporting became a repeatable process.',
           paragraphs: [
-            'One promising idea was to compare dispatch and vehicle systems and alert the team when a driver appeared to be logged into the wrong truck or not logged in at all. The first 31-day analysis found that most of the apparent problem came from standing conditions: missing accounts, repeated driver-truck pairings, aliases, and master-data errors.',
-            'If we had shipped the alert first, dispatch would have received the same known problems every day. The useful first output was a one-time cleanup list for the employees who could fix an account, correct a record, or decide that a particular role should not be expected to log in.',
+            'Each month, the finance team separates card purchases into individual owner-operator reports. The source export includes fuel and non-fuel purchases, reversals, shared equipment, inconsistent names, and categories that still require knowledge of the driver or truck.',
+            'Botworks derived the owner-operator roster from the operating system, built the processing rules, and generated the individual workbooks from the company’s export. The first live closed-month run was built before seeing the employee’s version, then reconciled against it to the cent. The software handles selection, formatting, totals, and known rules. The employee keeps the few decisions that depend on business context.',
+            'A new portal was considered and deliberately deferred. One file upload and a set of finished workbooks solved the important part without creating another interface for the company to maintain.',
           ],
-          callout: 'Good AI should not require more than 100 drivers to change their behavior before it can become useful.',
         },
         {
-          eyebrow: 'Another useful boundary',
-          heading: 'Not every repeatable process needs a new application.',
+          eyebrow: 'The operating data map',
+          heading: 'Behind both products is a working map of how the company represents its business.',
           paragraphs: [
-            'The company also hand-builds monthly owner-operator card sheets. We derived the current roster from the operating system, reconciled multiple months, and established repeatable rules for producing the files.',
-            'A portal was considered and deliberately deferred. Once the rules existed, an employee could upload the source and export the completed files in about a minute each month. Building and maintaining a new interface would not yet have improved the important part of the job.',
+            'Botworks mapped the roles and relationships among dispatch, billing, routes, divisions, drivers, tractors, telematics, card transactions, fuel sources, payroll, and separate operating entities. The map records the trusted source for each fact, the identifiers that connect systems, the places where those identifiers fail, and the questions that still belong to employees or vendors.',
+            'This is not documentation created after the work. It is part of how the work becomes reliable. It prevents a truck’s current home division from silently rewriting its operating history, keeps separate company instances from being combined on colliding identifiers, and makes clear when a requested metric cannot yet be supported by the available data.',
           ],
+        },
+        {
+          eyebrow: 'What happens next',
+          heading: 'The map turns a general interest in AI into specific work the company can evaluate.',
+          paragraphs: [
+            'The engagement now has a growing set of practical questions: how to extend executive reporting across another operating entity, how to calculate gross profit per truck, how to improve fuel and tax preparation, and where agents can help employees investigate recurring exceptions.',
+            'One proposed driver-and-truck alert shows the discipline. The first analysis found that a recurring alert would repeat standing account, identity, and equipment problems. Botworks produced a cleanup path first rather than asking more than 100 drivers to change their behavior for a system that would still be noisy.',
+          ],
+          callout: 'The goal is not to build every idea. It is to learn enough of the business to build the useful ones well.',
         },
       ]}
+      deliveredHeading="An active AI and data partnership is already producing daily and monthly work."
+      deliveredIntro="The visible outputs and the operating knowledge behind them are parts of the same engagement."
       delivered={[
-        'A source map across finance and operating systems',
-        'Explicit definitions and reconciliation rules',
-        'A repeatable executive snapshot and four-page PDF',
-        'Tests for arithmetic, stable definitions, and visual grammar',
-        'A driver-and-truck mismatch analysis and one-time cleanup design',
-        'Owner-operator card-sheet reconciliation and repeatable processing',
-        'A working record of open questions, decisions, and limitations',
+        {
+          heading: 'Daily executive reporting',
+          body: 'A generated operating and revenue view, delivered to company leadership with reconciled definitions, visible data freshness, and repeatable release checks.',
+        },
+        {
+          heading: 'Owner-operator card reports',
+          body: 'A monthly process that turns the company’s transaction export and operating roster into individual workbooks, while preserving the employee decisions that still require context.',
+        },
+        {
+          heading: 'Operating data architecture',
+          body: 'A working map of systems, entities, definitions, joins, conflicts, access constraints, and unresolved questions across the company’s operating data.',
+        },
+        {
+          heading: 'The next useful work',
+          body: 'A disciplined pipeline of reporting, finance, fleet, fuel, and agent opportunities that are tested against real evidence before they become production systems.',
+        },
       ]}
-      boundary="This is an active internal engagement. The reporting product and reconciliation work exist; the recurring driver alert described here was deliberately not shipped before the standing problems were addressed. This case study does not publish company figures or claim a business outcome Botworks cannot independently attribute."
+      boundary="This is an active internal engagement. The executive report is generated and delivered daily, and the owner-operator card-report process runs monthly. Other opportunities described here are being investigated or built in sequence. The driver alert was deliberately not shipped in its original form. This case study does not publish company figures or claim a financial result Botworks cannot independently attribute."
     />
   )
 }
