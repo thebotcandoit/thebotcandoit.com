@@ -9,11 +9,6 @@ export default function FinanceOperations() {
       eyebrow="Regional transportation company"
       status="Active engagement"
       intro="What began with one operational idea now gives company leadership a reconciled view of the business every day. Botworks also made monthly owner-operator card reporting easier to produce, mapped how the company’s operating systems fit together, and uses that understanding to investigate the next places where software, AI, and agents can help."
-      facts={[
-        ['For leadership', 'A daily operating and revenue view delivered to the C-suite'],
-        ['For finance', 'Repeatable monthly owner-operator card reports'],
-        ['Behind the work', 'A mapped data architecture across operating, fleet, fuel, and finance systems'],
-      ]}
       journey={{
         eyebrow: 'One relationship, several useful jobs',
         heading: 'Each useful output also makes the next question easier to answer.',
@@ -89,24 +84,21 @@ export default function FinanceOperations() {
           callout: 'The goal is not to build every idea. It is to learn enough of the business to build the useful ones well.',
         },
       ]}
-      deliveredHeading="An active AI and data partnership is already producing daily and monthly work."
-      deliveredIntro="The visible outputs and the operating knowledge behind them are parts of the same engagement."
+      deliveredPosition="top"
+      deliveredEyebrow={null}
+      deliveredHeading="What Botworks has built and delivered so far."
       delivered={[
         {
           heading: 'Daily executive reporting',
-          body: 'A generated operating and revenue view, delivered to company leadership with reconciled definitions, visible data freshness, and repeatable release checks.',
+          body: 'Company leadership receives a reconciled view of the operation every day.',
         },
         {
-          heading: 'Owner-operator card reports',
-          body: 'A monthly process that turns the company’s transaction export and operating roster into individual workbooks, while preserving the employee decisions that still require context.',
+          heading: 'Owner-operator expense reports',
+          body: 'A difficult monthly true-up now runs as a repeatable process, with employees handling the few decisions that require context.',
         },
         {
-          heading: 'Operating data architecture',
-          body: 'A working map of systems, entities, definitions, joins, conflicts, access constraints, and unresolved questions across the company’s operating data.',
-        },
-        {
-          heading: 'The next useful work',
-          body: 'A disciplined pipeline of reporting, finance, fleet, fuel, and agent opportunities that are tested against real evidence before they become production systems.',
+          heading: 'Mapped the company’s operating data',
+          body: 'Botworks traced how dispatch, billing, fleet, fuel, payroll, and finance records fit together so the next problems can be investigated against real evidence.',
         },
       ]}
       boundary="This is an active internal engagement. The executive report is generated and delivered daily, and the owner-operator card-report process runs monthly. Other opportunities described here are being investigated or built in sequence. The driver alert was deliberately not shipped in its original form. This case study does not publish company figures or claim a financial result Botworks cannot independently attribute."

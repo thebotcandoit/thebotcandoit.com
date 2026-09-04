@@ -3,6 +3,30 @@ import Nav from './Nav'
 import Footer from './Footer'
 import SiteHead from './SiteHead'
 
+function DeliveredSummary({ delivered, eyebrow, heading, intro }) {
+  return (
+    <section className="rounded-lg bg-ink p-6 text-white sm:p-8">
+      {eyebrow && <p className="site-label text-amber">{eyebrow}</p>}
+      <h2 className={`site-section-title text-white ${eyebrow ? 'mt-3' : ''}`}>{heading}</h2>
+      {intro && <p className="mt-3 text-sm leading-6 text-white/70">{intro}</p>}
+      {typeof delivered[0] === 'string' ? (
+        <ul className="mt-5 space-y-3">
+          {delivered.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">•</span><span>{item}</span></li>)}
+        </ul>
+      ) : (
+        <div className={`mt-6 grid gap-x-8 gap-y-6 ${delivered.length === 3 ? 'lg:grid-cols-3' : 'sm:grid-cols-2'}`}>
+          {delivered.map((item) => (
+            <section key={item.heading} className="border-t border-white/15 pt-4">
+              <h3 className="text-base font-semibold text-white">{item.heading}</h3>
+              <p className="mt-2 text-sm leading-6 text-white/65">{item.body}</p>
+            </section>
+          ))}
+        </div>
+      )}
+    </section>
+  )
+}
+
 export default function CaseStudyPage({
   path,
   title,
@@ -15,8 +39,10 @@ export default function CaseStudyPage({
   sections,
   evidence,
   delivered,
+  deliveredEyebrow = 'In production',
   deliveredHeading = 'What exists now',
   deliveredIntro,
+  deliveredPosition = 'bottom',
   boundary,
 }) {
   const schema = {
@@ -60,6 +86,17 @@ export default function CaseStudyPage({
             <h1 className="site-page-title mt-4">{title}</h1>
             <p className="site-lede mt-6">{intro}</p>
           </header>
+
+          {deliveredPosition === 'top' && (
+            <section className="site-shell max-w-5xl pb-14 sm:pb-16">
+              <DeliveredSummary
+                delivered={delivered}
+                eyebrow={deliveredEyebrow}
+                heading={deliveredHeading}
+                intro={deliveredIntro}
+              />
+            </section>
+          )}
 
           {facts.length > 0 && (
             <section className="border-y border-line bg-paper-deep/70">
@@ -161,25 +198,14 @@ export default function CaseStudyPage({
                 </section>
               )}
 
-              <section className="rounded-lg bg-ink p-6 text-white sm:p-8">
-                <p className="site-label text-amber">In production</p>
-                <h2 className="site-section-title mt-3 text-white">{deliveredHeading}</h2>
-                {deliveredIntro && <p className="mt-3 text-sm leading-6 text-white/70">{deliveredIntro}</p>}
-                {typeof delivered[0] === 'string' ? (
-                  <ul className="mt-5 space-y-3">
-                    {delivered.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-white/70"><span className="text-amber">•</span><span>{item}</span></li>)}
-                  </ul>
-                ) : (
-                  <div className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2">
-                    {delivered.map((item) => (
-                      <section key={item.heading} className="border-t border-white/15 pt-4">
-                        <h3 className="text-base font-semibold text-white">{item.heading}</h3>
-                        <p className="mt-2 text-sm leading-6 text-white/65">{item.body}</p>
-                      </section>
-                    ))}
-                  </div>
-                )}
-              </section>
+              {deliveredPosition === 'bottom' && (
+                <DeliveredSummary
+                  delivered={delivered}
+                  eyebrow={deliveredEyebrow}
+                  heading={deliveredHeading}
+                  intro={deliveredIntro}
+                />
+              )}
 
               <section className="border-y border-line py-7">
                 <p className="site-label text-copy">Boundary</p>
