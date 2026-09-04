@@ -94,18 +94,16 @@ export default function LandscapeOperationsSoftware() {
       ]}
       evidence={{
         eyebrow: 'Inside the product',
-        heading: 'The property record is ready for operations and the client.',
-        intro: 'The review workspace keeps the original field record, English and Spanish work descriptions, photographs, routing status, and the handoff into client reporting together.',
-        items: [
-          {
-            src: '/evidence/field-visit-review-anonymized.png',
-            alt: 'An anonymized field operations review screen showing a bilingual enhancement record, visit photographs, crew-work status, and a control to begin a PDF draft.',
-            width: 1719,
-            height: 915,
-            caption: 'An anonymized property record in production. The same record supports supervisor review, bilingual crew communication, routing status, and the start of a client report.',
-          },
-        ],
+        heading: 'Watch one property walk move through the system.',
+        intro: 'The walkthrough connects the mobile field app, the bilingual review and routing workspace, and the client PDF generated from the same visit record.',
+        video: {
+          src: '/evidence/landscape-operations-workflow.mp4',
+          poster: '/evidence/landscape-operations-workflow-poster.png',
+          label: 'Privacy-protected walkthrough of the commercial landscape operations system',
+          caption: 'The field capture and review scenes come from the production system. Client identities are hidden. The final scene uses the production PDF renderer with a generic property name.',
+        },
       }}
+      evidencePosition="top"
       deliveredHeading="One company-specific system replaced the app and the manual handoffs around it."
       deliveredIntro="The property-walk app, routing automation, review workspace, photo archive, PDF Creator, and operating layer are connected parts of one production system."
       delivered={[

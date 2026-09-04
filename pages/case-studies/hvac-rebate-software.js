@@ -94,6 +94,7 @@ export default function HvacRebateSoftware() {
           caption: 'A staged walkthrough assembled from a completed production run. No new rebate was created or submitted for this recording. The standard employee experience keeps the cloud-browser work behind one Generate button.',
         },
       }}
+      evidencePosition="top"
       deliveredHeading="A recurring office process now runs as one company-specific application."
       deliveredIntro="The employee-facing portal, system connections, browser automation, PDF generation, and operating safeguards are parts of one production workflow."
       delivered={[

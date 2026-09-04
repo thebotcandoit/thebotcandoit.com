@@ -101,6 +101,29 @@ export default function FinanceOperations() {
           body: 'Botworks traced how dispatch, billing, fleet, fuel, payroll, and finance records fit together so the next problems can be investigated against real evidence.',
         },
       ]}
+      evidence={{
+        eyebrow: 'Inside the work',
+        heading: 'The engagement already produces daily and monthly operating work.',
+        intro: 'These views show the delivered executive report and the owner-operator card-report workflow. Company figures, identities, and transactions are hidden.',
+        layout: 'stacked',
+        items: [
+          {
+            src: '/evidence/btl-executive-report-anonymized.png',
+            alt: 'A privacy-protected executive reporting snapshot with company figures hidden.',
+            width: 1280,
+            height: 720,
+            caption: 'The daily report combines the current schedule, prior-day operating results, revenue, and longer-term comparisons in one consistent executive view.',
+          },
+          {
+            src: '/evidence/btl-owner-operator-workflow.png',
+            alt: 'A privacy-protected before-and-after view of a company card export becoming owner-operator monthly workbooks.',
+            width: 1280,
+            height: 720,
+            caption: 'The monthly process starts with one company card export and produces separate, reconciled workbooks for employee review.',
+          },
+        ],
+      }}
+      evidencePosition="top"
       boundary="This is an active internal engagement. The executive report is generated and delivered daily, and the owner-operator card-report process runs monthly. Other opportunities described here are being investigated or built in sequence. The driver alert was deliberately not shipped in its original form. This case study does not publish company figures or claim a financial result Botworks cannot independently attribute."
     />
   )

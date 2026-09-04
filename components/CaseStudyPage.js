@@ -27,6 +27,61 @@ function DeliveredSummary({ delivered, eyebrow, heading, intro }) {
   )
 }
 
+function EvidenceSection({ evidence }) {
+  const imageLayout = evidence.layout === 'stacked'
+    ? 'mt-7 grid items-start gap-6 lg:-ml-[284px] lg:w-[calc(100%+284px)]'
+    : `mt-7 grid items-start gap-6 ${evidence.items?.length > 1 ? 'sm:grid-cols-2' : 'lg:-ml-[284px] lg:w-[calc(100%+284px)]'}`
+
+  return (
+    <section>
+      <p className="site-label mb-2">{evidence.eyebrow}</p>
+      <h2 className="site-section-title">{evidence.heading}</h2>
+      {evidence.intro && <p className="site-body mt-4">{evidence.intro}</p>}
+      {evidence.video && (
+        <figure className="mt-7 overflow-hidden rounded-lg border border-line bg-white/70 lg:-ml-[284px] lg:w-[calc(100%+284px)]">
+          <div className="bg-ink">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={evidence.video.poster}
+              aria-label={evidence.video.label}
+              className="aspect-video h-auto w-full bg-ink"
+            >
+              <source src={evidence.video.src} type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
+          <figcaption className="border-t border-line px-4 py-3 text-sm leading-6 text-copy">
+            {evidence.video.caption}
+          </figcaption>
+        </figure>
+      )}
+      {(evidence.items || []).length > 0 && (
+        <div className={imageLayout}>
+          {evidence.items.map((item) => (
+            <figure key={item.src} className="overflow-hidden rounded-lg border border-line bg-white/70">
+              <div className="bg-white">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  width={item.width}
+                  height={item.height}
+                  decoding="async"
+                  className="h-auto w-full"
+                />
+              </div>
+              <figcaption className="border-t border-line px-4 py-3 text-sm leading-6 text-copy">
+                {item.caption}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      )}
+    </section>
+  )
+}
+
 export default function CaseStudyPage({
   path,
   title,
@@ -43,6 +98,7 @@ export default function CaseStudyPage({
   deliveredHeading = 'What exists now',
   deliveredIntro,
   deliveredPosition = 'bottom',
+  evidencePosition = 'bottom',
   boundary,
 }) {
   const schema = {
@@ -138,6 +194,8 @@ export default function CaseStudyPage({
               </div>
             </aside>
             <div className="space-y-12">
+              {evidence && evidencePosition === 'top' && <EvidenceSection evidence={evidence} />}
+
               {sections.map((section) => (
                 <section key={section.heading}>
                   {section.eyebrow && <p className="site-label mb-2">{section.eyebrow}</p>}
@@ -149,54 +207,7 @@ export default function CaseStudyPage({
                 </section>
               ))}
 
-              {evidence && (
-                <section>
-                  <p className="site-label mb-2">{evidence.eyebrow}</p>
-                  <h2 className="site-section-title">{evidence.heading}</h2>
-                  {evidence.intro && <p className="site-body mt-4">{evidence.intro}</p>}
-                  {evidence.video && (
-                    <figure className="mt-7 overflow-hidden rounded-lg border border-line bg-white/70 lg:-ml-[284px] lg:w-[calc(100%+284px)]">
-                      <div className="bg-ink">
-                        <video
-                          controls
-                          playsInline
-                          preload="metadata"
-                          poster={evidence.video.poster}
-                          aria-label={evidence.video.label}
-                          className="aspect-video h-auto w-full bg-ink"
-                        >
-                          <source src={evidence.video.src} type="video/mp4" />
-                          Your browser does not support embedded video.
-                        </video>
-                      </div>
-                      <figcaption className="border-t border-line px-4 py-3 text-sm leading-6 text-copy">
-                        {evidence.video.caption}
-                      </figcaption>
-                    </figure>
-                  )}
-                  {(evidence.items || []).length > 0 && (
-                    <div className={`mt-7 grid items-start gap-6 ${evidence.items.length > 1 ? 'sm:grid-cols-2' : 'lg:-ml-[284px] lg:w-[calc(100%+284px)]'}`}>
-                      {evidence.items.map((item) => (
-                        <figure key={item.src} className="overflow-hidden rounded-lg border border-line bg-white/70">
-                          <div className="bg-white">
-                            <img
-                              src={item.src}
-                              alt={item.alt}
-                              width={item.width}
-                              height={item.height}
-                              decoding="async"
-                              className="h-auto w-full"
-                            />
-                          </div>
-                          <figcaption className="border-t border-line px-4 py-3 text-sm leading-6 text-copy">
-                            {item.caption}
-                          </figcaption>
-                        </figure>
-                      ))}
-                    </div>
-                  )}
-                </section>
-              )}
+              {evidence && evidencePosition === 'bottom' && <EvidenceSection evidence={evidence} />}
 
               {deliveredPosition === 'bottom' && (
                 <DeliveredSummary
