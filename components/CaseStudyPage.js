@@ -108,7 +108,7 @@ export default function CaseStudyPage({
                   <div className="mt-4 space-y-4">
                     {section.paragraphs.map((paragraph) => <p key={paragraph} className="site-body">{paragraph}</p>)}
                   </div>
-                  {section.callout && <blockquote className="site-item-title mt-6">{section.callout}</blockquote>}
+                  {section.callout && <blockquote className="site-body mt-6 font-semibold text-ink">{section.callout}</blockquote>}
                 </section>
               ))}
 
