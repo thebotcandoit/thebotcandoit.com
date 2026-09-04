@@ -95,6 +95,7 @@ export default function HvacRebateSoftware() {
         },
       }}
       evidencePosition="top"
+      deliveredPosition="top"
       deliveredHeading="A recurring office process now runs as one company-specific application."
       deliveredIntro="The employee-facing portal, system connections, browser automation, PDF generation, and operating safeguards are parts of one production workflow."
       delivered={[

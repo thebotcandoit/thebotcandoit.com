@@ -27,10 +27,11 @@ function DeliveredSummary({ delivered, eyebrow, heading, intro }) {
   )
 }
 
-function EvidenceSection({ evidence }) {
+function EvidenceSection({ evidence, fullWidth = false }) {
+  const wideClass = fullWidth ? '' : 'lg:-ml-[284px] lg:w-[calc(100%+284px)]'
   const imageLayout = evidence.layout === 'stacked'
-    ? 'mt-7 grid items-start gap-6 lg:-ml-[284px] lg:w-[calc(100%+284px)]'
-    : `mt-7 grid items-start gap-6 ${evidence.items?.length > 1 ? 'sm:grid-cols-2' : 'lg:-ml-[284px] lg:w-[calc(100%+284px)]'}`
+    ? `mt-7 grid items-start gap-6 ${wideClass}`
+    : `mt-7 grid items-start gap-6 ${evidence.items?.length > 1 ? 'sm:grid-cols-2' : wideClass}`
 
   return (
     <section>
@@ -38,7 +39,7 @@ function EvidenceSection({ evidence }) {
       <h2 className="site-section-title">{evidence.heading}</h2>
       {evidence.intro && <p className="site-body mt-4">{evidence.intro}</p>}
       {evidence.video && (
-        <figure className="mt-7 overflow-hidden rounded-lg border border-line bg-white/70 lg:-ml-[284px] lg:w-[calc(100%+284px)]">
+        <figure className={`mt-7 overflow-hidden rounded-lg border border-line bg-white/70 ${wideClass}`}>
           <div className="bg-ink">
             <video
               controls
@@ -154,6 +155,12 @@ export default function CaseStudyPage({
             </section>
           )}
 
+          {evidence && evidencePosition === 'top' && (
+            <section className="site-shell max-w-5xl pb-14 sm:pb-16">
+              <EvidenceSection evidence={evidence} fullWidth />
+            </section>
+          )}
+
           {facts.length > 0 && (
             <section className="border-y border-line bg-paper-deep/70">
               <dl className={`site-shell grid max-w-5xl divide-y divide-line sm:gap-8 sm:divide-y-0 ${facts.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
@@ -194,8 +201,6 @@ export default function CaseStudyPage({
               </div>
             </aside>
             <div className="space-y-12">
-              {evidence && evidencePosition === 'top' && <EvidenceSection evidence={evidence} />}
-
               {sections.map((section) => (
                 <section key={section.heading}>
                   {section.eyebrow && <p className="site-label mb-2">{section.eyebrow}</p>}

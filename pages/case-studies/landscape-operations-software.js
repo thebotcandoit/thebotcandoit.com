@@ -104,6 +104,7 @@ export default function LandscapeOperationsSoftware() {
         },
       }}
       evidencePosition="top"
+      deliveredPosition="top"
       deliveredHeading="One company-specific system replaced the app and the manual handoffs around it."
       deliveredIntro="The property-walk app, routing automation, review workspace, photo archive, PDF Creator, and operating layer are connected parts of one production system."
       delivered={[
