@@ -118,7 +118,7 @@ export default function CaseStudyPage({
                   <p className="site-label mb-2">{evidence.eyebrow}</p>
                   <h2 className="site-section-title">{evidence.heading}</h2>
                   {evidence.intro && <p className="site-body mt-4">{evidence.intro}</p>}
-                  <div className="mt-7 grid items-start gap-6 sm:grid-cols-2">
+                  <div className={`mt-7 grid items-start gap-6 ${evidence.items.length > 1 ? 'sm:grid-cols-2' : 'lg:-ml-[284px] lg:w-[calc(100%+284px)]'}`}>
                     {evidence.items.map((item) => (
                       <figure key={item.src} className="overflow-hidden rounded-lg border border-line bg-white/70">
                         <div className="bg-white">

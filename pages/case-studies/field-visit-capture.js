@@ -83,6 +83,20 @@ export default function FieldVisitCapture() {
           ],
         },
       ]}
+      evidence={{
+        eyebrow: 'Inside the product',
+        heading: 'A completed visit becomes a bilingual operating record.',
+        intro: 'The review workspace keeps the original field record, English and Spanish work descriptions, photographs, routing status, and the handoff into the PDF Creator together.',
+        items: [
+          {
+            src: '/evidence/field-visit-review-anonymized.png',
+            alt: 'An anonymized field operations review screen showing a bilingual enhancement record, visit photographs, crew-work status, and a control to begin a PDF draft.',
+            width: 1719,
+            height: 915,
+            caption: 'An anonymized production visit. The same record supports supervisor review, bilingual crew communication, routing status, and the start of a client PDF.',
+          },
+        ],
+      }}
       deliveredHeading="A company-specific field operations product."
       deliveredIntro="These are connected parts of one operating system, not a collection of demonstrations."
       delivered={[
