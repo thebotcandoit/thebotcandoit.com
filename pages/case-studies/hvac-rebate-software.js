@@ -83,6 +83,17 @@ export default function HvacRebateSoftware() {
           ],
         },
       ]}
+      evidence={{
+        eyebrow: 'Inside the workflow',
+        heading: 'A completed job moves through the systems the office already uses.',
+        intro: 'This privacy-protected walkthrough uses screens from a completed production run. Customer details, employee identities, job identifiers, account information, and the signed invoice are masked.',
+        video: {
+          src: '/evidence/hvac-rebate-workflow.mp4',
+          poster: '/evidence/hvac-rebate-workflow-poster.png',
+          label: 'Privacy-protected walkthrough of the HVAC rebate workflow',
+          caption: 'A staged walkthrough assembled from a completed production run. No new rebate was created or submitted for this recording. The standard employee experience keeps the cloud-browser work behind one Generate button.',
+        },
+      }}
       deliveredHeading="A recurring office process now runs as one company-specific application."
       deliveredIntro="The employee-facing portal, system connections, browser automation, PDF generation, and operating safeguards are parts of one production workflow."
       delivered={[
