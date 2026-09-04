@@ -1,0 +1,666 @@
+{
+  "pages": {
+    "work": {
+      "path": "/work",
+      "label": "Work",
+      "published": {
+        "meta": {
+          "title": "Work | Botworks",
+          "description": "Three Botworks case studies showing how AI and software support employees in commercial landscaping, transportation operations, and HVAC rebate processing."
+        },
+        "hero": {
+          "eyebrow": "Work",
+          "heading": "AI is useful when it helps someone do real work differently.",
+          "body": "These companies did not begin with a transformation plan. They began with employees who knew the work, an important problem, and a belief that AI might now make a better approach possible. The case studies show what we built together, where the human judgment remained, and what real use taught us."
+        },
+        "studies": [
+          {
+            "href": "/case-studies/landscape-operations-software",
+            "industry": "Large commercial landscaper · South Florida",
+            "status": "In production",
+            "title": "They replaced a field app employees disliked with software built around the way the team works.",
+            "body": "Account managers document a property once, even with weak cell service. The same standardized record is translated, routed into field tickets, reviewed by supervisors, and turned into client reporting.",
+            "cta": "Read case study"
+          },
+          {
+            "href": "/case-studies/finance-operations",
+            "industry": "Regional transportation company",
+            "status": "Active engagement",
+            "title": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
+            "body": "A daily executive report, repeatable owner-operator expense processing, and a mapped operating data architecture now support the next useful work for software, AI, and agents.",
+            "cta": "Read case study"
+          },
+          {
+            "href": "/case-studies/hvac-rebate-software",
+            "industry": "Family-owned HVAC contractor",
+            "status": "In production",
+            "title": "They replaced manual rebate entry with one review-and-generate workflow.",
+            "body": "A Housecall Pro job becomes a reviewed union submission and one double-sided PDF, ready for the office to print, sign, and mail.",
+            "cta": "Read case study"
+          }
+        ],
+        "repeats": {
+          "eyebrow": "What repeats",
+          "heading": "The software changes. The working relationship does not.",
+          "items": [
+            {
+              "heading": "Learn from the people doing the job",
+              "body": "The files and systems show part of the work. Employees explain the exceptions, judgment, and operating reality around them."
+            },
+            {
+              "heading": "Give AI a bounded responsibility",
+              "body": "Software calculates what should be deterministic. AI handles appropriate ambiguity. A person receives the decisions that still need judgment."
+            },
+            {
+              "heading": "Test the real failure modes",
+              "body": "Weak cell service, missing identities, changed equipment, portal rules, and misleading empty states are part of the product."
+            },
+            {
+              "heading": "Keep the work client-owned and transferable",
+              "body": "The company keeps its definitions, decisions, source data, code, tests, and documentation. A named operator still has to decide what changes and keep the system dependable."
+            }
+          ]
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "how-we-work": {
+      "path": "/how-we-work",
+      "label": "How we work",
+      "published": {
+        "meta": {
+          "title": "How Botworks works | AI built with the people who know the work",
+          "description": "How Botworks works with employees to give AI a useful part of an important job, build the surrounding system, and test it in practice."
+        },
+        "hero": {
+          "eyebrow": "How we work",
+          "heading": "Build with the people who know the work. Give AI a useful part of it.",
+          "body": "The first goal is not to persuade everyone to adopt AI. It is to work with employees on something the company already cares about and make a better way of doing it real."
+        },
+        "stages": [
+          {
+            "number": "01",
+            "title": "Bring the hunch and the people who know the work.",
+            "body": "A useful first conversation begins with something you think AI might change. You do not need a prescribed solution. We do need access to the employees, data, systems, and examples that reveal how the job actually works."
+          },
+          {
+            "number": "02",
+            "title": "Learn the job before assigning any of it to AI.",
+            "body": "I trace the current work with the team, reproduce the calculations, inspect the evidence, and look for exceptions. The goal is not to automate a description of the process. It is to understand the responsibility well enough to redesign it."
+          },
+          {
+            "number": "03",
+            "title": "Give AI a useful, bounded part of the work.",
+            "body": "Some steps should be deterministic software. AI can handle appropriate ambiguity, drafting, matching, and investigation. Employees keep the context, judgment, and accountability that belong with them. Uncertain work returns to the right person instead of being hidden."
+          },
+          {
+            "number": "04",
+            "title": "Build the surrounding system and use it for real.",
+            "body": "An agent needs evidence, tools, rules, tests, a place in the workflow, and a path for exceptions. Real use exposes bad connections, missing records, changed names, confusing states, and assumptions nobody had written down. We keep iterating, or choose a better answer."
+          },
+          {
+            "number": "05",
+            "title": "Keep the work client-owned and give it a responsible operator.",
+            "body": "Client-specific code, data, infrastructure, rules, tests, and documentation stay with the client. That makes the work transferable, not self-running. Botworks operates it while engaged; a future handoff requires a named person or partner who can direct agents, review consequential changes, and remain accountable for production."
+          }
+        ],
+        "why": {
+          "eyebrow": "Why the work comes first",
+          "heading": "People need a reason to change how they work.",
+          "paragraphs": [
+            "An executive may believe AI could help while having no reason to ask employees to change their habits for a promise. A working result gives the team evidence from its own business and a chance to shape the system around what it knows.",
+            "When AI does something that was difficult before, broader use stops feeling theoretical. Training, guardrails, and documentation now support work people already understand and value."
+          ],
+          "callout": "Do not make employees work for the AI. Build AI that works with them."
+        },
+        "relationship": {
+          "eyebrow": "The commercial relationship",
+          "heading": "Usually a retainer. Never artificial lock-in.",
+          "paragraphs": [
+            "Ongoing work commonly runs through a monthly retainer because production systems and recurring analysis need continuity and an accountable operator. The fee is for the work Botworks is doing, not a license claim on the client’s future.",
+            "The client owns what we build. Ownership does not mean every employee should use agents to change production code, or that software will safely improve itself after Botworks leaves. If responsibility moves, the handoff should be deliberate and made to someone prepared to own it."
+          ],
+          "responsibilityEyebrow": "What Botworks takes responsibility for",
+          "responsibilities": [
+            "If software is live, it works for the problem and the people it was built to serve.",
+            "If the work is analysis, the sources, definitions, assumptions, and disagreements remain inspectable.",
+            "AI uncertainty, real exceptions, and failures are visible to the person equipped to decide what happens next.",
+            "The company can see what is validated, what is experimental, and what remains open."
+          ]
+        },
+        "built": {
+          "eyebrow": "What gets built",
+          "heading": "Purpose-built software, without turning every workflow into a new product.",
+          "body": "Most Botworks engagements involve custom software: SQL, data connections, processing scripts, document generation, agents, monitoring, or focused internal interfaces. The boundary is not custom versus off-the-shelf. It is whether the business needs a company-specific operating system or an unnecessary attempt to recreate a mature SaaS product.",
+          "callout": "Use the good product. Build the company-specific software, connections, and intelligence around it."
+        },
+        "cta": {
+          "heading": "Start with the rough problem.",
+          "body": "You do not need to decide whether this is AI, software, data, or operations work before getting in touch.",
+          "label": "matt@botworksagency.com"
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "about": {
+      "path": "/about",
+      "label": "About",
+      "published": {
+        "meta": {
+          "title": "About Matt Livingston and Botworks",
+          "description": "Botworks is Matt Livingston: a former VP of Product Management who works with employees to put AI to work on important jobs inside their business."
+        },
+        "hero": {
+          "eyebrow": "About",
+          "heading": "Botworks is a small firm on purpose.",
+          "body": "I’m Matt Livingston. I work directly with the executive who has the problem and the employees who understand the work. AI helps me carry much more of the investigation, analysis, product, and engineering work; I bring in specialists when the problem genuinely needs them."
+        },
+        "why": {
+          "heading": "Why this firm exists",
+          "paragraphs": [
+            "I spent 15 years in software product management, most recently as a VP of Product Management. I was used to working with engineers, designers, analysts, and product people around the same problem.",
+            "Most operating companies do not have that group in-house, and I do not think recreating a software organization is a sensible use of their budget. They may have an IT provider, but keeping laptops and networks working is different from investigating a business problem and building a dependable product around it.",
+            "AI changed what one experienced person can carry. It can help inspect data, write and review code, generate tests, research unfamiliar systems, and document decisions. Botworks uses that leverage to build with the client’s team, while I remain accountable for the problem, the tradeoffs, and whether the result actually works.",
+            "The employees are not an afterthought or a source of resistance to overcome. They know where the process bends, which exceptions matter, and whether an answer is useful. My job is to make AI effective inside that reality."
+          ]
+        },
+        "care": {
+          "eyebrow": "What I care about",
+          "heading": "Getting to the truth and making the result useful to someone.",
+          "body": "With software, the test is whether people can depend on it in the conditions of their job. With data, the test is whether the definitions and sources survive scrutiny by the people who understand the business. In both cases I would rather show an unresolved question than hide it inside a polished answer."
+        },
+        "notBuilding": {
+          "eyebrow": "What I am not building",
+          "heading": "A new SaaS product every time a workflow is unusual.",
+          "body": "Botworks builds custom software all the time: data connections, scripts, agents, reports, document pipelines, and focused internal applications. I do not want to recreate mature products or add interfaces, user roles, and permanent support obligations that the important job does not require. The client owns the company-specific work; continued engagement should come from usefulness, not lock-in."
+        },
+        "cta": {
+          "heading": "Have something you want to think through?",
+          "body": "Email is the best place to start. The first conversation is simply a conversation.",
+          "label": "matt@botworksagency.com"
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "contact": {
+      "path": "/contact",
+      "label": "Contact",
+      "published": {
+        "meta": {
+          "title": "Contact Matt | Botworks",
+          "description": "Tell Matt Livingston about important work you and your team suspect AI could change. A hunch is enough; no specification or technical vocabulary is required."
+        },
+        "hero": {
+          "eyebrow": "Contact",
+          "heading": "Send me the rough version.",
+          "body": "What is the work you and your team suspect AI could change? You do not need to know whether the answer is an agent, software, analysis, an existing product, or something else.",
+          "note": "A useful note usually includes the company, the people who know the work, what happens today, and what you think might now be possible. It can be incomplete.",
+          "email": "matt@botworksagency.com"
+        },
+        "form": {
+          "nameLabel": "Your name",
+          "emailLabel": "Your email",
+          "messageLabel": "What do you think AI could change?",
+          "messagePlaceholder": "We have this work that…",
+          "successHeading": "Got it. Thank you.",
+          "successBody": "Matt will reply directly.",
+          "error": "The form did not send. Please email matt@botworksagency.com directly.",
+          "submit": "Send to Matt",
+          "emailSubmit": "Open in email",
+          "submitting": "Sending…"
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "notes": {
+      "path": "/notes",
+      "label": "Notes",
+      "published": {
+        "meta": {
+          "title": "Notes | Botworks",
+          "description": "Notes from Matt Livingston about putting AI into real company work, deciding when not to build, and making operational results dependable."
+        },
+        "hero": {
+          "eyebrow": "Notes",
+          "heading": "Writing down the decisions behind the work.",
+          "body": "These are working notes from Matt, not an AI content calendar. They explain tradeoffs, boundaries, failures, and the things that became clear only after someone used the result."
+        },
+        "articleCta": "Read note",
+        "agent": {
+          "heading": "Useful to agents without reading like an agent wrote it.",
+          "body": "Each note has a stable URL, factual summary, explicit status, structured facts, a Markdown version, and a prompt that lets a reader ask another AI to challenge the argument. That structure is for retrieval. The judgment and voice are still Matt’s responsibility."
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "landscape-operations-software": {
+      "path": "/case-studies/landscape-operations-software",
+      "label": "Landscape case study",
+      "published": {
+        "meta": {
+          "title": "They replaced a field app they disliked with software built around the way they work.",
+          "description": "How Botworks replaced a commercial landscaping team’s field app and manual processes with production software for property walks, bilingual field tickets, supervisor review, and client reporting."
+        },
+        "eyebrow": "Large commercial landscaper · South Florida",
+        "status": "In production",
+        "title": "They replaced a field app they disliked with software built around the way they work.",
+        "intro": "Account managers now walk a property once and create a reliable record from the road, even with poor cell coverage. The system standardizes notes and photographs, translates the work, creates field tickets for the right production team, gives supervisors one place to review what happened, and turns the same visit into client reporting.",
+        "deliveredEyebrow": "In production",
+        "deliveredHeading": "One company-specific system replaced the app and the manual handoffs around it.",
+        "deliveredIntro": "The property-walk app, routing automation, review workspace, photo archive, PDF Creator, and operating layer are connected parts of one production system.",
+        "delivered": [
+          {
+            "heading": "Property-walk app",
+            "body": "Installed mobile software, on-device drafts, resilient photo upload, visit history, and a standardized record for every property walk."
+          },
+          {
+            "heading": "Bilingual field operations",
+            "body": "English and Spanish records, HubSpot-informed routing, Microsoft To Do tasks, supervisor review, and a client-owned SharePoint archive."
+          },
+          {
+            "heading": "Client reporting",
+            "body": "Saved drafts, editable findings, photograph selection and ordering, image annotation, branded rendering, and generated-file history."
+          },
+          {
+            "heading": "Reliability and ownership",
+            "body": "Authentication, permissions, scheduled work, monitoring, alerts, tests, deployment, incident repair, and operating documentation."
+          }
+        ],
+        "evidence": {
+          "eyebrow": "Inside the product",
+          "heading": "Watch one property walk move through the system.",
+          "intro": "The walkthrough connects the mobile field app, the bilingual review and routing workspace, and the client PDF generated from the same visit record.",
+          "video": {
+            "src": "/evidence/landscape-operations-workflow.mp4",
+            "poster": "/evidence/landscape-operations-workflow-poster.png",
+            "label": "Privacy-protected walkthrough of the commercial landscape operations system",
+            "caption": "The field capture and review scenes come from the production system. Client identities are hidden. The final scene uses the production PDF renderer with a generic property name."
+          }
+        },
+        "journey": {
+          "eyebrow": "One property walk, carried forward",
+          "heading": "Account managers record what they see once. The same record moves through operations and out to the client.",
+          "intro": "",
+          "steps": [
+            {
+              "heading": "Property walk",
+              "body": "An account manager records quality issues, enhancement opportunities, notes, and photographs while still at the property."
+            },
+            {
+              "heading": "Reliable field record",
+              "body": "The phone saves the record locally and keeps moving photographs as connectivity allows."
+            },
+            {
+              "heading": "Bilingual record",
+              "body": "Every property walk follows the same structure, with English and Spanish versions of the work."
+            },
+            {
+              "heading": "Automated field tickets",
+              "body": "Actionable findings become bilingual tickets for the production manager responsible for the property."
+            },
+            {
+              "heading": "Supervisor review",
+              "body": "Operations staff can inspect visits, photographs, routing status, and exceptions in one authenticated workspace."
+            },
+            {
+              "heading": "Client reporting",
+              "body": "The same findings and photographs become an editable, branded client report without starting again."
+            }
+          ]
+        },
+        "sections": [
+          {
+            "eyebrow": "What came before",
+            "heading": "The available tools did not fit the operation.",
+            "paragraphs": [
+              "The company was using a field app its team did not like, along with manual processes for moving information from property visits into operations and client communication.",
+              "The goal was not to recreate that app feature for feature. It was to replace the fragmented process with one company-specific system built around how account managers and operations teams actually work."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "On the road",
+            "heading": "The new record has to work where the work happens.",
+            "paragraphs": [
+              "Account managers work across commercial properties where Wi-Fi may not exist and cell service may be weak. A visit can include dozens of photographs. The current production record is 60 photographs on one visit, and the application is designed not to reject a valid visit simply because it is large.",
+              "The phone saves drafts and photographs locally first. The small visit record can submit independently while photographs continue uploading as the app finds signal. Uploads can resume, repeated attempts converge on the same visit, and the interface distinguishes work saved on the phone from work fully received by the server.",
+              "Issues, enhancement opportunities, notes, reasons, and photographs now enter the same structure on every property walk. That record becomes the source for the work that follows."
+            ],
+            "callout": "The replacement had to work in the field, not just look complete in a software demo."
+          },
+          {
+            "eyebrow": "From property to crew",
+            "heading": "The system translates the work and creates the field tickets.",
+            "paragraphs": [
+              "After submission, AI produces a structured Spanish version of the English field record and drafts action-led titles in both languages. Incomplete translation is held for repair rather than sent to a Spanish-speaking crew as if it were finished.",
+              "The property’s HubSpot record identifies the responsible production manager. Actionable findings then become bilingual Microsoft To Do tasks with photographs attached. Irrigation work can route separately. If the mapping is missing or ambiguous, the system holds or flags the work instead of guessing where it belongs.",
+              "Visits with no crew-actionable issue correctly produce no task."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "Supervisor and company record",
+            "heading": "The work remains visible after the automation runs.",
+            "paragraphs": [
+              "An authenticated review workspace lets supervisors and account managers inspect visits, photographs, English and Spanish notes, routing status, and exceptions. The interface shows whether work was created, skipped because no crew action was required, or held because the automation needs attention.",
+              "The same stored photographs are also mirrored into a client-owned SharePoint archive, organized by property and visit date."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "Client reporting",
+            "heading": "The same property record becomes a report without starting again.",
+            "paragraphs": [
+              "Botworks also built a separate PDF application around the visit record. An employee can start from a completed visit, choose the issues and opportunities worth presenting, edit the title and scope, select and reorder photographs, mark up an image with a red pen, and generate a branded PDF.",
+              "The software preserves saved drafts and generated-file history. It does not claim whether each PDF was sent or produced revenue, so the case study stops at what the system can prove."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "What makes it production software",
+            "heading": "Operating the system is part of what Botworks provides.",
+            "paragraphs": [
+              "Task routing runs every ten minutes and photo archiving runs hourly. Health checks cover the database, Microsoft identity, the task drainer, translation holds, and routing configuration. Failures are surfaced, diagnosed, repaired, and turned into tests or measurements so the same class of problem is less likely to return silently.",
+              "The company controls its data and company-specific software. That does not pretend the product can run forever without ownership. Botworks operates it while engaged and is documenting the system so future owners, including employees working with AI agents, can understand and extend it."
+            ],
+            "callout": ""
+          }
+        ],
+        "boundary": "The property-walk app, routing, review workspace, photo archive, and PDF Creator are in production. This case study does not claim labor savings, revenue lift, crew completion, or client acceptance of generated reports. A separate estimating workspace is under active operator testing and is not included in the proven result described here.",
+        "cta": {
+          "heading": "Does this resemble work inside your company?",
+          "body": "Send Matt the rough version. The first conversation can begin before the problem has a clean name.",
+          "label": "matt@botworksagency.com"
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "finance-operations": {
+      "path": "/case-studies/finance-operations",
+      "label": "Finance operations case study",
+      "published": {
+        "meta": {
+          "title": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
+          "description": "How Botworks built daily executive reporting, made monthly owner-operator expense processing repeatable, mapped a transportation company’s operating data, and uses that understanding to find the next useful work."
+        },
+        "eyebrow": "Regional transportation company",
+        "status": "Active engagement",
+        "title": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
+        "intro": "What began with one operational idea now gives company leadership a reconciled view of the business every day. Botworks also made monthly owner-operator card reporting easier to produce, mapped how the company’s operating systems fit together, and uses that understanding to investigate the next places where software, AI, and agents can help.",
+        "deliveredEyebrow": "",
+        "deliveredHeading": "What Botworks has built and delivered so far.",
+        "deliveredIntro": "",
+        "delivered": [
+          {
+            "heading": "Daily executive reporting",
+            "body": "Company leadership receives a reconciled view of the operation every day."
+          },
+          {
+            "heading": "Owner-operator expense reports",
+            "body": "A difficult monthly true-up now runs as a repeatable process, with employees handling the few decisions that require context."
+          },
+          {
+            "heading": "Mapped the company’s operating data",
+            "body": "Botworks traced how dispatch, billing, fleet, fuel, payroll, and finance records fit together so the next problems can be investigated against real evidence."
+          }
+        ],
+        "evidence": {
+          "eyebrow": "Inside the work",
+          "heading": "The engagement already produces daily and monthly operating work.",
+          "intro": "These views show the delivered executive report and the owner-operator card-report workflow. Company figures, identities, and transactions are hidden.",
+          "layout": "stacked",
+          "items": [
+            {
+              "src": "/evidence/btl-executive-report-anonymized.png",
+              "alt": "A privacy-protected executive reporting snapshot with company figures hidden.",
+              "width": 1280,
+              "height": 720,
+              "caption": "The daily report combines the current schedule, prior-day operating results, revenue, and longer-term comparisons in one consistent executive view."
+            },
+            {
+              "src": "/evidence/btl-owner-operator-workflow.png",
+              "alt": "A privacy-protected before-and-after view of a company card export becoming owner-operator monthly workbooks.",
+              "width": 1280,
+              "height": 720,
+              "caption": "The monthly process starts with one company card export and produces separate, reconciled workbooks for employee review."
+            }
+          ]
+        },
+        "journey": {
+          "eyebrow": "One relationship, several useful jobs",
+          "heading": "Each useful output also makes the next question easier to answer.",
+          "intro": "",
+          "steps": [
+            {
+              "heading": "Start with an executive question",
+              "body": "Leadership wanted a timely view of what the company scheduled, moved, and earned, even before every invoice was final."
+            },
+            {
+              "heading": "Connect the operating evidence",
+              "body": "Botworks traced dispatch, billing, routes, drivers, trucks, card purchases, telematics, fuel, and payroll sources."
+            },
+            {
+              "heading": "Reconcile the definitions",
+              "body": "The team settled which dates, statuses, divisions, denominators, and revenue fields reproduce the company’s own records."
+            },
+            {
+              "heading": "Publish the daily view",
+              "body": "A generated executive report now reaches company leadership each day with a stable structure and visible limitations."
+            },
+            {
+              "heading": "Improve recurring finance work",
+              "body": "The same operating knowledge made monthly owner-operator card reports repeatable without hiding the judgment that remains."
+            },
+            {
+              "heading": "Test the next opportunity",
+              "body": "New ideas are investigated against the real data and the employees who know the work before another system is built."
+            }
+          ]
+        },
+        "sections": [
+          {
+            "eyebrow": "What came before",
+            "heading": "The company had the data, but no single system held the whole answer.",
+            "paragraphs": [
+              "Dispatch and billing lived in one operating platform. Driver and vehicle activity lived in a fleet system. Card purchases, bulk fuel, payroll, and acquired operations added their own records and identifiers. Each system described a real part of the business, but the joins and definitions between them were not automatic.",
+              "Leadership wanted a dependable daily view. Finance employees also spent time rebuilding recurring owner-operator reports from exported transactions. Both jobs required more than placing numbers on a page. Someone had to determine which records belonged, reproduce the company’s existing calculations, and keep uncertain cases visible to the employees who could resolve them."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "The daily executive product",
+            "heading": "Leadership now receives a current view of the operation every day.",
+            "paragraphs": [
+              "The generated report brings together today’s schedule, the prior day’s loads, deliveries, gallons and revenue, month-to-date comparisons, and trailing operating trends. It separates important parts of the operation instead of hiding them inside one company-wide average.",
+              "The report is emailed to company leadership as a consistent executive product. Definitions do not change from one day to the next, partial revenue is labeled with its priced share, and every total is checked against the underlying detail before the report is released."
+            ],
+            "callout": "A daily number is only useful when the reader can tell whether the business changed or the calculation changed."
+          },
+          {
+            "eyebrow": "The monthly finance workflow",
+            "heading": "Owner-operator expense reporting became a repeatable process.",
+            "paragraphs": [
+              "Each month, the finance team separates card purchases into individual owner-operator reports. The source export includes fuel and non-fuel purchases, reversals, shared equipment, inconsistent names, and categories that still require knowledge of the driver or truck.",
+              "Botworks derived the owner-operator roster from the operating system, built the processing rules, and generated the individual workbooks from the company’s export. The first live closed-month run was built before seeing the employee’s version, then reconciled against it to the cent. The software handles selection, formatting, totals, and known rules. The employee keeps the few decisions that depend on business context.",
+              "A new portal was considered and deliberately deferred. One file upload and a set of finished workbooks solved the important part without creating another interface for the company to maintain."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "The operating data map",
+            "heading": "Behind both products is a working map of how the company represents its business.",
+            "paragraphs": [
+              "Botworks mapped the roles and relationships among dispatch, billing, routes, divisions, drivers, tractors, telematics, card transactions, fuel sources, payroll, and separate operating entities. The map records the trusted source for each fact, the identifiers that connect systems, the places where those identifiers fail, and the questions that still belong to employees or vendors.",
+              "This is not documentation created after the work. It is part of how the work becomes reliable. It prevents a truck’s current home division from silently rewriting its operating history, keeps separate company instances from being combined on colliding identifiers, and makes clear when a requested metric cannot yet be supported by the available data."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "What happens next",
+            "heading": "The map turns a general interest in AI into specific work the company can evaluate.",
+            "paragraphs": [
+              "The engagement now has a growing set of practical questions: how to extend executive reporting across another operating entity, how to calculate gross profit per truck, how to improve fuel and tax preparation, and where agents can help employees investigate recurring exceptions.",
+              "One proposed driver-and-truck alert shows the discipline. The first analysis found that a recurring alert would repeat standing account, identity, and equipment problems. Botworks produced a cleanup path first rather than asking more than 100 drivers to change their behavior for a system that would still be noisy."
+            ],
+            "callout": "The goal is not to build every idea. It is to learn enough of the business to build the useful ones well."
+          }
+        ],
+        "boundary": "This is an active internal engagement. The executive report is generated and delivered daily, and the owner-operator card-report process runs monthly. Other opportunities described here are being investigated or built in sequence. The driver alert was deliberately not shipped in its original form. This case study does not publish company figures or claim a financial result Botworks cannot independently attribute.",
+        "cta": {
+          "heading": "Does this resemble work inside your company?",
+          "body": "Send Matt the rough version. The first conversation can begin before the problem has a clean name.",
+          "label": "matt@botworksagency.com"
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    },
+    "hvac-rebate-software": {
+      "path": "/case-studies/hvac-rebate-software",
+      "label": "HVAC rebate case study",
+      "published": {
+        "meta": {
+          "title": "They replaced manual rebate entry with one review-and-generate workflow.",
+          "description": "How Botworks built production software that turns a completed HVAC job into a reviewed union rebate submission and a print-ready, double-sided PDF."
+        },
+        "eyebrow": "Family-owned HVAC contractor",
+        "status": "In production",
+        "title": "They replaced manual rebate entry with one review-and-generate workflow.",
+        "intro": "The office now starts with a Housecall Pro job number. The system brings in the customer and equipment details, identifies the rebate path, fills the union portal, retrieves the signed invoice, and creates the double-sided PDF required for mailing. The employee reviews the facts before anything is generated.",
+        "deliveredEyebrow": "In production",
+        "deliveredHeading": "A recurring office process now runs as one company-specific application.",
+        "deliveredIntro": "The employee-facing portal, system connections, browser automation, PDF generation, and operating safeguards are parts of one production workflow.",
+        "delivered": [
+          {
+            "heading": "Employee review portal",
+            "body": "Restricted sign-in, job lookup, an editable customer and equipment record, one-button generation, and access to completed PDFs."
+          },
+          {
+            "heading": "Housecall Pro connection",
+            "body": "Customer, job, equipment, invoice, and signature retrieval from the systems the contractor already uses to run the business."
+          },
+          {
+            "heading": "Rebate submission and PDF",
+            "body": "Program classification, union portal automation, form submission, signed-invoice rendering, and one double-sided file ready to print."
+          },
+          {
+            "heading": "Reliability and ownership",
+            "body": "Run history, operator overrides, saved files, monitoring, tests, deployment, incident repair, and documentation for the next responsible owner."
+          }
+        ],
+        "evidence": {
+          "eyebrow": "Inside the workflow",
+          "heading": "A completed job moves through the systems the office already uses.",
+          "intro": "This privacy-protected walkthrough uses screens from a completed production run. Customer details, employee identities, job identifiers, account information, and the signed invoice are masked.",
+          "video": {
+            "src": "/evidence/hvac-rebate-workflow.mp4",
+            "poster": "/evidence/hvac-rebate-workflow-poster.png",
+            "label": "Privacy-protected walkthrough of the HVAC rebate workflow",
+            "caption": "A staged walkthrough assembled from a completed production run. No new rebate was created or submitted for this recording. The standard employee experience keeps the cloud-browser work behind one Generate button."
+          }
+        },
+        "journey": {
+          "eyebrow": "One completed job, ready for the office",
+          "heading": "The rebate moves from existing job data to a print-ready submission without being rebuilt by hand.",
+          "intro": "",
+          "steps": [
+            {
+              "heading": "Completed HVAC job",
+              "body": "The operator enters the Housecall Pro job number instead of opening several records and copying each field herself."
+            },
+            {
+              "heading": "Customer and equipment data",
+              "body": "The app retrieves the service address, contact details, completed work, installed equipment, and invoice information."
+            },
+            {
+              "heading": "Employee review",
+              "body": "The operator reviews the prepared record and corrects anything that is incomplete, unusual, or wrong before continuing."
+            },
+            {
+              "heading": "Union portal entry",
+              "body": "Browser automation signs in, enters the customer and equipment information, selects the rebate type and equipment counts, and submits the portal record."
+            },
+            {
+              "heading": "Double-sided PDF",
+              "body": "The rebate form and the signed Housecall Pro invoice are composed into one print-ready file."
+            },
+            {
+              "heading": "Sign and mail",
+              "body": "The employee prints, completes the required signatures, and mails the submission. These steps remain manual by union policy."
+            }
+          ]
+        },
+        "sections": [
+          {
+            "eyebrow": "What came before",
+            "heading": "One rebate meant rebuilding the same job across two systems and a printer.",
+            "paragraphs": [
+              "The office began in Housecall Pro, opened the completed job, and copied the customer name, address, phone number, and equipment details into a separate union rebate portal. The employee had to interpret the line items, select the correct rebate program, and enter the counts and customer information field by field.",
+              "After submitting the portal form, she printed the rebate. Then she returned to the Housecall Pro invoice, found the version with the customer signature, changed the print scale, reinserted the paper in the correct orientation, and printed the signed invoice onto the reverse. The final form still needed physical signatures and mailing.",
+              "Each step was understandable on its own. Together they created a recurring office process that depended on retyping, remembering rules, switching systems, and getting an unusual print sequence right."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "The new workflow",
+            "heading": "The operator starts with the job and reviews the result.",
+            "paragraphs": [
+              "The secure company portal asks for one Housecall Pro job number. It retrieves the customer record, service address, equipment line items, and invoice details, then presents the prepared rebate information for review. The employee can correct a city, postal code, classification, or other unusual fact before generating anything.",
+              "One button then runs the rest of the digital workflow. The software opens the union portal in a cloud browser, enters and submits the rebate, captures the resulting form, opens the signed Housecall Pro invoice, and combines the two into a double-sided PDF ready to print."
+            ],
+            "callout": "The employee still controls the submission. The software removes the repeated assembly around that decision."
+          },
+          {
+            "eyebrow": "What the system decides",
+            "heading": "Rules handle the repeatable work. Exceptions return to the person who knows the job.",
+            "paragraphs": [
+              "The app identifies equipment-replacement and clean-and-check rebates from the contractor’s Housecall Pro price-book records. Stable service-item identifiers and tested program rules determine which equipment counts belong in the portal. The system does not ask an AI model to invent eligibility or rebate amounts.",
+              "Real records are still imperfect. Postal codes can map to more than one city, migrated customer data can be wrong, and a technician may leave without capturing a signature. Those conditions are visible to the operator or handled according to a documented company decision instead of being silently guessed away."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "Why custom work was warranted",
+            "heading": "The valuable products stay. The company-specific work between them changes.",
+            "paragraphs": [
+              "Housecall Pro remains the operating record for the HVAC business. The union portal remains the required filing destination. Botworks did not recreate either product.",
+              "The custom software handles the work specific to this contractor: reading its job and price-book data, applying its rebate workflow, operating an older portal with no practical integration, retrieving the signed invoice from the Housecall Pro web application, and composing the exact document the office must mail."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "What makes it production software",
+            "heading": "A working automation needs more than a successful demonstration.",
+            "paragraphs": [
+              "The application has restricted sign-in, a run history, saved PDFs, visible error states, operator corrections, health checks, deployment procedures, and in-product documentation. Real failures, including city-name drift and wrong-customer rendering risk, became explicit safeguards and tests.",
+              "Botworks operates and maintains the system while engaged. The contractor controls its company data and the path to the application, but reliable use still requires a named operator and ongoing maintenance when Housecall Pro or the union portal changes."
+            ],
+            "callout": ""
+          }
+        ],
+        "boundary": "The application is in production for this contractor’s residential Union 265 equipment-replacement and clean-and-check rebates. Printing, physical signatures, and mailing remain manual because the union requires them. Manufacturer rebates, utility rebates, commercial work, and other unions are not part of this system.",
+        "cta": {
+          "heading": "Does this resemble work inside your company?",
+          "body": "Send Matt the rough version. The first conversation can begin before the problem has a clean name.",
+          "label": "matt@botworksagency.com"
+        }
+      },
+      "draft": null,
+      "updatedAt": null,
+      "publishedAt": "2026-09-04T00:00:00.000Z"
+    }
+  }
+}

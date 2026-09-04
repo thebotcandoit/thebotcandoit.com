@@ -1,6 +1,6 @@
 import notesData from './notes.json'
 
-export const notes = notesData
+export const notes = notesData.map((note) => ({ ...note, ...note.published }))
 
 export const publishedNotes = notes.filter((note) => note.status === 'published')
 

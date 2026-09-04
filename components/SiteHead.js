@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function SiteHead({ title, description, path = '/', type = 'website' }) {
   const canonical = `https://botworksagency.com${path === '/' ? '/' : path}`
-  const socialImage = 'https://sitedemo.botworksagency.com/og.png'
+  const socialImage = 'https://botworksagency.com/og.png'
   return (
     <Head>
       <title>{title}</title>

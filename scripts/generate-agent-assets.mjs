@@ -4,7 +4,15 @@ import { fileURLToPath } from 'url'
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)))
 const notes = JSON.parse(readFileSync(join(root, 'data', 'notes.json'), 'utf8'))
-const publishedNotes = notes.filter((note) => note.status === 'published')
+const publishedNotes = notes
+  .filter((note) => note.status === 'published')
+  .map((note) => ({ ...note, ...note.published }))
+const sitePages = JSON.parse(readFileSync(join(root, 'data', 'site-pages.json'), 'utf8')).pages
+const homepage = JSON.parse(readFileSync(join(root, 'data', 'homepage.json'), 'utf8')).published
+
+function publishedPage(pageId) {
+  return sitePages[pageId].published
+}
 
 const baseUrls = [
   ['https://botworksagency.com/', 'weekly', '1.0'],
@@ -78,9 +86,9 @@ function renderLlmsTxt() {
   const lines = [
     '# Botworks Agency',
     '',
-    'Botworks helps companies put AI to work alongside the people who know the business.',
+    sitePages['how-we-work'].published.hero.heading,
     '',
-    'Botworks works with employees to understand an important job, give AI a useful and bounded part of it, build the surrounding software and rules, and test the result in real conditions. Employees supply operating knowledge, judgment, and accountability. AI handles appropriate investigation, matching, drafting, analysis, and other repeatable work. The client owns the resulting capability.',
+    homepage.hero.body,
     '',
     'Primary site: https://botworksagency.com/',
     'Contact: https://botworksagency.com/contact',
@@ -88,17 +96,17 @@ function renderLlmsTxt() {
     '',
     'Useful pages:',
     '',
-    '- https://botworksagency.com/how-we-work',
-    '- https://botworksagency.com/work',
-    '- https://botworksagency.com/about',
-    '- https://botworksagency.com/notes',
-    '- https://botworksagency.com/contact',
+    `- ${publishedPage('how-we-work').hero.heading}: https://botworksagency.com/how-we-work`,
+    `- ${publishedPage('work').hero.heading}: https://botworksagency.com/work`,
+    `- ${publishedPage('about').hero.heading}: https://botworksagency.com/about`,
+    `- ${publishedPage('notes').hero.heading}: https://botworksagency.com/notes`,
+    `- ${publishedPage('contact').hero.heading}: https://botworksagency.com/contact`,
     '',
     'Production case studies:',
     '',
-    '- Commercial landscaping operations software (property walks, weak-cell records, bilingual field tickets, supervisor review, and client reporting): https://botworksagency.com/case-studies/landscape-operations-software',
-    '- Transportation finance operations (source mapping, reconciliation, executive snapshot, owner-operator processing): https://botworksagency.com/case-studies/finance-operations',
-    '- HVAC rebate software (Housecall Pro job data to reviewed union submission and double-sided PDF; in production): https://botworksagency.com/case-studies/hvac-rebate-software',
+    `- ${publishedPage('landscape-operations-software').title}: https://botworksagency.com/case-studies/landscape-operations-software`,
+    `- ${publishedPage('finance-operations').title}: https://botworksagency.com/case-studies/finance-operations`,
+    `- ${publishedPage('hvac-rebate-software').title}: https://botworksagency.com/case-studies/hvac-rebate-software`,
     '',
     'Published note markdown:',
     '',
@@ -155,7 +163,7 @@ function renderSitemap() {
 const publicNotesDir = join(root, 'public', 'notes')
 mkdirSync(publicNotesDir, { recursive: true })
 
-for (const note of notes) {
+for (const note of notes.map((item) => ({ ...item, ...item.published }))) {
   writeFileSync(join(publicNotesDir, `${note.slug}.md`), renderMarkdown(note))
 }
 

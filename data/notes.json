@@ -3,11 +3,12 @@
     "slug": "botworks-vs-using-ai-yourself",
     "status": "published",
     "type": "Field note",
-    "title": "You should probably try AI yourself first.",
-    "description": "Botworks is not the first step for every AI question. Try the tools yourself, then bring in help when important work needs a dependable system built with the people who know it.",
     "date": "2026-09-01",
     "readingTime": "5 min read",
     "canonical": "https://botworksagency.com/notes/botworks-vs-using-ai-yourself",
+    "published": {
+    "title": "You should probably try AI yourself first.",
+    "description": "Botworks is not the first step for every AI question. Try the tools yourself, then bring in help when important work needs a dependable system built with the people who know it.",
     "summary": "If the work is research, drafting, analysis, or a second opinion, open the AI tool you already have and try it. Hiring Botworks starts to make sense when you see a larger possibility inside the business and need someone to build it with the employees who understand the work, then make the result dependable enough for others to use.",
     "facts": [
       "Botworks recommends using existing AI tools directly when a person can review the answer and the work does not need a durable system around it.",
@@ -73,5 +74,9 @@
         ]
       }
     ]
+    },
+    "draft": null,
+    "updatedAt": null,
+    "publishedAt": "2026-09-01T00:00:00.000Z"
   }
 ]

@@ -16,6 +16,16 @@
       "permanent": true
     },
     {
+      "source": "/whats-new",
+      "destination": "/notes",
+      "permanent": true
+    },
+    {
+      "source": "/skills/:path*",
+      "destination": "/work",
+      "permanent": true
+    },
+    {
       "source": "/case-studies/interior-design-research-toolkit",
       "destination": "/work",
       "permanent": true

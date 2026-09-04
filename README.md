@@ -21,16 +21,11 @@ The site is written for executives and owners who have the authority to turn an
 operational hunch into real work. It does not target searchers or promise that
 custom software should replace useful SaaS.
 
-## Notes editor
+## Browser editor
 
-Draft Notes can be edited on their real rendered pages by opening the Note with
-`?edit=1`. The page uses the authenticated editor service at
-`status.botworksagency.com` to save approved `data-editable` text fields back to
-`data/notes.json` in GitHub. Save and Publish are separate actions; publishing
-controls inclusion in `/notes`, the sitemap, `llms.txt`, and generated Markdown.
-
-## Homepage editor
-
-The `site-demo` branch supports contextual homepage editing at `/?edit=1`.
-Drafts and published content are separate. A saved draft cannot be published
-until that exact version has passed the built-in 375px and 430px reviews.
+Every main route on the `site-demo` branch supports contextual editing with
+`?edit=1`, including the homepage, supporting pages, case studies, the Notes
+index, and individual Notes. Drafts and published content are separate. A saved
+draft cannot be published until that exact version has passed and been confirmed
+in the built-in 375px and 430px previews. The editor also links the GitHub
+revision history for recovery.

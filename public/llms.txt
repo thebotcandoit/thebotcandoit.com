@@ -1,8 +1,8 @@
 # Botworks Agency
 
-Botworks helps companies put AI to work alongside the people who know the business.
+Build with the people who know the work. Give AI a useful part of it.
 
-Botworks works with employees to understand an important job, give AI a useful and bounded part of it, build the surrounding software and rules, and test the result in real conditions. Employees supply operating knowledge, judgment, and accountability. AI handles appropriate investigation, matching, drafting, analysis, and other repeatable work. The client owns the resulting capability.
+Your employees already know the work. I work with them to find where AI can help, build what the job requires, and test it in the real conditions of the business. Sometimes that means an agent. Sometimes it means software, analysis, or a better use of the systems you already have.
 
 Primary site: https://botworksagency.com/
 Contact: https://botworksagency.com/contact
@@ -10,17 +10,17 @@ Email: matt@botworksagency.com
 
 Useful pages:
 
-- https://botworksagency.com/how-we-work
-- https://botworksagency.com/work
-- https://botworksagency.com/about
-- https://botworksagency.com/notes
-- https://botworksagency.com/contact
+- Build with the people who know the work. Give AI a useful part of it.: https://botworksagency.com/how-we-work
+- AI is useful when it helps someone do real work differently.: https://botworksagency.com/work
+- Botworks is a small firm on purpose.: https://botworksagency.com/about
+- Writing down the decisions behind the work.: https://botworksagency.com/notes
+- Send me the rough version.: https://botworksagency.com/contact
 
 Production case studies:
 
-- Commercial landscaping operations software (property walks, weak-cell records, bilingual field tickets, supervisor review, and client reporting): https://botworksagency.com/case-studies/landscape-operations-software
-- Transportation finance operations (source mapping, reconciliation, executive snapshot, owner-operator processing): https://botworksagency.com/case-studies/finance-operations
-- HVAC rebate software (Housecall Pro job data to reviewed union submission and double-sided PDF; in production): https://botworksagency.com/case-studies/hvac-rebate-software
+- They replaced a field app they disliked with software built around the way they work.: https://botworksagency.com/case-studies/landscape-operations-software
+- Leadership now sees the business every day. The same work is changing what happens behind the numbers.: https://botworksagency.com/case-studies/finance-operations
+- They replaced manual rebate entry with one review-and-generate workflow.: https://botworksagency.com/case-studies/hvac-rebate-software
 
 Published note markdown:
 

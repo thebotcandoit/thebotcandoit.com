@@ -24,13 +24,13 @@ function valueAtPath(object, path) {
   }, object)
 }
 
-function editableElements() {
-  return Array.from(document.querySelectorAll('[data-home-editable]'))
+function editableElements(attribute) {
+  return Array.from(document.querySelectorAll(`[${attribute}]`))
 }
 
-function applyContent(content, readOnly = false) {
-  editableElements().forEach((element) => {
-    const path = element.getAttribute('data-home-editable')
+function applyContent(content, attribute, readOnly = false) {
+  editableElements(attribute).forEach((element) => {
+    const path = element.getAttribute(attribute)
     const value = valueAtPath(content, path)
     if (typeof value !== 'string') return
 
@@ -47,9 +47,9 @@ function applyContent(content, readOnly = false) {
   })
 }
 
-function runPhoneChecks(expectedSha, actualSha) {
+function runPhoneChecks(expectedSha, actualSha, attribute) {
   const viewportWidth = document.documentElement.clientWidth
-  const editable = editableElements()
+  const editable = editableElements(attribute)
   const media = Array.from(document.querySelectorAll('img, video, iframe'))
   const pageFits = document.documentElement.scrollWidth <= viewportWidth + 1
   const textFits = editable.every((element) => {
@@ -81,7 +81,12 @@ function CheckRow({ passed, children }) {
   )
 }
 
-export default function HomepageEditor() {
+export default function HomepageEditor({
+  label = 'Homepage',
+  endpoint = '/api/editor/homepage',
+  editableAttribute = 'data-home-editable',
+  previewPath,
+}) {
   const [active, setActive] = useState(false)
   const [phoneCheckMode, setPhoneCheckMode] = useState(false)
   const [phase, setPhase] = useState('idle')
@@ -94,7 +99,11 @@ export default function HomepageEditor() {
   const [phoneResults, setPhoneResults] = useState({})
   const [confirmedWidths, setConfirmedWidths] = useState({})
   const [editableIndex, setEditableIndex] = useState(0)
+  const [historyOpen, setHistoryOpen] = useState(false)
+  const [history, setHistory] = useState([])
+  const [historyPhase, setHistoryPhase] = useState('idle')
   const baseUrl = useMemo(editorOrigin, [])
+  const pagePath = previewPath || (typeof window !== 'undefined' ? window.location.pathname : '/')
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
@@ -121,7 +130,7 @@ export default function HomepageEditor() {
 
     async function initialize() {
       try {
-        const response = await fetch(`${baseUrl}/api/editor/homepage`, {
+        const response = await fetch(`${baseUrl}${endpoint}`, {
           credentials: 'include',
           headers: { Accept: 'application/json' },
         })
@@ -133,21 +142,21 @@ export default function HomepageEditor() {
           setMessage('Sign in to the Botworks admin, then return here to edit.')
           return
         }
-        if (!response.ok) throw new Error(body.error || 'The homepage editor could not open.')
+        if (!response.ok) throw new Error(body.error || `The ${label.toLowerCase()} editor could not open.`)
 
         setSha(body.sha)
         setHasDraft(body.hasDraft)
-        applyContent(body.content, checkingPhone)
+        applyContent(body.content, editableAttribute, checkingPhone)
 
         if (checkingPhone) {
           document.body.classList.add('homepage-phone-check')
           window.setTimeout(() => {
-            window.parent.postMessage(runPhoneChecks(expectedSha, body.sha), window.location.origin)
+            window.parent.postMessage(runPhoneChecks(expectedSha, body.sha, editableAttribute), window.location.origin)
           }, 450)
           return
         }
 
-        editableElements().forEach((element) => {
+        editableElements(editableAttribute).forEach((element) => {
           element.addEventListener('input', onInput)
           element.addEventListener('click', onEditableClick)
         })
@@ -164,7 +173,7 @@ export default function HomepageEditor() {
     return () => {
       cancelled = true
       document.body.classList.remove('homepage-editor-open', 'homepage-phone-check')
-      editableElements().forEach((element) => {
+      editableElements(editableAttribute).forEach((element) => {
         element.removeEventListener('input', onInput)
         element.removeEventListener('click', onEditableClick)
         element.removeAttribute('data-home-editor-active')
@@ -172,7 +181,7 @@ export default function HomepageEditor() {
         element.contentEditable = 'false'
       })
     }
-  }, [baseUrl])
+  }, [baseUrl, editableAttribute, endpoint, label])
 
   useEffect(() => {
     function onMessage(event) {
@@ -187,8 +196,8 @@ export default function HomepageEditor() {
 
   function collectUpdates() {
     const updates = {}
-    editableElements().forEach((element) => {
-      const path = element.getAttribute('data-home-editable')
+    editableElements(editableAttribute).forEach((element) => {
+      const path = element.getAttribute(editableAttribute)
       if (!path) return
       const value = element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement
         ? element.value
@@ -203,8 +212,8 @@ export default function HomepageEditor() {
     if (!dirty && hasDraft) return sha
 
     setPhase('saving')
-    setMessage('Saving this homepage draft…')
-    const response = await fetch(`${baseUrl}/api/editor/homepage`, {
+    setMessage(`Saving this ${label.toLowerCase()} draft…`)
+    const response = await fetch(`${baseUrl}${endpoint}`, {
       method: 'POST',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json' },
@@ -215,7 +224,7 @@ export default function HomepageEditor() {
       setPhase('signed-out')
       throw new Error('Your editor session expired. Sign in again, then return here.')
     }
-    if (response.status === 409) throw new Error('The homepage changed after you opened it. Reload before saving so no work is overwritten.')
+    if (response.status === 409) throw new Error(`The ${label.toLowerCase()} changed after you opened it. Reload before saving so no work is overwritten.`)
     if (!response.ok) throw new Error(body.error || 'The draft could not be saved.')
 
     const nextSha = body.sha || sha
@@ -269,7 +278,7 @@ export default function HomepageEditor() {
     try {
       setPhase('publishing')
       setMessage('Publishing the reviewed draft to the site demo…')
-      const response = await fetch(`${baseUrl}/api/editor/homepage/publish`, {
+      const response = await fetch(`${baseUrl}${endpoint}/publish`, {
         method: 'POST',
         credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
@@ -285,7 +294,7 @@ export default function HomepageEditor() {
       })
       const body = await responseBody(response)
       if (response.status === 409) throw new Error('The draft changed after the phone review. Review the newest version before publishing.')
-      if (!response.ok) throw new Error(body.error || 'The homepage could not be published.')
+      if (!response.ok) throw new Error(body.error || `The ${label.toLowerCase()} could not be published.`)
 
       setSha(body.sha || sha)
       setHasDraft(false)
@@ -301,12 +310,31 @@ export default function HomepageEditor() {
   }
 
   function moveToEditable(direction) {
-    const elements = editableElements()
+    const elements = editableElements(editableAttribute)
     if (!elements.length) return
     const nextIndex = (editableIndex + direction + elements.length) % elements.length
     setEditableIndex(nextIndex)
     elements[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'center' })
     elements[nextIndex].focus({ preventScroll: true })
+  }
+
+  async function openHistory() {
+    setHistoryOpen(true)
+    if (history.length > 0) return
+    setHistoryPhase('loading')
+    try {
+      const response = await fetch(`${baseUrl}${endpoint}/history`, {
+        credentials: 'include',
+        headers: { Accept: 'application/json' },
+      })
+      const body = await responseBody(response)
+      if (!response.ok) throw new Error(body.error || 'Revision history could not be loaded.')
+      setHistory(body.revisions || [])
+      setHistoryPhase('ready')
+    } catch (error) {
+      setHistoryPhase('error')
+      setMessage(error instanceof Error ? error.message : String(error))
+    }
   }
 
   function exitEditor() {
@@ -323,7 +351,7 @@ export default function HomepageEditor() {
   const reviewed = PHONE_WIDTHS.every((width) => confirmedWidths[width] && phoneResults[width]?.passed)
   const loginUrl = `${baseUrl}/login?next=${encodeURIComponent(window.location.href)}`
   const currentResult = phoneResults[previewWidth]
-  const previewUrl = `/?edit=1&phonecheck=1&expectedSha=${encodeURIComponent(sha || '')}&width=${previewWidth}`
+  const previewUrl = `${pagePath}?edit=1&phonecheck=1&expectedSha=${encodeURIComponent(sha || '')}&width=${previewWidth}`
 
   return (
     <>
@@ -331,7 +359,7 @@ export default function HomepageEditor() {
         <div className="mx-auto flex max-w-6xl flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded bg-[#f2b84b] px-2 py-1 text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#12131a]">Homepage editor</span>
+              <span className="rounded bg-[#f2b84b] px-2 py-1 text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#12131a]">{label} editor</span>
               <span className="text-xs text-white/55">site-demo</span>
               {dirty && <span className="text-xs text-[#f2b84b]">Unsaved changes</span>}
               {!dirty && hasDraft && <span className="text-xs text-sky-300">Draft saved</span>}
@@ -353,6 +381,7 @@ export default function HomepageEditor() {
                 </div>
                 <button type="button" onClick={handleSave} disabled={busy || !sha} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">{phase === 'saving' ? 'Saving…' : 'Save draft'}</button>
                 <button type="button" onClick={openPhoneReview} disabled={busy || !sha} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">Review phone</button>
+                <button type="button" onClick={openHistory} disabled={busy} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">History</button>
                 <button type="button" onClick={handlePublish} disabled={busy || dirty || !hasDraft || !reviewed} className="rounded bg-[#f2b84b] px-4 py-2 text-sm font-semibold text-[#12131a] hover:bg-white disabled:cursor-not-allowed disabled:opacity-40">{phase === 'publishing' ? 'Publishing…' : 'Publish to demo'}</button>
               </>
             )}
@@ -368,7 +397,7 @@ export default function HomepageEditor() {
               <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#1f7a57]">Required before every publish</p>
-                  <h2 className="font-display mt-1 text-2xl font-bold text-[#12131a]">Read the homepage at both phone widths.</h2>
+                  <h2 className="font-display mt-1 text-2xl font-bold text-[#12131a]">Read this page at both phone widths.</h2>
                   <p className="mt-1 max-w-2xl text-sm leading-relaxed text-[#626b7a]">The checks catch overflow and unreadable text automatically. You still confirm that the copy feels right in the actual narrow layout.</p>
                 </div>
                 <button type="button" onClick={() => setPreviewOpen(false)} className="self-start rounded border border-[#ded6c7] px-3 py-2 text-sm font-semibold text-[#12131a] hover:border-[#12131a]">Close</button>
@@ -387,7 +416,7 @@ export default function HomepageEditor() {
                   <iframe
                     key={`${previewWidth}-${sha}`}
                     src={previewUrl}
-                    title={`${previewWidth}px homepage preview`}
+                    title={`${previewWidth}px ${label.toLowerCase()} preview`}
                     style={{ width: `${previewWidth}px`, height: '720px' }}
                     className="mx-auto block max-w-none rounded-lg border-0 bg-white shadow-lg"
                   />
@@ -419,6 +448,34 @@ export default function HomepageEditor() {
                 </aside>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {historyOpen && (
+        <div className="fixed inset-0 z-[110] overflow-y-auto bg-[#12131a]/80 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Revision history">
+          <div className="mx-auto mt-8 max-w-2xl rounded-xl bg-[#f7f3ea] p-5 shadow-2xl sm:p-7">
+            <div className="flex items-start justify-between gap-5">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#1f7a57]">Saved in GitHub</p>
+                <h2 className="font-display mt-1 text-2xl font-bold text-[#12131a]">Revision history</h2>
+                <p className="mt-2 text-sm leading-6 text-[#626b7a]">Every saved draft and publish is recoverable from the linked revision.</p>
+              </div>
+              <button type="button" onClick={() => setHistoryOpen(false)} className="rounded border border-[#ded6c7] px-3 py-2 text-sm font-semibold text-[#12131a] hover:border-[#12131a]">Close</button>
+            </div>
+            {historyPhase === 'loading' && <p className="mt-6 text-sm text-[#626b7a]">Loading revisions…</p>}
+            {historyPhase === 'error' && <p className="mt-6 text-sm text-red-700">Revision history is unavailable right now.</p>}
+            {historyPhase === 'ready' && (
+              <ol className="mt-6 divide-y divide-[#ded6c7] border-y border-[#ded6c7]">
+                {history.map((revision) => (
+                  <li key={revision.sha} className="py-4">
+                    <a href={revision.url} target="_blank" rel="noreferrer" className="font-semibold text-[#12131a] underline-offset-4 hover:underline">{revision.message}</a>
+                    <p className="mt-1 text-xs text-[#626b7a]">{new Date(revision.date).toLocaleString()} · {revision.sha.slice(0, 7)}</p>
+                  </li>
+                ))}
+                {history.length === 0 && <li className="py-4 text-sm text-[#626b7a]">No saved revisions yet.</li>}
+              </ol>
+            )}
           </div>
         </div>
       )}

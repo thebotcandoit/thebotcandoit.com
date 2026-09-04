@@ -56,7 +56,7 @@ export default function BotworksVsUsingAiYourself() {
       <SiteHead title={`${note.title} | Botworks`} description={note.description} path={`/notes/${note.slug}`} type="article" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <div className="min-h-screen overflow-x-hidden paper-grid">
-        <NotesEditor slug={note.slug} initialStatus={note.status} />
+        <NotesEditor slug={note.slug} />
         <Nav />
         <main>
           <article className="mx-auto max-w-3xl px-6 pb-12 pt-10 sm:px-8 sm:pt-16">
@@ -77,10 +77,10 @@ export default function BotworksVsUsingAiYourself() {
             </div>
 
             <p className="site-label mb-4 text-copy">{note.type}</p>
-            <h1 data-editable="note.title" className="site-page-title mb-5">
+            <h1 data-editable="title" className="site-page-title mb-5">
               {note.title}
             </h1>
-            <p data-editable="note.summary" className="site-lede mb-10">
+            <p data-editable="summary" className="site-lede mb-10">
               {note.summary}
             </p>
 
@@ -90,7 +90,7 @@ export default function BotworksVsUsingAiYourself() {
                 {note.facts.map((fact, factIndex) => (
                   <li key={fact} className="flex gap-3 text-base leading-7 text-copy">
                     <span className="mt-2.5 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
-                    <span data-editable={`note.facts.${factIndex}`}>{fact}</span>
+                    <span data-editable={`facts.${factIndex}`}>{fact}</span>
                   </li>
                 ))}
               </ul>
@@ -101,10 +101,10 @@ export default function BotworksVsUsingAiYourself() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {note.comparison.map((column, columnIndex) => (
                   <div key={column.label}>
-                    <h2 data-editable={`note.comparison.${columnIndex}.label`} className="font-display text-xl font-bold mb-3">{column.label}</h2>
+                    <h2 data-editable={`comparison.${columnIndex}.label`} className="font-display text-xl font-bold mb-3">{column.label}</h2>
                     <ul className="space-y-3">
                       {column.items.map((item, itemIndex) => (
-                        <li key={item} data-editable={`note.comparison.${columnIndex}.items.${itemIndex}`} className="text-sm leading-6 text-white/70">
+                        <li key={item} data-editable={`comparison.${columnIndex}.items.${itemIndex}`} className="text-sm leading-6 text-white/70">
                           {item}
                         </li>
                       ))}
@@ -117,15 +117,15 @@ export default function BotworksVsUsingAiYourself() {
             <div className="space-y-10">
               {note.sections.map((section, sectionIndex) => (
                 <section key={section.heading}>
-                  <p data-editable={`note.sections.${sectionIndex}.eyebrow`} className="site-label mb-3">
+                  <p data-editable={`sections.${sectionIndex}.eyebrow`} className="site-label mb-3">
                     {section.eyebrow}
                   </p>
-                  <h2 data-editable={`note.sections.${sectionIndex}.heading`} className="site-section-title mb-4">
+                  <h2 data-editable={`sections.${sectionIndex}.heading`} className="site-section-title mb-4">
                     {section.heading}
                   </h2>
                   <div className="space-y-4">
                     {section.body.map((paragraph, paragraphIndex) => (
-                      <p key={paragraph} data-editable={`note.sections.${sectionIndex}.body.${paragraphIndex}`} className="site-body">
+                      <p key={paragraph} data-editable={`sections.${sectionIndex}.body.${paragraphIndex}`} className="site-body">
                         {paragraph}
                       </p>
                     ))}
@@ -144,7 +144,7 @@ export default function BotworksVsUsingAiYourself() {
               </p>
               <textarea
                 readOnly
-                data-editable="note.secondOpinionPrompt"
+                data-editable="secondOpinionPrompt"
                 value={secondOpinionPrompt}
                 className="mb-4 h-56 w-full resize-none rounded-md border border-white/10 bg-white/[0.06] p-4 font-mono text-xs leading-relaxed text-white/70 outline-none"
               />
@@ -172,10 +172,10 @@ export default function BotworksVsUsingAiYourself() {
 
             <section className="hairline-card mt-12 rounded-lg bg-white/50 p-6">
               <p className="site-label mb-3 text-copy">A useful next question</p>
-              <h2 data-editable="note.cta.heading" className="site-item-title mb-3">
+              <h2 data-editable="cta.heading" className="site-item-title mb-3">
                 {note.cta.heading}
               </h2>
-              <p data-editable="note.cta.body" className="site-body mb-5">
+              <p data-editable="cta.body" className="site-body mb-5">
                 {note.cta.body}
               </p>
               <Link href="/contact" className="inline-flex rounded-lg bg-ink px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent">

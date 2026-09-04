@@ -2,23 +2,30 @@ import Link from 'next/link'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import SiteHead from '../../components/SiteHead'
+import HomepageEditor from '../../components/HomepageEditor'
 import { publishedNotes } from '../../data/notes'
+import sitePages from '../../data/site-pages.json'
+
+const pageId = 'notes'
+const page = sitePages.pages[pageId]
+const content = page.published
 
 export default function NotesIndex() {
   return (
     <>
       <SiteHead
-        title="Notes | Botworks"
-        description="Notes from Matt Livingston about putting AI into real company work, deciding when not to build, and making operational results dependable."
-        path="/notes"
+        title={content.meta.title}
+        description={content.meta.description}
+        path={page.path}
       />
       <div className="min-h-screen overflow-x-hidden paper-grid">
+        <HomepageEditor label={page.label} endpoint={`/api/editor/pages/${pageId}`} editableAttribute="data-site-editable" previewPath={page.path} />
         <Nav />
         <main>
           <header className="site-shell pb-16 pt-12 sm:pb-20 sm:pt-20">
-            <p className="site-label">Notes</p>
-            <h1 className="site-page-title mt-4">Writing down the decisions behind the work.</h1>
-            <p className="site-lede mt-6">These are working notes from Matt, not an AI content calendar. They explain tradeoffs, boundaries, failures, and the things that became clear only after someone used the result.</p>
+            <p data-site-editable="hero.eyebrow" className="site-label">{content.hero.eyebrow}</p>
+            <h1 data-site-editable="hero.heading" className="site-page-title mt-4">{content.hero.heading}</h1>
+            <p data-site-editable="hero.body" className="site-lede mt-6">{content.hero.body}</p>
           </header>
 
           <section className="border-y border-line bg-paper-deep/65">
@@ -32,7 +39,7 @@ export default function NotesIndex() {
                   <div>
                     <h2 className="site-section-title">{note.title}</h2>
                     <p className="site-supporting mt-3">{note.description}</p>
-                    <span className="site-link mt-5 inline-block">Read note →</span>
+                    <span data-site-editable="articleCta" className="site-link mt-5 inline-block">{content.articleCta} →</span>
                   </div>
                 </Link>
               ))}
@@ -40,8 +47,8 @@ export default function NotesIndex() {
           </section>
 
           <section className="site-shell site-section grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
-            <h2 className="site-section-title">Useful to agents without reading like an agent wrote it.</h2>
-            <p className="site-body">Each note has a stable URL, factual summary, explicit status, structured facts, a Markdown version, and a prompt that lets a reader ask another AI to challenge the argument. That structure is for retrieval. The judgment and voice are still Matt’s responsibility.</p>
+            <h2 data-site-editable="agent.heading" className="site-section-title">{content.agent.heading}</h2>
+            <p data-site-editable="agent.body" className="site-body">{content.agent.body}</p>
           </section>
         </main>
         <Footer />
