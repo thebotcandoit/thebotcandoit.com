@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
                 <div className="divide-y divide-line">
                   {content.proof.items.map((item, index) => {
-                    const href = ['/case-studies/field-visit-capture', '/case-studies/finance-operations', '/case-studies/hvac-rebate-automation'][index]
+                    const href = ['/case-studies/landscape-operations-software', '/case-studies/finance-operations', '/case-studies/hvac-rebate-automation'][index]
                     return (
                       <Link key={item.heading} href={href} className="group block py-8">
                         <div className="mb-3 flex flex-wrap items-center gap-x-2 gap-y-1">

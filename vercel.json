@@ -19,6 +19,11 @@
       "source": "/case-studies/interior-design-research-toolkit",
       "destination": "/work",
       "permanent": true
+    },
+    {
+      "source": "/case-studies/field-visit-capture",
+      "destination": "/case-studies/landscape-operations-software",
+      "permanent": true
     }
   ]
 }

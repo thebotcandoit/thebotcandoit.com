@@ -18,7 +18,7 @@ Useful pages:
 
 Production case studies:
 
-- Commercial-landscaping field workflow (weak-cell capture, review, follow-up, client PDFs, estimating): https://botworksagency.com/case-studies/field-visit-capture
+- Commercial landscaping operations software (property walks, weak-cell records, bilingual field tickets, supervisor review, and client reporting): https://botworksagency.com/case-studies/landscape-operations-software
 - Transportation finance operations (source mapping, reconciliation, executive snapshot, owner-operator processing): https://botworksagency.com/case-studies/finance-operations
 - HVAC rebate processing (existing job data to reviewed, print-ready packet; under operator validation): https://botworksagency.com/case-studies/hvac-rebate-automation
 

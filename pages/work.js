@@ -5,11 +5,11 @@ import SiteHead from '../components/SiteHead'
 
 const studies = [
   {
-    href: '/case-studies/field-visit-capture',
+    href: '/case-studies/landscape-operations-software',
     industry: 'Large commercial landscaper · South Florida',
     status: 'In production',
-    title: 'The team records a site visit once. AI and software help carry it forward.',
-    body: 'Weak-cell photo capture, supervisor review, crew follow-up, client PDFs, and an estimating system under active testing. It is all built around the way employees already work in the field.',
+    title: 'They replaced a field app employees disliked with software built around the way the team works.',
+    body: 'Account managers document a property once, even with weak cell service. The same standardized record is translated, routed into field tickets, reviewed by supervisors, and turned into client reporting.',
   },
   {
     href: '/case-studies/finance-operations',

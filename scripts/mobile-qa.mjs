@@ -15,7 +15,7 @@ const routes = [
   '/contact',
   '/notes',
   '/notes/botworks-vs-using-ai-yourself',
-  '/case-studies/field-visit-capture',
+  '/case-studies/landscape-operations-software',
   '/case-studies/finance-operations',
   '/case-studies/hvac-rebate-automation',
 ]
