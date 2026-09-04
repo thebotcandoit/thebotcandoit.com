@@ -9,12 +9,6 @@ export default function FieldVisitCapture() {
       eyebrow="Large commercial landscaper · South Florida"
       status="In production"
       intro="Botworks built and operates the company’s field-to-crew software. Account managers record what they see at a client property, even with poor connectivity. The same visit becomes a bilingual operating record, routed work for the production team, a supervisor view, and an editable client PDF."
-      facts={[
-        ['Recorded', '176 site visits'],
-        ['Used across', '118 client properties'],
-        ['Captured', '1,390 visit photographs'],
-        ['Generated', '36 PDFs by client employees'],
-      ]}
       journey={{
         eyebrow: 'One visit, carried forward',
         heading: 'The account manager records the work once. The system makes it useful to everyone who comes next.',
@@ -61,7 +55,7 @@ export default function FieldVisitCapture() {
           paragraphs: [
             'After submission, AI produces a structured Spanish version of the English field record and drafts action-led titles in both languages. Incomplete translation is held for repair rather than sent to a Spanish-speaking crew as if it were finished.',
             'The property’s HubSpot record identifies the responsible production manager. Actionable findings then become bilingual Microsoft To Do tasks with photographs attached. Irrigation work can route separately. If the mapping is missing or ambiguous, the system holds or flags the work instead of guessing where it belongs.',
-            'To date, the software has created 122 production-manager and irrigation tasks from 104 visits. Visits with no crew-actionable issue correctly produce no task.',
+            'Visits with no crew-actionable issue correctly produce no task.',
           ],
         },
         {
@@ -69,7 +63,7 @@ export default function FieldVisitCapture() {
           heading: 'The automation remains visible to the people running the operation.',
           paragraphs: [
             'An authenticated review workspace lets supervisors and account managers inspect visits, photographs, English and Spanish notes, routing status, and exceptions. The interface shows whether work was created, skipped because no crew action was required, or held because the automation needs attention.',
-            'The same stored photographs are also mirrored into a client-owned SharePoint archive, organized by property and visit date. At the time of measurement, 1,243 photographs had been archived successfully with none in a failed state.',
+            'The same stored photographs are also mirrored into a client-owned SharePoint archive, organized by property and visit date.',
           ],
         },
         {
@@ -77,7 +71,7 @@ export default function FieldVisitCapture() {
           heading: 'A visit can become client-facing work without starting again.',
           paragraphs: [
             'Botworks also built a separate PDF application around the visit record. An employee can start from a completed visit, choose the issues and opportunities worth presenting, edit the title and scope, select and reorder photographs, mark up an image with a red pen, and generate a branded PDF.',
-            'The client’s employees own 43 saved PDF drafts containing 284 findings and have generated 36 PDF files. The software measures generation, not whether each PDF was sent or produced revenue, so the case study stops at what the system can prove.',
+            'The software preserves saved drafts and generated-file history. It does not claim whether each PDF was sent or produced revenue, so the case study stops at what the system can prove.',
           ],
         },
         {
@@ -109,7 +103,7 @@ export default function FieldVisitCapture() {
           body: 'Authentication, permissions, scheduled work, monitoring, alerts, tests, deployment, incident repair, and operating documentation.',
         },
       ]}
-      boundary="The field system, routing, review workspace, photo archive, and PDF Creator are in production. The usage figures above do not claim labor savings, revenue lift, crew completion, or client acceptance of generated PDFs. A separate estimating workspace is under active operator testing and is not included in the proven result described here."
+      boundary="The field system, routing, review workspace, photo archive, and PDF Creator are in production. This case study does not claim labor savings, revenue lift, crew completion, or client acceptance of generated PDFs. A separate estimating workspace is under active operator testing and is not included in the proven result described here."
     />
   )
 }

@@ -10,7 +10,7 @@ export default function CaseStudyPage({
   eyebrow,
   intro,
   status,
-  facts,
+  facts = [],
   journey,
   sections,
   evidence,
@@ -27,11 +27,13 @@ export default function CaseStudyPage({
     url: `https://botworksagency.com${path}`,
     author: { '@type': 'Person', name: 'Matt Livingston' },
     publisher: { '@type': 'Organization', name: 'Botworks Agency' },
-    additionalProperty: facts.map(([name, value]) => ({
-      '@type': 'PropertyValue',
-      name,
-      value,
-    })),
+    ...(facts.length ? {
+      additionalProperty: facts.map(([name, value]) => ({
+        '@type': 'PropertyValue',
+        name,
+        value,
+      })),
+    } : {}),
     ...(journey ? {
       hasPart: journey.steps.map((step, index) => ({
         '@type': 'HowToStep',
@@ -60,16 +62,18 @@ export default function CaseStudyPage({
             <p className="site-lede mt-6">{intro}</p>
           </header>
 
-          <section className="border-y border-line bg-paper-deep/70">
-            <dl className={`site-shell grid max-w-5xl divide-y divide-line sm:gap-8 sm:divide-y-0 ${facts.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
-              {facts.map(([label, value]) => (
-                <div key={label} className="py-5">
-                  <dt className="site-label text-copy">{label}</dt>
-                  <dd className="mt-2 text-sm leading-6 text-ink">{value}</dd>
-                </div>
-              ))}
-            </dl>
-          </section>
+          {facts.length > 0 && (
+            <section className="border-y border-line bg-paper-deep/70">
+              <dl className={`site-shell grid max-w-5xl divide-y divide-line sm:gap-8 sm:divide-y-0 ${facts.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
+                {facts.map(([label, value]) => (
+                  <div key={label} className="py-5">
+                    <dt className="site-label text-copy">{label}</dt>
+                    <dd className="mt-2 text-sm leading-6 text-ink">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
 
           {journey && (
             <section className="site-shell max-w-5xl py-14 sm:py-18">
