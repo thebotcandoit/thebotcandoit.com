@@ -3,7 +3,7 @@ import Script from 'next/script'
 import '../styles/globals.css'
 
 const GA_ID = 'G-VH8LTHVN9Z'
-const IS_SITE_DEMO = process.env.NEXT_PUBLIC_SITE_ENV !== 'production'
+const IS_SITE_DEMO = process.env.VERCEL_ENV === 'preview' || process.env.NEXT_PUBLIC_SITE_ENV === 'demo'
 const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === 'true'
 
 export default function App({ Component, pageProps }) {
