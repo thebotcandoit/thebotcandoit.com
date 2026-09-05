@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import NotesEditor from '../../components/NotesEditor'
+import NoteImageUploader from '../../components/NoteImageUploader'
 import SiteHead from '../../components/SiteHead'
 import { getNoteBySlug, notes } from '../../data/notes'
 
@@ -137,13 +138,45 @@ function ArticleSections({ note }) {
                 data-placeholder="Write a paragraph, or leave this blank"
                 className="site-body min-h-[1em]"
               >
-                {paragraph}
+                <LinkedText text={paragraph} />
               </p>
             ))}
           </div>
         </section>
       ))}
     </div>
+  )
+}
+
+function LinkedText({ text }) {
+  return text.split(/(https?:\/\/[^\s]+)/g).map((part, index) => (
+    /^https?:\/\//.test(part)
+      ? <a key={index} href={part} className="site-link break-words">{part}</a>
+      : part
+  ))
+}
+
+function NoteLeadImage({ note }) {
+  const image = note.image || { src: '', alt: '', caption: '' }
+  return (
+    <>
+      <NoteImageUploader slug={note.slug} />
+      <figure data-note-image-frame className={`mb-10 ${image.src ? '' : 'note-media-empty'}`}>
+        <div className="note-image-placeholder rounded-lg border border-dashed border-line bg-white/55 p-8 text-center site-supporting">
+          Upload an image above to see it in the Note.
+        </div>
+        <img
+          data-note-image-src="image.src"
+          data-note-image-alt="image.alt"
+          src={image.src || undefined}
+          alt={image.alt}
+          className="w-full rounded-lg border border-line object-cover"
+        />
+        <figcaption data-editable="image.caption" data-placeholder="Optional image caption" className="site-supporting mt-3 min-h-[1em]">
+          {image.caption}
+        </figcaption>
+      </figure>
+    </>
   )
 }
 
@@ -174,6 +207,8 @@ export default function NotePage({ slug }) {
         description={note.description}
         path={`/notes/${note.slug}`}
         type="article"
+        image={note.image?.src || '/og.jpg'}
+        imageAlt={note.image?.alt || 'Botworks Agency'}
         noindex={isDraft}
       />
       {!isDraft && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />}
@@ -208,7 +243,12 @@ export default function NotePage({ slug }) {
               {note.summary}
             </p>
 
-            {note.layout === 'standard' ? <ArticleSections note={note} /> : <DecisionNote note={note} />}
+            {note.layout === 'standard' ? (
+              <>
+                <NoteLeadImage note={note} />
+                <ArticleSections note={note} />
+              </>
+            ) : <DecisionNote note={note} />}
 
             <section className="hairline-card mt-12 rounded-lg bg-white/50 p-6">
               <p className="site-label mb-3 text-copy">A useful next question</p>

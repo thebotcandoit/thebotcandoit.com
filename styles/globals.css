@@ -148,6 +148,22 @@ body.homepage-editor-open .note-editor-only {
   font-style: italic;
 }
 
+.note-media-empty {
+  display: none;
+}
+
+body.homepage-editor-open .note-media-empty {
+  display: block;
+}
+
+[data-note-image-src]:not([src]) {
+  display: none;
+}
+
+[data-note-image-frame]:has([data-note-image-src][src]) .note-image-placeholder {
+  display: none;
+}
+
 :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
   border-radius: 0.2rem;
   outline: 3px solid var(--green-deep);

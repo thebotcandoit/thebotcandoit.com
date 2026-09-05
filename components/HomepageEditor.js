@@ -46,6 +46,15 @@ function applyContent(content, attribute, readOnly = false) {
     }
     if (!readOnly) element.setAttribute('data-home-editor-active', 'true')
   })
+
+  document.querySelectorAll('[data-note-image-src]').forEach((image) => {
+    const src = valueAtPath(content, image.getAttribute('data-note-image-src'))
+    const alt = valueAtPath(content, image.getAttribute('data-note-image-alt'))
+    if (typeof alt === 'string') image.alt = alt
+    if (typeof src === 'string' && src) image.src = src
+    else image.removeAttribute('src')
+    image.closest('[data-note-image-frame]')?.classList.toggle('note-media-empty', !src)
+  })
 }
 
 function runPhoneChecks(expectedSha, actualSha, attribute) {
@@ -197,6 +206,19 @@ export default function HomepageEditor({
     window.addEventListener('message', onMessage)
     return () => window.removeEventListener('message', onMessage)
   }, [sha])
+
+  useEffect(() => {
+    function onVersionChanged(event) {
+      if (!event.detail?.sha) return
+      setSha(event.detail.sha)
+      setHasDraft(true)
+      setPhoneResults({})
+      setConfirmedWidths({})
+      setMessage('Image saved. Review both phone widths before publishing.')
+    }
+    window.addEventListener('BOTWORKS_CONTENT_VERSION_CHANGED', onVersionChanged)
+    return () => window.removeEventListener('BOTWORKS_CONTENT_VERSION_CHANGED', onVersionChanged)
+  }, [])
 
   function collectUpdates() {
     const updates = {}

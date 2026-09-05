@@ -33,6 +33,9 @@ function escapeYaml(value) {
 function renderMarkdown(note) {
   const trackedUrl = `${note.canonical}?via=second-opinion`
   const prompt = note.secondOpinionPrompt.replace('{{url}}', trackedUrl)
+  const imageLines = note.image?.src
+    ? [`![${note.image.alt || ''}](${note.image.src})`, '', ...(note.image.caption ? [`_${note.image.caption}_`, ''] : [])]
+    : []
   const lines = [
     '---',
     `title: "${escapeYaml(note.title)}"`,
@@ -49,6 +52,7 @@ function renderMarkdown(note) {
     '',
     note.summary,
     '',
+    ...imageLines,
     '## Facts for agents and everyone else',
     '',
     ...note.facts.map((fact) => `- ${fact}`),
