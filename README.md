@@ -23,9 +23,12 @@ custom software should replace useful SaaS.
 
 ## Browser editor
 
-Every main route on the `site-demo` branch supports contextual editing with
+Every main route on the `main` branch supports contextual editing with
 `?edit=1`, including the homepage, supporting pages, case studies, the Notes
 index, and individual Notes. Drafts and published content are separate. A saved
 draft cannot be published until that exact version has passed and been confirmed
 in the built-in 375px and 430px previews. The editor also links the GitHub
 revision history for recovery.
+
+The former `sitedemo.botworksagency.com` staging hostname redirects to the
+corresponding page on `botworksagency.com`.

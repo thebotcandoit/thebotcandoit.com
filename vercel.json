@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "sitedemo.botworksagency.com"
+        }
+      ],
+      "destination": "https://botworksagency.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/for-searchers",
       "destination": "/",
       "permanent": true

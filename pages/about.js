@@ -17,7 +17,7 @@ export default function About() {
         <Nav />
         <main>
           <header className="site-shell grid max-w-5xl gap-10 pb-16 pt-12 sm:pb-20 sm:pt-20 lg:grid-cols-[220px_1fr] lg:items-start">
-            <img src="/profil_pic_thebotcandoit_2_march30.jpg" alt="Matt Livingston" className="h-48 w-48 rounded-lg object-cover shadow-[0_18px_60px_rgba(45,36,18,0.16)]" />
+            <img src="/profil_pic_thebotcandoit_2_march30.jpg" alt="Matt Livingston" width="604" height="598" decoding="async" className="h-48 w-48 rounded-lg object-cover shadow-[0_18px_60px_rgba(45,36,18,0.16)]" />
             <div>
               <p data-site-editable="hero.eyebrow" className="site-label">{content.hero.eyebrow}</p>
               <h1 data-site-editable="hero.heading" className="site-page-title mt-4">{content.hero.heading}</h1>

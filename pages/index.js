@@ -161,7 +161,7 @@ export default function Home() {
 
           <section className="border-y border-[#ded6c7] bg-[#efe8da]/65">
             <div className="site-shell site-section grid max-w-5xl gap-10 sm:grid-cols-[160px_1fr]">
-              <img src="/profil_pic_thebotcandoit_2_march30.jpg" alt="Matt Livingston, founder of Botworks" className="h-36 w-36 rounded-lg object-cover shadow-[0_15px_50px_rgba(45,36,18,0.14)]" />
+              <img src="/profil_pic_thebotcandoit_2_march30.jpg" alt="Matt Livingston, founder of Botworks" width="604" height="598" loading="lazy" decoding="async" className="h-36 w-36 rounded-lg object-cover shadow-[0_15px_50px_rgba(45,36,18,0.14)]" />
               <div>
                 <p data-home-editable="about.eyebrow" className="site-label">{content.about.eyebrow}</p>
                 <h2 data-home-editable="about.heading" className="site-section-title mt-3">{content.about.heading}</h2>

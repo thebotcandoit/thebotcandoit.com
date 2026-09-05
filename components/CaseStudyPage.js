@@ -48,7 +48,7 @@ function EvidenceSection({ evidence, fullWidth = false }) {
               preload="metadata"
               poster={evidence.video.poster}
               aria-label={evidence.video.label}
-              className="aspect-video h-auto w-full bg-ink"
+              className="aspect-video h-auto w-full bg-ink text-white"
             >
               <source src={evidence.video.src} type="video/mp4" />
               Your browser does not support embedded video.
@@ -69,6 +69,7 @@ function EvidenceSection({ evidence, fullWidth = false }) {
                   alt={item.alt}
                   width={item.width}
                   height={item.height}
+                  loading="lazy"
                   decoding="async"
                   className="h-auto w-full"
                 />
@@ -105,6 +106,10 @@ export default function CaseStudyPage({
   cta,
   editorId,
 }) {
+  const shareImage = evidence?.video?.poster || evidence?.items?.[0]?.src || '/og.jpg'
+  const shareImageAlt = evidence?.video?.label || evidence?.items?.[0]?.alt || `${title} case study from Botworks`
+  const shareImageWidth = evidence?.items?.[0]?.width || (shareImage === '/og.jpg' ? 1200 : 1280)
+  const shareImageHeight = evidence?.items?.[0]?.height || (shareImage === '/og.jpg' ? 630 : 720)
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CaseStudy',
@@ -132,7 +137,16 @@ export default function CaseStudyPage({
 
   return (
     <>
-      <SiteHead title={`${title} | Botworks`} description={description} path={path} type="article" />
+      <SiteHead
+        title={`${title} | Botworks`}
+        description={description}
+        path={path}
+        type="article"
+        image={shareImage}
+        imageAlt={shareImageAlt}
+        imageWidth={shareImageWidth}
+        imageHeight={shareImageHeight}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="min-h-screen overflow-x-hidden paper-grid">
         {editorId && (

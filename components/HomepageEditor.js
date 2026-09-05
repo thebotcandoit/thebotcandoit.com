@@ -161,7 +161,7 @@ export default function HomepageEditor({
           element.addEventListener('click', onEditableClick)
         })
         setPhase('ready')
-        setMessage(body.hasDraft ? 'Draft loaded from the site-demo branch.' : `Editing as ${body.user}`)
+        setMessage(body.hasDraft ? 'Saved draft loaded.' : `Editing as ${body.user}`)
       } catch (error) {
         if (cancelled) return
         setPhase('error')
@@ -234,7 +234,7 @@ export default function HomepageEditor({
     setPhoneResults({})
     setConfirmedWidths({})
     setPhase('ready')
-    setMessage(body.unchanged ? 'No text changed.' : 'Draft saved to site-demo. Review both phone widths before publishing.')
+    setMessage(body.unchanged ? 'No text changed.' : 'Draft saved. Review both phone widths before publishing.')
     return nextSha
   }
 
@@ -277,7 +277,7 @@ export default function HomepageEditor({
 
     try {
       setPhase('publishing')
-      setMessage('Publishing the reviewed draft to the site demo…')
+      setMessage('Publishing the reviewed draft to the live site…')
       const response = await fetch(`${baseUrl}${endpoint}/publish`, {
         method: 'POST',
         credentials: 'include',
@@ -302,7 +302,7 @@ export default function HomepageEditor({
       setConfirmedWidths({})
       setPreviewOpen(false)
       setPhase('ready')
-      setMessage('Published to sitedemo.botworksagency.com. The preview deployment is rebuilding now.')
+      setMessage('Published to botworksagency.com. The site is rebuilding now.')
     } catch (error) {
       setPhase('error')
       setMessage(error instanceof Error ? error.message : String(error))
@@ -360,7 +360,7 @@ export default function HomepageEditor({
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded bg-[#f2b84b] px-2 py-1 text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#12131a]">{label} editor</span>
-              <span className="text-xs text-white/55">site-demo</span>
+              <span className="text-xs text-white/55">botworksagency.com</span>
               {dirty && <span className="text-xs text-[#f2b84b]">Unsaved changes</span>}
               {!dirty && hasDraft && <span className="text-xs text-sky-300">Draft saved</span>}
               {reviewed && <span className="text-xs text-emerald-300">Phone review complete</span>}
@@ -382,7 +382,7 @@ export default function HomepageEditor({
                 <button type="button" onClick={handleSave} disabled={busy || !sha} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">{phase === 'saving' ? 'Saving…' : 'Save draft'}</button>
                 <button type="button" onClick={openPhoneReview} disabled={busy || !sha} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">Review phone</button>
                 <button type="button" onClick={openHistory} disabled={busy} className="rounded border border-white/20 px-4 py-2 text-sm font-semibold hover:border-white disabled:opacity-40">History</button>
-                <button type="button" onClick={handlePublish} disabled={busy || dirty || !hasDraft || !reviewed} className="rounded bg-[#f2b84b] px-4 py-2 text-sm font-semibold text-[#12131a] hover:bg-white disabled:cursor-not-allowed disabled:opacity-40">{phase === 'publishing' ? 'Publishing…' : 'Publish to demo'}</button>
+                <button type="button" onClick={handlePublish} disabled={busy || dirty || !hasDraft || !reviewed} className="rounded bg-[#f2b84b] px-4 py-2 text-sm font-semibold text-[#12131a] hover:bg-white disabled:cursor-not-allowed disabled:opacity-40">{phase === 'publishing' ? 'Publishing…' : 'Publish live'}</button>
               </>
             )}
             <button type="button" onClick={exitEditor} className="px-2 py-2 text-sm text-white/55 hover:text-white">Exit</button>
