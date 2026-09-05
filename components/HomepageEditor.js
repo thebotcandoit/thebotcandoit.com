@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 
 const DEFAULT_EDITOR_ORIGIN = 'https://status.botworksagency.com'
 const PHONE_WIDTHS = [375, 430]
+const EDITOR_SESSION_KEY = 'botworks-content-editor-active'
 
 function editorOrigin() {
   return process.env.NEXT_PUBLIC_CONTENT_EDITOR_URL
@@ -107,7 +108,10 @@ export default function HomepageEditor({
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
-    if (params.get('edit') !== '1') return undefined
+    const requestedEditor = params.get('edit') === '1'
+    const continuingEditor = window.sessionStorage.getItem(EDITOR_SESSION_KEY) === '1'
+    if (!requestedEditor && !continuingEditor) return undefined
+    if (requestedEditor) window.sessionStorage.setItem(EDITOR_SESSION_KEY, '1')
 
     const checkingPhone = params.get('phonecheck') === '1'
     const expectedSha = params.get('expectedSha') || ''
@@ -338,6 +342,7 @@ export default function HomepageEditor({
   }
 
   function exitEditor() {
+    window.sessionStorage.removeItem(EDITOR_SESSION_KEY)
     const url = new URL(window.location.href)
     url.searchParams.delete('edit')
     url.searchParams.delete('phonecheck')
