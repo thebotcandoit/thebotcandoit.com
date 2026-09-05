@@ -134,6 +134,20 @@ body {
   overflow-x: hidden;
 }
 
+.note-editor-only {
+  display: none;
+}
+
+body.homepage-editor-open .note-editor-only {
+  display: block;
+}
+
+[data-home-editor-active="true"]:empty::before {
+  color: rgb(107 114 128 / 0.7);
+  content: attr(data-placeholder);
+  font-style: italic;
+}
+
 :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
   border-radius: 0.2rem;
   outline: 3px solid var(--green-deep);

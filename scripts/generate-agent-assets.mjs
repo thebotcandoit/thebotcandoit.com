@@ -163,7 +163,7 @@ function renderSitemap() {
 const publicNotesDir = join(root, 'public', 'notes')
 mkdirSync(publicNotesDir, { recursive: true })
 
-for (const note of notes.map((item) => ({ ...item, ...item.published }))) {
+for (const note of publishedNotes) {
   writeFileSync(join(publicNotesDir, `${note.slug}.md`), renderMarkdown(note))
 }
 

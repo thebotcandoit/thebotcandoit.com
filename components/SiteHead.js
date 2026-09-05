@@ -9,6 +9,7 @@ export default function SiteHead({
   imageAlt = 'Botworks Agency',
   imageWidth = 1200,
   imageHeight = 630,
+  noindex = false,
 }) {
   const canonical = `https://botworksagency.com${path === '/' ? '/' : path}`
   const socialImage = image.startsWith('http') ? image : `https://botworksagency.com${image}`
@@ -30,6 +31,8 @@ export default function SiteHead({
       <meta name="twitter:image" content={socialImage} />
       <meta name="twitter:image:alt" content={imageAlt} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      {noindex && <meta name="robots" content="noindex, nofollow, noarchive" />}
+      {noindex && <meta name="googlebot" content="noindex, nofollow, noarchive" />}
       <link rel="canonical" href={canonical} />
       <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     </Head>
