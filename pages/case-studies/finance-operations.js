@@ -12,7 +12,7 @@ export default function FinanceOperations() {
       description={content.meta.description}
       editorId={pageId}
       deliveredPosition="top"
-      evidencePosition="top"
+      evidencePosition="bottom"
     />
   )
 }

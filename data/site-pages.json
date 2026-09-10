@@ -392,34 +392,38 @@
       "label": "Finance operations case study",
       "published": {
         "meta": {
-          "title": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
-          "description": "How Botworks built daily executive reporting, made monthly owner-operator expense processing repeatable, mapped a transportation company’s operating data, and uses that understanding to find the next useful work."
+          "title": "From daily reporting to driver pay, working alongside the people who run the business.",
+          "description": "Inside an ongoing transportation engagement: daily executive reporting, repeatable expense workbooks, a driver-settlement prototype, and the business rules uncovered with finance staff."
         },
         "eyebrow": "Regional transportation company",
         "status": "Active engagement",
-        "title": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
-        "intro": "What began with one operational idea now gives company leadership a reconciled view of the business every day. Botworks also made monthly owner-operator card reporting easier to produce, mapped how the company’s operating systems fit together, and uses that understanding to investigate the next places where software, AI, and agents can help.",
+        "title": "From daily reporting to driver pay, working alongside the people who run the business.",
+        "intro": "At a regional transportation company, Botworks works directly with leadership and finance staff on the jobs behind the numbers: seeing yesterday’s operation, preparing owner-operator expenses, and calculating what drivers should be paid. The engagement now includes daily reporting, a repeatable monthly finance process, and a settlement prototype built around an employee’s actual working files.",
         "deliveredEyebrow": "",
-        "deliveredHeading": "What Botworks has built and delivered so far.",
-        "deliveredIntro": "",
+        "deliveredHeading": "What the engagement means at each desk.",
+        "deliveredIntro": "The work spans recurring reports, detailed investigation, and software built around the people responsible for the result.",
         "delivered": [
           {
-            "heading": "Daily executive reporting",
-            "body": "Company leadership receives a reconciled view of the operation every day."
+            "heading": "For company leadership",
+            "body": "A report delivered every day brings together the schedule, operating results, revenue, and trends across divisions."
           },
           {
-            "heading": "Owner-operator expense reports",
-            "body": "A difficult monthly true-up now runs as a repeatable process, with employees handling the few decisions that require context."
+            "heading": "For the expense-reporting team",
+            "body": "A monthly card export becomes individual owner-operator workbooks, with totals checked and business exceptions kept visible."
           },
           {
-            "heading": "Mapped the company’s operating data",
-            "body": "Botworks traced how dispatch, billing, fleet, fuel, payroll, and finance records fit together so the next problems can be investigated against real evidence."
+            "heading": "For the settlement specialist",
+            "body": "A reviewable prototype separates the components of driver pay and pinpoints differences from her existing workbook. Contract rules still need validation."
+          },
+          {
+            "heading": "For finance leadership",
+            "body": "The investigations identify specific decisions about driver rosters, contract exceptions, equipment, and data the operating-system vendor needs to expose."
           }
         ],
         "evidence": {
           "eyebrow": "Inside the work",
-          "heading": "The engagement already produces daily and monthly operating work.",
-          "intro": "These views show the delivered executive report and the owner-operator card-report workflow. Company figures, identities, and transactions are hidden.",
+          "heading": "Two of the recurring outputs already in use.",
+          "intro": "The daily executive report and monthly owner-operator card workbooks are shown below. Company figures, identities, and transactions are hidden.",
           "layout": "stacked",
           "items": [
             {
@@ -438,86 +442,70 @@
             }
           ]
         },
-        "journey": {
-          "eyebrow": "One relationship, several useful jobs",
-          "heading": "Each useful output also makes the next question easier to answer.",
-          "intro": "",
-          "steps": [
-            {
-              "heading": "Start with an executive question",
-              "body": "Leadership wanted a timely view of what the company scheduled, moved, and earned, even before every invoice was final."
-            },
-            {
-              "heading": "Connect the operating evidence",
-              "body": "Botworks traced dispatch, billing, routes, drivers, trucks, card purchases, telematics, fuel, and payroll sources."
-            },
-            {
-              "heading": "Reconcile the definitions",
-              "body": "The team settled which dates, statuses, divisions, denominators, and revenue fields reproduce the company’s own records."
-            },
-            {
-              "heading": "Publish the daily view",
-              "body": "A generated executive report now reaches company leadership each day with a stable structure and visible limitations."
-            },
-            {
-              "heading": "Improve recurring finance work",
-              "body": "The same operating knowledge made monthly owner-operator card reports repeatable without hiding the judgment that remains."
-            },
-            {
-              "heading": "Test the next opportunity",
-              "body": "New ideas are investigated against the real data and the employees who know the work before another system is built."
-            }
-          ]
-        },
+        "journey": null,
         "sections": [
           {
-            "eyebrow": "What came before",
-            "heading": "The company had the data, but no single system held the whole answer.",
+            "eyebrow": "One ongoing relationship",
+            "heading": "The work grows through the people who know where the process gets difficult.",
             "paragraphs": [
-              "Dispatch and billing lived in one operating platform. Driver and vehicle activity lived in a fleet system. Card purchases, bulk fuel, payroll, and acquired operations added their own records and identifiers. Each system described a real part of the business, but the joins and definitions between them were not automatic.",
-              "Leadership wanted a dependable daily view. Finance employees also spent time rebuilding recurring owner-operator reports from exported transactions. Both jobs required more than placing numbers on a page. Someone had to determine which records belonged, reproduce the company’s existing calculations, and keep uncertain cases visible to the employees who could resolve them."
+              "Leadership wanted a dependable daily view of the operation. In finance, employees were assembling recurring expense reports and rebuilding driver-pay calculations by hand. Dispatch, billing, fleet activity, fuel purchases, and payroll each held part of the answer.",
+              "Botworks works through these jobs with the employees who perform them, reads their working files, traces the source records, and builds something they can check. Understanding gained in one part of the company carries into the next: the driver roster used for card reports also matters when deciding who belongs in a settlement."
             ],
             "callout": ""
           },
           {
-            "eyebrow": "The daily executive product",
-            "heading": "Leadership now receives a current view of the operation every day.",
+            "eyebrow": "At the leadership desk",
+            "heading": "A consistent view of what the company scheduled, moved, and earned.",
             "paragraphs": [
-              "The generated report brings together today’s schedule, the prior day’s loads, deliveries, gallons and revenue, month-to-date comparisons, and trailing operating trends. It separates important parts of the operation instead of hiding them inside one company-wide average.",
-              "The report is emailed to company leadership as a consistent executive product. Definitions do not change from one day to the next, partial revenue is labeled with its priced share, and every total is checked against the underlying detail before the report is released."
-            ],
-            "callout": "A daily number is only useful when the reader can tell whether the business changed or the calculation changed."
-          },
-          {
-            "eyebrow": "The monthly finance workflow",
-            "heading": "Owner-operator expense reporting became a repeatable process.",
-            "paragraphs": [
-              "Each month, the finance team separates card purchases into individual owner-operator reports. The source export includes fuel and non-fuel purchases, reversals, shared equipment, inconsistent names, and categories that still require knowledge of the driver or truck.",
-              "Botworks derived the owner-operator roster from the operating system, built the processing rules, and generated the individual workbooks from the company’s export. The first live closed-month run was built before seeing the employee’s version, then reconciled against it to the cent. The software handles selection, formatting, totals, and known rules. The employee keeps the few decisions that depend on business context.",
-              "A new portal was considered and deliberately deferred. One file upload and a set of finished workbooks solved the important part without creating another interface for the company to maintain."
+              "The daily report combines today’s schedule, the prior day’s loads, deliveries, gallons and revenue, month-to-date comparisons, and longer-term operating trends. It separates divisions and haul types so leadership can see differences inside the business.",
+              "Botworks traced how revenue becomes available as work moves through billing, reconciled the definitions to the company’s own reports, and built the repeatable generation process. Each daily run checks totals against the underlying detail and shows how much work has been priced, so an incomplete billing day is recognizable.",
+              "The report is generated and emailed to leadership each day. Requests and questions from those readers continue to shape it, while the definitions remain consistent across runs."
             ],
             "callout": ""
           },
           {
-            "eyebrow": "The operating data map",
-            "heading": "Behind both products is a working map of how the company represents its business.",
+            "eyebrow": "At the expense-reporting desk",
+            "heading": "One card export becomes the individual workbooks finance needs.",
             "paragraphs": [
-              "Botworks mapped the roles and relationships among dispatch, billing, routes, divisions, drivers, tractors, telematics, card transactions, fuel sources, payroll, and separate operating entities. The map records the trusted source for each fact, the identifiers that connect systems, the places where those identifiers fail, and the questions that still belong to employees or vendors.",
-              "This is not documentation created after the work. It is part of how the work becomes reliable. It prevents a truck’s current home division from silently rewriting its operating history, keeps separate company instances from being combined on colliding identifiers, and makes clear when a requested metric cannot yet be supported by the available data."
+              "The monthly job starts with a fleet-wide card export containing fuel, parts, maintenance, reversals, inconsistent names, and purchases on shared equipment. The employee needs the right transactions assigned to the right owner-operators, with usable totals for settlement.",
+              "Botworks worked through prior months, built the selection and processing rules, and generated individual workbooks. The first live closed-month run was produced before seeing the employee’s version. Once a known roster exception was included, every workbook matched her monetary totals.",
+              "That comparison also exposed where employee knowledge still matters: a driver’s operating division does not necessarily identify who settles him, purchase categories may need context, and a failed card swipe can contain information missing from the successful transaction. Those questions remain visible in the process."
             ],
             "callout": ""
           },
           {
-            "eyebrow": "What happens next",
-            "heading": "The map turns a general interest in AI into specific work the company can evaluate.",
+            "eyebrow": "At the settlement desk",
+            "heading": "Hundreds of handwritten calculations led us to the source of an incorrect pay report.",
             "paragraphs": [
-              "The engagement now has a growing set of practical questions: how to extend executive reporting across another operating entity, how to calculate gross profit per truck, how to improve fuel and tax preparation, and where agents can help employees investigate recurring exceptions.",
-              "One proposed driver-and-truck alert shows the discipline. The first analysis found that a recurring alert would repeat standing account, identity, and equipment problems. Botworks produced a cleanup path first rather than asking more than 100 drivers to change their behavior for a system that would still be noisy."
+              "Another finance employee showed us how she prepares owner-operator settlements: the pay run for a period of work, after adding items such as tolls and subtracting fuel or parts owed back to the company. She prints driver schedules, writes out hundreds of calculations, and transfers the results into a workbook because the operating system’s pay export needs correcting.",
+              "Botworks read the annotated schedules alongside her workbook and traced each component back to the operating data. The export applied the driver’s percentage to a base that still included insurance surcharges and minimum charges. The separate billing components needed to reconstruct the calculation were already available.",
+              "We built a spreadsheet prototype with a per-driver summary, every delivery line, editable rate inputs, linked formulas, and a list of unresolved differences. It separates base revenue, fuel surcharge, tolls, stop-offs, and waiting-time charges. A trailer-based pay rule is evaluated for each load, and the source notes travel with it.",
+              "Every delivery line in the sample period matched to the source records. Comparing the calculations with her workbook then located individual differences that needed explanation. The remaining rate assumptions are explicit: most percentages were inferred from that same workbook and still need independent contract validation. Matching her total alone would not establish that the pay was right."
             ],
-            "callout": "The goal is not to build every idea. It is to learn enough of the business to build the useful ones well."
+            "callout": "The prototype makes the calculation inspectable, including the places where the business still needs to confirm the rule."
+          },
+          {
+            "eyebrow": "With finance leadership",
+            "heading": "The investigation turns broad concerns into specific decisions.",
+            "paragraphs": [
+              "The settlement work uncovered questions that span several desks: which subsidiary settles each driver, when the customer and product change the pay percentage, how trailer ownership affects pay, and which individual arrangements need clarification or standardization.",
+              "Finance leadership identified a payroll field as the intended roster flag. Botworks established that the field was missing from the reporting data and asked the operating-system vendor to expose it. The same answer can resolve roster exceptions in both expense reporting and settlements.",
+              "The settlement specialist also asked what non-fuel purchases appeared on her drivers’ cards. Reviewing several months of transactions showed that nearly all of that spend was repairs and parts. The major vehicle-linked charges were associated with company equipment, where maintenance was an allowed use; transactions without vehicle identifiers remained for review. The findings were sent back, and that question was closed. Fuel purchases remain relevant to settlement deductions."
+            ],
+            "callout": ""
+          },
+          {
+            "eyebrow": "Behind the work",
+            "heading": "Each investigation leaves the next one with a better starting point.",
+            "paragraphs": [
+              "Botworks maintains a working map of dispatch, billing, drivers, vehicles, fuel, payroll sources, and separate operating entities: where each fact lives, how records connect, and where the connections fail. That understanding supports the daily report, the expense process, and the settlement investigation.",
+              "It has also supported a driver-and-vehicle data cleanup report, fuel-tax preparation analysis, product-record cleanup analysis, and work toward reporting across another operating entity. Gross profit per truck remains dependent on access to driver-pay data. Each piece has its own status and next decision.",
+              "This is the ongoing role Botworks plays inside the company: investigate with the people doing the work, build and check the useful result, operate the recurring outputs, and carry what was learned into the next problem."
+            ],
+            "callout": ""
           }
         ],
-        "boundary": "This is an active internal engagement. The executive report is generated and delivered daily, and the owner-operator card-report process runs monthly. Other opportunities described here are being investigated or built in sequence. The driver alert was deliberately not shipped in its original form. This case study does not publish company figures or claim a financial result Botworks cannot independently attribute.",
+        "boundary": "The daily executive report is live, and the owner-operator card-report process runs monthly. The settlement workbook is a prototype for review, with contract rates and individual exceptions still to resolve. Other investigations are at the stages described above. Client details are anonymized; no time savings or financial return are claimed without measurement.",
         "cta": {
           "heading": "Does this resemble work inside your company?",
           "body": "Send Matt the rough version. The first conversation can begin before the problem has a clean name.",
@@ -525,8 +513,8 @@
         }
       },
       "draft": null,
-      "updatedAt": null,
-      "publishedAt": "2026-09-04T00:00:00.000Z"
+      "updatedAt": "2026-09-10T21:01:19.043Z",
+      "publishedAt": "2026-09-10T21:01:19.043Z"
     },
     "hvac-rebate-software": {
       "path": "/case-studies/hvac-rebate-software",
