@@ -26,8 +26,8 @@
             "href": "/case-studies/finance-operations",
             "industry": "Regional transportation company",
             "status": "Active engagement",
-            "title": "Better visibility for leadership. New ways of working across the business.",
-            "body": "Working with the CEO, CFO, and teams across departments on executive reporting, business investigations, and new ways to handle finance work, including accounts payable approaches now in development.",
+            "title": "Hours of manual reconciliation became a repeatable monthly process.",
+            "body": "AI helped us turn repeated sorting, checking, and spreadsheet preparation into a process finance can run each month. The partnership now spans leadership reporting, business investigations, and new accounts payable work.",
             "cta": "Read case study"
           },
           {
@@ -63,8 +63,8 @@
         }
       },
       "draft": null,
-      "updatedAt": "2026-09-16T15:53:13.756452+00:00",
-      "publishedAt": "2026-09-16T15:53:13.756452+00:00"
+      "updatedAt": "2026-09-16T16:16:47.121799+00:00",
+      "publishedAt": "2026-09-16T16:16:47.121799+00:00"
     },
     "how-we-work": {
       "path": "/how-we-work",
@@ -392,17 +392,17 @@
       "label": "Finance operations case study",
       "published": {
         "meta": {
-          "title": "Better visibility for leadership. New ways of working across the business.",
-          "description": "An ongoing partnership with a transportation company’s CEO, CFO, and teams across departments: new reporting, business investigations, and better ways to handle finance work."
+          "title": "Hours of manual reconciliation became a repeatable monthly process.",
+          "description": "How Botworks used AI to help a finance team turn manual reconciliation into repeatable reporting, then expanded the work with the CEO, CFO, and teams across the business."
         },
         "eyebrow": "Regional transportation company",
         "status": "Active engagement",
-        "title": "Better visibility for leadership. New ways of working across the business.",
-        "intro": "At a regional transportation company, Botworks works directly with the CEO, CFO, and teams across departments to answer business questions, deliver new reporting, and improve how important work gets done.",
+        "title": "Hours of manual reconciliation became a repeatable monthly process.",
+        "intro": "The finance team was spending too many hours sorting transactions, checking totals, and rebuilding reports. Botworks used AI to help investigate the work and build a repeatable process with the people who knew it best. That work is now part of a broader partnership with the CEO, CFO, and teams across the business.",
         "evidence": {
-          "eyebrow": "Examples in use",
-          "heading": "Two practical results from the ongoing engagement.",
-          "intro": "These recurring outputs show how the partnership turns business needs into tools people can use. Company figures, identities, and transactions are hidden.",
+          "eyebrow": "What changed",
+          "heading": "From assembling reports to reviewing the results.",
+          "intro": "A repeatable expense process for finance, and a daily view of the business for leadership.",
           "layout": "stacked",
           "items": [
             {
@@ -410,60 +410,80 @@
               "alt": "A privacy-protected executive reporting snapshot with company figures hidden.",
               "width": 1280,
               "height": 720,
-              "caption": "Live daily: one executive report brings together the schedule, operating results, revenue, and trends across divisions. Leadership gets a consistent view, with totals checked against the underlying records."
+              "caption": "Delivered daily: leadership gets activity, revenue, and trends together in one report, with totals checked against the source records. Company information is hidden in this example."
             },
             {
-              "src": "/evidence/btl-owner-operator-workflow.png",
-              "alt": "A privacy-protected before-and-after view of a company card export becoming owner-operator monthly workbooks.",
-              "width": 1280,
-              "height": 720,
-              "caption": "Running monthly: one company card export becomes individual owner-operator expense workbooks for finance review. In the first live closed-month comparison, every workbook matched the employee’s monetary totals after a known roster exception was included."
+              "comparison": {
+                "heading": "The monthly expense report no longer starts from scratch.",
+                "before": {
+                  "label": "Before",
+                  "heading": "Assemble and reconcile by hand.",
+                  "items": [
+                    "Sort a company-wide transaction file.",
+                    "Match expenses to the right people.",
+                    "Build separate reports and check each total."
+                  ]
+                },
+                "after": {
+                  "label": "Now · running monthly",
+                  "heading": "Start with reports ready for review.",
+                  "items": [
+                    "Process the export using the company’s rules.",
+                    "Generate separate reports with checked totals.",
+                    "Review the results and resolve exceptions."
+                  ]
+                }
+              },
+              "caption": "AI helped us investigate the work and build the repeatable process. The team’s knowledge and review remain part of how it works."
             }
           ]
         },
         "journey": null,
         "sections": [
           {
+            "eyebrow": "The problem",
+            "heading": "The data was there. Getting it into a usable report took hours.",
+            "paragraphs": [
+              "Each month, an employee at this transportation company worked through company card transactions, assigned expenses to the right people, and prepared separate reports. Inconsistent names, reversals, and exceptions made it more than a simple spreadsheet exercise.",
+              "The familiar problem: capable people spending too much of their time moving information around and checking it, month after month."
+            ]
+          },
+          {
+            "eyebrow": "Putting AI to work",
+            "heading": "We turned the employee’s knowledge into a process the team could use again.",
+            "paragraphs": [
+              "Botworks used AI to help analyze the files, investigate discrepancies, and build the processing tools. The employee supplied the business knowledge: which expenses belonged where, which exceptions mattered, and what a correct report should look like.",
+              "The monthly process now takes the company’s transaction export and prepares the individual expense reports, with totals checked and exceptions kept visible for review. We compared the first live run with the employee’s own reports. After including a known exception, every report matched her totals."
+            ]
+          },
+          {
+            "eyebrow": "Beyond the first process",
+            "heading": "The same approach now supports reporting, investigations, and new finance workflows.",
+            "paragraphs": [
+              "Leadership receives a daily report bringing together activity, revenue, and trends across the business. New questions from the CEO and CFO lead to additional reporting and investigations with the teams who hold the answers.",
+              "We are also working on payment calculations that employees were working through by hand. A prototype makes those calculations easier to inspect; payment rules still need validation. New approaches to accounts payable processing are in development."
+            ]
+          },
+          {
             "eyebrow": "An ongoing partnership",
-            "heading": "Connecting leadership’s priorities with the people doing the work.",
+            "heading": "Every problem solved gives us a better starting point for the next.",
             "paragraphs": [
-              "The engagement connects leadership’s priorities with the practical knowledge of the people doing the work. Some needs lead to recurring reports. Others require investigation into the company’s data and processes. Still others become entirely new tools and workflows."
-            ]
-          },
-          {
-            "eyebrow": "Reporting and investigation",
-            "heading": "Giving leadership a clearer view.",
-            "paragraphs": [
-              "Daily executive reporting brings together operating activity, revenue, and trends across divisions. As leadership raises new questions, Botworks develops additional reporting and investigates the details behind the numbers.",
-              "When records disagree or a process requires repeated manual corrections, we work with employees to trace the issue, understand the business rules, and identify what needs to change. Findings help the company make specific decisions about its data, systems, and processes."
-            ]
-          },
-          {
-            "eyebrow": "New ways of working",
-            "heading": "Building better ways to handle finance work.",
-            "paragraphs": [
-              "The work includes recurring owner-operator expense reporting, a driver-settlement prototype, and new approaches to accounts payable processing now in development. Each starts with understanding the real work and building alongside the people responsible for it.",
-              "For driver settlements, that meant working through an employee’s handwritten calculations and tracing an incorrect pay export back to its source. A reviewable prototype now separates the pay components and highlights differences, with contract rates and individual exceptions still to validate."
-            ]
-          },
-          {
-            "eyebrow": "Value that carries forward",
-            "heading": "A relationship that grows with the business.",
-            "paragraphs": [
-              "Each project deepens our understanding of the company: its systems, people, and operating rules. That knowledge carries into the next question, report, or process, giving leadership an ongoing partner who can move from investigating a problem to building a practical solution."
+              "Each piece of work builds our understanding of the company’s people, systems, and business rules. That knowledge carries forward as we investigate new issues, connect information across departments, and build better ways to get the work done.",
+              "Your version might be reconciling supplier invoices, allocating expenses across plants, or assembling a management report from several systems. The starting point is the same: a recurring job that takes too much effort, and people who know what needs to be right."
             ]
           }
         ],
-        "boundary": "Executive reporting is live, and owner-operator expense reporting runs monthly. Driver settlements remain a prototype pending validation. New accounts payable approaches are in development.",
+        "boundary": "Daily leadership reporting and monthly expense reporting are in use. The payment-calculation tool is a prototype pending validation. Accounts payable work is in development.",
         "cta": {
-          "heading": "What needs a closer look in your business?",
-          "body": "Talk with Matt about the questions your team needs answered or the work you want to improve. A rough starting point is enough.",
+          "heading": "What does your team keep reconciling by hand?",
+          "body": "Tell Matt about the report, spreadsheet, or recurring task taking up too much time. We can start with the work your team already does.",
           "label": "matt@botworksagency.com"
-        }
+        },
+        "boundaryLabel": "Current status"
       },
       "draft": null,
-      "updatedAt": "2026-09-16T15:53:13.756452+00:00",
-      "publishedAt": "2026-09-16T15:53:13.756452+00:00"
+      "updatedAt": "2026-09-16T16:16:47.121799+00:00",
+      "publishedAt": "2026-09-16T16:16:47.121799+00:00"
     },
     "hvac-rebate-software": {
       "path": "/case-studies/hvac-rebate-software",

@@ -19,7 +19,7 @@ Useful pages:
 Production case studies:
 
 - They replaced a field app they disliked with software built around the way they work.: https://botworksagency.com/case-studies/landscape-operations-software
-- Better visibility for leadership. New ways of working across the business.: https://botworksagency.com/case-studies/finance-operations
+- Hours of manual reconciliation became a repeatable monthly process.: https://botworksagency.com/case-studies/finance-operations
 - They replaced manual rebate entry with one review-and-generate workflow.: https://botworksagency.com/case-studies/hvac-rebate-software
 
 Published note markdown:

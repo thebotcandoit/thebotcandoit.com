@@ -62,8 +62,25 @@ function EvidenceSection({ evidence, fullWidth = false }) {
       {(evidence.items || []).length > 0 && (
         <div className={imageLayout}>
           {evidence.items.map((item, index) => (
-            <figure key={item.src} className="overflow-hidden rounded-lg border border-line bg-white/70">
-              <div className="bg-white">
+            <figure key={item.src || item.comparison.heading} className="overflow-hidden rounded-lg border border-line bg-white/70">
+              {item.comparison ? (
+                <div className="p-6 sm:p-8">
+                  <h3 data-site-editable={`evidence.items.${index}.comparison.heading`} className="site-section-title">{item.comparison.heading}</h3>
+                  <div className="mt-7 grid gap-6 sm:grid-cols-2">
+                    {['before', 'after'].map((phase) => (
+                      <section key={phase} className={`rounded-md border p-5 ${phase === 'after' ? 'border-accent/30 bg-accent/5' : 'border-line bg-white/70'}`}>
+                        <p data-site-editable={`evidence.items.${index}.comparison.${phase}.label`} className="text-sm font-semibold text-accent">{item.comparison[phase].label}</p>
+                        <h4 data-site-editable={`evidence.items.${index}.comparison.${phase}.heading`} className="site-item-title mt-3">{item.comparison[phase].heading}</h4>
+                        <ul className="mt-4 list-disc space-y-3 pl-5 text-base leading-7 text-copy">
+                          {item.comparison[phase].items.map((step, stepIndex) => (
+                            <li key={step} data-site-editable={`evidence.items.${index}.comparison.${phase}.items.${stepIndex}`}>{step}</li>
+                          ))}
+                        </ul>
+                      </section>
+                    ))}
+                  </div>
+                </div>
+              ) : <div className="bg-white">
                 <img
                   src={item.src}
                   alt={item.alt}
@@ -73,7 +90,7 @@ function EvidenceSection({ evidence, fullWidth = false }) {
                   decoding="async"
                   className="h-auto w-full"
                 />
-              </div>
+              </div>}
               <figcaption data-site-editable={`evidence.items.${index}.caption`} className="border-t border-line px-4 py-3 text-sm leading-6 text-copy">
                 {item.caption}
               </figcaption>
@@ -103,6 +120,7 @@ export default function CaseStudyPage({
   deliveredPosition = 'bottom',
   evidencePosition = 'bottom',
   boundary,
+  boundaryLabel = 'Boundary',
   cta,
   editorId,
 }) {
@@ -249,7 +267,7 @@ export default function CaseStudyPage({
               )}
 
               <section className="border-y border-line py-7">
-                <p className="site-label text-copy">Boundary</p>
+                <p data-site-editable="boundaryLabel" className="site-label text-copy">{boundaryLabel}</p>
                 <p data-site-editable="boundary" className="site-body mt-3">{boundary}</p>
               </section>
             </div>
