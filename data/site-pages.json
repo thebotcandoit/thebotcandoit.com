@@ -26,8 +26,8 @@
             "href": "/case-studies/finance-operations",
             "industry": "Regional transportation company",
             "status": "Active engagement",
-            "title": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
-            "body": "A daily executive report, repeatable owner-operator expense processing, and a mapped operating data architecture now support the next useful work for software, AI, and agents.",
+            "title": "Better visibility for leadership. New ways of working across the business.",
+            "body": "Working with the CEO, CFO, and teams across departments on executive reporting, business investigations, and new ways to handle finance work, including accounts payable approaches now in development.",
             "cta": "Read case study"
           },
           {
@@ -63,8 +63,8 @@
         }
       },
       "draft": null,
-      "updatedAt": null,
-      "publishedAt": "2026-09-04T00:00:00.000Z"
+      "updatedAt": "2026-09-16T15:53:13.756452+00:00",
+      "publishedAt": "2026-09-16T15:53:13.756452+00:00"
     },
     "how-we-work": {
       "path": "/how-we-work",
@@ -392,38 +392,17 @@
       "label": "Finance operations case study",
       "published": {
         "meta": {
-          "title": "From daily reporting to driver pay, working alongside the people who run the business.",
-          "description": "Inside an ongoing transportation engagement: daily executive reporting, repeatable expense workbooks, a driver-settlement prototype, and the business rules uncovered with finance staff."
+          "title": "Better visibility for leadership. New ways of working across the business.",
+          "description": "An ongoing partnership with a transportation company’s CEO, CFO, and teams across departments: new reporting, business investigations, and better ways to handle finance work."
         },
         "eyebrow": "Regional transportation company",
         "status": "Active engagement",
-        "title": "From daily reporting to driver pay, working alongside the people who run the business.",
-        "intro": "At a regional transportation company, Botworks works directly with leadership and finance staff on the jobs behind the numbers: seeing yesterday’s operation, preparing owner-operator expenses, and calculating what drivers should be paid. The engagement now includes daily reporting, a repeatable monthly finance process, and a settlement prototype built around an employee’s actual working files.",
-        "deliveredEyebrow": "",
-        "deliveredHeading": "What the engagement means at each desk.",
-        "deliveredIntro": "The work spans recurring reports, detailed investigation, and software built around the people responsible for the result.",
-        "delivered": [
-          {
-            "heading": "For company leadership",
-            "body": "A report delivered every day brings together the schedule, operating results, revenue, and trends across divisions."
-          },
-          {
-            "heading": "For the expense-reporting team",
-            "body": "A monthly card export becomes individual owner-operator workbooks, with totals checked and business exceptions kept visible."
-          },
-          {
-            "heading": "For the settlement specialist",
-            "body": "A reviewable prototype separates the components of driver pay and pinpoints differences from her existing workbook. Contract rules still need validation."
-          },
-          {
-            "heading": "For finance leadership",
-            "body": "The investigations identify specific decisions about driver rosters, contract exceptions, equipment, and data the operating-system vendor needs to expose."
-          }
-        ],
+        "title": "Better visibility for leadership. New ways of working across the business.",
+        "intro": "At a regional transportation company, Botworks works directly with the CEO, CFO, and teams across departments to answer business questions, deliver new reporting, and improve how important work gets done.",
         "evidence": {
-          "eyebrow": "Inside the work",
-          "heading": "Two of the recurring outputs already in use.",
-          "intro": "The daily executive report and monthly owner-operator card workbooks are shown below. Company figures, identities, and transactions are hidden.",
+          "eyebrow": "Examples in use",
+          "heading": "Two practical results from the ongoing engagement.",
+          "intro": "These recurring outputs show how the partnership turns business needs into tools people can use. Company figures, identities, and transactions are hidden.",
           "layout": "stacked",
           "items": [
             {
@@ -431,90 +410,60 @@
               "alt": "A privacy-protected executive reporting snapshot with company figures hidden.",
               "width": 1280,
               "height": 720,
-              "caption": "The daily report combines the current schedule, prior-day operating results, revenue, and longer-term comparisons in one consistent executive view."
+              "caption": "Live daily: one executive report brings together the schedule, operating results, revenue, and trends across divisions. Leadership gets a consistent view, with totals checked against the underlying records."
             },
             {
               "src": "/evidence/btl-owner-operator-workflow.png",
               "alt": "A privacy-protected before-and-after view of a company card export becoming owner-operator monthly workbooks.",
               "width": 1280,
               "height": 720,
-              "caption": "The monthly process starts with one company card export and produces separate, reconciled workbooks for employee review."
+              "caption": "Running monthly: one company card export becomes individual owner-operator expense workbooks for finance review. In the first live closed-month comparison, every workbook matched the employee’s monetary totals after a known roster exception was included."
             }
           ]
         },
         "journey": null,
         "sections": [
           {
-            "eyebrow": "One ongoing relationship",
-            "heading": "The work grows through the people who know where the process gets difficult.",
+            "eyebrow": "An ongoing partnership",
+            "heading": "Connecting leadership’s priorities with the people doing the work.",
             "paragraphs": [
-              "Leadership wanted a dependable daily view of the operation. In finance, employees were assembling recurring expense reports and rebuilding driver-pay calculations by hand. Dispatch, billing, fleet activity, fuel purchases, and payroll each held part of the answer.",
-              "Botworks works through these jobs with the employees who perform them, reads their working files, traces the source records, and builds something they can check. Understanding gained in one part of the company carries into the next: the driver roster used for card reports also matters when deciding who belongs in a settlement."
-            ],
-            "callout": ""
+              "The engagement connects leadership’s priorities with the practical knowledge of the people doing the work. Some needs lead to recurring reports. Others require investigation into the company’s data and processes. Still others become entirely new tools and workflows."
+            ]
           },
           {
-            "eyebrow": "At the leadership desk",
-            "heading": "A consistent view of what the company scheduled, moved, and earned.",
+            "eyebrow": "Reporting and investigation",
+            "heading": "Giving leadership a clearer view.",
             "paragraphs": [
-              "The daily report combines today’s schedule, the prior day’s loads, deliveries, gallons and revenue, month-to-date comparisons, and longer-term operating trends. It separates divisions and haul types so leadership can see differences inside the business.",
-              "Botworks traced how revenue becomes available as work moves through billing, reconciled the definitions to the company’s own reports, and built the repeatable generation process. Each daily run checks totals against the underlying detail and shows how much work has been priced, so an incomplete billing day is recognizable.",
-              "The report is generated and emailed to leadership each day. Requests and questions from those readers continue to shape it, while the definitions remain consistent across runs."
-            ],
-            "callout": ""
+              "Daily executive reporting brings together operating activity, revenue, and trends across divisions. As leadership raises new questions, Botworks develops additional reporting and investigates the details behind the numbers.",
+              "When records disagree or a process requires repeated manual corrections, we work with employees to trace the issue, understand the business rules, and identify what needs to change. Findings help the company make specific decisions about its data, systems, and processes."
+            ]
           },
           {
-            "eyebrow": "At the expense-reporting desk",
-            "heading": "One card export becomes the individual workbooks finance needs.",
+            "eyebrow": "New ways of working",
+            "heading": "Building better ways to handle finance work.",
             "paragraphs": [
-              "The monthly job starts with a fleet-wide card export containing fuel, parts, maintenance, reversals, inconsistent names, and purchases on shared equipment. The employee needs the right transactions assigned to the right owner-operators, with usable totals for settlement.",
-              "Botworks worked through prior months, built the selection and processing rules, and generated individual workbooks. The first live closed-month run was produced before seeing the employee’s version. Once a known roster exception was included, every workbook matched her monetary totals.",
-              "That comparison also exposed where employee knowledge still matters: a driver’s operating division does not necessarily identify who settles him, purchase categories may need context, and a failed card swipe can contain information missing from the successful transaction. Those questions remain visible in the process."
-            ],
-            "callout": ""
+              "The work includes recurring owner-operator expense reporting, a driver-settlement prototype, and new approaches to accounts payable processing now in development. Each starts with understanding the real work and building alongside the people responsible for it.",
+              "For driver settlements, that meant working through an employee’s handwritten calculations and tracing an incorrect pay export back to its source. A reviewable prototype now separates the pay components and highlights differences, with contract rates and individual exceptions still to validate."
+            ]
           },
           {
-            "eyebrow": "At the settlement desk",
-            "heading": "Hundreds of handwritten calculations led us to the source of an incorrect pay report.",
+            "eyebrow": "Value that carries forward",
+            "heading": "A relationship that grows with the business.",
             "paragraphs": [
-              "Another finance employee showed us how she prepares owner-operator settlements: the pay run for a period of work, after adding items such as tolls and subtracting fuel or parts owed back to the company. She prints driver schedules, writes out hundreds of calculations, and transfers the results into a workbook because the operating system’s pay export needs correcting.",
-              "Botworks read the annotated schedules alongside her workbook and traced each component back to the operating data. The export applied the driver’s percentage to a base that still included insurance surcharges and minimum charges. The separate billing components needed to reconstruct the calculation were already available.",
-              "We built a spreadsheet prototype with a per-driver summary, every delivery line, editable rate inputs, linked formulas, and a list of unresolved differences. It separates base revenue, fuel surcharge, tolls, stop-offs, and waiting-time charges. A trailer-based pay rule is evaluated for each load, and the source notes travel with it.",
-              "Every delivery line in the sample period matched to the source records. Comparing the calculations with her workbook then located individual differences that needed explanation. The remaining rate assumptions are explicit: most percentages were inferred from that same workbook and still need independent contract validation. Matching her total alone would not establish that the pay was right."
-            ],
-            "callout": "The prototype makes the calculation inspectable, including the places where the business still needs to confirm the rule."
-          },
-          {
-            "eyebrow": "With finance leadership",
-            "heading": "The investigation turns broad concerns into specific decisions.",
-            "paragraphs": [
-              "The settlement work uncovered questions that span several desks: which subsidiary settles each driver, when the customer and product change the pay percentage, how trailer ownership affects pay, and which individual arrangements need clarification or standardization.",
-              "Finance leadership identified a payroll field as the intended roster flag. Botworks established that the field was missing from the reporting data and asked the operating-system vendor to expose it. The same answer can resolve roster exceptions in both expense reporting and settlements.",
-              "The settlement specialist also asked what non-fuel purchases appeared on her drivers’ cards. Reviewing several months of transactions showed that nearly all of that spend was repairs and parts. The major vehicle-linked charges were associated with company equipment, where maintenance was an allowed use; transactions without vehicle identifiers remained for review. The findings were sent back, and that question was closed. Fuel purchases remain relevant to settlement deductions."
-            ],
-            "callout": ""
-          },
-          {
-            "eyebrow": "Behind the work",
-            "heading": "Each investigation leaves the next one with a better starting point.",
-            "paragraphs": [
-              "Botworks maintains a working map of dispatch, billing, drivers, vehicles, fuel, payroll sources, and separate operating entities: where each fact lives, how records connect, and where the connections fail. That understanding supports the daily report, the expense process, and the settlement investigation.",
-              "It has also supported a driver-and-vehicle data cleanup report, fuel-tax preparation analysis, product-record cleanup analysis, and work toward reporting across another operating entity. Gross profit per truck remains dependent on access to driver-pay data. Each piece has its own status and next decision.",
-              "This is the ongoing role Botworks plays inside the company: investigate with the people doing the work, build and check the useful result, operate the recurring outputs, and carry what was learned into the next problem."
-            ],
-            "callout": ""
+              "Each project deepens our understanding of the company: its systems, people, and operating rules. That knowledge carries into the next question, report, or process, giving leadership an ongoing partner who can move from investigating a problem to building a practical solution."
+            ]
           }
         ],
-        "boundary": "The daily executive report is live, and the owner-operator card-report process runs monthly. The settlement workbook is a prototype for review, with contract rates and individual exceptions still to resolve. Other investigations are at the stages described above. Client details are anonymized; no time savings or financial return are claimed without measurement.",
+        "boundary": "Executive reporting is live, and owner-operator expense reporting runs monthly. Driver settlements remain a prototype pending validation. New accounts payable approaches are in development.",
         "cta": {
-          "heading": "Does this resemble work inside your company?",
-          "body": "Send Matt the rough version. The first conversation can begin before the problem has a clean name.",
+          "heading": "What needs a closer look in your business?",
+          "body": "Talk with Matt about the questions your team needs answered or the work you want to improve. A rough starting point is enough.",
           "label": "matt@botworksagency.com"
         }
       },
       "draft": null,
-      "updatedAt": "2026-09-10T21:01:19.043Z",
-      "publishedAt": "2026-09-10T21:01:19.043Z"
+      "updatedAt": "2026-09-16T15:53:13.756452+00:00",
+      "publishedAt": "2026-09-16T15:53:13.756452+00:00"
     },
     "hvac-rebate-software": {
       "path": "/case-studies/hvac-rebate-software",

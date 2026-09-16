@@ -28,9 +28,9 @@
         {
           "industry": "Regional transportation company",
           "status": "Active engagement",
-          "heading": "Leadership now sees the business every day. The same work is changing what happens behind the numbers.",
-          "body": "A daily executive report, repeatable owner-operator expense processing, and a mapped operating data architecture now support the next useful work for software, AI, and agents.",
-          "detail": "The relationship began with one operating problem and expanded as each useful result made the next question easier to answer.",
+          "heading": "Better visibility for leadership. New ways of working across the business.",
+          "body": "Working with the CEO, CFO, and teams across departments on executive reporting, business investigations, and new ways to handle finance work, including accounts payable approaches now in development.",
+          "detail": "Each project builds knowledge of the company that carries into the next question, report, or process.",
           "cta": "Read the finance-operations case study"
         },
         {
@@ -109,6 +109,6 @@
     }
   },
   "draft": null,
-  "updatedAt": null,
-  "publishedAt": "2026-09-02T00:00:00.000Z"
+  "updatedAt": "2026-09-16T15:53:13.756452+00:00",
+  "publishedAt": "2026-09-16T15:53:13.756452+00:00"
 }

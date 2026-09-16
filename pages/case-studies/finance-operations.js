@@ -11,7 +11,7 @@ export default function FinanceOperations() {
       path={sitePages.pages[pageId].path}
       description={content.meta.description}
       editorId={pageId}
-      deliveredPosition="top"
+      deliveredPosition="none"
       evidencePosition="bottom"
     />
   )
