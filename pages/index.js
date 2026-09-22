@@ -42,6 +42,26 @@ export default function Home() {
             </aside>
           </section>
 
+          <section className="bg-ink text-white">
+            <div className="site-shell site-section">
+              <div className="max-w-3xl">
+                <p data-home-editable="work.eyebrow" className="site-label text-amber">{content.work.eyebrow}</p>
+                <h2 data-home-editable="work.heading" className="font-display mt-3 text-3xl font-bold leading-tight sm:text-4xl">{content.work.heading}</h2>
+                <p data-home-editable="work.body" className="mt-4 max-w-prose text-base leading-7 text-white/70">{content.work.body}</p>
+              </div>
+              <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-white/12 bg-white/12 md:grid-cols-3">
+                {content.work.items.map((item, index) => (
+                  <div key={item.heading} className="bg-ink p-6 sm:p-8">
+                    <p className="mb-4 font-mono text-sm text-amber">0{index + 1}</p>
+                    <h3 data-home-editable={`work.items.${index}.heading`} className="font-display text-xl font-bold">{item.heading}</h3>
+                    <p data-home-editable={`work.items.${index}.body`} className="mt-3 text-sm leading-6 text-white/70">{item.body}</p>
+                  </div>
+                ))}
+              </div>
+              <Link href="/how-we-work" className="mt-8 inline-flex text-sm font-semibold text-amber underline-offset-4 hover:underline">How an engagement works →</Link>
+            </div>
+          </section>
+
           <section id="work" className="border-y border-[#ded6c7] bg-[#efe8da]/65">
             <div className="site-shell site-section">
               <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
@@ -83,26 +103,6 @@ export default function Home() {
                   <p key={paragraph} data-home-editable={`premise.paragraphs.${index}`} className="site-body">{paragraph}</p>
                 ))}
               </div>
-            </div>
-          </section>
-
-          <section className="bg-ink text-white">
-            <div className="site-shell site-section">
-              <div className="max-w-3xl">
-                <p data-home-editable="work.eyebrow" className="site-label text-amber">{content.work.eyebrow}</p>
-                <h2 data-home-editable="work.heading" className="font-display mt-3 text-3xl font-bold leading-tight sm:text-4xl">{content.work.heading}</h2>
-                <p data-home-editable="work.body" className="mt-4 max-w-prose text-base leading-7 text-white/70">{content.work.body}</p>
-              </div>
-              <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-white/12 bg-white/12 md:grid-cols-3">
-                {content.work.items.map((item, index) => (
-                  <div key={item.heading} className="bg-ink p-6 sm:p-8">
-                    <p className="mb-4 font-mono text-sm text-amber">0{index + 1}</p>
-                    <h3 data-home-editable={`work.items.${index}.heading`} className="font-display text-xl font-bold">{item.heading}</h3>
-                    <p data-home-editable={`work.items.${index}.body`} className="mt-3 text-sm leading-6 text-white/70">{item.body}</p>
-                  </div>
-                ))}
-              </div>
-              <Link href="/how-we-work" className="mt-8 inline-flex text-sm font-semibold text-amber underline-offset-4 hover:underline">How an engagement works →</Link>
             </div>
           </section>
 
